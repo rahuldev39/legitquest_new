@@ -109,6 +109,7 @@ nav.navbar {
     position: relative;
     padding-top: 65px;
     padding-bottom: 65px;
+    background-position: bottom;
 }
 .search-section .container{
   position: relative;
@@ -149,7 +150,8 @@ nav.navbar {
 }
 .search-field input {
     font-size: 18px;
- border-color: #077af8;
+    border-color: #077af8;
+    padding-right: 35px;
 }
 .search-select{
   margin-right: 3px
@@ -547,7 +549,7 @@ nav.navbar {
     top: 10%;
     width: 70%;
 }
-.left-div._1 {
+.left-div.left {
     height: 650px;
 }
 .image-section.new {
@@ -557,7 +559,7 @@ nav.navbar {
 }
 @media (max-width: 767px)
 {
-.left-div._1 {
+.left-div.left {
     height: 550px;
     width: 100%;
     height: 550px;
@@ -590,5 +592,19 @@ padding: 0px 20px;
 }
 .idraf-img{
   margin-bottom: 40px
+}
+}
+@media (max-width: 767px)
+{
+  .search-filed-box {
+  flex-direction: column;
+      max-width: 450px;
+}
+.search-select {
+    width: 100%;
+    margin-bottom: 10px
+}
+.search-field {
+    width: 100%;
 }
 }
