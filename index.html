@@ -1,0 +1,596 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Legitquest : Order System</title>
+  <meta charset="utf-8">
+  <meta content="ie=edge" http-equiv="x-ua-compatible">
+  <meta content="template language" name="keywords">
+  <meta content="width=device-width, initial-scale=1" name="viewport">
+  <link href="favicon.png" rel="shortcut icon">
+
+  <link href="bower_components/bootstrap-daterangepicker/daterangepicker.css" rel="stylesheet">
+  <link href="bower_components/perfect-scrollbar/css/perfect-scrollbar.min.css" rel="stylesheet">
+  <link href="bower_components/slick-carousel/slick/slick.css" rel="stylesheet">
+  <link href="./icon_fonts_assets/simple-line-icons/css/simple-line-icons.css" rel="stylesheet">
+  <link href="bower_components/select2/dist/css/bootstrap-select.min.css" rel="stylesheet">
+  <link href="./css/bootstrap.min.css" rel="stylesheet">
+  <link href="./css/owl.theme.css" rel="stylesheet">
+  <link href="./css/owl.carousel.css" rel="stylesheet">
+  <link href="css/maince5a.css" rel="stylesheet">
+  <link href="./css/custom.css" rel="stylesheet">
+  <script src="./js/webfont.js"></script>
+  <script type="text/javascript">
+    WebFont.load({
+      google: {
+        families: ["PT Serif:400,400italic,700,700italic", "Open Sans:300,300italic,400,400italic,600,600italic,700,700italic,800,800italic", "Poppins:300,regular,500,600,700"]
+      }
+    });
+  </script>
+</head>
+
+<body class="menu-position-side menu-side-left full-screen">
+  <div class="all-wrapper white-bg-all">
+
+
+    <header id="pageTop" class="header">
+      <nav class="navbar navbar-expand-md navbar-transparent navbar-home fixed-top">
+        <div class="container">
+          <div class="nav-mobile d-flex  justify-content-between align-items-center">
+            <a class="navbar-brand" href="#">
+              <img src="./img/lq-logo.png" alt="">
+            </a>
+            <button class="navbar-toggler btn btn-primary" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="icon-menu"></span>
+            </button>
+          </div>
+
+
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav ml-auto">
+              <li class="nav-item active">
+                <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+              </li>
+
+
+
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                  About
+                </a>
+                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <a class="dropdown-item" href="#">About Legitquest</a>
+                  <a class="dropdown-item" href="#">Our Team</a>
+                  <a class="dropdown-item" href="#">Gallery</a>
+                </div>
+              </li>
+
+              <li class="nav-item">
+                <a class="nav-link" href="#">Features</a>
+              </li>
+
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                  Career
+                </a>
+                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <a class="dropdown-item" href="#">Job Openings</a>
+                  <a class="dropdown-item" href="#">Cap</a>
+                </div>
+              </li>
+
+              <li class="nav-item">
+                <a class="nav-link" href="#">Contact</a>
+              </li>
+              <li class="nav-item btn-link">
+                <button class="mr-2 mb-2 btn btn-primary" type="button"> Sign In</button>
+              </li>
+            </ul>
+
+
+
+          </div>
+
+
+        </div>
+
+      </nav>
+    </header>
+
+
+    <div class="search-section overlay">
+      <div class="container">
+        <div class="banner-text text-center">
+          <h1 class="intro-lead-in">Re-Defining Legal Research</h1>
+          <span class="intro-heading">It is the authority which makes law, to find it is arduous. A good lawyer is one who knows where to find it.</span>
+        </div>
+
+        <div class="search-filed-box d-flex align-items-center">
+          <div class="search-select">
+            <select class="selectpicker">
+              <optgroup label="Case Law">
+                <option>Party Name</option>
+                <option>Citation</option>
+                <option>Act Name</option>
+                <option>Free text</option>
+              </optgroup>
+              <optgroup label="Act Search">
+                <option>Act Name</option>
+                <option>Free Text </option>
+              </optgroup>
+            </select>
+
+          </div>
+          <div class="search-field flex-fill">
+            <input class="form-control" placeholder="Search Cases, Statutes and Regulations">
+            <div class="search-btn">
+              <a href="#"><i class="os-icon os-icon-search" aria-hidden="true"></i></a>
+            </div>
+          </div>
+        </div>
+
+
+      </div>
+
+
+
+    </div>
+
+    <section class="intro-section">
+      <div class="container">
+        <div class="intro-text text-center">
+          <h2>World’s only 1-click access to DRAF of a case law! </h2>
+          <div class="section-divider-line"></div>
+          <div class="info-features">
+            <span>Decision</span>
+            <span class="blue">Reasoning</span>
+            <span>Arguments & Facts</span>
+          </div>
+
+
+        </div>
+      </div>
+    </section>
+
+
+    <div class="image-section clearfix">
+      <div class="left-div left"></div>
+      <div class="left-div right gray">
+        <div class="center-div">
+          <div>
+            <div data-ix="hero-left-2" class="div-block">
+              <h1 class="column-tittle ">iSearch</h1>
+              <h1 class="column-tittle subtittle">Not all legal search engines are created equal - Information retrieval made easy</h1>
+              <div class="section-divider-line"></div>
+              <div class="section-content">
+                <p>For years, lawyers have been stuck with antiquated tools that focus primarily on Boolean search. Better tools are needed to truly understand data.</p>
+                <p>
+                  For years, lawyers have been stuck with antiquated tools that focus primarily on Boolean search. Better tools are needed to truly understand data.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="section dark-bg">
+      <div class="container">
+        <div class="row">
+          <div class="w-col col-md-6">
+            <div class="div-info left">
+              <h1 class="column-tittle">iGraphics</h1>
+              <h1 class="column-tittle subtittle">A picture is intelligence made visible</h1>
+              <div class="section-divider-line light"></div>
+              <div class="section-content">
+                <p>
+                  Instead of wading through piles of paper, lawyers now deal with terabytes of data and millions of documents.
+                </p>
+
+                <p>
+                  Experts have proven that visuals have a positive impact on the human mind for learning and memorising.
+                </p>
+
+                <p>
+                  iGraphics saves your time by condensing the treatment of overruled, distinguished, followed and relied case laws into a single canvas for easy reference and understanding.
+                </p>
+              </div>
+
+
+            </div>
+          </div>
+          <div class="w-col col-md-6">
+            <div class="igraphic-img">
+              <img src="./img/58c7149e0709dda74260b034_11ss1-p-800.png" class="model-image img-responsive">
+
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="section draf-bg">
+      <div class="container">
+        <div class="row">
+          <div class="info-column-left col-md-7 ">
+            <img src="./img/tab-citation.png" class="img-fluid idraf-img" alt="">
+          </div>
+          <div data-ix="fade-on-scroll-right" class="w-col col-md-5">
+            <div class="left-algined-div">
+              <h1 class="column-tittle list">iDRAF</h1>
+              <h1 class="column-tittle list subtittle">Deliver beyond expectations</h1>
+              <div class="section-divider-line left"></div>
+
+              <div class="section-content">
+                <p class="paragraph">
+                  iDRAF stands for “Decision Reasoning Arguments Facts” of a Case Law. This tool uses our proprietary algorithm to cull out the iDRAF of Supreme Court Judgements with 1-click.
+                </p>
+
+                <p>
+                  It’s a unique & reliable tool created to save your valuable time.
+                </p>
+              </div>
+
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+    <div class="section price gray">
+      <div class="container">
+        <div class="section-tittle-block text-center">
+          <h1 class="section-tittle"><span class="center-text">Our Pricing Plan</span></h1>
+          <h1 class="section-tittle subtittle"><span class="text-span">We have created a unique pricing model which is based on features you use.</span></h1>
+          <div class="section-divider-line"></div>
+        </div>
+        <div class="features-row w-row row">
+          <div class="features-column col-lg-3 col-md-6 col-sm-6 w-col-stack">
+            <div data-ix="hero-left-1" class="features-block price" style="transition: background-color 0.4s ease 0s, opacity 500ms, transform 500ms; opacity: 1; transform: translateX(0px) translateY(0px) translateZ(0px);">
+              <h2 class="feature-tittle">Individuals Plan</h2>
+              <h2 class="feature-tittle subtittle">PER MONTH</h2>
+              <div class="section-divider-line"></div>
+              <div class="pricing-detail">
+                <p>Starting From ₹ 4550, 0-day money-back guarantee</p>
+              </div>
+              <a href="#" class="btn btn-primary">Learn more</a>
+            </div>
+          </div>
+          <div class="features-column col-lg-3 col-md-6 col-sm-6 w-col-stack">
+            <div data-ix="hero-left-3" class="features-block center price" style="transition: background-color 0.4s ease 0s, opacity 500ms, transform 500ms; opacity: 1; transform: translateX(0px) translateY(0px) translateZ(0px);">
+              <h2 class="feature-tittle">Law Firms Plan</h2>
+              <h2 class="feature-tittle subtittle">PER MONTH</h2>
+              <div class="section-divider-line"></div>
+              <div class="pricing-detail">
+                <p>Request information about a firm-wide subscription</p>
+              </div>
+              <a href="#" class="btn btn-primary">Learn more</a>
+            </div>
+          </div>
+          <div class="features-column col-lg-3 col-md-6 col-sm-6 w-col-stack">
+            <div data-ix="hero-left-5" class="features-block price" style="transition: background-color 0.4s ease 0s, opacity 500ms, transform 500ms; opacity: 1; transform: translateX(0px) translateY(0px) translateZ(0px);">
+              <h2 class="feature-tittle">Free 7 day Trial</h2>
+              <h2 class="feature-tittle subtittle">PER MONTH</h2>
+              <div class="section-divider-line"></div>
+              <div class="pricing-detail">
+                <p>Want to try first, get 14 days complete system access for free.</p>
+              </div>
+              <a href="#" class="btn btn-primary">Learn more</a>
+            </div>
+          </div>
+          <div class="features-column col-lg-3 col-md-6 col-sm-6 w-col-stack">
+            <div data-ix="hero-left-5" class="features-block price" style="transition: background-color 0.4s ease 0s, opacity 500ms, transform 500ms; opacity: 1; transform: translateX(0px) translateY(0px) translateZ(0px);">
+              <h2 class="feature-tittle">Free Case search</h2>
+              <h2 class="feature-tittle subtittle">PER MONTH</h2>
+              <div class="section-divider-line"></div>
+              <div class="pricing-detail">
+                <p>Just want to see cases, register for free</p>
+              </div>
+              <a href="#" class="btn btn-primary">Learn more</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <section id="testimonials" class="section testimonials text-center">
+      <div class="container">
+
+        <div class="tt-container">
+          <div class="owl-carousel owl-theme ">
+            <div class="item">
+              <div class="tt-content">
+                <h3><span class="tt-quote">“</span>
+  <span class='tt-quote tt-quote-right'>”</span>
+  LegitQuest seems to be a one of its kind Legal Research engine with features like iDRAF and IGraphics.
+  It helped me find out relevant cases with just One Click to reach to the Reasoning and decision of the case.
+  A feature like iDraf has helped me save a lot of time while analysing a case.
+  </h3>
+                <div class="tt-container white">
+                  <h4>Rahul Sinha Roy</h4>
+                  <span class="content"> Assistant Professor, LLoyd law College
+  <br>
+  <small>Faculty Member, Commonwealth Institute for Justice, Education and Research</small>
+  </span>
+                </div>
+              </div>
+            </div>
+            <div class="item">
+              <div class=tt-content>
+                <h3><span class="tt-quote">“</span>
+  <span class='tt-quote tt-quote-right'>”</span>
+  LegitQuest is sure to transform and revolutionise the way Judges, Attorneys, law students, professors, researchers and scholars do legal research.
+  </h3>
+                <div class="tt-container white">
+                  <h4>Pratyush Kumar</h4>
+                  <span class="content">Research Associate - NLU, Delhi
+  <br>
+  <small>LLM, The George Washington University Law School, US</small>
+  </span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+
+    <div class="section featured">
+      <div class="container">
+        <div class="featured-slider owl-carousel owl-theme ">
+          <div class="item">
+            <img src="./img/featured/ai.jpg" class="img-fluid" alt="">
+          </div>
+          <div class="item">
+            <img src="./img/featured/apn.jpg" class="img-fluid" alt="">
+          </div>
+
+          <div class="item">
+            <img src="./img/featured/barnbench.png" class="img-fluid" alt="">
+          </div>
+          <div class="item">
+            <img src="./img/featured/bixnewsindex.jpg" class="img-fluid" alt="">
+          </div>
+          <div class="item">
+            <img src="./img/featured/business_standard.jpg" class="img-fluid" alt="">
+          </div>
+          <div class="item">
+            <img src="./img/featured/crowdz.jpg" class="img-fluid" alt="">
+          </div>
+          <div class="item">
+            <img src="./img/featured/dna.jpg" class="img-fluid" alt="">
+          </div>
+          <div class="item">
+            <img src="./img/featured/economicstimes.jpg" class="img-fluid" alt="">
+          </div>
+          <div class="item">
+            <img src="./img/featured/etcio.jpg" class="img-fluid" alt="">
+          </div>
+          <div class="item">
+            <img src="./img/featured/firstpost.jpg" class="img-fluid" alt="">
+          </div>
+          <div class="item">
+            <img src="./img/featured/gadgetsnow.jpg" class="img-fluid" alt="">
+          </div>
+          <div class="item">
+            <img src="./img/featured/hindustantimes.jpg" class="img-fluid" alt="">
+          </div>
+          <div class="item">
+            <img src="./img/featured/india-legal.png" class="img-fluid" alt="">
+          </div>
+          <div class="item">
+            <img src="./img/featured/indianexpress.jpg" class="img-fluid" alt="">
+          </div>
+          <div class="item">
+            <img src="./img/featured/indiatoday.jpg" class="img-fluid" alt="">
+          </div>
+          <div class="item">
+            <img src="./img/featured/lawnn.jpg" class="img-fluid" alt="">
+          </div>
+          <div class="item">
+            <img src="./img/featured/legal_bites.jpg" class="img-fluid" alt="">
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="footer">
+      <div class="container">
+        <div class="footer-row row">
+          <div class="features-column w-col col-md-4 w-col-small-small-stack">
+            <div class="footer-tittle">Legitquest</div>
+            <p class="footer-text">Legit Quest is a Legal-Tech venture run by a versatile team of tech-savvy attorneys, engineers and designers who aim to make the practice of law simpler for its end users. We have eminent jurist Mr. Ram Jethmalani as our patron...</p>
+            <div class="footer-tittle middle">Infomation</div>
+            <div class="row">
+              <div class="col-md-6 ">
+                <ul class="footer-list w-list-unstyled">
+                  <li class="list-footer"><a href="#" class="link footer-link">FAQ</a></li>
+                  <li class="list-footer"><a href="#" class="link footer-link">Careers</a></li>
+                  <li class="list-footer"><a href="#" class="link footer-link">Admin Login</a></li>
+                </ul>
+              </div>
+              <div class="col-md-6">
+                <ul class="footer-list w-list-unstyled">
+                  <li class="list-footer"><a href="#" class="link footer-link">Terms & Conditions</a></li>
+                  <li class="list-footer"><a href="#" class="link footer-link">We value your Privacy</a></li>
+                  <li class="list-footer"><a href="#" class="link footer-link">Our Team</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="features-column col-md-4">
+            <div class="footer-tittle">Popular Posts</div>
+            <div class="w-dyn-list">
+              <div class="w-dyn-items">
+                <div class="w-dyn-item">
+                  <a href="#" class="blog-wrapper w-inline-block w-clearfix">
+                    <div class="icon-clock date"></div>
+                    <p class="footer-text">July 13, 2017</p>
+                    <p class="footer-text white">Best Aprooach</p>
+                    <p class="footer-text">Pellentesque egestas, neque sit amet convallis pulvinar, usce vulputate eleifend sapien [...]</p>
+                  </a>
+                </div>
+                <div class="w-dyn-item">
+                  <a href="#" class="blog-wrapper w-inline-block w-clearfix">
+                    <div class="icon-clock date"></div>
+                    <p class="footer-text">July 13, 2017</p>
+                    <p class="footer-text white">Designers and Web</p>
+                    <p class="footer-text">Pellentesque egestas, neque sit amet convallis pulvinar, usce vulputate eleifend sapien [...]</p>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="features-column col-md-4">
+            <div class="footer-tittle">Contact</div>
+            <div class="address_box">
+                    <div>
+                        <span><img src="./img/singapore.png" alt="Singapore Flag" class="flag"></span>
+                        <p class="contact-info footer-text"> 519 Balestier Road, #02-03 Le Shantier, Singapore 329852</p>
+                    </div>
+                    <div>
+                        <span><img src="./img/india.png" alt="India Flag" class="flag"></span>
+                        <p class="contact-info footer-text">   A-149,Block A, LGF, Defence Colony, New Delhi, India - 110024.</p>
+                    </div>
+                    <div>
+                        <span><i class="icon-envelope-open"></i></span>
+                        <a class="contact-info" href="mailto:info@legitquest.com">info@legitquest.com</a>
+                    </div>
+
+                </div>
+
+                <div class="footer-tittle middle">Social Contact</div>
+                <div class="row">
+                  <div class="col-md-12 ">
+                    <ul class="footer-list social-list">
+                      <li class="list-footer">
+                        <a href="#" class="link footer-link">
+                          <i class="icon-social-facebook"></i>
+                        </a>
+                      </li>
+                      <li class="list-footer">
+                        <a href="#" class="link footer-link">
+                          <i class="icon-social-twitter"></i>
+                        </a>
+                      </li>
+                      <li class="list-footer">
+                        <a href="#" class="link footer-link">
+                          <i class="icon-social-linkedin"></i>
+                        </a>
+                      </li>
+                      <li class="list-footer">
+                        <a href="#" class="link footer-link">
+                          <i class="icon-social-google"></i>
+                        </a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+
+          </div>
+        </div>
+      </div>
+      <div class="subtitle-footer">
+        <div class="container text-center">
+          <div class="row">
+            <div class="col-md-12">
+              <p class="bottom-footer-text">© 2018. LQ Global services private limited. All rights reserved</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+
+  </div>
+
+  <script src="bower_components/jquery/dist/jquery.min.js"></script>
+  <script src="bower_components/popper.js/dist/umd/popper.min.js"></script>
+  <script src="./js/bootstrap.min.js"></script>
+  <script src="bower_components/moment/moment.js"></script>
+  <script src="./bower_components/select2/dist/js/bootstrap-select.min.js"></script>
+  <script src="bower_components/ckeditor/ckeditor.js"></script>
+  <script src="bower_components/bootstrap-daterangepicker/daterangepicker.js"></script>
+  <script src="bower_components/perfect-scrollbar/js/perfect-scrollbar.jquery.min.js"></script>
+  <script src="bower_components/tether/dist/js/tether.min.js"></script>
+  <script src="bower_components/bootstrap/js/dist/util.js"></script>
+  <script src="bower_components/bootstrap/js/dist/button.js"></script>
+  <script src="bower_components/bootstrap/js/dist/collapse.js"></script>
+
+  <script src="bower_components/bootstrap/js/dist/modal.js"></script>
+  <script src="./js/owl.carousel.min.js"></script>
+  <script src="js/maince5a.js?version=4.4.1"></script>
+
+<script type="text/javascript">
+$(document).ready(function(){
+$(window).scroll(function(){
+  var scroll = $(window).scrollTop();
+  if (scroll > 70) {
+    $(".navbar-home").removeClass("navbar-transparent");
+
+  }
+
+  else{
+    $(".navbar-home").addClass("navbar-transparent")
+  }
+})
+})
+</script>
+
+
+  <script type="text/javascript">
+    $('.selectpicker').selectpicker({
+      size: 10,
+      style: 'btn-primary',
+    });
+  </script>
+
+
+  <script type="text/javascript">
+    $('.featured-slider').owlCarousel({
+      center: true,
+      loop: true,
+      margin: 10,
+      nav: false,
+      dots: false,
+      autoplay: true,
+      responsive: {
+        0: {
+          items: 2
+        },
+        600: {
+          items: 4
+        },
+        1000: {
+          items: 8
+        }
+      }
+    })
+  </script>
+
+  <script type="text/javascript">
+    $('.owl-carousel').owlCarousel({
+      center: true,
+      loop: true,
+      margin: 10,
+      nav: true,
+      responsive: {
+        0: {
+          items: 1
+        },
+        600: {
+          items: 1
+        },
+        1000: {
+          items: 1
+        }
+      }
+    })
+  </script>
+</body>
+
+</html>
