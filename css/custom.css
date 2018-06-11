@@ -521,6 +521,7 @@ nav.navbar {
 }
 .search-select .bootstrap-select.btn-group .dropdown-menu {
     min-width: 10rem;
+    text-transform: none;
 }
 .search-select .bootstrap-select .dropdown-menu>li>a {
     font-weight: 500;
@@ -535,10 +536,103 @@ nav.navbar {
   background-size: cover;
 
 }
+body.page-internal{
+  padding-top: 74px !important
+}
 
+.container-wide {
+    min-width: 100% !important;
+    padding: 0px 40px;
+}
+.search-nav {
+    flex-grow: 1;
+    padding: 0px;
+    margin: 0px;
+    margin-left: auto;
+}
+body.page-internal .navbar-collapse {
+    flex-grow: initial;
+}
+.result-container{
+  padding-top: 15px
+}
+.result-stats {
+    color: #808080;
+    line-height: 43px;
+}
+h2.result_title {
+    font-size: 21px;
+    font-weight: 500;
+    margin-bottom: 1px;
+}
+.info_line {
+    color: #25773f;
+    margin-bottom: 5px;
+}
+.search-text{
+      font-size: .93rem;
+}
+.result-block {
+    padding-bottom: 20px;
+    margin-bottom: 20px;
+    border-bottom: 1px solid #f2f2f2;
+}
+.filter-list b.case-count {
+    color: #868383;
+    padding-left: 5px;
+    font-weight: 300;
+    font-size: 14px;
+}
+.filter-list .checkbox label{
+  font-size: 14px
+}
+.case-popup {
+    transition: all 300ms ease-in-out;
+    height: 0;
+    overflow: hidden;
+    opacity: 0;
+    background-color: #fff6d7;
 
-
-
+    display: none;
+}
+.case-popup.active {
+    height: auto;
+    opacity: 1;
+    margin-top: 10px;
+    display: block;
+}
+.header-popup {
+    width: 100%;
+    color: #3E3221;
+    border-radius: 2px 2px 0 0;
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 20px;
+    font-weight: 700;
+    border-bottom: 1px solid #f7edcc;
+}
+.header-popup a{
+  color: #3E3221;
+}
+.popup-body {
+  padding: 20px;
+}
+.judges-list span {
+    margin-right: 2px;
+    border: 1px solid #e8dbae;
+    padding: 4px 10px;
+    display: inline-block;
+    border-radius: 4px;
+    background-color: #fbf2d4;
+    font-size: 13px;
+}
+.popup-result .case-search .btn{
+margin-left: 5px
+}
+.popup-result .case-search .form-control {
+    max-width: 400px;
+    height: 32px;
+}
 @media (max-width: 991px)
 {
 .left-div.right {
@@ -596,13 +690,25 @@ padding: 0px 20px;
 }
 @media (max-width: 767px)
 {
+  body.page-internal {
+    padding-top: 116px !important;
+}
   .search-filed-box {
   flex-direction: column;
       max-width: 450px;
 }
+.search-nav {
+    flex-direction: row;
+    max-width: 100%;
+    padding: 0px 20px;
+}
 .search-select {
     width: 100%;
     margin-bottom: 10px
+}
+.search-nav .search-select {
+    width: auto;
+    margin-bottom: 0px;
 }
 .search-field {
     width: 100%;

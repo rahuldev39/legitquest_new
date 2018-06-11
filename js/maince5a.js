@@ -21,7 +21,7 @@ Main javascript functions to init most of the elements
 #15. CRM PIPELINE
 #16. OUR OWN CUSTOM DROPDOWNS
 #17. BOOTSTRAP RELATED JS ACTIVATIONS
-#18. TODO Application
+#18. search Application
 #19. Fancy Selector
 #20. SUPPORT SERVICE
 #21. Onboarding Screens Modal
@@ -765,7 +765,7 @@ $(function () {
   // - Activate popovers
   $('[data-toggle="popover"]').popover();
 
-  // #18. TODO Application
+  // #18. search Application
 
   // Tasks foldable trigger
   $('.tasks-header-toggler').on('click', function () {
@@ -774,20 +774,20 @@ $(function () {
   });
 
   // Sidebar Sections foldable trigger
-  $('.todo-sidebar-section-toggle').on('click', function () {
-    $(this).closest('.todo-sidebar-section').find('.todo-sidebar-section-contents').slideToggle(100);
+  $('.search-sidebar-section-toggle').on('click', function () {
+    $(this).closest('.search-sidebar-section').find('.search-sidebar-section-contents').slideToggle(100);
     return false;
   });
 
   // Sidebar Sub Sections foldable trigger
-  $('.todo-sidebar-section-sub-section-toggler').on('click', function () {
-    $(this).closest('.todo-sidebar-section-sub-section').find('.todo-sidebar-section-sub-section-content').slideToggle(100);
+  $('.search-sidebar-section-sub-section-toggler').on('click', function () {
+    $(this).closest('.search-sidebar-section-sub-section').find('.search-sidebar-section-sub-section-content').slideToggle(100);
     return false;
   });
 
   // Drag init
   if ($('.tasks-list').length) {
-    // INIT DRAG AND DROP FOR Todo Tasks
+    // INIT DRAG AND DROP FOR search Tasks
     var dragulaTasksObj = dragula($('.tasks-list').toArray(), {
       moves: function moves(el, container, handle) {
         return handle.classList.contains('drag-handle');

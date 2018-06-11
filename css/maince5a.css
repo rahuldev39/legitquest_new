@@ -4455,9 +4455,9 @@ input[type="submit"].btn-block, input[type="reset"].btn-block, input[type="butto
 
 .page-item.active .page-link {
     z-index: 1;
-    color: #fff;
-    background-color: #2a3145;
-    border-color: #2a3145;
+    color: #737272;
+    background-color: #f9f9f9;
+    border-color: #dfe2e6;
 }
 
 .page-item.disabled .page-link {
@@ -14845,7 +14845,7 @@ body.menu-side-right .layout-w {
   color: rgba(0, 0, 0, 0.3)
 }
 
-.box-style, .user-profile, .element-box, .invoice-w, .big-error-w, .activity-boxes-w .activity-box, .post-box, .projects-list .project-box {
+.box-style, .user-profile, .element-box, .invoice-w, .big-error-w, .activity-boxes-w .activity-box, .post-box, .filter-list .project-box {
   border-radius: 6px;
   background-color: #fff;
   -webkit-box-shadow: 0px 2px 4px rgba(126, 142, 177, 0.12);
@@ -16561,7 +16561,7 @@ a.el-tablo:hover .label {
   vertical-align: middle
 }
 
-.todo-list .todo-item {
+.search-list .search-item {
   text-decoration: none;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -16575,33 +16575,33 @@ a.el-tablo:hover .label {
   margin-bottom: 0.5rem
 }
 
-.todo-list .todo-item .ti-header {
+.search-list .search-item .ti-header {
   font-weight: 500;
   color: #047bf8
 }
 
-.todo-list .todo-item .ti-sub-header {
+.search-list .search-item .ti-sub-header {
   font-size: .8rem;
   color: rgba(90, 99, 126, 0.49);
   line-height: 1.2
 }
 
-.todo-list .todo-item .ti-icon {
+.search-list .search-item .ti-icon {
   margin-left: auto;
   font-size: 20px;
   color: #047bf8
 }
 
-.todo-list .todo-item.complete {
+.search-list .search-item.complete {
   opacity: 0.7;
   border-color: #24b314
 }
 
-.todo-list .todo-item.complete .ti-icon {
+.search-list .search-item.complete .ti-icon {
   color: #24b314
 }
 
-.todo-list .todo-item.complete .ti-header {
+.search-list .search-item.complete .ti-header {
   color: #1b850f
 }
 
@@ -19531,11 +19531,11 @@ a.with-avatar span {
   box-shadow: 0px 0px 0px 3px #323c58
 }
 
-.projects-list {
+.filter-list {
   margin-bottom: 2rem
 }
 
-.projects-list .project-head {
+.filter-list .project-head {
   padding: 20px 40px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -19549,23 +19549,23 @@ a.with-avatar span {
   border-bottom: 1px solid rgba(0, 0, 0, 0.1)
 }
 
-.projects-list .project-head .project-title {
+.filter-list .project-head .project-title {
   text-transform: uppercase;
   letter-spacing: 2px
 }
 
-.projects-list .project-head .project-title h5 {
+.filter-list .project-head .project-title h5 {
   margin-bottom: 0
 }
 
-.projects-list .project-head .project-users {
+.filter-list .project-head .project-users {
   -webkit-box-flex: 0;
   -ms-flex: 0 0 220px;
   flex: 0 0 220px;
   text-align: right
 }
 
-.projects-list .project-head .project-users .avatar {
+.filter-list .project-head .project-users .avatar {
   width: 35px;
   border-radius: 35px;
   -webkit-box-shadow: 0px 0px 0px 5px #fff;
@@ -19575,12 +19575,12 @@ a.with-avatar span {
   vertical-align: middle
 }
 
-.projects-list .project-head .project-users .avatar img {
+.filter-list .project-head .project-users .avatar img {
   height: auto;
   width: 35px
 }
 
-.projects-list .project-head .project-users .more {
+.filter-list .project-head .project-users .more {
   background-color: #047bf8;
   display: inline-block;
   vertical-align: middle;
@@ -19592,19 +19592,19 @@ a.with-avatar span {
   font-size: .63rem
 }
 
-.projects-list .project-info {
+.filter-list .project-info {
   padding: 20px 40px
 }
 
-.projects-list .project-info .os-progress-bar {
+.filter-list .project-info .os-progress-bar {
   margin-bottom: 0px
 }
 
-.projects-list .project-info .os-progress-bar+.os-progress-bar {
+.filter-list .project-info .os-progress-bar+.os-progress-bar {
   margin-top: 1rem
 }
 
-.projects-list .project-box+.project-box {
+.filter-list .project-box+.project-box {
   margin-top: 2rem
 }
 
@@ -20892,60 +20892,62 @@ a.with-avatar span {
   color: #047bf8
 }
 
-.todo-app-w {
+.search-app-w {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex
 }
 
-.todo-app-w .todo-sidebar {
-  -webkit-box-flex: 0;
-  -ms-flex: 0 0 350px;
-  flex: 0 0 350px;
-  background-color: #F9F9F9;
-  padding: 40px
+.search-app-w .search-sidebar {
+    -webkit-box-flex: 0;
+    -ms-flex: 0 0 350px;
+    flex: 0 0 300px;
+    background-color: #F9F9F9;
+    padding: 40px;
 }
 
-.todo-app-w .todo-sidebar .todo-sidebar-section {
+.search-app-w .search-sidebar .search-sidebar-section {
   border-bottom: 1px solid rgba(0, 0, 0, 0.1);
   padding: 20px;
   margin-bottom: 20px
 }
 
-.todo-app-w .todo-sidebar .todo-sidebar-section:first-child {
+.search-app-w .search-sidebar .search-sidebar-section:first-child {
   padding-top: 0px
 }
 
-.todo-app-w .todo-sidebar .todo-sidebar-section-header {
-  color: #047bf8;
-  position: relative
+.search-app-w .search-sidebar .search-sidebar-section-header {
+    color: #047bf8;
+    position: relative;
+    font-size: 18px;
+    /* margin-bottom: 27px; */
 }
 
-.todo-app-w .todo-sidebar .todo-sidebar-section-header span {
+.search-app-w .search-sidebar .search-sidebar-section-header span {
   display: inline-block;
   vertical-align: middle
 }
 
-.todo-app-w .todo-sidebar .todo-sidebar-section-header span+.os-icon {
+.search-app-w .search-sidebar .search-sidebar-section-header span+.os-icon {
   display: inline-block;
   vertical-align: middle;
   margin-left: 10px;
   font-size: 22px
 }
 
-.todo-app-w .todo-sidebar .todo-sidebar-section-header span+.os-icon.starred {
+.search-app-w .search-sidebar .search-sidebar-section-header span+.os-icon.starred {
   color: #E7AD10
 }
 
-.todo-app-w .todo-sidebar .todo-sidebar-section-header span+.os-icon.fire {
+.search-app-w .search-sidebar .search-sidebar-section-header span+.os-icon.fire {
   color: #ff1b1b
 }
 
-.todo-app-w .todo-sidebar .todo-sidebar-section-contents {
+.search-app-w .search-sidebar .search-sidebar-section-contents {
   margin-top: 20px
 }
 
-.todo-app-w .todo-sidebar .todo-sidebar-section-toggle {
+.search-app-w .search-sidebar .search-sidebar-section-toggle {
   top: 50%;
   -webkit-transform: translateY(-50%);
   transform: translateY(-50%);
@@ -20956,92 +20958,74 @@ a.with-avatar span {
   text-decoration: none
 }
 
-.todo-app-w .todo-sidebar .todo-sidebar-section-toggle:hover {
+.search-app-w .search-sidebar .search-sidebar-section-toggle:hover {
   color: #024994
 }
 
-.todo-app-w .todo-sidebar ul {
+.search-app-w .search-sidebar ul {
   margin-left: 0px;
-  padding-left: 30px
+  padding-left: 0px
 }
 
-.todo-app-w .todo-sidebar ul.projects-list {
+.search-app-w .search-sidebar ul.filter-list {
   list-style: none;
   font-size: .99rem;
   margin-bottom: 0px
 }
 
-.todo-app-w .todo-sidebar ul.projects-list li {
+.search-app-w .search-sidebar ul.filter-list li {
   position: relative;
   margin-bottom: 10px
 }
 
-.todo-app-w .todo-sidebar ul.projects-list li:before {
-  content: "\e981";
-  color: #047bf8;
-  font-family: 'osfont' !important;
-  speak: none;
-  font-style: normal;
-  font-weight: normal;
-  font-variant: normal;
-  text-transform: none;
-  line-height: 1;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  font-size: 18px;
-  position: absolute;
-  left: -30px;
-  top: 50%;
-  -webkit-transform: translateY(-50%);
-  transform: translateY(-50%)
-}
 
-.todo-app-w .todo-sidebar ul.projects-list li a {
+
+.search-app-w .search-sidebar ul.filter-list li a {
   color: #3E4B5B;
   display: block
 }
 
-.todo-app-w .todo-sidebar ul.projects-list li.add-new-project {
+.search-app-w .search-sidebar ul.filter-list li.add-new-project {
   margin-top: 20px
 }
 
-.todo-app-w .todo-sidebar ul.projects-list li.add-new-project:before {
+.search-app-w .search-sidebar ul.filter-list li.add-new-project:before {
   content: "\e969"
 }
 
-.todo-app-w .todo-sidebar ul.projects-list li.add-new-project a {
+.search-app-w .search-sidebar ul.filter-list li.add-new-project a {
   color: #047bf8;
   border-bottom: 1px solid #047bf8;
   display: inline-block;
   font-size: .9rem
 }
 
-.todo-app-w .todo-sidebar ul.projects-list li.add-new-project a:hover {
+.search-app-w .search-sidebar ul.filter-list li.add-new-project a:hover {
   text-decoration: none
 }
 
-.todo-app-w .todo-sidebar ul.tasks-list {
+.search-app-w .search-sidebar ul.tasks-list {
   list-style: none;
   padding-left: 25px
 }
 
-.todo-app-w .todo-sidebar ul.tasks-list li {
+.search-app-w .search-sidebar ul.tasks-list li {
   position: relative;
   margin-bottom: 10px
 }
 
-.todo-app-w .todo-sidebar ul.tasks-list li strong {
+.search-app-w .search-sidebar ul.tasks-list li strong {
   color: #3E4B5B;
   display: block
 }
 
-.todo-app-w .todo-sidebar ul.tasks-list li span {
+.search-app-w .search-sidebar ul.tasks-list li span {
   color: rgba(0, 0, 0, 0.4);
   font-size: .72rem;
   display: inline-block
 }
 
-.todo-app-w .todo-sidebar ul.tasks-list li:before {
+.search-app-w .search-sidebar ul.tasks-list li:before {
   content: "";
   width: 10px;
   height: 10px;
@@ -21051,30 +21035,30 @@ a.with-avatar span {
   border-radius: 10px
 }
 
-.todo-app-w .todo-sidebar ul.tasks-list li a {
+.search-app-w .search-sidebar ul.tasks-list li a {
   color: #3E4B5B;
   display: block
 }
 
-.todo-app-w .todo-sidebar ul.tasks-list li.danger:before {
+.search-app-w .search-sidebar ul.tasks-list li.danger:before {
   background-color: #f59595
 }
 
-.todo-app-w .todo-sidebar ul.tasks-list li.warning:before {
+.search-app-w .search-sidebar ul.tasks-list li.warning:before {
   background-color: #fbe4a0
 }
 
-.todo-app-w .todo-sidebar ul.tasks-list li.success:before {
+.search-app-w .search-sidebar ul.tasks-list li.success:before {
   background-color: #b1ef98
 }
 
-.todo-app-w .todo-sidebar .todo-sidebar-section-sub-section {
+.search-app-w .search-sidebar .search-sidebar-section-sub-section {
   padding-left: 30px;
   position: relative;
   margin-bottom: 15px
 }
 
-.todo-app-w .todo-sidebar .todo-sidebar-section-sub-section .todo-sidebar-section-sub-section-toggler {
+.search-app-w .search-sidebar .search-sidebar-section-sub-section .search-sidebar-section-sub-section-toggler {
   position: absolute;
   z-index: 2;
   top: 5px;
@@ -21083,14 +21067,14 @@ a.with-avatar span {
   cursor: pointer
 }
 
-.todo-app-w .todo-sidebar .todo-sidebar-section-sub-section .todo-sidebar-section-sub-header {
+.search-app-w .search-sidebar .search-sidebar-section-sub-section .search-sidebar-section-sub-header {
   position: relative;
   border-bottom: 1px solid rgba(0, 0, 0, 0.05);
   padding-bottom: 10px;
   padding-top: 10px
 }
 
-.todo-app-w .todo-sidebar .todo-sidebar-section-sub-section .todo-sidebar-section-sub-header i.os-icon {
+.search-app-w .search-sidebar .search-sidebar-section-sub-section .search-sidebar-section-sub-header i.os-icon {
   position: absolute;
   top: 50%;
   -webkit-transform: translateY(-50%);
@@ -21100,7 +21084,7 @@ a.with-avatar span {
   color: #047bf8
 }
 
-.todo-app-w .todo-sidebar .todo-sidebar-section-sub-section .todo-sidebar-section-sub-header h6 {
+.search-app-w .search-sidebar .search-sidebar-section-sub-section .search-sidebar-section-sub-header h6 {
   text-transform: uppercase;
   letter-spacing: 1px;
   font-size: .72rem;
@@ -21108,18 +21092,18 @@ a.with-avatar span {
   color: #047bf8
 }
 
-.todo-app-w .todo-sidebar .todo-sidebar-section-sub-section .todo-sidebar-section-sub-section-content ul {
+.search-app-w .search-sidebar .search-sidebar-section-sub-section .search-sidebar-section-sub-section-content ul {
   list-style: none;
   padding: 10px 0px;
   margin: 0px
 }
 
-.todo-app-w .todo-sidebar .todo-sidebar-section-sub-section .todo-sidebar-section-sub-section-content ul li {
+.search-app-w .search-sidebar .search-sidebar-section-sub-section .search-sidebar-section-sub-section-content ul li {
   padding: 3px 0px;
   margin: 0px
 }
 
-.todo-app-w .todo-sidebar .todo-sidebar-section-sub-section .todo-sidebar-section-sub-section-content ul li a {
+.search-app-w .search-sidebar .search-sidebar-section-sub-section .search-sidebar-section-sub-section-content ul li a {
   color: #3E4B5B;
   display: inline-block;
   font-size: .9rem;
@@ -21128,7 +21112,7 @@ a.with-avatar span {
   overflow: hidden
 }
 
-.todo-app-w .todo-content {
+.search-app-w .search-content {
   background-color: #fff;
   -webkit-box-flex: 1;
   -ms-flex: 1;
@@ -21136,28 +21120,28 @@ a.with-avatar span {
   padding: 40px
 }
 
-.todo-app-w .todo-content .todo-content-header {
+.search-app-w .search-content .search-content-header {
   margin-bottom: 20px;
   color: #047bf8
 }
 
-.todo-app-w .todo-content .todo-content-header i {
+.search-app-w .search-content .search-content-header i {
   margin-right: 10px;
   font-size: 22px;
   display: inline-block;
   vertical-align: middle
 }
 
-.todo-app-w .todo-content .todo-content-header span {
+.search-app-w .search-content .search-content-header span {
   display: inline-block;
   vertical-align: middle
 }
 
-.todo-app-w .todo-content .all-tasks-w {
+.search-app-w .search-content .all-tasks-w {
   padding: 20px 30px
 }
 
-.todo-app-w .todo-content .tasks-header-w {
+.search-app-w .search-content .tasks-header-w {
   border-bottom: 1px solid rgba(0, 0, 0, 0.1);
   padding: 10px 0px;
   position: relative;
@@ -21165,7 +21149,7 @@ a.with-avatar span {
   margin-top: 20px
 }
 
-.todo-app-w .todo-content .tasks-header-w .tasks-header-toggler {
+.search-app-w .search-content .tasks-header-w .tasks-header-toggler {
   position: absolute;
   color: #047bf8;
   font-size: 18px;
@@ -21177,41 +21161,41 @@ a.with-avatar span {
   text-decoration: none
 }
 
-.todo-app-w .todo-content .tasks-header-w .tasks-header-toggler:hover {
+.search-app-w .search-content .tasks-header-w .tasks-header-toggler:hover {
   color: #024994
 }
 
-.todo-app-w .todo-content .tasks-header-w .tasks-header {
+.search-app-w .search-content .tasks-header-w .tasks-header {
   display: inline-block;
   margin-bottom: 0px
 }
 
-.todo-app-w .todo-content .tasks-header-w .tasks-sub-header {
+.search-app-w .search-content .tasks-header-w .tasks-sub-header {
   display: inline-block;
   margin-left: 10px;
   color: rgba(0, 0, 0, 0.3);
   font-size: .81rem
 }
 
-.todo-app-w .todo-content .tasks-header-w .add-task-btn {
+.search-app-w .search-content .tasks-header-w .add-task-btn {
   float: right
 }
 
-.todo-app-w .todo-content .tasks-header-w .add-task-btn span, .todo-app-w .todo-content .tasks-header-w .add-task-btn i {
+.search-app-w .search-content .tasks-header-w .add-task-btn span, .search-app-w .search-content .tasks-header-w .add-task-btn i {
   display: inline-block;
   vertical-align: middle
 }
 
-.todo-app-w .todo-content .tasks-header-w .add-task-btn span {
+.search-app-w .search-content .tasks-header-w .add-task-btn span {
   border-bottom: 1px solid #047bf8
 }
 
-.todo-app-w .todo-content .tasks-header-w .add-task-btn i.os-icon {
+.search-app-w .search-content .tasks-header-w .add-task-btn i.os-icon {
   margin-right: 5px;
   font-size: 20px
 }
 
-.todo-app-w .todo-content .tasks-list-header {
+.search-app-w .search-content .tasks-list-header {
   text-transform: uppercase;
   color: #047bf8;
   letter-spacing: 1px;
@@ -21220,7 +21204,7 @@ a.with-avatar span {
   margin-bottom: 5px
 }
 
-.todo-app-w .todo-content .tasks-list {
+.search-app-w .search-content .tasks-list {
   font-size: 1.08rem;
   padding: 0px;
   list-style: none;
@@ -21229,14 +21213,14 @@ a.with-avatar span {
   padding: 5px 0px
 }
 
-.todo-app-w .todo-content .tasks-list li.draggable-task {
+.search-app-w .search-content .tasks-list li.draggable-task {
   margin: 0px;
   padding: 6px 40px;
   position: relative;
   border: 1px solid transparent
 }
 
-.todo-app-w .todo-content .tasks-list li.draggable-task .todo-task-drag {
+.search-app-w .search-content .tasks-list li.draggable-task .search-task-drag {
   color: #111;
   position: absolute;
   top: 9px;
@@ -21247,11 +21231,11 @@ a.with-avatar span {
   padding: 5px
 }
 
-.todo-app-w .todo-content .tasks-list li.draggable-task .todo-task-media {
+.search-app-w .search-content .tasks-list li.draggable-task .search-task-media {
   padding-top: 10px
 }
 
-.todo-app-w .todo-content .tasks-list li.draggable-task .todo-task-media img {
+.search-app-w .search-content .tasks-list li.draggable-task .search-task-media img {
   display: inline-block;
   border-radius: 4px;
   height: 30px;
@@ -21259,7 +21243,7 @@ a.with-avatar span {
   margin-right: 5px
 }
 
-.todo-app-w .todo-content .tasks-list li.draggable-task .todo-task-buttons {
+.search-app-w .search-content .tasks-list li.draggable-task .search-task-buttons {
   position: absolute;
   right: -10px;
   top: 50%;
@@ -21268,7 +21252,7 @@ a.with-avatar span {
   display: none
 }
 
-.todo-app-w .todo-content .tasks-list li.draggable-task .todo-task-buttons a {
+.search-app-w .search-content .tasks-list li.draggable-task .search-task-buttons a {
   font-size: 18px;
   display: inline-block;
   position: relative;
@@ -21276,7 +21260,7 @@ a.with-avatar span {
   text-decoration: none
 }
 
-.todo-app-w .todo-content .tasks-list li.draggable-task .todo-task-buttons a span {
+.search-app-w .search-content .tasks-list li.draggable-task .search-task-buttons a span {
   position: absolute;
   top: -28px;
   left: 50%;
@@ -21299,51 +21283,51 @@ a.with-avatar span {
   vertical-align: middle
 }
 
-.todo-app-w .todo-content .tasks-list li.draggable-task .todo-task-buttons a:hover {
+.search-app-w .search-content .tasks-list li.draggable-task .search-task-buttons a:hover {
   text-decoration: none
 }
 
-.todo-app-w .todo-content .tasks-list li.draggable-task .todo-task-buttons a:hover span {
+.search-app-w .search-content .tasks-list li.draggable-task .search-task-buttons a:hover span {
   -webkit-transform: translate(-50%, 8px);
   transform: translate(-50%, 8px);
   visibility: visible;
   opacity: 1
 }
 
-.todo-app-w .todo-content .tasks-list li.draggable-task .todo-task-buttons a+a {
+.search-app-w .search-content .tasks-list li.draggable-task .search-task-buttons a+a {
   margin-left: 8px
 }
 
-.todo-app-w .todo-content .tasks-list li.draggable-task .todo-task-buttons .task-btn-done {
+.search-app-w .search-content .tasks-list li.draggable-task .search-task-buttons .task-btn-done {
   color: #4d9121
 }
 
-.todo-app-w .todo-content .tasks-list li.draggable-task .todo-task-buttons .task-btn-edit {
+.search-app-w .search-content .tasks-list li.draggable-task .search-task-buttons .task-btn-edit {
   color: #047bf8
 }
 
-.todo-app-w .todo-content .tasks-list li.draggable-task .todo-task-buttons .task-btn-delete {
+.search-app-w .search-content .tasks-list li.draggable-task .search-task-buttons .task-btn-delete {
   color: #e65252
 }
 
-.todo-app-w .todo-content .tasks-list li.draggable-task .todo-task-buttons .task-btn-star {
+.search-app-w .search-content .tasks-list li.draggable-task .search-task-buttons .task-btn-star {
   color: #c89302
 }
 
-.todo-app-w .todo-content .tasks-list li.draggable-task .todo-task {
+.search-app-w .search-content .tasks-list li.draggable-task .search-task {
   position: relative;
   display: inline-block
 }
 
-.todo-app-w .todo-content .tasks-list li.draggable-task .todo-task span {
+.search-app-w .search-content .tasks-list li.draggable-task .search-task span {
   outline: none
 }
 
-.todo-app-w .todo-content .tasks-list li.draggable-task:hover .todo-task-drag, .todo-app-w .todo-content .tasks-list li.draggable-task:hover .todo-task-buttons {
+.search-app-w .search-content .tasks-list li.draggable-task:hover .search-task-drag, .search-app-w .search-content .tasks-list li.draggable-task:hover .search-task-buttons {
   display: block
 }
 
-.todo-app-w .todo-content .tasks-list li.draggable-task:before {
+.search-app-w .search-content .tasks-list li.draggable-task:before {
   content: "";
   width: 8px;
   height: 8px;
@@ -21354,27 +21338,27 @@ a.with-avatar span {
   top: 15px
 }
 
-.todo-app-w .todo-content .tasks-list li.draggable-task.favorite {
+.search-app-w .search-content .tasks-list li.draggable-task.favorite {
   background-color: #fffaea;
   border-radius: 6px
 }
 
-.todo-app-w .todo-content .tasks-list li.draggable-task.gu-transit {
+.search-app-w .search-content .tasks-list li.draggable-task.gu-transit {
   opacity: 0.8;
   border-radius: 4px;
   background-color: rgba(0, 0, 0, 0.05)
 }
 
-.todo-app-w .todo-content .tasks-list li.draggable-task.pre-removed {
+.search-app-w .search-content .tasks-list li.draggable-task.pre-removed {
   background-color: #fff5f5;
   border-radius: 6px
 }
 
-.todo-app-w .todo-content .tasks-list li.draggable-task.pre-removed .todo-task {
+.search-app-w .search-content .tasks-list li.draggable-task.pre-removed .search-task {
   opacity: 0.3
 }
 
-.todo-app-w .todo-content .tasks-list li.draggable-task.pre-removed .task-btn-undelete {
+.search-app-w .search-content .tasks-list li.draggable-task.pre-removed .task-btn-undelete {
   position: absolute;
   right: 10px;
   top: 50%;
@@ -21389,36 +21373,36 @@ a.with-avatar span {
   text-decoration: none
 }
 
-.todo-app-w .todo-content .tasks-list li.draggable-task.pre-removed .task-btn-undelete:hover {
+.search-app-w .search-content .tasks-list li.draggable-task.pre-removed .task-btn-undelete:hover {
   background-color: #111;
   text-decoration: none
 }
 
-.todo-app-w .todo-content .tasks-list li.draggable-task.pre-removed .todo-task-drag, .todo-app-w .todo-content .tasks-list li.draggable-task.pre-removed .todo-task-buttons {
+.search-app-w .search-content .tasks-list li.draggable-task.pre-removed .search-task-drag, .search-app-w .search-content .tasks-list li.draggable-task.pre-removed .search-task-buttons {
   display: none !important
 }
 
-.todo-app-w .todo-content .tasks-list li.draggable-task.complete {
+.search-app-w .search-content .tasks-list li.draggable-task.complete {
   color: #999
 }
 
-.todo-app-w .todo-content .tasks-list li.draggable-task.complete .todo-task {
+.search-app-w .search-content .tasks-list li.draggable-task.complete .search-task {
   text-decoration: line-through
 }
 
-.todo-app-w .todo-content .tasks-list li.draggable-task.complete:before {
+.search-app-w .search-content .tasks-list li.draggable-task.complete:before {
   background-color: #e1e1e1 !important
 }
 
-.todo-app-w .todo-content .tasks-list li.draggable-task.danger:before {
+.search-app-w .search-content .tasks-list li.draggable-task.danger:before {
   background-color: #e65252
 }
 
-.todo-app-w .todo-content .tasks-list li.draggable-task.warning:before {
+.search-app-w .search-content .tasks-list li.draggable-task.warning:before {
   background-color: #fbe4a0
 }
 
-.todo-app-w .todo-content .tasks-list li.draggable-task.success:before {
+.search-app-w .search-content .tasks-list li.draggable-task.success:before {
   background-color: #24b314
 }
 
@@ -21434,7 +21418,7 @@ a.with-avatar span {
   border-radius: 4px
 }
 
-.draggable-task.gu-mirror .todo-task-drag {
+.draggable-task.gu-mirror .search-task-drag {
   color: #111;
   position: absolute;
   top: 50%;
@@ -21446,15 +21430,15 @@ a.with-avatar span {
   padding: 5px
 }
 
-.draggable-task.gu-mirror .todo-task-buttons {
+.draggable-task.gu-mirror .search-task-buttons {
   display: none
 }
 
-.draggable-task.gu-mirror .todo-task-media {
+.draggable-task.gu-mirror .search-task-media {
   padding-top: 10px
 }
 
-.draggable-task.gu-mirror .todo-task-media img {
+.draggable-task.gu-mirror .search-task-media img {
   display: inline-block;
   border-radius: 4px;
   height: 30px;
@@ -21489,77 +21473,77 @@ a.with-avatar span {
   font-size: 18px
 }
 
-.color-scheme-dark .todo-app-w .todo-sidebar {
+.color-scheme-dark .search-app-w .search-sidebar {
   background-color: #293145
 }
 
-.color-scheme-dark .todo-app-w .todo-sidebar ul.tasks-list li strong {
+.color-scheme-dark .search-app-w .search-sidebar ul.tasks-list li strong {
   color: #ccd9e8
 }
 
-.color-scheme-dark .todo-app-w .todo-sidebar ul.tasks-list li span {
+.color-scheme-dark .search-app-w .search-sidebar ul.tasks-list li span {
   color: rgba(218, 226, 243, 0.4)
 }
 
-.color-scheme-dark .todo-app-w .todo-sidebar .todo-sidebar-section {
+.color-scheme-dark .search-app-w .search-sidebar .search-sidebar-section {
   border-bottom: 1px solid rgba(255, 255, 255, 0.05)
 }
 
-.color-scheme-dark .todo-app-w .todo-sidebar ul.projects-list li a {
+.color-scheme-dark .search-app-w .search-sidebar ul.filter-list li a {
   color: #ccd9e8
 }
 
-.color-scheme-dark .todo-app-w .todo-sidebar .todo-sidebar-section-sub-section .todo-sidebar-section-sub-header {
+.color-scheme-dark .search-app-w .search-sidebar .search-sidebar-section-sub-section .search-sidebar-section-sub-header {
   border-bottom: 1px solid rgba(255, 255, 255, 0.05)
 }
 
-.color-scheme-dark .todo-app-w .todo-sidebar .todo-sidebar-section-sub-section .todo-sidebar-section-sub-section-content ul li a {
+.color-scheme-dark .search-app-w .search-sidebar .search-sidebar-section-sub-section .search-sidebar-section-sub-section-content ul li a {
   color: #ccd9e8
 }
 
-.color-scheme-dark .todo-app-w .todo-content .tasks-list li.draggable-task.pre-removed {
+.color-scheme-dark .search-app-w .search-content .tasks-list li.draggable-task.pre-removed {
   background-color: #f59595;
   color: #a94442
 }
 
-.color-scheme-dark .todo-app-w .todo-content .tasks-list li.draggable-task.pre-removed .todo-task {
+.color-scheme-dark .search-app-w .search-content .tasks-list li.draggable-task.pre-removed .search-task {
   opacity: 0.7
 }
 
-.color-scheme-dark .todo-app-w .todo-content .tasks-list li.draggable-task.pre-removed span {
+.color-scheme-dark .search-app-w .search-content .tasks-list li.draggable-task.pre-removed span {
   color: #a94442
 }
 
-.color-scheme-dark .todo-app-w .todo-content {
+.color-scheme-dark .search-app-w .search-content {
   background-color: #323c58
 }
 
-.color-scheme-dark .todo-app-w .todo-content .tasks-header-w {
+.color-scheme-dark .search-app-w .search-content .tasks-header-w {
   border-bottom-color: rgba(255, 255, 255, 0.05)
 }
 
-.color-scheme-dark .todo-app-w .todo-content .tasks-header-w .tasks-sub-header {
+.color-scheme-dark .search-app-w .search-content .tasks-header-w .tasks-sub-header {
   color: rgba(218, 226, 243, 0.4)
 }
 
-.color-scheme-dark .todo-app-w .todo-content .tasks-list li.draggable-task .todo-task-buttons .task-btn-done {
+.color-scheme-dark .search-app-w .search-content .tasks-list li.draggable-task .search-task-buttons .task-btn-done {
   color: #55bf10
 }
 
-.color-scheme-dark .todo-app-w .todo-content .tasks-list li.draggable-task.favorite {
+.color-scheme-dark .search-app-w .search-content .tasks-list li.draggable-task.favorite {
   background-color: #efe67b;
   color: #383314
 }
 
-.color-scheme-dark .todo-app-w .todo-content .tasks-list li.draggable-task .todo-task-drag {
+.color-scheme-dark .search-app-w .search-content .tasks-list li.draggable-task .search-task-drag {
   color: #fff
 }
 
-.color-scheme-dark .todo-app-w .todo-content .tasks-list li.draggable-task.complete {
+.color-scheme-dark .search-app-w .search-content .tasks-list li.draggable-task.complete {
   color: rgba(218, 226, 243, 0.4)
 }
 
-.color-scheme-dark .todo-app-w .todo-content .tasks-list li.draggable-task.complete:before {
+.color-scheme-dark .search-app-w .search-content .tasks-list li.draggable-task.complete:before {
   background-color: #445279 !important
 }
 
@@ -25731,7 +25715,7 @@ body.rentals-wrapper .select2-container--default .select2-results__option[aria-s
   background-color: #0f1115
 }
 
-.box-style-dark, .color-scheme-dark .ae-content-w .aec-full-message-w .aec-full-message, .color-scheme-dark .ae-content-w .aec-reply, body.color-scheme-dark .box-style, body.color-scheme-dark .user-profile, body.color-scheme-dark .element-box, body.color-scheme-dark .invoice-w, body.color-scheme-dark .big-error-w, body.color-scheme-dark .activity-boxes-w .activity-box, .activity-boxes-w body.color-scheme-dark .activity-box, body.color-scheme-dark .post-box, body.color-scheme-dark .projects-list .project-box, .projects-list body.color-scheme-dark .project-box, body.color-scheme-dark .profile-tile .profile-tile-box, .content-panel.color-scheme-dark .box-style, .content-panel.color-scheme-dark .user-profile, .content-panel.color-scheme-dark .element-box, .content-panel.color-scheme-dark .invoice-w, .content-panel.color-scheme-dark .big-error-w, .content-panel.color-scheme-dark .activity-boxes-w .activity-box, .activity-boxes-w .content-panel.color-scheme-dark .activity-box, .content-panel.color-scheme-dark .post-box, .content-panel.color-scheme-dark .projects-list .project-box, .projects-list .content-panel.color-scheme-dark .project-box, .content-panel.color-scheme-dark .profile-tile .profile-tile-box {
+.box-style-dark, .color-scheme-dark .ae-content-w .aec-full-message-w .aec-full-message, .color-scheme-dark .ae-content-w .aec-reply, body.color-scheme-dark .box-style, body.color-scheme-dark .user-profile, body.color-scheme-dark .element-box, body.color-scheme-dark .invoice-w, body.color-scheme-dark .big-error-w, body.color-scheme-dark .activity-boxes-w .activity-box, .activity-boxes-w body.color-scheme-dark .activity-box, body.color-scheme-dark .post-box, body.color-scheme-dark .filter-list .project-box, .filter-list body.color-scheme-dark .project-box, body.color-scheme-dark .profile-tile .profile-tile-box, .content-panel.color-scheme-dark .box-style, .content-panel.color-scheme-dark .user-profile, .content-panel.color-scheme-dark .element-box, .content-panel.color-scheme-dark .invoice-w, .content-panel.color-scheme-dark .big-error-w, .content-panel.color-scheme-dark .activity-boxes-w .activity-box, .activity-boxes-w .content-panel.color-scheme-dark .activity-box, .content-panel.color-scheme-dark .post-box, .content-panel.color-scheme-dark .filter-list .project-box, .filter-list .content-panel.color-scheme-dark .project-box, .content-panel.color-scheme-dark .profile-tile .profile-tile-box {
   background-color: #323c58;
   -webkit-box-shadow: 0px 5px 15px rgba(22, 22, 35, 0.1);
   box-shadow: 0px 5px 15px rgba(22, 22, 35, 0.1);
@@ -25796,35 +25780,35 @@ body.color-scheme-dark .fancy-progress-with-label .fpl-progress-w, .content-pane
   background-color: rgba(255, 255, 255, 0.05)
 }
 
-body.color-scheme-dark .todo-list .todo-item, .content-panel.color-scheme-dark .todo-list .todo-item {
+body.color-scheme-dark .search-list .search-item, .content-panel.color-scheme-dark .search-list .search-item {
   border-color: #A3A6B3
 }
 
-body.color-scheme-dark .todo-list .todo-item .ti-header, .content-panel.color-scheme-dark .todo-list .todo-item .ti-header {
+body.color-scheme-dark .search-list .search-item .ti-header, .content-panel.color-scheme-dark .search-list .search-item .ti-header {
   color: #fff
 }
 
-body.color-scheme-dark .todo-list .todo-item .ti-sub-header, .content-panel.color-scheme-dark .todo-list .todo-item .ti-sub-header {
+body.color-scheme-dark .search-list .search-item .ti-sub-header, .content-panel.color-scheme-dark .search-list .search-item .ti-sub-header {
   color: #979DA8
 }
 
-body.color-scheme-dark .todo-list .todo-item .ti-icon, .content-panel.color-scheme-dark .todo-list .todo-item .ti-icon {
+body.color-scheme-dark .search-list .search-item .ti-icon, .content-panel.color-scheme-dark .search-list .search-item .ti-icon {
   color: #fff
 }
 
-body.color-scheme-dark .todo-list .todo-item.complete, .content-panel.color-scheme-dark .todo-list .todo-item.complete {
+body.color-scheme-dark .search-list .search-item.complete, .content-panel.color-scheme-dark .search-list .search-item.complete {
   border-color: #166e0c
 }
 
-body.color-scheme-dark .todo-list .todo-item.complete .ti-icon, .content-panel.color-scheme-dark .todo-list .todo-item.complete .ti-icon {
+body.color-scheme-dark .search-list .search-item.complete .ti-icon, .content-panel.color-scheme-dark .search-list .search-item.complete .ti-icon {
   color: #24b314
 }
 
-body.color-scheme-dark .todo-list .todo-item.complete .ti-sub-header, .content-panel.color-scheme-dark .todo-list .todo-item.complete .ti-sub-header {
+body.color-scheme-dark .search-list .search-item.complete .ti-sub-header, .content-panel.color-scheme-dark .search-list .search-item.complete .ti-sub-header {
   color: #71AA91
 }
 
-body.color-scheme-dark .todo-list .todo-item.complete .ti-header, .content-panel.color-scheme-dark .todo-list .todo-item.complete .ti-header {
+body.color-scheme-dark .search-list .search-item.complete .ti-header, .content-panel.color-scheme-dark .search-list .search-item.complete .ti-header {
   color: #F2F4F8
 }
 
@@ -26070,12 +26054,12 @@ body.color-scheme-dark .value-pair .label, .content-panel.color-scheme-dark .val
   color: rgba(218, 226, 243, 0.4)
 }
 
-body.color-scheme-dark .box-style legend span, body.color-scheme-dark .user-profile legend span, body.color-scheme-dark .element-box legend span, body.color-scheme-dark .invoice-w legend span, body.color-scheme-dark .big-error-w legend span, body.color-scheme-dark .activity-boxes-w .activity-box legend span, .activity-boxes-w body.color-scheme-dark .activity-box legend span, body.color-scheme-dark .post-box legend span, body.color-scheme-dark .projects-list .project-box legend span, .projects-list body.color-scheme-dark .project-box legend span, body.color-scheme-dark .user-profile legend span, body.color-scheme-dark .element-box legend span, body.color-scheme-dark .invoice-w legend span, body.color-scheme-dark .big-error-w legend span, body.color-scheme-dark .invoice-w legend span, body.color-scheme-dark .big-error-w legend span, body.color-scheme-dark .activity-boxes-w .activity-box legend span, body.color-scheme-dark .projects-list .project-box legend span, body.color-scheme-dark .profile-tile .profile-tile-box legend span, .content-panel.color-scheme-dark .box-style legend span, .content-panel.color-scheme-dark .user-profile legend span, .content-panel.color-scheme-dark .element-box legend span, .content-panel.color-scheme-dark .invoice-w legend span, .content-panel.color-scheme-dark .big-error-w legend span, .content-panel.color-scheme-dark .activity-boxes-w .activity-box legend span, .activity-boxes-w .content-panel.color-scheme-dark .activity-box legend span, .content-panel.color-scheme-dark .post-box legend span, .content-panel.color-scheme-dark .projects-list .project-box legend span, .projects-list .content-panel.color-scheme-dark .project-box legend span, .content-panel.color-scheme-dark .user-profile legend span, .content-panel.color-scheme-dark .element-box legend span, .content-panel.color-scheme-dark .invoice-w legend span, .content-panel.color-scheme-dark .big-error-w legend span, .content-panel.color-scheme-dark .invoice-w legend span, .content-panel.color-scheme-dark .big-error-w legend span, .content-panel.color-scheme-dark .activity-boxes-w .activity-box legend span, .content-panel.color-scheme-dark .projects-list .project-box legend span, .content-panel.color-scheme-dark .profile-tile .profile-tile-box legend span {
+body.color-scheme-dark .box-style legend span, body.color-scheme-dark .user-profile legend span, body.color-scheme-dark .element-box legend span, body.color-scheme-dark .invoice-w legend span, body.color-scheme-dark .big-error-w legend span, body.color-scheme-dark .activity-boxes-w .activity-box legend span, .activity-boxes-w body.color-scheme-dark .activity-box legend span, body.color-scheme-dark .post-box legend span, body.color-scheme-dark .filter-list .project-box legend span, .filter-list body.color-scheme-dark .project-box legend span, body.color-scheme-dark .user-profile legend span, body.color-scheme-dark .element-box legend span, body.color-scheme-dark .invoice-w legend span, body.color-scheme-dark .big-error-w legend span, body.color-scheme-dark .invoice-w legend span, body.color-scheme-dark .big-error-w legend span, body.color-scheme-dark .activity-boxes-w .activity-box legend span, body.color-scheme-dark .filter-list .project-box legend span, body.color-scheme-dark .profile-tile .profile-tile-box legend span, .content-panel.color-scheme-dark .box-style legend span, .content-panel.color-scheme-dark .user-profile legend span, .content-panel.color-scheme-dark .element-box legend span, .content-panel.color-scheme-dark .invoice-w legend span, .content-panel.color-scheme-dark .big-error-w legend span, .content-panel.color-scheme-dark .activity-boxes-w .activity-box legend span, .activity-boxes-w .content-panel.color-scheme-dark .activity-box legend span, .content-panel.color-scheme-dark .post-box legend span, .content-panel.color-scheme-dark .filter-list .project-box legend span, .filter-list .content-panel.color-scheme-dark .project-box legend span, .content-panel.color-scheme-dark .user-profile legend span, .content-panel.color-scheme-dark .element-box legend span, .content-panel.color-scheme-dark .invoice-w legend span, .content-panel.color-scheme-dark .big-error-w legend span, .content-panel.color-scheme-dark .invoice-w legend span, .content-panel.color-scheme-dark .big-error-w legend span, .content-panel.color-scheme-dark .activity-boxes-w .activity-box legend span, .content-panel.color-scheme-dark .filter-list .project-box legend span, .content-panel.color-scheme-dark .profile-tile .profile-tile-box legend span {
   background-color: #303950;
   color: #fff
 }
 
-body.color-scheme-dark .box-style legend:before, body.color-scheme-dark .user-profile legend:before, body.color-scheme-dark .element-box legend:before, body.color-scheme-dark .invoice-w legend:before, body.color-scheme-dark .big-error-w legend:before, body.color-scheme-dark .activity-boxes-w .activity-box legend:before, .activity-boxes-w body.color-scheme-dark .activity-box legend:before, body.color-scheme-dark .post-box legend:before, body.color-scheme-dark .projects-list .project-box legend:before, .projects-list body.color-scheme-dark .project-box legend:before, body.color-scheme-dark .user-profile legend:before, body.color-scheme-dark .element-box legend:before, body.color-scheme-dark .invoice-w legend:before, body.color-scheme-dark .big-error-w legend:before, body.color-scheme-dark .invoice-w legend:before, body.color-scheme-dark .big-error-w legend:before, body.color-scheme-dark .activity-boxes-w .activity-box legend:before, body.color-scheme-dark .projects-list .project-box legend:before, body.color-scheme-dark .profile-tile .profile-tile-box legend:before, .content-panel.color-scheme-dark .box-style legend:before, .content-panel.color-scheme-dark .user-profile legend:before, .content-panel.color-scheme-dark .element-box legend:before, .content-panel.color-scheme-dark .invoice-w legend:before, .content-panel.color-scheme-dark .big-error-w legend:before, .content-panel.color-scheme-dark .activity-boxes-w .activity-box legend:before, .activity-boxes-w .content-panel.color-scheme-dark .activity-box legend:before, .content-panel.color-scheme-dark .post-box legend:before, .content-panel.color-scheme-dark .projects-list .project-box legend:before, .projects-list .content-panel.color-scheme-dark .project-box legend:before, .content-panel.color-scheme-dark .user-profile legend:before, .content-panel.color-scheme-dark .element-box legend:before, .content-panel.color-scheme-dark .invoice-w legend:before, .content-panel.color-scheme-dark .big-error-w legend:before, .content-panel.color-scheme-dark .invoice-w legend:before, .content-panel.color-scheme-dark .big-error-w legend:before, .content-panel.color-scheme-dark .activity-boxes-w .activity-box legend:before, .content-panel.color-scheme-dark .projects-list .project-box legend:before, .content-panel.color-scheme-dark .profile-tile .profile-tile-box legend:before {
+body.color-scheme-dark .box-style legend:before, body.color-scheme-dark .user-profile legend:before, body.color-scheme-dark .element-box legend:before, body.color-scheme-dark .invoice-w legend:before, body.color-scheme-dark .big-error-w legend:before, body.color-scheme-dark .activity-boxes-w .activity-box legend:before, .activity-boxes-w body.color-scheme-dark .activity-box legend:before, body.color-scheme-dark .post-box legend:before, body.color-scheme-dark .filter-list .project-box legend:before, .filter-list body.color-scheme-dark .project-box legend:before, body.color-scheme-dark .user-profile legend:before, body.color-scheme-dark .element-box legend:before, body.color-scheme-dark .invoice-w legend:before, body.color-scheme-dark .big-error-w legend:before, body.color-scheme-dark .invoice-w legend:before, body.color-scheme-dark .big-error-w legend:before, body.color-scheme-dark .activity-boxes-w .activity-box legend:before, body.color-scheme-dark .filter-list .project-box legend:before, body.color-scheme-dark .profile-tile .profile-tile-box legend:before, .content-panel.color-scheme-dark .box-style legend:before, .content-panel.color-scheme-dark .user-profile legend:before, .content-panel.color-scheme-dark .element-box legend:before, .content-panel.color-scheme-dark .invoice-w legend:before, .content-panel.color-scheme-dark .big-error-w legend:before, .content-panel.color-scheme-dark .activity-boxes-w .activity-box legend:before, .activity-boxes-w .content-panel.color-scheme-dark .activity-box legend:before, .content-panel.color-scheme-dark .post-box legend:before, .content-panel.color-scheme-dark .filter-list .project-box legend:before, .filter-list .content-panel.color-scheme-dark .project-box legend:before, .content-panel.color-scheme-dark .user-profile legend:before, .content-panel.color-scheme-dark .element-box legend:before, .content-panel.color-scheme-dark .invoice-w legend:before, .content-panel.color-scheme-dark .big-error-w legend:before, .content-panel.color-scheme-dark .invoice-w legend:before, .content-panel.color-scheme-dark .big-error-w legend:before, .content-panel.color-scheme-dark .activity-boxes-w .activity-box legend:before, .content-panel.color-scheme-dark .filter-list .project-box legend:before, .content-panel.color-scheme-dark .profile-tile .profile-tile-box legend:before {
   background-color: rgba(255, 255, 255, 0.05)
 }
 
@@ -26100,7 +26084,7 @@ body.color-scheme-dark .users-list-w .user-w.with-status .user-avatar-w:before, 
   box-shadow: 0px 0px 3px #293145
 }
 
-body.color-scheme-dark .projects-list .project-head .project-users .avatar, .content-panel.color-scheme-dark .projects-list .project-head .project-users .avatar {
+body.color-scheme-dark .filter-list .project-head .project-users .avatar, .content-panel.color-scheme-dark .filter-list .project-head .project-users .avatar {
   -webkit-box-shadow: 0px 0px 0px 5px #323c58;
   box-shadow: 0px 0px 0px 5px #323c58
 }
@@ -27059,16 +27043,16 @@ body.color-scheme-dark .page-item.disabled .page-link, .content-panel.color-sche
   .user-profile .up-sub-header {
     font-size: 1rem
   }
-  .todo-app-w .todo-sidebar {
+  .search-app-w .search-sidebar {
     padding: 30px;
     -webkit-box-flex: 0;
     -ms-flex: 0 0 280px;
     flex: 0 0 280px
   }
-  .todo-app-w .todo-sidebar .todo-sidebar-section {
+  .search-app-w .search-sidebar .search-sidebar-section {
     padding: 10px
   }
-  .todo-app-w .todo-content {
+  .search-app-w .search-content {
     padding: 30px
   }
 }
@@ -27106,41 +27090,41 @@ body.color-scheme-dark .page-item.disabled .page-link, .content-panel.color-sche
   .os-tabs-w .os-tabs-complex .nav-item:first-child .nav-link {
     border-top: none
   }
-  .todo-app-w .todo-sidebar {
+  .search-app-w .search-sidebar {
     padding: 30px 20px 20px 45px
   }
-  .todo-app-w .todo-sidebar .todo-sidebar-section {
+  .search-app-w .search-sidebar .search-sidebar-section {
     padding: 10px 0px
   }
-  .todo-app-w .todo-sidebar .todo-sidebar-section-toggle {
+  .search-app-w .search-sidebar .search-sidebar-section-toggle {
     left: -22px
   }
-  .todo-app-w .todo-sidebar .todo-sidebar-section-header {
+  .search-app-w .search-sidebar .search-sidebar-section-header {
     font-size: 1.25rem
   }
-  .todo-app-w .todo-sidebar .todo-sidebar-section-sub-section, .todo-app-w .todo-sidebar ul.projects-list {
+  .search-app-w .search-sidebar .search-sidebar-section-sub-section, .search-app-w .search-sidebar ul.filter-list {
     padding-left: 10px
   }
-  .todo-app-w .todo-content {
+  .search-app-w .search-content {
     padding: 30px
   }
-  .todo-app-w .todo-content .all-tasks-w {
+  .search-app-w .search-content .all-tasks-w {
     padding-left: 5px
   }
-  .todo-app-w .todo-content .tasks-header-w {
+  .search-app-w .search-content .tasks-header-w {
     padding-left: 20px
   }
-  .todo-app-w .todo-content .tasks-header-w .tasks-header-toggler {
+  .search-app-w .search-content .tasks-header-w .tasks-header-toggler {
     left: -5px
   }
-  .todo-app-w .todo-content .todo-content-header {
+  .search-app-w .search-content .search-content-header {
     font-size: 1.25rem
   }
-  .todo-app-w .todo-content .all-tasks-w {
+  .search-app-w .search-content .all-tasks-w {
     padding-top: 0px;
     padding-right: 0px
   }
-  .todo-app-w .todo-content .tasks-list li.draggable-task {
+  .search-app-w .search-content .tasks-list li.draggable-task {
     padding-right: 10px
   }
   .support-index .support-tickets {
@@ -27294,56 +27278,56 @@ body.color-scheme-dark .page-item.disabled .page-link, .content-panel.color-sche
     font-size: 1.26rem;
     margin-top: 3px
   }
-  .todo-app-w {
+  .search-app-w {
     display: block
   }
-  .todo-app-w .todo-sidebar {
+  .search-app-w .search-sidebar {
     padding: 30px 15px 20px 40px;
     -webkit-box-flex: 1;
     -ms-flex: 1;
     flex: 1
   }
-  .todo-app-w .todo-sidebar .todo-sidebar-section {
+  .search-app-w .search-sidebar .search-sidebar-section {
     padding: 10px 0px
   }
-  .todo-app-w .todo-sidebar .todo-sidebar-section-toggle {
+  .search-app-w .search-sidebar .search-sidebar-section-toggle {
     left: -22px
   }
-  .todo-app-w .todo-sidebar .todo-sidebar-section-header {
+  .search-app-w .search-sidebar .search-sidebar-section-header {
     font-size: 1.25rem
   }
-  .todo-app-w .todo-sidebar .todo-sidebar-section-sub-section, .todo-app-w .todo-sidebar ul.projects-list {
+  .search-app-w .search-sidebar .search-sidebar-section-sub-section, .search-app-w .search-sidebar ul.filter-list {
     padding-left: 10px
   }
-  .todo-app-w .todo-content {
+  .search-app-w .search-content {
     padding: 30px 20px
   }
-  .todo-app-w .todo-content .todo-content-header {
+  .search-app-w .search-content .search-content-header {
     font-size: 1.25rem
   }
-  .todo-app-w .todo-content .all-tasks-w {
+  .search-app-w .search-content .all-tasks-w {
     padding-top: 0px;
     padding-right: 0px
   }
-  .todo-app-w .todo-content .tasks-list li.draggable-task {
+  .search-app-w .search-content .tasks-list li.draggable-task {
     padding-right: 10px
   }
   .full-chat-w .full-chat-i {
     display: block
   }
-  .projects-list .project-head {
+  .filter-list .project-head {
     padding: 20px 30px;
     display: block;
     text-align: center
   }
-  .projects-list .project-head .project-users {
+  .filter-list .project-head .project-users {
     text-align: center;
     margin-top: 2rem
   }
-  .projects-list .project-info {
+  .filter-list .project-info {
     padding: 20px 30px
   }
-  .projects-list .project-info .el-tablo {
+  .filter-list .project-info .el-tablo {
     text-align: center;
     margin-bottom: 0.5rem
   }
