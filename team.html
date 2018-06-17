@@ -1,0 +1,1560 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Legitquest : Order System</title>
+  <meta charset="utf-8">
+  <meta content="ie=edge" http-equiv="x-ua-compatible">
+  <meta content="template language" name="keywords">
+  <meta content="width=device-width, initial-scale=1" name="viewport">
+  <link href="favicon.png" rel="shortcut icon">
+
+  <link href="bower_components/bootstrap-daterangepicker/daterangepicker.css" rel="stylesheet">
+  <link href="bower_components/perfect-scrollbar/css/perfect-scrollbar.min.css" rel="stylesheet">
+  <link href="bower_components/slick-carousel/slick/slick.css" rel="stylesheet">
+  <link href="./icon_fonts_assets/simple-line-icons/css/simple-line-icons.css" rel="stylesheet">
+  <link href="./icon_fonts_assets/font-awesome/css/font-awesome.min.css" rel="stylesheet">
+  <link href="bower_components/select2/dist/css/bootstrap-select.min.css" rel="stylesheet">
+  <link href="./css/bootstrap.min.css" rel="stylesheet">
+  <link href="./css/owl.theme.css" rel="stylesheet">
+  <link href="./css/owl.carousel.css" rel="stylesheet">
+  <link href="css/maince5a.css" rel="stylesheet">
+  <link href="./css/custom.css" rel="stylesheet">
+  <script src="./js/webfont.js"></script>
+  <script type="text/javascript">
+    WebFont.load({
+      google: {
+        families: ["PT Serif:400,400italic,700,700italic", "Open Sans:300,300italic,400,400italic,600,600italic,700,700italic,800,800italic", "Poppins:300,regular,500,600,700"]
+      }
+    });
+  </script>
+</head>
+
+<body class="menu-position-side menu-side-left full-screen">
+  <div class="preload">
+    <div class="sk-fading-circle">
+      <div class="sk-circle1 sk-circle"></div>
+      <div class="sk-circle2 sk-circle"></div>
+      <div class="sk-circle3 sk-circle"></div>
+      <div class="sk-circle4 sk-circle"></div>
+      <div class="sk-circle5 sk-circle"></div>
+      <div class="sk-circle6 sk-circle"></div>
+      <div class="sk-circle7 sk-circle"></div>
+      <div class="sk-circle8 sk-circle"></div>
+      <div class="sk-circle9 sk-circle"></div>
+      <div class="sk-circle10 sk-circle"></div>
+      <div class="sk-circle11 sk-circle"></div>
+      <div class="sk-circle12 sk-circle"></div>
+    </div>
+  </div>
+
+  <div class="all-wrapper white-bg-all">
+    <header id="pageTop" class="header">
+      <nav class="navbar navbar-expand-md fixed-top">
+        <div class="container">
+          <div class="nav-mobile d-flex  justify-content-between align-items-center">
+            <a class="navbar-brand" href="#">
+              <img src="./img/lq-logo.png" alt="">
+            </a>
+            <button class="navbar-toggler btn btn-primary" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="icon-menu"></span>
+            </button>
+          </div>
+
+
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav ml-auto">
+              <li class="nav-item active">
+                <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+              </li>
+
+
+
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                  About
+                </a>
+                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <a class="dropdown-item" href="#">About Legitquest</a>
+                  <a class="dropdown-item" href="#">Our Team</a>
+                  <a class="dropdown-item" href="#">Gallery</a>
+                </div>
+              </li>
+
+              <li class="nav-item">
+                <a class="nav-link" href="#">Features</a>
+              </li>
+
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                  Career
+                </a>
+                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <a class="dropdown-item" href="#">Job Openings</a>
+                  <a class="dropdown-item" href="#">Cap</a>
+                </div>
+              </li>
+
+              <li class="nav-item">
+                <a class="nav-link" href="#">Contact</a>
+              </li>
+              <li class="nav-item btn-link">
+                <button class="mr-2 mb-2 btn btn-primary" type="button"> Sign In</button>
+              </li>
+            </ul>
+
+
+
+          </div>
+
+
+        </div>
+
+      </nav>
+    </header>
+
+
+    <div class="page-header overlay dark">
+      <div class="container">
+        <div class="banner-text text-center">
+          <h1 class="intro-lead-in">Legitquest Team</h1>
+          <div class="section-divider-line light"></div>
+        </div>
+
+      </div>
+    </div>
+
+    <div class="tab-topnav">
+      <ul class="nav nav-tabs" id="myTab" role="tablist">
+        <li class="nav-item">
+          <a class="nav-link active" data-toggle="tab" href="#tab1" role="tab" aria-controls="tab1" aria-selected="true">
+              Team
+            </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" data-toggle="tab" href="#tab2" role="tab" aria-controls="tab2" aria-selected="false">
+              National Advisory
+            </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" data-toggle="tab" href="#tab3" role="tab" aria-controls="tab3" aria-selected="false">
+              International Advisory
+            </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" data-toggle="tab" href="#tab4" role="tab" aria-controls="tab4" aria-selected="false">
+              Consultant
+            </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" data-toggle="tab" href="#tab5" role="tab" aria-controls="tab5" aria-selected="false">
+              Campus
+            </a>
+        </li>
+      </ul>
+    </div>
+
+    <div class="section section-thin">
+      <div class="container">
+        <div class="tab-content" id="myTabContent">
+          <div class="tab-pane fade show active" id="tab1" role="tabpanel" aria-labelledby="tab1">
+            <div class="team-pane">
+
+              <div class="team-block">
+                <div class="element-wrapper center">
+                  <h6 class="element-header">
+                          Management team
+                        </h6>
+                </div>
+
+                <div class="row flex-row center">
+
+                  <div class="thumbnail text-center">
+                    <div class="thumb-inner">
+                      <div class="liner-box">
+                        <div class="member-container">
+                          <img src="./img/team/karankalia.jpg" alt="Karan Kalia" class=" imgcylenew">
+
+                        </div>
+                      </div>
+
+
+                      <div class="caption">
+                        <strong>Karan Kalia</strong>
+                        <p class="sior">Founder & CEO</p>
+                        <a href="#" class="linkedin-btn">
+                                        Linked <i class="fa fa-linkedin-square" aria-hidden="true"></i>
+                                  </a>
+
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="thumbnail text-center">
+                    <div class="thumb-inner">
+                      <div class="liner-box">
+                        <div class="member-container">
+                          <img src="./img/team/himanshupuri.jpg" alt="Himanshu Puri" class=" imgcylenew">
+
+                        </div>
+                      </div>
+
+
+                      <div class="caption">
+                        <strong>Himanshu Puri</strong>
+                        <p class="sior">Co-Founder & CBO</p>
+                        <a href="#" class="linkedin-btn">
+                                        Linked <i class="fa fa-linkedin-square" aria-hidden="true"></i>
+                                  </a>
+
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="thumbnail text-center">
+                    <div class="thumb-inner">
+                      <div class="liner-box">
+                        <div class="member-container">
+                          <img src="./img/team/rohit_shuka.jpg" alt="Rohit Shukla" class=" imgcylenew">
+
+                        </div>
+                      </div>
+
+
+                      <div class="caption">
+                        <strong>Rohit Shukla</strong>
+                        <p class="sior">Co-Founder & CTO</p>
+
+                        <a href="#" class="linkedin-btn">
+                                            Linked <i class="fa fa-linkedin-square" aria-hidden="true"></i>
+                                      </a>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="thumbnail text-center">
+                    <div class="thumb-inner">
+                      <div class="liner-box">
+                        <div class="member-container">
+                          <img src="./img/team/sanjiv.jpg" alt="Sanjiv Sharma" class=" imgcylenew">
+
+                        </div>
+
+                      </div>
+
+
+                      <div class="caption">
+                        <strong>Sanjiv Sharma</strong>
+                        <p class="sior">HEAD - GLOBAL AFFAIRS</p>
+                        <a href="https://www.linkedin.com/in/sanjiv-sharma-02347b10/" class="linkedin-btn">
+                                        Linked <i class="fa fa-linkedin-square" aria-hidden="true"></i>
+                                  </a>
+
+                      </div>
+                    </div>
+                  </div>
+
+                </div>
+              </div>
+
+
+              <div class="team-block">
+                <div class="element-wrapper center">
+
+                  <h6 class="element-header">
+                      Research & Development
+                    </h6>
+                </div>
+                <div class="row flex-row center">
+                  <div class="thumbnail text-center">
+                    <div class="thumb-inner">
+                      <div class="liner-box">
+                        <div class="member-container">
+                          <img src="./img/team/shivajisolanki.jpg" alt="Shivaji Solanki" class=" imgcylenew">
+
+                        </div>
+                      </div>
+
+
+                      <div class="caption">
+                        <strong>Shivaji Solanki</strong>
+                        <a href="https://www.linkedin.com/in/sanjiv-sharma-02347b10/" class="linkedin-btn">
+                                      Linked <i class="fa fa-linkedin-square" aria-hidden="true"></i>
+                                </a>
+
+
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="thumbnail text-center">
+                    <div class="thumb-inner">
+                      <div class="liner-box">
+                        <div class="member-container">
+                          <img src="./img/team/shrutipandey.jpg" alt="Shruti Pandey" class=" imgcylenew">
+
+
+                        </div>
+                      </div>
+
+
+                      <div class="caption">
+                        <strong>Shruti Pandey</strong>
+                        <a href="https://www.linkedin.com/in/rukmalavania/" class="linkedin-btn">
+                                      Linked <i class="fa fa-linkedin-square" aria-hidden="true"></i>
+                                </a>
+
+
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="thumbnail text-center">
+                    <div class="thumb-inner">
+                      <div class="liner-box">
+                        <div class="member-container">
+                          <img src="./img/team/ambikaprasad.jpg" alt="Ambika Prasad Jena" class=" imgcylenew">
+
+
+                        </div>
+                      </div>
+
+                      <div class="caption">
+                        <strong>Ambika Prasad Jena</strong>
+                        <a href="https://www.linkedin.com/in/ambika-jena-691b275a/" class="linkedin-btn">
+                                      Linked <i class="fa fa-linkedin-square" aria-hidden="true"></i>
+                                </a>
+
+
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="thumbnail text-center">
+                    <div class="thumb-inner">
+                      <div class="liner-box">
+                        <div class="member-container">
+                          <img src="./img/team/JAISIS_SRIKRISHNA_DAS.jpg" alt="Jaisis Srikrishna Das" class=" imgcylenew">
+
+
+                        </div>
+                      </div>
+
+
+                      <div class="caption">
+                        <strong>Jaisis Srikrishna Das</strong>
+                        <a href="https://www.linkedin.com/in/jaisis-srikrishna-das-30909b5a/" class="linkedin-btn">
+                                      Linked <i class="fa fa-linkedin-square" aria-hidden="true"></i>
+                                </a>
+
+
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+
+                <div class="row flex-row center">
+                  <div class="thumbnail text-center">
+                    <div class="thumb-inner">
+                      <div class="liner-box">
+                        <div class="member-container">
+                          <img src="./img/team/sumit.jpg" alt="Sumit Saurav" class=" imgcylenew">
+
+
+                        </div>
+                      </div>
+
+
+                      <div class="caption">
+                        <strong>Sumit Saurav</strong>
+                        <a href="https://www.linkedin.com/in/sumit-saurav-953a405b/" class="linkedin-btn">
+                                      Linked <i class="fa fa-linkedin-square" aria-hidden="true"></i>
+                                </a>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="thumbnail text-center">
+                    <div class="thumb-inner">
+                      <div class="liner-box">
+                        <div class="member-container">
+                          <img src="./img/team/Parija_Marwah.jpg" alt="Parija Marwah" class=" imgcylenew">
+
+
+                        </div>
+                      </div>
+
+
+                      <div class="caption">
+                        <strong>Parija Marwah</strong>
+                        <a href="#" class="linkedin-btn">
+                                      Linked <i class="fa fa-linkedin-square" aria-hidden="true"></i>
+                                </a>
+
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="thumbnail text-center">
+                    <div class="thumb-inner">
+                      <div class="liner-box">
+                        <div class="member-container">
+                          <img src="././img/team/Dipika-Sharma.jpg" alt="Parija Marwah" class=" imgcylenew">
+
+
+                        </div>
+                      </div>
+
+
+                      <div class="caption">
+                        <strong>Dipika Sharma </strong>
+                        <a href="https://www.linkedin.com/in/dipika-sharma-316a98a2/" class="linkedin-btn">
+                                      Linked <i class="fa fa-linkedin-square" aria-hidden="true"></i>
+                                </a>
+
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="thumbnail text-center">
+                    <div class="thumb-inner">
+                      <div class="liner-box">
+                        <div class="member-container">
+                          <img src="././img/team/JaydipPati.jpg" alt="Parija Marwah" class=" imgcylenew">
+
+                        </div>
+                      </div>
+
+
+                      <div class="caption">
+                        <strong>Jaydip Pati </strong>
+                        <a href="https://www.linkedin.com/in/jaydip-pati-34567068/" class="linkedin-btn">
+                                      Linked <i class="fa fa-linkedin-square" aria-hidden="true"></i>
+                                </a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="row flex-row center">
+                  <div class="thumbnail text-center">
+                    <div class="thumb-inner">
+                      <div class="liner-box">
+                        <div class="member-container">
+                          <img src="././img/team/malika-malhotra.jpg" alt="Parija Marwah" class=" imgcylenew">
+
+                        </div>
+                      </div>
+
+
+                      <div class="caption">
+                        <strong>Malika Malhotra  </strong>
+                        <a href="https://www.linkedin.com/in/malika-malhotra-b0343340" class="linkedin-btn">
+                                      Linked <i class="fa fa-linkedin-square" aria-hidden="true"></i>
+                                </a>
+
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="thumbnail text-center">
+                    <div class="thumb-inner">
+                      <div class="liner-box">
+                        <div class="member-container">
+                          <img src="././img/team/RukmaLavania.jpg" alt="Parija Marwah" class=" imgcylenew">
+
+
+                        </div>
+                      </div>
+
+
+                      <div class="caption">
+                        <strong>Rukma Lavania </strong>
+                        <a href="https://www.linkedin.com/in/malika-malhotra-b0343340" class="linkedin-btn">
+                                      Linked <i class="fa fa-linkedin-square" aria-hidden="true"></i>
+                                </a>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="thumbnail text-center">
+                    <div class="thumb-inner">
+                      <div class="liner-box">
+                        <div class="member-container">
+                          <img src="././img/team/SwastiSingh.jpg" alt="Parija Marwah" class=" imgcylenew">
+
+
+                        </div>
+                      </div>
+
+
+                      <div class="caption">
+                        <strong>Swasti Singh </strong>
+                        <a href="https://www.linkedin.com/in/swasti-singh-b4116731/" class="linkedin-btn">
+                                      Linked <i class="fa fa-linkedin-square" aria-hidden="true"></i>
+                                </a>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="thumbnail text-center">
+                    <div class="thumb-inner">
+                      <div class="liner-box">
+                        <div class="member-container">
+                          <img src="./img/team/Akshita_Bhatia.jpg" alt="Akshita Bhatia" class=" imgcylenew">
+
+
+                        </div>
+                      </div>
+
+
+                      <div class="caption">
+                        <strong>Akshita Bhatia</strong>
+                        <a href="#" class="linkedin-btn">
+                                      Linked <i class="fa fa-linkedin-square" aria-hidden="true"></i>
+                                </a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="row flex-row center">
+                  <div class="thumbnail text-center">
+                    <div class="thumb-inner">
+                      <div class="liner-box">
+                        <div class="member-container">
+                          <img src="./img/team/shrilekha_dash.jpg" alt="Akshita Bhatia" class=" imgcylenew">
+
+
+                        </div>
+                      </div>
+
+
+                      <div class="caption">
+                        <strong>Sreelekha Dash</strong>
+                        <a href="https://www.linkedin.com/in/shrilekha-dash-63022962/" class="linkedin-btn">
+                                      Linked <i class="fa fa-linkedin-square" aria-hidden="true"></i>
+                                </a>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="thumbnail text-center">
+                    <div class="thumb-inner">
+                      <div class="liner-box">
+                        <div class="member-container">
+                          <img src="./img/team/palak_nehra.jpg" alt="Akshita Bhatia" class=" imgcylenew">
+
+
+                        </div>
+                      </div>
+
+
+                      <div class="caption">
+                        <strong>Palak Nehra</strong>
+                        <a href="https://www.linkedin.com/in/palak-nehra-75a35167/" class="linkedin-btn">
+                                    Linked <i class="fa fa-linkedin-square" aria-hidden="true"></i>
+                              </a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+
+              </div>
+
+
+              <div class="team-block">
+                <div class="element-wrapper center">
+
+                  <h6 class="element-header">
+                Technology Education
+              </h6>
+                </div>
+
+
+                <div class="row flex-row center">
+
+                  <div class="thumbnail text-center">
+                    <div class="thumb-inner">
+                      <div class="liner-box">
+                        <div class="member-container">
+                          <img src="././img/team/lordshimbati.jpg" alt="Parija Marwah" class=" imgcylenew">
+
+
+                        </div>
+                      </div>
+
+
+                      <div class="caption">
+                        <strong>Lorsim</strong>
+                        <a href="https://www.linkedin.com/in/lordshimbati-sorokhaibam-b350ab14b" class="linkedin-btn">
+                                Linked <i class="fa fa-linkedin-square" aria-hidden="true"></i>
+                          </a>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="thumbnail text-center">
+                    <div class="thumb-inner">
+                      <div class="liner-box">
+                        <div class="member-container">
+                          <img src="././img/team/mohit_kumar.jpg" alt="Parija Marwah" class=" imgcylenew">
+
+
+                        </div>
+                      </div>
+
+
+                      <div class="caption">
+                        <strong>Mohit Dutt </strong>
+                        <a href="https://www.linkedin.com/in/mohit-dutt-a30817148" class="linkedin-btn">
+                                Linked <i class="fa fa-linkedin-square" aria-hidden="true"></i>
+                          </a>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="thumbnail text-center">
+                    <div class="thumb-inner">
+                      <div class="liner-box">
+                        <div class="member-container">
+                          <img src="././img/team/Jatin-Gola.jpg" alt="Parija Marwah" class=" imgcylenew">
+
+
+                        </div>
+                      </div>
+
+
+                      <div class="caption">
+                        <strong>Jatin Kumar </strong>
+                        <a href="https://www.linkedin.com/in/jatin-kumar-04478614a" class="linkedin-btn">
+                                Linked <i class="fa fa-linkedin-square" aria-hidden="true"></i>
+                          </a>
+                      </div>
+                    </div>
+                  </div>
+
+                </div>
+              </div>
+
+
+              <div class="team-block">
+                <div class="element-wrapper center">
+
+                  <h6 class="element-header">
+                Human Resources Education
+              </h6>
+                </div>
+
+
+
+                <div class="row flex-row center">
+
+                  <div class="thumbnail text-center">
+                    <div class="thumb-inner">
+                      <div class="liner-box">
+                        <div class="member-container">
+                          <img src="././img/team/krati.jpg" alt="Parija Marwah" class=" imgcylenew">
+
+
+                        </div>
+                      </div>
+
+
+                      <div class="caption">
+                        <strong>Krati Ahlawat </strong>
+                        <a href="https://www.linkedin.com/in/krati-ahlawat-a4b1b68b/" class="linkedin-btn">
+                                Linked <i class="fa fa-linkedin-square" aria-hidden="true"></i>
+                          </a>
+
+                      </div>
+                    </div>
+                  </div>
+
+                </div>
+              </div>
+
+
+              <div class="team-block">
+                <div class="element-wrapper center">
+
+                  <h6 class="element-header">
+                  Digital Marketing Education
+                </h6>
+                </div>
+
+
+                <div class="row flex-row center">
+                  <div class="thumbnail text-center">
+                    <div class="thumb-inner">
+                      <div class="liner-box">
+                        <div class="member-container">
+                          <img src="././img/team/Hitesh.jpg" alt="Parija Marwah" class=" imgcylenew">
+
+
+                        </div>
+                      </div>
+
+
+                      <div class="caption">
+                        <strong>Hitesh Vashishth </strong>
+                        <a href="https://www.linkedin.com/in/hitesh-vashishth/" class="linkedin-btn">
+                                  Linked <i class="fa fa-linkedin-square" aria-hidden="true"></i>
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+
+                </div>
+              </div>
+
+
+
+            </div>
+          </div>
+          <div class="tab-pane fade" id="tab2" role="tabpanel" aria-labelledby="tab2">
+            <div class="team-pane">
+
+              <div class="team-block">
+                <div class="row flex-row center">
+
+                  <div class="thumbnail text-center" style="border: 0px;">
+                    <div class="thumb-inner">
+                      <div class="liner-box">
+                        <div class="member-container">
+                          <img src="././img/team/shri_jetmalani.jpg" alt="Karan Kalia" class=" imgcylenew">
+
+                        </div>
+                      </div>
+
+
+                      <div class="caption">
+                        <strong>Shri Ram Jethmalani</strong>
+                        <a href="https://www.linkedin.com/in/ram-jethmalani-a3424b146/" class="linkedin-btn">
+                          Linked <i class="fa fa-linkedin-square" aria-hidden="true"></i>
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="thumbnail text-center" style="border: 0px;">
+                    <div class="thumb-inner">
+                      <div class="liner-box">
+                        <div class="member-container">
+                          <img src="././img/team/nikilesh_ramachandran.jpg" alt="Nikilesh Ramachandran" class="imgcylenew">
+
+                        </div>
+
+                      </div>
+                      <div class="caption">
+                        <strong class="staffName">Nikilesh Ramachandran</strong>
+                        <a href="https://www.linkedin.com/in/nikilesh-ramachandran-b112ab2/" class="linkedin-btn">
+                          Linked <i class="fa fa-linkedin-square" aria-hidden="true"></i>
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="thumbnail text-center" style="border: 0px;">
+                    <div class="thumb-inner">
+                      <div class="liner-box">
+                        <div class="member-container">
+                          <img src="././img/team/Hitesh-Oberoi.JPG" alt="Ridhima Malhotra" class=" imgcylenew">
+
+                        </div>
+                      </div>
+
+                      <div class="caption">
+                        <strong>Hitesh Oberoi</strong>
+                        <a href="#" class="linkedin-btn">
+                                        Linked <i class="fa fa-linkedin-square" aria-hidden="true"></i>
+                                  </a>
+                      </div>
+                    </div>
+                  </div>
+
+
+                  <div class="thumbnail text-center" style="border: 0px;">
+                    <div class="thumb-inner">
+                      <div class="liner-box">
+                        <div class="member-container">
+                          <img src="././img/team/ph_parikh.jpg" alt="Ridhima Malhotra" class=" imgcylenew">
+
+                        </div>
+                      </div>
+
+                      <div class="caption">
+                        <strong>PH Parikh</strong>
+                        <a href="#" class="linkedin-btn">
+                                        Linked <i class="fa fa-linkedin-square" aria-hidden="true"></i>
+                                  </a>
+                      </div>
+                    </div>
+                  </div>
+
+
+                </div>
+              </div>
+
+            </div>
+          </div>
+          <div class="tab-pane fade" id="tab3" role="tabpanel" aria-labelledby="tab3">
+            <div class="team-pane">
+              <div class="team-block">
+                <div class="row flex-row center">
+                  <div class="thumbnail text-center" style="border: 0px;">
+                    <div class="thumb-inner">
+                      <div class="liner-box">
+                        <div class="member-container">
+                          <img src="././img/team/International - Phillip.jpg" alt="Karan Kalia" class=" imgcylenew">
+
+                        </div>
+                      </div>
+
+
+                      <div class="caption">
+                        <strong>Philipp Scheibenpflug</strong>
+                        <a href="https://www.linkedin.com/in/dr-philipp-scheibenpflug-160469105/" class="linkedin-btn">
+                                    Linked <i class="fa fa-linkedin-square" aria-hidden="true"></i>
+                              </a>
+                      </div>
+                    </div>
+                  </div>
+
+
+
+                  <div class="thumbnail text-center" style="border: 0px;">
+                    <div class="thumb-inner">
+                      <div class="liner-box">
+                        <div class="member-container">
+                          <img src="././img/team/International- Alonso.jpg" alt="Ridhima Malhotra" class=" imgcylenew">
+
+                        </div>
+                      </div>
+
+                      <div class="caption">
+                        <strong>Alonso Sandoval</strong>
+                        <a href="https://www.linkedin.com/in/alonsosandoval/" class="linkedin-btn">
+                                    Linked <i class="fa fa-linkedin-square" aria-hidden="true"></i>
+                              </a>
+
+                      </div>
+                    </div>
+                  </div>
+
+
+
+                  <div class="thumbnail text-center" style="border: 0px;">
+                    <div class="thumb-inner">
+                      <div class="liner-box">
+                        <div class="member-container">
+                          <img src="././img/team/International---Sebastian_risso.jpg" alt="Sanjiv Sharma" class=" imgcylenew">
+
+                        </div>
+                      </div>
+
+
+                      <div class="caption">
+                        <strong>Sebastian Risso</strong>
+                        <a href="https://www.linkedin.com/in/sebasti%C3%A1n-risso-a3753b57/" class="linkedin-btn">
+                                    Linked <i class="fa fa-linkedin-square" aria-hidden="true"></i>
+                              </a>
+                      </div>
+                    </div>
+                  </div>
+
+
+
+                  <div class="thumbnail text-center" style="border: 0px;">
+                    <div class="thumb-inner">
+                      <div class="liner-box">
+                        <div class="member-container">
+                          <img src="././img/team/International - Valentina.jpg" alt="Himanshu Puri" class=" imgcylenew">
+
+                        </div>
+                      </div>
+
+
+                      <div class="caption">
+                        <strong>Valentina Lipatnikova</strong>
+                        <a href="https://www.linkedin.com/in/valentinalipatnikova/" class="linkedin-btn">
+                                Linked <i class="fa fa-linkedin-square" aria-hidden="true"></i>
+                          </a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="row flex-row center">
+                  <div class="thumbnail text-center" style="border: 0px;">
+                    <div class="thumb-inner">
+                      <div class="liner-box">
+                        <div class="member-container">
+                          <img src="././img/team/International-Vincenso.jpg" alt="Rohit Shukla" class=" imgcylenew">
+
+                        </div>
+                      </div>
+
+
+                      <div class="caption">
+                        <strong>Vincenzo Dell’Osso</strong>
+                        <a href="https://www.linkedin.com/in/vincenzodellosso/" class="linkedin-btn">
+                                       Linked <i class="fa fa-linkedin-square" aria-hidden="true"></i>
+                                 </a>
+                      </div>
+                    </div>
+                  </div>
+
+
+
+                  <div class="thumbnail text-center" style="border: 0px;">
+                    <div class="thumb-inner">
+                      <div class="liner-box">
+                        <div class="member-container">
+                          <img src="././img/team/International-Valerio.jpg" alt="Rohit Shukla" class=" imgcylenew">
+
+                        </div>
+                      </div>
+
+
+                      <div class="caption">
+                        <strong>Valerio Severo Marotta</strong>
+                        <a href="https://www.linkedin.com/in/valerio-severo-marotta-9a6188aa/" class="linkedin-btn">
+                                       Linked <i class="fa fa-linkedin-square" aria-hidden="true"></i>
+                                 </a>
+
+
+                      </div>
+                    </div>
+                  </div>
+
+
+
+                  <div class="thumbnail text-center" style="border: 0px;">
+                    <div class="thumb-inner">
+                      <div class="liner-box">
+                        <div class="member-container">
+                          <img src="././img/team/A-Dziki.jpg" alt="Rohit Shukla" class=" imgcylenew">
+
+                        </div>
+                      </div>
+
+
+                      <div class="caption">
+                        <strong>Aleksandra M. Dziki</strong>
+                        <a href="https://www.linkedin.com/in/aleksandradziki/" class="linkedin-btn">
+                                       Linked <i class="fa fa-linkedin-square" aria-hidden="true"></i>
+                                 </a>
+
+
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+              </div>
+
+
+            </div>
+
+          </div>
+
+          <div class="tab-pane fade" id="tab4" role="tabpanel" aria-labelledby="tab4">
+            <div class="team-pane">
+              <div class="team-block">
+                <div class="row flex-row center">
+
+
+
+                  <div class="thumbnail text-center" style="border: 0px;">
+                    <div class="thumb-inner">
+                      <div class="liner-box">
+                        <div class="member-container">
+                          <img src="././img/team/Technical Board-Sheetal bafana.jpg" alt="Sheetal bafana" class="imgcylenew">
+
+                        </div>
+                      </div>
+                      <div class="caption">
+                        <strong class="staffName">Sheetal bafana</strong>
+                        <a href="https://www.linkedin.com/in/sheetal-bafna-msc-comp-security-5718b448/" class="linkedin-btn">
+                      Linked <i class="fa fa-linkedin-square" aria-hidden="true"></i>
+                </a>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="thumbnail text-center" style="border: 0px;">
+                    <div class="thumb-inner">
+                      <div class="liner-box">
+                        <div class="member-container">
+                          <img src="././img/team/rahu_gupta.jpg" alt="Rahul Gupta" class="imgcylenew">
+
+                        </div>
+                      </div>
+                      <div class="caption">
+                        <strong>Rahul Gupta</strong>
+                        <a href="https://www.linkedin.com/in/rgprod/" class="linkedin-btn">
+                    Linked <i class="fa fa-linkedin-square" aria-hidden="true"></i>
+              </a>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="thumbnail text-center" style="border: 0px;">
+                    <div class="thumb-inner">
+                      <div class="liner-box">
+                        <div class="member-container">
+                          <img src="././img/team/vivek_narayan_sharma.jpg" alt="Vivek Narayan Sharma" class="imgcylenew">
+
+                        </div>
+                      </div>
+                      <div class="caption">
+                        <strong>Vivek Narayan Sharma</strong>
+                        <a href="http://linkedin.com/in/viveknarayan" class="linkedin-btn">
+                    Linked <i class="fa fa-linkedin-square" aria-hidden="true"></i>
+              </a>
+                      </div>
+                    </div>
+                  </div>
+
+
+                </div>
+              </div>
+            </div>
+          </div>
+
+
+          <div class="tab-pane fade" id="tab5" role="tabpanel" aria-labelledby="tab5">
+            <div class="team-pane">
+              <div class="team-block">
+                <div class="row flex-row center">
+                  <div class="thumbnail text-center" style="border: 0px;">
+                    <div class="thumb-inner">
+                      <div class="liner-box">
+                        <div class="member-container">
+                          <img src="././img/cap/anuj_malik.jpg" alt="Anuj Malik" class="imgcylenew">
+
+                        </div>
+                      </div>
+                      <div class="caption">
+                        <strong class="staffName">Anuj Malik</strong>
+                        <a href="https://www.linkedin.com/in/iamanujmalik " class="linkedin-btn">
+                                Linked <i class="fa fa-linkedin-square" aria-hidden="true"></i>
+                          </a>
+                      </div>
+                    </div>
+
+
+
+                  </div>
+
+
+                  <div class="thumbnail text-center" style="border: 0px;">
+                    <div class="thumb-inner">
+                      <div class="liner-box">
+                        <div class="member-container">
+                          <img src="././img/cap/abhishek_acharya.jpg" alt="Abhishek Acharya" class="imgcylenew">
+
+                        </div>
+                      </div>
+                      <div class="caption">
+                        <strong class="staffName">Abhishek Acharya</strong>
+                        <a href="https://www.linkedin.com/in/abhishek-acharya-371a9a72/" class="linkedin-btn">
+                                Linked <i class="fa fa-linkedin-square" aria-hidden="true"></i>
+                          </a>
+                      </div>
+                    </div>
+
+
+
+                  </div>
+
+                  <div class="thumbnail text-center" style="border: 0px;">
+                    <div class="thumb-inner">
+                      <div class="liner-box">
+                        <div class="member-container">
+                          <img src="././img/cap/vidushi_verma.jpg" alt="Vidushi Verma" class="imgcylenew">
+
+                        </div>
+                      </div>
+                      <div class="caption">
+                        <strong class="staffName">Vidushi Verma</strong>
+                        <a href="https://www.linkedin.com/in/vidushi-verma-a87a2a151" class="linkedin-btn">
+                                Linked <i class="fa fa-linkedin-square" aria-hidden="true"></i>
+                          </a>
+                      </div>
+                    </div>
+
+
+
+                  </div>
+
+                  <div class="thumbnail text-center" style="border: 0px;">
+                    <div class="thumb-inner">
+                      <div class="liner-box">
+                        <div class="member-container">
+                          <img src="././img/cap/kartikey_joshi.jpg" alt="Kartikeya Joshi" class="imgcylenew">
+
+                        </div>
+                      </div>
+                      <div class="caption">
+                        <strong class="staffName">Kartikeya Joshi</strong>
+                        <a href="https://www.linkedin.com/in/kartikey-joshi-688762151" class="linkedin-btn">
+                                Linked <i class="fa fa-linkedin-square" aria-hidden="true"></i>
+                          </a>
+                      </div>
+                    </div>
+
+
+
+                  </div>
+
+                </div>
+
+
+                <div class="row flex-row center">
+                  <div class="thumbnail text-center" style="border: 0px;">
+                    <div class="thumb-inner">
+                      <div class="liner-box">
+                        <div class="member-container">
+                          <img src="././img/cap/parshanth_yadav.jpg" alt="Prashant Yadav" class="imgcylenew">
+
+                        </div>
+                      </div>
+                      <div class="caption">
+                        <strong class="staffName">Prashant Yadav</strong>
+                        <a href="https://www.linkedin.com/in/prashant-yadav-b0377b146" class="linkedin-btn">
+                                Linked <i class="fa fa-linkedin-square" aria-hidden="true"></i>
+                          </a>
+                      </div>
+                    </div>
+
+
+
+                  </div>
+
+                  <div class="thumbnail text-center" style="border: 0px;">
+                    <div class="thumb-inner">
+                      <div class="liner-box">
+                        <div class="member-container">
+                          <img src="././img/cap/arshpreet_khaiyal.jpg" alt="Arshpreet Khadial" class="imgcylenew">
+
+                        </div>
+                      </div>
+                      <div class="caption">
+                        <strong class="staffName">Arshpreet Khadial</strong>
+                        <a href="#" class="linkedin-btn">
+                                Linked <i class="fa fa-linkedin-square" aria-hidden="true"></i>
+                          </a>
+                      </div>
+                    </div>
+
+
+
+                  </div>
+
+                  <div class="thumbnail text-center" style="border: 0px;">
+                    <div class="thumb-inner">
+                      <div class="liner-box">
+                        <div class="member-container">
+                          <img src="././img/cap/basuki_nath_pandey.jpg" alt="Basuki Nath Pandey" class="imgcylenew">
+
+                        </div>
+                      </div>
+                      <div class="caption">
+                        <strong class="staffName">Basuki Nath Pandey</strong>
+                        <a href="https://www.linkedin.com/in/basuki-nath-pandey-3b6b47151" class="linkedin-btn">
+                                Linked <i class="fa fa-linkedin-square" aria-hidden="true"></i>
+                          </a>
+                      </div>
+                    </div>
+
+
+
+                  </div>
+
+                  <div class="thumbnail text-center" style="border: 0px;">
+                    <div class="thumb-inner">
+                      <div class="liner-box">
+                        <div class="member-container">
+                          <img src="././img/cap/vernika_taya.jpg" alt="Varnika Taya" class="imgcylenew">
+
+                        </div>
+                      </div>
+                      <div class="caption">
+                        <strong class="staffName">Varnika Taya</strong>
+                        <a href="https://www.linkedin.com/in/varnika-taya-8b261aa7/" class="linkedin-btn">
+                                Linked <i class="fa fa-linkedin-square" aria-hidden="true"></i>
+                          </a>
+                      </div>
+                    </div>
+
+
+
+                  </div>
+                </div>
+
+
+                <div class="row flex-row center">
+                  <div class="thumbnail text-center" style="border: 0px;">
+                    <div class="thumb-inner">
+                      <div class="liner-box">
+                        <div class="member-container">
+                          <img src="././img/cap/karan_pandey.jpg" alt="Karan Pandey" class="imgcylenew">
+
+                        </div>
+                      </div>
+                      <div class="caption">
+                        <strong class="staffName">Karan Pandey</strong>
+                        <a href="https://www.linkedin.com/in/karan-pandey-49965a149" class="linkedin-btn">
+                                Linked <i class="fa fa-linkedin-square" aria-hidden="true"></i>
+                          </a>
+                      </div>
+                    </div>
+
+
+
+                  </div>
+
+                  <div class="thumbnail text-center" style="border: 0px;">
+                    <div class="thumb-inner">
+                      <div class="liner-box">
+                        <div class="member-container">
+                          <img src="././img/cap/nitish_choudhary.jpg" alt="Nitish Choudhary" class="imgcylenew">
+
+                        </div>
+                      </div>
+                      <div class="caption">
+                        <strong class="staffName">Nitish Choudhary</strong>
+                        <a href="#" class="linkedin-btn">
+                                Linked <i class="fa fa-linkedin-square" aria-hidden="true"></i>
+                          </a>
+                      </div>
+                    </div>
+
+
+
+                  </div>
+
+                  <div class="thumbnail text-center" style="border: 0px;">
+                    <div class="thumb-inner">
+                      <div class="liner-box">
+                        <div class="member-container">
+                          <img src="././img/cap/mahek_dalmia.jpg" alt="Mahek Dalmia" class="imgcylenew">
+
+                        </div>
+                      </div>
+                      <div class="caption">
+                        <strong class="staffName">Mahek Dalmia</strong>
+                        <a href="https://www.linkedin.com/in/mahek-dalmia-826476150/" class="linkedin-btn">
+                                Linked <i class="fa fa-linkedin-square" aria-hidden="true"></i>
+                          </a>
+                      </div>
+                    </div>
+
+
+
+                  </div>
+
+                  <div class="thumbnail text-center" style="border: 0px;">
+                    <div class="thumb-inner">
+                      <div class="liner-box">
+                        <div class="member-container">
+                          <img src="././img/cap/rahul_gupta.jpg" alt="Rahul Gupta" class="imgcylenew">
+
+                        </div>
+                      </div>
+                      <div class="caption">
+                        <strong class="staffName">Rahul Gupta</strong>
+                        <a href="https://www.linkedin.com/in/rahul-gupta-26535a12b/" class="linkedin-btn">
+                                Linked <i class="fa fa-linkedin-square" aria-hidden="true"></i>
+                          </a>
+                      </div>
+                    </div>
+
+
+
+                  </div>
+                </div>
+
+
+                <div class="row flex-row center">
+                  <div class="thumbnail text-center" style="border: 0px;">
+                    <div class="thumb-inner">
+                      <div class="liner-box">
+                        <div class="member-container">
+                          <img src="././img/cap/abhishek_singh.jpg" alt="Abhishek Singh" class="imgcylenew">
+
+                        </div>
+                      </div>
+                      <div class="caption">
+                        <strong class="staffName">Abhishek Singh</strong>
+                        <a href="https://www.linkedin.com/in/abhishek-singh-78300312b/" class="linkedin-btn">
+                                Linked <i class="fa fa-linkedin-square" aria-hidden="true"></i>
+                          </a>
+                      </div>
+                    </div>
+
+
+
+                  </div>
+
+                  <div class="thumbnail text-center" style="border: 0px;">
+                    <div class="thumb-inner">
+                      <div class="liner-box">
+                        <div class="member-container">
+                          <img src="././img/cap/ashish_yadav.jpg" alt="Ashish Yadav" class="imgcylenew">
+
+                        </div>
+                      </div>
+                      <div class="caption">
+                        <strong class="staffName">Ashish Yadav</strong>
+                        <a href="https://www.linkedin.com/in/ashishyadav1994/" class="linkedin-btn">
+                                Linked <i class="fa fa-linkedin-square" aria-hidden="true"></i>
+                          </a>
+                      </div>
+                    </div>
+
+
+
+                  </div>
+
+                  <div class="thumbnail text-center" style="border: 0px;">
+                    <div class="thumb-inner">
+                      <div class="liner-box">
+                        <div class="member-container">
+                          <img src="././img/cap/hardik_jain.jpg" alt="Hardik Jain" class="imgcylenew">
+
+                        </div>
+                      </div>
+                      <div class="caption">
+                        <strong class="staffName">Hardik Jain</strong>
+                        <a href="https://www.linkedin.com/in/hardik-jain-6b444213a/" class="linkedin-btn">
+                                Linked <i class="fa fa-linkedin-square" aria-hidden="true"></i>
+                          </a>
+                      </div>
+                    </div>
+
+
+
+                  </div>
+                </div>
+              </div>
+            </div>
+
+          </div>
+
+
+
+
+
+
+
+
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="footer">
+    <div class="container">
+      <div class="footer-row row">
+        <div class="features-column w-col col-md-4 w-col-small-small-stack">
+          <div class="footer-tittle">Legitquest</div>
+          <p class="footer-text">Legit Quest is a Legal-Tech venture run by a versatile team of tech-savvy attorneys, engineers and designers who aim to make the practice of law simpler for its end users. We have eminent jurist Mr. Ram Jethmalani as our patron...</p>
+          <div class="footer-tittle middle">Infomation</div>
+          <div class="row">
+            <div class="col-md-6 ">
+              <ul class="footer-list w-list-unstyled">
+                <li class="list-footer"><a href="#" class="link footer-link">FAQ</a></li>
+                <li class="list-footer"><a href="#" class="link footer-link">Careers</a></li>
+                <li class="list-footer"><a href="#" class="link footer-link">Admin Login</a></li>
+              </ul>
+            </div>
+            <div class="col-md-6">
+              <ul class="footer-list w-list-unstyled">
+                <li class="list-footer"><a href="#" class="link footer-link">Terms & Conditions</a></li>
+                <li class="list-footer"><a href="#" class="link footer-link">We value your Privacy</a></li>
+                <li class="list-footer"><a href="#" class="link footer-link">Our Team</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="features-column col-md-4">
+          <div class="footer-tittle">Popular Posts</div>
+          <div class="w-dyn-list">
+            <div class="w-dyn-items">
+              <div class="w-dyn-item">
+                <a href="#" class="blog-wrapper w-inline-block w-clearfix">
+                  <div class="icon-clock date"></div>
+                  <p class="footer-text">July 13, 2017</p>
+                  <p class="footer-text white">Best Aprooach</p>
+                  <p class="footer-text">Pellentesque egestas, neque sit amet convallis pulvinar, usce vulputate eleifend sapien [...]</p>
+                </a>
+              </div>
+              <div class="w-dyn-item">
+                <a href="#" class="blog-wrapper w-inline-block w-clearfix">
+                  <div class="icon-clock date"></div>
+                  <p class="footer-text">July 13, 2017</p>
+                  <p class="footer-text white">Designers and Web</p>
+                  <p class="footer-text">Pellentesque egestas, neque sit amet convallis pulvinar, usce vulputate eleifend sapien [...]</p>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="features-column col-md-4">
+          <div class="footer-tittle">Contact</div>
+          <div class="address_box">
+            <div>
+              <span><img src="./img/singapore.png" alt="Singapore Flag" class="flag"></span>
+              <p class="contact-info footer-text"> 519 Balestier Road, #02-03 Le Shantier, Singapore 329852</p>
+            </div>
+            <div>
+              <span><img src="./img/india.png" alt="India Flag" class="flag"></span>
+              <p class="contact-info footer-text"> A-149,Block A, LGF, Defence Colony, New Delhi, India - 110024.</p>
+            </div>
+            <div>
+              <span><i class="icon-envelope-open"></i></span>
+              <a class="contact-info" href="mailto:info@legitquest.com">info@legitquest.com</a>
+            </div>
+
+          </div>
+
+          <div class="footer-tittle middle">Social Contact</div>
+          <div class="row">
+            <div class="col-md-12 ">
+              <ul class="footer-list social-list">
+                <li class="list-footer">
+                  <a href="#" class="link footer-link">
+                          <i class="icon-social-facebook"></i>
+                        </a>
+                </li>
+                <li class="list-footer">
+                  <a href="#" class="link footer-link">
+                          <i class="icon-social-twitter"></i>
+                        </a>
+                </li>
+                <li class="list-footer">
+                  <a href="#" class="link footer-link">
+                          <i class="icon-social-linkedin"></i>
+                        </a>
+                </li>
+                <li class="list-footer">
+                  <a href="#" class="link footer-link">
+                          <i class="icon-social-google"></i>
+                        </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+    <div class="subtitle-footer">
+      <div class="container text-center">
+        <div class="row">
+          <div class="col-md-12">
+            <p class="bottom-footer-text">© 2018. LQ Global services private limited. All rights reserved</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+
+  </div>
+
+  <script src="bower_components/jquery/dist/jquery.min.js"></script>
+  <script src="bower_components/popper.js/dist/umd/popper.min.js"></script>
+  <script src="./js/bootstrap.min.js"></script>
+  <script src="bower_components/moment/moment.js"></script>
+  <script src="./bower_components/select2/dist/js/bootstrap-select.min.js"></script>
+  <script src="bower_components/ckeditor/ckeditor.js"></script>
+  <script src="bower_components/bootstrap-daterangepicker/daterangepicker.js"></script>
+  <script src="bower_components/perfect-scrollbar/js/perfect-scrollbar.jquery.min.js"></script>
+  <script src="bower_components/tether/dist/js/tether.min.js"></script>
+  <script src="bower_components/bootstrap/js/dist/util.js"></script>
+  <script src="bower_components/bootstrap/js/dist/button.js"></script>
+  <script src="bower_components/bootstrap/js/dist/collapse.js"></script>
+  <script src="./js/jquery.sticky.js"></script>
+  <script src="bower_components/bootstrap/js/dist/modal.js"></script>
+  <script src="./js/owl.carousel.min.js"></script>
+  <script src="js/maince5a.js?version=4.4.1"></script>
+
+  <script type="text/javascript">
+    var navbar = $(".navbar-home"),
+      body = $("html,body");
+
+    function track(e) {
+      navbar.toggleClass("fix", $(window).scrollTop() > 0);
+    }
+    $(window).on("scroll", track);
+    $(window).on("load", track);
+  </script>
+
+
+  <script type="text/javascript">
+    $('.selectpicker').selectpicker({
+      size: 10,
+      style: 'btn-primary',
+    });
+  </script>
+
+
+  <script type="text/javascript">
+    $('.featured-slider').owlCarousel({
+      center: true,
+      loop: true,
+      margin: 10,
+      nav: false,
+      dots: false,
+      autoplay: true,
+      responsive: {
+        0: {
+          items: 2
+        },
+        600: {
+          items: 4
+        },
+        1000: {
+          items: 8
+        }
+      }
+    })
+  </script>
+
+  <script type="text/javascript">
+    $('.owl-carousel').owlCarousel({
+      center: true,
+      loop: true,
+      margin: 10,
+      nav: true,
+      responsive: {
+        0: {
+          items: 1
+        },
+        600: {
+          items: 1
+        },
+        1000: {
+          items: 1
+        }
+      }
+    })
+  </script>
+
+  <script>
+    $(document).ready(function() {
+      $(".tab-topnav").sticky({
+        topSpacing: 74
+      });
+    });
+  </script>
+</body>
+
+</html>
