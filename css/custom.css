@@ -1392,6 +1392,34 @@ font-weight: 700;
 .gallery-section {
     margin-top: -167px;
 }
+.no-padder{
+  padding: 0px
+}
+.plan-image {
+    font-size: 35px;
+}
+.plan-switch{
+  position: absolute;
+    bottom: -10px;
+    left: 50%;
+    margin-left: -65.5px;
+}
+.plan-switch .btn{
+  box-shadow: none !important;
+  border-color: #047bf8;
+  color: #047bf8
+}
+.plan-switch .btn.active {
+    background-color: #047bf8 !important;
+    color: white !important;
+    border-color: #077af8 !important;
+}
+.monthly-price,.yearly-price{
+  display: none;
+}
+.price-value.show{
+  display: block;
+}
 @media (max-width: 992px){
   .detail-container {
     margin-right: 0px;
