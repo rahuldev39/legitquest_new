@@ -138,9 +138,9 @@
                                 </div>
                                 <div class="plan-body">
                                     <div class="plan-price-w">
-                                      <div class="btn-group plan-switch">
-                                         <button id="monthly" class="btn btn-light btn-sm active ">Monthly</button>
-                                         <button id="yearly" class="btn btn-light btn-sm ">Annually</button>
+                                      <div class="plan-switch">
+                                         <a href="#" id="monthly" class="plan-link active ">Monthly</a>
+                                         <a href="#" id="yearly" class="plan-link ">Annually</a>
                                        </div>
                                         <div class="price-value monthly-price show"><span>₹</span> 4550</div>
                                         <div class="price-value yearly-price"><span>₹</span> 39000</div>
@@ -438,8 +438,8 @@
     });
   </script>
   <script type="text/javascript">
-    $(".plan-switch > .btn").click(function() {
-      $(".plan-switch > .btn").removeClass("active");
+    $(".plan-switch > .plan-link").click(function(e) {
+      $(".plan-switch > .plan-link").removeClass("active");
       $(this).addClass("active");
 
       if ($('#yearly').hasClass('active')) {
@@ -450,11 +450,11 @@
         $('.monthly-price').addClass('show');
       }
 
-    });
-
-    $(function() {
+      e.preventDefault();
 
     });
+
+    
   </script>
 </body>
 

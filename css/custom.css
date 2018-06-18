@@ -1401,18 +1401,21 @@ font-weight: 700;
 .plan-switch {
     position: absolute;
     top: 24px;
-    left: 50%;
-    margin-left: -65.5px;
+    width: 100%;
 }
-.plan-switch .btn{
-  box-shadow: none !important;
-  border-color: #047bf8;
-  color: #047bf8
+.plan-switch .plan-link {
+    font-size: 12px;
+    color: #b1b1b1;
+    display: inline-block;
+    padding: 0px 4px;
+    text-decoration: none;
 }
-.plan-switch .btn.active {
-    background-color: #047bf8 !important;
-    color: white !important;
-    border-color: #077af8 !important;
+.plan-switch .plan-link:first-child {
+    border-right: 1px solid #dad4d4 !important;
+    padding-right: 8px;
+}
+.plan-switch .plan-link.active {
+    color: #077af8;
 }
 .monthly-price,.yearly-price{
   display: none;
