@@ -1398,9 +1398,9 @@ font-weight: 700;
 .plan-image {
     font-size: 35px;
 }
-.plan-switch{
-  position: absolute;
-    bottom: -10px;
+.plan-switch {
+    position: absolute;
+    top: 24px;
     left: 50%;
     margin-left: -65.5px;
 }

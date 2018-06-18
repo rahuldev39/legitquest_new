@@ -1,0 +1,461 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Legitquest : Order System</title>
+  <meta charset="utf-8">
+  <meta content="ie=edge" http-equiv="x-ua-compatible">
+  <meta content="template language" name="keywords">
+  <meta content="width=device-width, initial-scale=1" name="viewport">
+  <link href="favicon.png" rel="shortcut icon">
+
+  <link href="bower_components/bootstrap-daterangepicker/daterangepicker.css" rel="stylesheet">
+  <link href="bower_components/perfect-scrollbar/css/perfect-scrollbar.min.css" rel="stylesheet">
+  <link href="bower_components/slick-carousel/slick/slick.css" rel="stylesheet">
+  <link href="./icon_fonts_assets/simple-line-icons/css/simple-line-icons.css" rel="stylesheet">
+  <link href="./icon_fonts_assets/font-awesome/css/font-awesome.min.css" rel="stylesheet">
+  <link href="bower_components/select2/dist/css/bootstrap-select.min.css" rel="stylesheet">
+  <link href="./css/bootstrap.min.css" rel="stylesheet">
+  <link href="./css/owl.theme.css" rel="stylesheet">
+  <link href="./css/owl.carousel.css" rel="stylesheet">
+  <link href="css/maince5a.css" rel="stylesheet">
+  <link href="./css/custom.css" rel="stylesheet">
+  <script src="./js/webfont.js"></script>
+  <script type="text/javascript">
+    WebFont.load({
+      google: {
+        families: ["PT Serif:400,400italic,700,700italic", "Open Sans:300,300italic,400,400italic,600,600italic,700,700italic,800,800italic", "Poppins:300,regular,500,600,700"]
+      }
+    });
+  </script>
+</head>
+
+<body class="menu-position-side menu-side-left full-screen">
+  <div class="preload">
+    <div class="sk-fading-circle">
+      <div class="sk-circle1 sk-circle"></div>
+      <div class="sk-circle2 sk-circle"></div>
+      <div class="sk-circle3 sk-circle"></div>
+      <div class="sk-circle4 sk-circle"></div>
+      <div class="sk-circle5 sk-circle"></div>
+      <div class="sk-circle6 sk-circle"></div>
+      <div class="sk-circle7 sk-circle"></div>
+      <div class="sk-circle8 sk-circle"></div>
+      <div class="sk-circle9 sk-circle"></div>
+      <div class="sk-circle10 sk-circle"></div>
+      <div class="sk-circle11 sk-circle"></div>
+      <div class="sk-circle12 sk-circle"></div>
+    </div>
+  </div>
+
+  <div class="all-wrapper white-bg-all">
+    <header id="pageTop" class="header">
+      <nav class="navbar navbar-expand-md fixed-top">
+        <div class="container">
+          <div class="nav-mobile d-flex  justify-content-between align-items-center">
+            <a class="navbar-brand" href="#">
+              <img src="./img/lq-logo.png" alt="">
+            </a>
+            <button class="navbar-toggler btn btn-primary" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="icon-menu"></span>
+            </button>
+          </div>
+
+
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav ml-auto">
+              <li class="nav-item active">
+                <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+              </li>
+
+
+
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                  About
+                </a>
+                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <a class="dropdown-item" href="#">About Legitquest</a>
+                  <a class="dropdown-item" href="#">Our Team</a>
+                  <a class="dropdown-item" href="#">Gallery</a>
+                </div>
+              </li>
+
+              <li class="nav-item">
+                <a class="nav-link" href="#">Features</a>
+              </li>
+
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                  Career
+                </a>
+                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <a class="dropdown-item" href="#">Job Openings</a>
+                  <a class="dropdown-item" href="#">Cap</a>
+                </div>
+              </li>
+
+              <li class="nav-item">
+                <a class="nav-link" href="#">Contact</a>
+              </li>
+              <li class="nav-item btn-link">
+                <button class="mr-2 mb-2 btn btn-primary" type="button"> Sign In</button>
+              </li>
+            </ul>
+
+
+
+          </div>
+
+
+        </div>
+
+      </nav>
+    </header>
+
+
+    <div class="page-header overlay dark">
+      <div class="container">
+        <div class="banner-text text-center">
+          <h1 class="intro-lead-in">Feature based Pricing</h1>
+          <span class="intro-heading">We have created a unique pricing model which is based on features you use. This means access to data is free, for life, yes for life. You only pay for the features you want to subscribe to.</span>
+          <div class="section-divider-line light"></div>
+        </div>
+
+      </div>
+    </div>
+
+
+    <div class="section no-padder ">
+      <div class="pricing-plans row no-gutters">
+                            <div class="pricing-plan col-sm-3 with-hover-effect">
+                                <div class="plan-head">
+                                    <div class="plan-image">
+                                      <i class="icon-user"></i>
+                                    </div>
+                                    <div class="plan-name">Individuals</div>
+
+                                </div>
+                                <div class="plan-body">
+                                    <div class="plan-price-w">
+                                      <div class="btn-group plan-switch">
+                                         <button id="monthly" class="btn btn-light btn-sm active ">Monthly</button>
+                                         <button id="yearly" class="btn btn-light btn-sm ">Annually</button>
+                                       </div>
+                                        <div class="price-value monthly-price show"><span>₹</span> 4550</div>
+                                        <div class="price-value yearly-price"><span>₹</span> 39000</div>
+                                        <div class="price-label">For Price</div>
+                                    </div>
+                                    <div class="plan-btn-w"><a class="btn btn-primary btn-rounded" href="#">Subscribe</a></div>
+                                </div>
+                                <div class="plan-description">
+                                    <h6>Quick Description</h6>
+                                    <p>Pane, problem that millions lay up as and but antiquity in that officers. Was at survey is be behavioural how behavioural writing arrange trial.</p>
+                                    <h6>Features</h6>
+                                    <ul>
+                                        <li>User Profiles</li>
+                                        <li>File Manager</li>
+                                        <li>Pricing Plans</li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="pricing-plan col-sm-3 with-hover-effect">
+                                <div class="plan-head">
+                                    <div class="plan-image">
+                                      <i class="icon-people"></i>
+                                    </div>
+                                    <div class="plan-name">Law Firms</div>
+                                </div>
+                                <div class="plan-body">
+                                    <div class="plan-price-w">
+                                        <div class="price-value">Call</div>
+                                        <div class="price-label">For Price</div>
+                                    </div>
+                                    <div class="plan-btn-w"><a class="btn btn-primary btn-rounded" href="#">Contact Us</a></div>
+                                </div>
+                                <div class="plan-description">
+                                    <h6>Quick Description</h6>
+                                    <p>Pane, problem that millions lay up as and but antiquity in that officers. Was at survey is be behavioural how behavioural writing arrange trial.</p>
+                                    <h6>Features</h6>
+                                    <ul>
+                                        <li>User Profiles</li>
+                                        <li>File Manager</li>
+                                        <li>Pricing Plans</li>
+                                        <li>Booking Functions</li>
+                                        <li>Neural Networks</li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="pricing-plan col-sm-3 with-hover-effect">
+                                <div class="plan-head">
+                                    <div class="plan-image">
+                                      <i class="icon-tag"></i>
+                                    </div>
+                                    <div class="plan-name">Free 7 day Trial</div>
+                                </div>
+                                <div class="plan-body">
+                                    <div class="plan-price-w">
+                                        <div class="price-value">Free</div>
+                                        <div class="price-label">For Price</div>
+                                    </div>
+                                    <div class="plan-btn-w"><a class="btn btn-primary btn-rounded" href="#">Subscribe</a></div>
+                                </div>
+                                <div class="plan-description">
+                                    <h6>Quick Description</h6>
+                                    <p>Pane, problem that millions lay up as and but antiquity in that officers. Was at survey is be behavioural how behavioural writing arrange trial.</p>
+                                    <h6>Features</h6>
+                                    <ul>
+                                        <li>User Profiles</li>
+                                        <li>File Manager</li>
+                                        <li>Pricing Plans</li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="pricing-plan col-sm-3 with-hover-effect">
+                                <div class="plan-head">
+                                    <div class="plan-image">
+                                      <i class="icon-magnifier"></i>
+                                    </div>
+                                    <div class="plan-name">Free Case search</div>
+                                </div>
+                                <div class="plan-body">
+                                    <div class="plan-price-w">
+                                        <div class="price-value">Free</div>
+                                        <div class="price-label">For Price</div>
+                                    </div>
+                                    <div class="plan-btn-w"><a class="btn btn-primary btn-rounded" href="#">Sign Up</a></div>
+                                </div>
+                                <div class="plan-description">
+                                    <h6>Quick Description</h6>
+                                    <p>Pane, problem that millions lay up as and but antiquity in that officers. Was at survey is be behavioural how behavioural writing arrange trial.</p>
+                                    <h6>Features</h6>
+                                    <ul>
+                                        <li>User Profiles</li>
+                                        <li>File Manager</li>
+                                        <li>Pricing Plans</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+    </div>
+  </div>
+
+  <div class="footer">
+    <div class="container">
+      <div class="footer-row row">
+        <div class="features-column w-col col-md-4 w-col-small-small-stack">
+          <div class="footer-tittle">Legitquest</div>
+          <p class="footer-text">Legit Quest is a Legal-Tech venture run by a versatile team of tech-savvy attorneys, engineers and designers who aim to make the practice of law simpler for its end users. We have eminent jurist Mr. Ram Jethmalani as our patron...</p>
+          <div class="footer-tittle middle">Infomation</div>
+          <div class="row">
+            <div class="col-md-6 ">
+              <ul class="footer-list w-list-unstyled">
+                <li class="list-footer"><a href="#" class="link footer-link">FAQ</a></li>
+                <li class="list-footer"><a href="#" class="link footer-link">Careers</a></li>
+                <li class="list-footer"><a href="#" class="link footer-link">Admin Login</a></li>
+              </ul>
+            </div>
+            <div class="col-md-6">
+              <ul class="footer-list w-list-unstyled">
+                <li class="list-footer"><a href="#" class="link footer-link">Terms & Conditions</a></li>
+                <li class="list-footer"><a href="#" class="link footer-link">We value your Privacy</a></li>
+                <li class="list-footer"><a href="#" class="link footer-link">Our Team</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="features-column col-md-4">
+          <div class="footer-tittle">Popular Posts</div>
+          <div class="w-dyn-list">
+            <div class="w-dyn-items">
+              <div class="w-dyn-item">
+                <a href="#" class="blog-wrapper w-inline-block w-clearfix">
+                  <div class="icon-clock date"></div>
+                  <p class="footer-text">July 13, 2017</p>
+                  <p class="footer-text white">Best Aprooach</p>
+                  <p class="footer-text">Pellentesque egestas, neque sit amet convallis pulvinar, usce vulputate eleifend sapien [...]</p>
+                </a>
+              </div>
+              <div class="w-dyn-item">
+                <a href="#" class="blog-wrapper w-inline-block w-clearfix">
+                  <div class="icon-clock date"></div>
+                  <p class="footer-text">July 13, 2017</p>
+                  <p class="footer-text white">Designers and Web</p>
+                  <p class="footer-text">Pellentesque egestas, neque sit amet convallis pulvinar, usce vulputate eleifend sapien [...]</p>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="features-column col-md-4">
+          <div class="footer-tittle">Contact</div>
+          <div class="address_box">
+            <div>
+              <span><img src="./img/singapore.png" alt="Singapore Flag" class="flag"></span>
+              <p class="contact-info footer-text"> 519 Balestier Road, #02-03 Le Shantier, Singapore 329852</p>
+            </div>
+            <div>
+              <span><img src="./img/india.png" alt="India Flag" class="flag"></span>
+              <p class="contact-info footer-text"> A-149,Block A, LGF, Defence Colony, New Delhi, India - 110024.</p>
+            </div>
+            <div>
+              <span><i class="icon-envelope-open"></i></span>
+              <a class="contact-info" href="mailto:info@legitquest.com">info@legitquest.com</a>
+            </div>
+
+          </div>
+
+          <div class="footer-tittle middle">Social Contact</div>
+          <div class="row">
+            <div class="col-md-12 ">
+              <ul class="footer-list social-list">
+                <li class="list-footer">
+                  <a href="#" class="link footer-link">
+                          <i class="icon-social-facebook"></i>
+                        </a>
+                </li>
+                <li class="list-footer">
+                  <a href="#" class="link footer-link">
+                          <i class="icon-social-twitter"></i>
+                        </a>
+                </li>
+                <li class="list-footer">
+                  <a href="#" class="link footer-link">
+                          <i class="icon-social-linkedin"></i>
+                        </a>
+                </li>
+                <li class="list-footer">
+                  <a href="#" class="link footer-link">
+                          <i class="icon-social-google"></i>
+                        </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+    <div class="subtitle-footer">
+      <div class="container text-center">
+        <div class="row">
+          <div class="col-md-12">
+            <p class="bottom-footer-text">© 2018. LQ Global services private limited. All rights reserved</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+
+  </div>
+
+  <script src="bower_components/jquery/dist/jquery.min.js"></script>
+  <script src="bower_components/popper.js/dist/umd/popper.min.js"></script>
+  <script src="./js/bootstrap.min.js"></script>
+  <script src="bower_components/moment/moment.js"></script>
+  <script src="./bower_components/select2/dist/js/bootstrap-select.min.js"></script>
+  <script src="bower_components/ckeditor/ckeditor.js"></script>
+  <script src="bower_components/bootstrap-daterangepicker/daterangepicker.js"></script>
+  <script src="bower_components/perfect-scrollbar/js/perfect-scrollbar.jquery.min.js"></script>
+  <script src="bower_components/tether/dist/js/tether.min.js"></script>
+  <script src="bower_components/bootstrap/js/dist/util.js"></script>
+  <script src="bower_components/bootstrap/js/dist/button.js"></script>
+  <script src="bower_components/bootstrap/js/dist/collapse.js"></script>
+  <script src="./js/jquery.sticky.js"></script>
+  <script src="bower_components/bootstrap/js/dist/modal.js"></script>
+  <script src="./js/owl.carousel.min.js"></script>
+  <script src="js/maince5a.js?version=4.4.1"></script>
+
+  <script type="text/javascript">
+    var navbar = $(".navbar-home"),
+      body = $("html,body");
+
+    function track(e) {
+      navbar.toggleClass("fix", $(window).scrollTop() > 0);
+    }
+    $(window).on("scroll", track);
+    $(window).on("load", track);
+  </script>
+
+
+  <script type="text/javascript">
+    $('.selectpicker').selectpicker({
+      size: 10,
+      style: 'btn-primary',
+    });
+  </script>
+
+
+  <script type="text/javascript">
+    $('.featured-slider').owlCarousel({
+      center: true,
+      loop: true,
+      margin: 10,
+      nav: false,
+      dots: false,
+      autoplay: true,
+      responsive: {
+        0: {
+          items: 2
+        },
+        600: {
+          items: 4
+        },
+        1000: {
+          items: 8
+        }
+      }
+    })
+  </script>
+
+  <script type="text/javascript">
+    $('.owl-carousel').owlCarousel({
+      center: true,
+      loop: true,
+      margin: 10,
+      nav: true,
+      responsive: {
+        0: {
+          items: 1
+        },
+        600: {
+          items: 1
+        },
+        1000: {
+          items: 1
+        }
+      }
+    })
+  </script>
+
+  <script>
+    $(document).ready(function() {
+      $(".tab-topnav").sticky({
+        topSpacing: 74
+      });
+    });
+  </script>
+  <script type="text/javascript">
+    $(".plan-switch > .btn").click(function() {
+      $(".plan-switch > .btn").removeClass("active");
+      $(this).addClass("active");
+
+      if ($('#yearly').hasClass('active')) {
+        $('.yearly-price').addClass('show');
+        $('.monthly-price').removeClass('show');
+      } else {
+        $('.yearly-price').removeClass('show');
+        $('.monthly-price').addClass('show');
+      }
+
+    });
+
+    $(function() {
+
+    });
+  </script>
+</body>
+
+</html>
