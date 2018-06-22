@@ -130,7 +130,7 @@
           <div class="position-relative flex-fill">
 
             <div id="citation-box" class="search-field flex-fill show">
-              <input class="form-control" placeholder="Journal">
+              <input id="example1" class="form-control journal-input" placeholder="Journal">
               <input id="example2" class="form-control" placeholder="Year - Volume - Page" >
             </div>
             <div id="judge-box" class="search-field flex-fill">
@@ -138,12 +138,12 @@
               <input class="form-control" placeholder="First name">
             </div>
             <div id="party-box" class="search-field flex-fill">
-              <input class="form-control" placeholder="Party 1">
-              <input class="form-control" placeholder="Party 2">
+              <input class="form-control" placeholder="petitioner/respondent">
+              <input class="form-control" placeholder="petitioner/respondent">
             </div>
             <div id="act-box" class="search-field flex-fill">
               <input class="form-control" placeholder="Act Name">
-              <input class="form-control" placeholder="Section">
+              <input class="form-control section-input" placeholder="Section">
             </div>
             <div id="act-search-box" class="search-field flex-fill">
               <input class="form-control" placeholder="Act Name">
@@ -155,63 +155,59 @@
 
           <div class="collapse" id="select-dropdown">
             <div class="card card-body">
-                <div class="row">
-                    <div class="col-md-8">
-                      <div class="select-block">
-                        <strong>Case Law <small>(text in bracket is the help text)</small></strong>
-                        <ul>
-                          <li>
-                            <div class="select-radio">
-                              <label>
-                                <input type="radio" name="search-radio" value="citation-box" checked>
-                                <span>Citation</span>
-                              </label>
-                            </div>
-                          </li>
-                          <li>
-                            <div class="select-radio">
-                              <label>
-                                <input type="radio" name="search-radio" value="judge-box">
-                                <span>Judge Name</span>
-                              </label>
-                            </div>
-                          </li>
-                          <li>
-                            <div class="select-radio">
-                              <label>
-                                <input type="radio" name="search-radio" value="party-box">
-                                <span>Party Name</span>
-                              </label>
-                            </div>
-                          </li>
-                          <li>
-                            <div class="select-radio">
-                              <label>
-                                <input type="radio" name="search-radio" value="act-box">
-                                <span>Act Name</span>
-                              </label>
-                            </div>
-                          </li>
-                        </ul>
-                      </div>
+              <div class="select-block">
+                <strong>Case Law <small>(text in bracket is the help text)</small></strong>
+                <ul>
+                  <li>
+                    <div class="select-radio">
+                      <label>
+                        <input type="radio" name="search-radio" value="citation-box" checked>
+                        <span>Citation</span>
+                      </label>
                     </div>
-                    <div class="col-md-4">
-                      <div class="select-block">
-                        <strong>Acts Search</strong>
-                        <ul>
-                          <li>
-                            <div class="select-radio">
-                              <label>
-                                <input type="radio" name="search-radio" value="act-search-box">
-                                <span>Act Name</span>
-                              </label>
-                            </div>
-                          </li>
-                        </ul>
-                      </div>
+                  </li>
+                  <li>
+                    <div class="select-radio">
+                      <label>
+                        <input type="radio" name="search-radio" value="judge-box">
+                        <span>Judge Name</span>
+                      </label>
                     </div>
-                </div>
+                  </li>
+                  <li>
+                    <div class="select-radio">
+                      <label>
+                        <input type="radio" name="search-radio" value="party-box">
+                        <span>Party Name</span>
+                      </label>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="select-radio">
+                      <label>
+                        <input type="radio" name="search-radio" value="act-box">
+                        <span>Act Name</span>
+                      </label>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+
+              <div class="select-block">
+                <strong>Acts Search</strong>
+                <ul>
+                  <li>
+                    <div class="select-radio">
+                      <label>
+                        <input type="radio" name="search-radio" value="act-search-box">
+                        <span>Act Name</span>
+                      </label>
+                    </div>
+                  </li>
+                </ul>
+              </div>
             </div>
+            
           </div>
 
         </div>
@@ -680,17 +676,37 @@
 
              var test = $(this).val();
              var sText = $(this).next().text();
-             console.log(sText)
+
              $(".search-field").removeClass('show');
              $("#"+test).addClass('show');
              $(".select-btn").text(sText)
         } );
+
+        $(".select-radio span").on("click", function() {
+          $("#select-dropdown").removeClass("show");
+
+        });
+
+        $(document).on('click',function(e) {
+            e.stopPropagation();
+            var container = $("#select-dropdown");
+
+            //check if the clicked area is dropDown or not
+            if (container.has(e.target).length === 0) {
+                $('#select-dropdown').removeClass('show');
+            }
+
+        });
+
+
       });
+
+
   </script>
   <script type="text/javascript">
   $(document).ready(function(){
-$("#example1").inputmask("99-9999999");
-$("#example2").inputmask("9999-999-999");
+$("#example1").inputmask("******");
+$("#example2").inputmask("******-9999-999-999");
 });
   </script>
 </body>

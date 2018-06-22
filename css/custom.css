@@ -287,24 +287,26 @@ nav.navbar {
     padding: 30px 0px;
     position: relative;
     padding-bottom: 0px;
+    margin-bottom: 30px;
 }
 #select-dropdown {
     position: absolute;
     top: 104%;
     width: 100%;
+    max-width: 335px;
 }
+
 #select-dropdown .card-body {
     padding: .5rem;
 }
-.select-block{
-
+.select-block {
+    margin: 5px 0px;
 }
 .select-block ul {
     padding: 0px;
     list-style-type: none;
     margin: 0px;
-    display: flex;
-    flex-wrap: wrap;
+
 }
 .select-block ul li {
     margin: 4px 0px;
@@ -319,25 +321,34 @@ nav.navbar {
     margin-bottom: 0px;
 }
 .select-block ul li input[type="radio"] + span {
-    padding: 5px 15px;
-    background-color: #f1f1f7;
+    padding: 4px 6px;
+    background-color: transparent;
     display: block;
-    border-radius: 4px;
-    font-size: .7rem;
+    border-radius: 0px;
+    font-size: .8rem;
     color: #2d2d2d;
     cursor: pointer;
 }
 .select-block ul li input[type="radio"]:checked + span {
+    color: #ffffff;
     background-color: #077af8;
-    color: white;
+    border-radius: 4px;
+}
+.search-field .section-input{
+  flex-basis: 300px
+}
+.search-field .journal-input{
+  flex-basis: 200px;
 }
 .select-block strong {
     font-size: 13px;
     display: block;
     margin-bottom: 8px;
-    border-bottom: 1px solid #f1f1f1;
+    border-bottom: 1px solid #f3ece8;
     padding-bottom: 7px;
+    color: #077af8;
 }
+
 .search-field {
     position: relative;
     display: none;
@@ -348,8 +359,8 @@ nav.navbar {
 .search-btn {
     position: absolute;
     right: 11px;
-    top: 6px;
-    font-size: 22px;
+    top: 7px;
+    font-size: 19px;
     opacity: .9;
 }
 .search-btn a{
@@ -366,6 +377,9 @@ nav.navbar {
     border-color: #077af8;
     padding-right: 35px;
     margin-right: 2px;
+    webkit-box-shadow: 0px 2px 4px rgba(126,142,177,0.12);
+    box-shadow: 0px 2px 4px rgba(64, 70, 82, 0.13);
+    border-width: 1px;
 }
 .search-select{
   margin-right: 3px

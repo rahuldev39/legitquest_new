@@ -66,6 +66,25 @@ $(function () {
   $('[data-toggle="popover"]').popover();
 
 
+	// #18. search Application
+
+
+
+  // Sidebar Sections foldable trigger
+  $('.search-sidebar-section-toggle').on('click', function () {
+    $(this).closest('.search-sidebar-section').find('.search-sidebar-section-contents').slideToggle(100);
+    return false;
+  });
+
+  // Sidebar Sub Sections foldable trigger
+  $('.search-sidebar-section-sub-section-toggler').on('click', function () {
+    $(this).closest('.search-sidebar-section-sub-section').find('.search-sidebar-section-sub-section-content').slideToggle(100);
+    return false;
+  });
+
+
+
+
 	// #20. SUPPORT SERVICE
 
 	  $('.close-university-info').on('click', function () {

@@ -20911,9 +20911,9 @@ a.with-avatar span {
   padding: 40px;
 }
 .search-app-w .search-sidebar .search-sidebar-section {
-  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
-  padding: 20px;
-  margin-bottom: 20px
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+    padding: 15px 15px;
+    margin-bottom: 0px;
 }
 
 .search-app-w .search-sidebar .search-sidebar-section:first-child {
@@ -20923,8 +20923,8 @@ a.with-avatar span {
 .search-app-w .search-sidebar .search-sidebar-section-header {
     color: #047bf8;
     position: relative;
-    font-size: 18px;
-    /* margin-bottom: 27px; */
+    font-size: 15px;
+    margin-bottom: 0px;
 }
 
 .search-app-w .search-sidebar .search-sidebar-section-header span {
@@ -20948,7 +20948,7 @@ a.with-avatar span {
 }
 
 .search-app-w .search-sidebar .search-sidebar-section-contents {
-  margin-top: 20px
+    margin-top: 15px;
 }
 
 .search-app-w .search-sidebar .search-sidebar-section-toggle {
@@ -20978,8 +20978,8 @@ a.with-avatar span {
 }
 
 .search-app-w .search-sidebar ul.filter-list li {
-  position: relative;
-  margin-bottom: 10px
+    position: relative;
+    margin-bottom: 3px;
 }
 
 
