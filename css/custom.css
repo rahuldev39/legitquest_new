@@ -285,9 +285,65 @@ nav.navbar {
     max-width: 800px;
     margin: 0 auto;
     padding: 30px 0px;
+    position: relative;
+    padding-bottom: 0px;
 }
-.search-field{
-  position: relative;
+#select-dropdown {
+    position: absolute;
+    top: 104%;
+    width: 100%;
+}
+#select-dropdown .card-body {
+    padding: .5rem;
+}
+.select-block{
+
+}
+.select-block ul {
+    padding: 0px;
+    list-style-type: none;
+    margin: 0px;
+    display: flex;
+    flex-wrap: wrap;
+}
+.select-block ul li {
+    margin: 4px 0px;
+    margin-right: 11px;
+}
+.select-block ul li  input[type="radio"]
+{
+  display: none;
+}
+.select-block ul li label {
+    display: block;
+    margin-bottom: 0px;
+}
+.select-block ul li input[type="radio"] + span {
+    padding: 5px 15px;
+    background-color: #f1f1f7;
+    display: block;
+    border-radius: 4px;
+    font-size: .7rem;
+    color: #2d2d2d;
+    cursor: pointer;
+}
+.select-block ul li input[type="radio"]:checked + span {
+    background-color: #077af8;
+    color: white;
+}
+.select-block strong {
+    font-size: 13px;
+    display: block;
+    margin-bottom: 8px;
+    border-bottom: 1px solid #f1f1f1;
+    padding-bottom: 7px;
+}
+.search-field {
+    position: relative;
+    display: none;
+}
+.search-field.show{
+  display: flex;
 }
 .search-btn {
     position: absolute;
@@ -309,21 +365,35 @@ nav.navbar {
     font-size: 18px;
     border-color: #077af8;
     padding-right: 35px;
+    margin-right: 2px;
 }
 .search-select{
   margin-right: 3px
 }
-.search-select .btn {
+.select-btn {
     height: 41px;
     min-width: 131px;
-}
-.btn-link {
+    text-align: left;
     display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.select-btn::after {
+    display: inline-block;
+    width: 0;
+    height: 0;
+    margin-left: .255em;
+    vertical-align: .255em;
+    content: "";
+    border-top: .3em solid;
+    border-right: .3em solid transparent;
+    border-bottom: 0;
+    border-left: .3em solid transparent;
+}
+.nav-btn-link{
+  display: flex;
     align-items: center;
     justify-content: center;
-}
-.btn-link .btn{
-  margin: 0px !important
 }
 .section {
     padding: 100px 0px;
@@ -366,6 +436,8 @@ nav.navbar {
     padding-bottom: 0px;
     background-color: #ebebeb;
     background-image: none;
+    display: flex;
+    flex-wrap: wrap;
 }
 .left-div.left {
     background-image: url(./../img/58c70b2f0709dda74260a94e_04-2.jpg);
@@ -451,8 +523,8 @@ nav.navbar {
     padding-right: 40px;
     text-align: left;
 }
-.section.gray {
-    background-color: #f1f1f7;
+.gray {
+    background-color: #f2f4f8;
 }
 .features-row {
     margin-top: 51px;
@@ -837,6 +909,7 @@ margin-left: 5px
     background-color: white;
     transition: all ease-in-out 300ms;
     -webkit-transition: all ease-in-out 300ms;
+    min-height: calc(100vh - 74px);
 }
 .close-sidebar .right-sidebar-wrap{
   right: -35%;
@@ -1137,7 +1210,7 @@ span.bullet {
 .advocate-detail div{
   margin-bottom: 5px
 }
-.main-detail-content p, .main-detail-content {
+.main-detail-content p, .main-detail-content, .university_info_content {
     font-size: 16px;
     line-height: 2em;
     text-align: justify;
@@ -1164,10 +1237,10 @@ blockquote {
 }
 .aside-toggle {
     position: absolute;
-    right: 100%;
+    left: -34px;
     top: 0;
     margin-right: 1px;
-    z-index: 10000
+    z-index: 10000;
 }
 .aside-toggle a {
     padding: 16px 7px;
@@ -1178,6 +1251,7 @@ blockquote {
     background-color: #f9f9f9;
     border-left: 1px solid #eae9e9;
     height: 50px;
+    border-bottom: 1px solid #eae9e9;
 }
 .sidebar-inner {
 
@@ -1248,6 +1322,15 @@ font-weight: 700;
     padding-top: 132px;
     padding-bottom: 30px
 }
+.page-header.contact {
+    background-color: #184fc2;
+    background-image: -webkit-linear-gradient(270deg, rgba(24, 79, 194, .97), rgba(24, 79, 194, .97)), url(./../img/contact-bg.png);
+    background-image: linear-gradient(180deg, rgba(24, 79, 194, .97), rgba(24, 79, 194, .97)), url(./../img/contact-bg.png);
+    background-position: 0px 0px, 50% 50%;
+    background-size: auto, cover;
+    text-align: center;
+    padding-bottom: 115px;
+}
 .page-header.about{
   height: 540px;
   padding-bottom: 0px
@@ -1288,10 +1371,6 @@ font-weight: 700;
 }
 .section-thin{
   padding: 50px 0px;
-  background-color: #f2f4f8;
-}
-.gray{
-  background-color: #f2f4f8;
 }
 
 .member-container > img {
@@ -1423,7 +1502,292 @@ font-weight: 700;
 .price-value.show{
   display: block;
 }
+.accordion .card{
+  margin-bottom: 10px
+}
+.accordion .card .card-header{
+  padding: 0px
+}
+.accordion .card .card-header .btn{
+  width: 100%;
+    text-align: left;
+    padding: 1.2rem 1.25rem;
+    font-weight: 500;
+    font-size: .95rem;
+    text-decoration: none;
+    color: #585858;
+}
+.accordion .card .card-header .btn small {
+    display: block;
+    margin-top: 8px;
+    color: #969696;
+}
+.job-detail{
+  margin-bottom: 30px
+}
+.apply-btn {
+    padding-top: 15px;
+    border-top: 1px solid #f2f2f2;
+}
+.arrow-list {
+    padding: 0;
+    list-style-type: none;
+    font-size: 15px;
+}
+.arrow-list li {
+    position: relative;
+    padding-left: 24px;
+    margin-bottom: 6px;
+    padding-bottom: 10px;
+}
+.arrow-list li::before {
+    content: "\f101";
+    display: inline-block;
+    font: normal normal normal 14px/1 FontAwesome;
+    font-size: inherit;
+    text-rendering: auto;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    color: #4a7ba5;
+    margin-right: 8px;
+    position: absolute;
+    left: 0;
+    top: 7px;
+}
+.map-section {
+    margin-top: -86px;
+    padding-bottom: 80px;
+    background-color: #f1f1f7;
+}
+.map-section .left-div.left {
+    background-image: none;
+    padding: 0px;
+    height: auto;
+}
+.map-section .left-div.right {
+    background-color: white;
+    padding: 45px 45px;
+    border: 1px solid #f1f1f7;
+    height: auto;
+}
+#map {
+  width: 100%;
+  height: 100%;
+}
+.map-section .column-tittle {
+    margin-bottom: -8px;
+    font-size: 21px;
+}
+.address_box {
+    border-bottom: 1px solid #eaeaea;
+    padding-bottom: 20px;
+    margin-bottom: 30px;
+}
+.university_pts {
+    padding: 4px 0px;
+    border-bottom: 1px solid #e8e8e8;
+    border-top: 1px solid #e8e8e8;
+}
+.university_pager {
+    text-align: center;
+    padding: 21px 0px;
+    font-size: 16px;
+}
+.university_pager a {
+    margin: 0px 14px;
+    font-size: 21px;
+}
+.article-header{
+  padding: 20px 25px;
+    font-size: .99rem;
+    background-color: #ffffff;
+    border-radius: 6px;
+    margin-bottom: 16px;
+    border: 1px solid #edeef3;
+}
+.article-header h4{
+      font-size: 1.2rem;
+}
+.article-header span{
+  font-size: 13px
+}
+.rank-block {
+    display: flex;
+    align-items: center;
+    background-color: #eff1f7;
+    border: 1px solid #0879f8;
+    padding-right: 6px;
+}
+.rank-block h4 {
+    margin: 0;
+    padding: 8px;
+    background-color: #077af8;
+    margin-right: 7px;
+    border-right: 1px solid #e4e4e4;
+    font-size: 14px;
+    color: white;
+}
+.rank-label {
+    font-size: 25px;
+    color: #0879f8;
+    padding: 0px 2px;
+    margin-bottom: 0;
+    margin-top: 0;
+}
+.rank-label-container .avatar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 13px;
+}
+.rating-stars {
+    display: flex;
+    align-items: center;
+    /* justify-content: center; */
+    margin-top: 17px;
+}
+.rating-stars ul {
+    list-style-type: none;
+    padding: 0;
+    text-align: left;
+    -moz-user-select: none;
+    -webkit-user-select: none;
+    margin-bottom: 0px
+}
+.rating-stars ul > li.star {
+    display: inline-block;
+}
+.rating-stars ul > li.star > i.fa {
+    font-size: 16px;
+    color: #ccc;
+}
+.rating-stars ul > li.star.selected > i.fa {
+    color: #EDB867
+}
+.university-info .block{
+  padding-bottom: 20px;
+    margin-bottom: 30px;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+}
+.university-info .block h4 {
+    font-size: 1.1rem;
+}
+.university-info .block ul {
+    padding: 0px;
+    list-style-type: none;
+}
+.university-info .block ul li{
+  margin-bottom: 12px
+
+}
+button.close .close-label {
+    margin-right: 10px;
+    color: #C26C6C;
+    letter-spacing: 1px;
+    font-weight: 500;
+    font-size: .81rem;
+}
+button.close .os-icon {
+    font-size: 12px;
+    color: #111 !important;
+}
+button.close {
+    position: absolute;
+    top: 15px;
+    right: 20px;
+    float: none;
+    z-index: 999;
+
+    opacity: 1;
+    text-shadow: none;
+}
+.university_slide_block_info {
+    width: 100%;
+    padding: 14px 0;
+    display: flex;
+    flex-wrap: wrap;
+}
+.university_rank_total {
+    vertical-align: middle;
+    padding-left: 15px;
+    flex: 1;
+}
+.university_seat {
+    height: 80px;
+    width: 80px;
+    border-radius: 100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+}
+.university_seat.bgorange {
+    background-color: #fd8c17;
+}
+.university_seat span {
+    color: #fff;
+    font-size: 13px;
+    text-align: center;
+    text-transform: uppercase;
+    display: block;
+}
+.university_rank_slid {
+    text-align: center;
+    min-height: 48px;
+    margin-top: 15px;
+}
+.university_rank_slid span {
+    display: block;
+    font-size: 13px;
+    line-height: 24px;
+}
+.rank-text {
+    font-weight: 600;
+    font-size: 14px!important;
+}
+.university_seat.bgblue {
+    background-color: #077af8;
+}
+.university-name {
+    color: #7d7f82;
+}
+.university_slide_block_title span {
+    font-size: 20px;
+    line-height: 48px;
+    height: 48px;
+    border-radius: 50px;
+    text-transform: uppercase;
+    font-weight: 600;
+    display: block;
+    text-align: center;
+}
+
 @media (max-width: 992px){
+  .support-index .university-content-w .university-info {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    width: 250px;
+    -webkit-box-shadow: 0px 20px 60px rgba(4, 123, 248, 0.3);
+    box-shadow: 0px 20px 60px rgba(4, 123, 248, 0.3);
+    background-color: #fff;
+    background-image: none;
+    display: none
+  }
+  .support-index .university-content-w .university-content .show-university-info {
+    display: block
+  }
+  .support-index .university-content-w.force-show-folded-info .university-info {
+    display: block
+  }
+  .support-index .university-content-w .university-content {
+    padding-right: 20px;
+    padding-left: 20px
+  }
+  .support-index .university-content-w.folded-info .university-content {
+    padding: 10px 20px
+  }
   .detail-container {
     margin-right: 0px;
 }
@@ -1471,6 +1835,10 @@ font-weight: 700;
 }
 @media (max-width: 767px)
 {
+  .university_rank_total {
+    flex: auto;
+    width: 50%;
+}
   body.page-internal.has-nav-search  {
       padding-top: 116px !important;
   }

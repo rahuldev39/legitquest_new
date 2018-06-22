@@ -7,7 +7,7 @@
 .checkbox {
     padding-left: 20px;
 }
-.checkbox label {
+.checkbox label, .radio label {
     display: inline-block;
     vertical-align: middle;
     position: relative;
@@ -15,18 +15,19 @@
     line-height: 18px;
 }
 
-.checkbox input[type="checkbox"], .checkbox input[type="radio"] {
+.checkbox input[type="checkbox"], .radio input[type="radio"] {
     opacity: 0;
     z-index: 1;
     cursor: pointer;
     display: none;
 }
-.checkbox-default input[type="checkbox"]:checked + span::before, .checkbox-default input[type="radio"]:checked + span::before {
+.checkbox-default input[type="checkbox"]:checked + span::before,
+.radio-default input[type="radio"]:checked + span::before {
     background-color: #ffffff;
     border-color: #077af8;
 }
 .checkbox-default input[type="checkbox"]:checked + span::after,
-.checkbox-default input[type="radio"]:checked + span::after {
+.radio-default input[type="radio"]:checked + span::after {
     color: #077af8;
 }
 
@@ -65,4 +66,52 @@
 .checkbox input[type="checkbox"]:checked + span::after {
     font-family: "FontAwesome";
     content: "\f00c";
+}
+.radio span::before {
+    content: "";
+    display: inline-block;
+    position: absolute;
+    width: 17px;
+    height: 17px;
+    left: 0;
+    top: 1px;
+    margin-left: -20px;
+    border: 1px solid #cccccc;
+    border-radius: 50%;
+    background-color: #fff;
+    -webkit-transition: border 0.15s ease-in-out;
+    -o-transition: border 0.15s ease-in-out;
+    transition: border 0.15s ease-in-out;
+}
+.radio span::after {
+    display: inline-block;
+    position: absolute;
+    content: " ";
+    width: 11px;
+    height: 11px;
+    left: 3px;
+    top: 4px;
+    margin-left: -20px;
+    border-radius: 50%;
+    background-color: #555555;
+    -webkit-transform: scale(0, 0);
+    -ms-transform: scale(0, 0);
+    -o-transform: scale(0, 0);
+    transform: scale(0, 0);
+    -webkit-transition: -webkit-transform 0.1s cubic-bezier(0.8, -0.33, 0.2, 1.33);
+    -moz-transition: -moz-transform 0.1s cubic-bezier(0.8, -0.33, 0.2, 1.33);
+    -o-transition: -o-transform 0.1s cubic-bezier(0.8, -0.33, 0.2, 1.33);
+    transition: transform 0.1s cubic-bezier(0.8, -0.33, 0.2, 1.33);
+}
+.radio input[type="radio"]:checked + span::after {
+    -webkit-transform: scale(1, 1);
+    -ms-transform: scale(1, 1);
+    -o-transform: scale(1, 1);
+    transform: scale(1, 1);
+}
+.radio-default input[type="radio"]:checked + span::after {
+    background-color: #077af8;
+}
+.radio {
+    padding-left: 20px;
 }

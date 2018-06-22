@@ -66,7 +66,27 @@ $(function () {
   $('[data-toggle="popover"]').popover();
 
 
+	// #20. SUPPORT SERVICE
 
+	  $('.close-university-info').on('click', function () {
+	    $('.university-content-w').addClass('folded-info').removeClass('force-show-folded-info');
+	    return false;
+	  });
+
+	  $('.show-university-info').on('click', function () {
+	    $('.university-content-w').removeClass('folded-info').addClass('force-show-folded-info');
+	    return false;
+	  });
+
+	  $('.support-index .universitys .university').on('click', function () {
+	    $('.support-index').addClass('show-university-content');
+	    return false;
+	  });
+
+	  $('.support-index .back-to-index').on('click', function () {
+	    $('.support-index').removeClass('show-university-content');
+	    return false;
+	  });
 
 
   // #22. Colors Toggler

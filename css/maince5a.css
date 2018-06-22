@@ -4928,19 +4928,19 @@ button.close {
 }
 
 .modal-header {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: start;
-  -ms-flex-align: start;
-  align-items: flex-start;
-  -webkit-box-pack: justify;
-  -ms-flex-pack: justify;
-  justify-content: space-between;
-  padding: 1rem;
-  border-bottom: 0px solid #e9ecef;
-  border-top-left-radius: 6px;
-  border-top-right-radius: 6px
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: start;
+    -ms-flex-align: start;
+    align-items: flex-start;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    padding: .9rem;
+    border-bottom: 1px solid #f1f1f1;
+    border-top-left-radius: 6px;
+    border-top-right-radius: 6px;
 }
 
 .modal-header .close {
@@ -4949,10 +4949,10 @@ button.close {
 }
 
 .modal-title {
-  margin-bottom: 0;
-  line-height: 1.5
+    margin-bottom: 0;
+    line-height: 1.2;
+    font-size: 1.2rem;
 }
-
 .modal-body {
   position: relative;
   -webkit-box-flex: 1;
@@ -10344,7 +10344,8 @@ legend:before {
 }
 
 .modal-header.faded {
-  background-color: rgba(0, 0, 0, 0.05)
+    background-color: #0d73e4;
+    color: white;
 }
 
 .modal-header.smaller {
@@ -10357,8 +10358,9 @@ legend:before {
 }
 
 .modal-header span {
-  color: #999;
-  margin-right: 5px
+    color: #ffffffb5;
+    margin-right: 5px;
+    margin-left: 6px;
 }
 
 .modal-header .avatar {
@@ -23353,7 +23355,7 @@ body.rentals-wrapper .select2-container--default .select2-results__option[aria-s
   align-items: flex-start
 }
 
-.support-index .support-tickets {
+.support-index .universitys {
   -webkit-box-flex: 0;
   -ms-flex: 0 0 470px;
   flex: 0 0 470px;
@@ -23362,38 +23364,38 @@ body.rentals-wrapper .select2-container--default .select2-results__option[aria-s
   border-right: 1px solid rgba(0, 0, 0, 0.05)
 }
 
-.support-index .load-more-tickets {
+.support-index .load-more-universitys {
   text-align: center;
   margin-top: 8px
 }
 
-.support-index .load-more-tickets a {
+.support-index .load-more-universitys a {
   display: inline-block;
   padding: 10px;
   text-decoration: none
 }
 
-.support-index .load-more-tickets a i {
+.support-index .load-more-universitys a i {
   font-size: 20px;
   display: inline-block;
   vertical-align: middle
 }
 
-.support-index .load-more-tickets a span {
+.support-index .load-more-universitys a span {
   display: inline-block;
   vertical-align: middle;
   border-bottom: 1px solid #047bf8
 }
 
-.support-index .load-more-tickets a i+span {
+.support-index .load-more-universitys a i+span {
   margin-left: 10px
 }
 
-.support-index .support-tickets-header h5 {
+.support-index .universitys-header h5 {
   margin-bottom: 0px
 }
 
-.support-index .support-tickets-header .tickets-control {
+.support-index .universitys-header .universitys-control {
   border-bottom: 1px solid rgba(0, 0, 0, 0.08);
   padding-bottom: 10px;
   margin-bottom: 10px;
@@ -23405,12 +23407,12 @@ body.rentals-wrapper .select2-container--default .select2-results__option[aria-s
   align-items: center
 }
 
-.support-index .support-tickets-header .tickets-control .element-search {
+.support-index .universitys-header .universitys-control .element-search {
   position: relative;
   margin-left: auto
 }
 
-.support-index .support-tickets-header .tickets-control .element-search:before {
+.support-index .universitys-header .universitys-control .element-search:before {
   font-family: 'osfont' !important;
   speak: none;
   font-style: normal;
@@ -23430,7 +23432,7 @@ body.rentals-wrapper .select2-container--default .select2-results__option[aria-s
   color: rgba(0, 0, 0, 0.2)
 }
 
-.support-index .support-tickets-header .tickets-control .element-search input {
+.support-index .universitys-header .universitys-control .element-search input {
   border: none;
   -webkit-box-shadow: none;
   box-shadow: none;
@@ -23443,23 +23445,23 @@ body.rentals-wrapper .select2-container--default .select2-results__option[aria-s
   outline: none
 }
 
-.support-index .support-tickets-header .tickets-control .element-search input::-webkit-input-placeholder {
+.support-index .universitys-header .universitys-control .element-search input::-webkit-input-placeholder {
   color: rgba(0, 0, 0, 0.3)
 }
 
-.support-index .support-tickets-header .tickets-control .element-search input:-ms-input-placeholder {
+.support-index .universitys-header .universitys-control .element-search input:-ms-input-placeholder {
   color: rgba(0, 0, 0, 0.3)
 }
 
-.support-index .support-tickets-header .tickets-control .element-search input::-ms-input-placeholder {
+.support-index .universitys-header .universitys-control .element-search input::-ms-input-placeholder {
   color: rgba(0, 0, 0, 0.3)
 }
 
-.support-index .support-tickets-header .tickets-control .element-search input::placeholder {
+.support-index .universitys-header .universitys-control .element-search input::placeholder {
   color: rgba(0, 0, 0, 0.3)
 }
 
-.support-index .support-tickets-header .tickets-filter {
+.support-index .universitys-header .universitys-filter {
   margin-bottom: 15px;
   border-bottom: 1px solid rgba(0, 0, 0, 0.08);
   padding-bottom: 10px;
@@ -23468,33 +23470,33 @@ body.rentals-wrapper .select2-container--default .select2-results__option[aria-s
   display: flex
 }
 
-.support-index .support-tickets-header .tickets-filter .form-check {
+.support-index .universitys-header .universitys-filter .form-check {
   margin-bottom: 0px
 }
 
-.support-index .support-tickets-header .tickets-filter .form-check label.form-check-label {
+.support-index .universitys-header .universitys-filter .form-check label.form-check-label {
   vertical-align: middle;
   padding-left: 5px
 }
 
-.support-index .support-tickets-header .tickets-filter .form-group {
+.support-index .universitys-header .universitys-filter .form-group {
   white-space: nowrap;
   margin-bottom: 0px
 }
 
-.support-index .support-tickets-header .tickets-filter .form-group label {
+.support-index .universitys-header .universitys-filter .form-group label {
   margin-bottom: 0px
 }
 
-.support-index .support-tickets-header .tickets-filter select.form-control-sm, .support-index .support-tickets-header .tickets-filter .input-group-sm>select.form-control, .support-index .support-tickets-header .tickets-filter .input-group-sm>.input-group-prepend>select.input-group-text, .support-index .support-tickets-header .tickets-filter .input-group-sm>.input-group-append>select.input-group-text, .support-index .support-tickets-header .tickets-filter .input-group-sm>.input-group-prepend>select.btn, .support-index .support-tickets-header .tickets-filter .all-wrapper .input-group-sm>.input-group-prepend>select.fc-button, .all-wrapper .support-index .support-tickets-header .tickets-filter .input-group-sm>.input-group-prepend>select.fc-button, .support-index .support-tickets-header .tickets-filter .input-group-sm>.input-group-append>select.btn, .support-index .support-tickets-header .tickets-filter .all-wrapper .input-group-sm>.input-group-append>select.fc-button, .all-wrapper .support-index .support-tickets-header .tickets-filter .input-group-sm>.input-group-append>select.fc-button {
+.support-index .universitys-header .universitys-filter select.form-control-sm, .support-index .universitys-header .universitys-filter .input-group-sm>select.form-control, .support-index .universitys-header .universitys-filter .input-group-sm>.input-group-prepend>select.input-group-text, .support-index .universitys-header .universitys-filter .input-group-sm>.input-group-append>select.input-group-text, .support-index .universitys-header .universitys-filter .input-group-sm>.input-group-prepend>select.btn, .support-index .universitys-header .universitys-filter .all-wrapper .input-group-sm>.input-group-prepend>select.fc-button, .all-wrapper .support-index .universitys-header .universitys-filter .input-group-sm>.input-group-prepend>select.fc-button, .support-index .universitys-header .universitys-filter .input-group-sm>.input-group-append>select.btn, .support-index .universitys-header .universitys-filter .all-wrapper .input-group-sm>.input-group-append>select.fc-button, .all-wrapper .support-index .universitys-header .universitys-filter .input-group-sm>.input-group-append>select.fc-button {
   background-color: #fff
 }
 
-.support-index .support-tickets-header .tickets-filter .stick-right {
+.support-index .universitys-header .universitys-filter .stick-right {
   margin-left: auto
 }
 
-.support-index .support-ticket {
+.support-index .university {
   background-color: #fff;
   border-radius: 6px;
   -webkit-box-shadow: 0px 2px 4px rgba(126, 142, 177, 0.12);
@@ -23504,11 +23506,11 @@ body.rentals-wrapper .select2-container--default .select2-results__option[aria-s
   position: relative
 }
 
-.support-index .support-ticket+.support-ticket {
+.support-index .university+.university {
   margin-top: 20px
 }
 
-.support-index .support-ticket:hover, .support-index .support-ticket.active {
+.support-index .university:hover, .support-index .university.active {
   -webkit-box-shadow: 0px 5px 12px rgba(126, 142, 177, 0.2), 0px 0px 0px 2px #047bf8;
   box-shadow: 0px 5px 12px rgba(126, 142, 177, 0.2), 0px 0px 0px 2px #047bf8;
   -webkit-transform: translateY(-3px);
@@ -23516,11 +23518,11 @@ body.rentals-wrapper .select2-container--default .select2-results__option[aria-s
   cursor: pointer
 }
 
-.support-index .support-ticket:hover .ticket-title, .support-index .support-ticket.active .ticket-title {
+.support-index .university:hover .university-title, .support-index .university.active .university-title {
   color: #047bf8
 }
 
-.support-index .support-ticket.active {
+.support-index .university.active {
   -webkit-transform: none;
   transform: none
 }
@@ -23579,11 +23581,11 @@ body.rentals-wrapper .select2-container--default .select2-results__option[aria-s
   border-radius: 50px
 }
 
-.support-index .st-body .ticket-content .ticket-title {
+.support-index .st-body .university-content .university-title {
   margin-bottom: 5px
 }
 
-.support-index .st-body .ticket-content .ticket-description {
+.support-index .st-body .university-content .university-description {
   color: #636c72;
   font-size: .81rem;
   font-weight: 300;
@@ -23625,7 +23627,7 @@ body.rentals-wrapper .select2-container--default .select2-results__option[aria-s
   margin-left: 20px
 }
 
-.support-index .support-ticket-content-w {
+.support-index .university-content-w {
   -webkit-box-flex: 1;
   -ms-flex: 1;
   flex: 1;
@@ -23640,7 +23642,7 @@ body.rentals-wrapper .select2-container--default .select2-results__option[aria-s
   position: relative
 }
 
-.support-index .support-ticket-content-w .support-ticket-content {
+.support-index .university-content-w .university-content {
   -webkit-box-flex: 1;
   -ms-flex: 1;
   flex: 1;
@@ -23648,16 +23650,15 @@ body.rentals-wrapper .select2-container--default .select2-results__option[aria-s
   padding-right: 60px;
   position: relative
 }
-
-.support-index .support-ticket-content-w .support-ticket-content .support-ticket-content-header {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  margin-bottom: 30px;
-  padding: 10px 0px
+.support-index .university-content-w .university-content .university-content-header {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    margin-bottom: 0px;
+    padding: 2px 0px;
 }
 
-.support-index .support-ticket-content-w .support-ticket-content .support-ticket-content-header .show-ticket-info {
+.support-index .university-content-w .university-content .university-content-header .show-university-info {
   margin-left: auto;
   -webkit-box-flex: 0;
   -ms-flex: 0 0 auto;
@@ -23666,17 +23667,17 @@ body.rentals-wrapper .select2-container--default .select2-results__option[aria-s
   padding-top: 5px
 }
 
-.support-index .support-ticket-content-w .support-ticket-content .support-ticket-content-header h3, .support-index .support-ticket-content-w .support-ticket-content .support-ticket-content-header h4 {
+.support-index .university-content-w .university-content .university-content-header h3, .support-index .university-content-w .university-content .university-content-header h4 {
   margin-bottom: 0px
 }
 
-.support-index .support-ticket-content-w .support-ticket-content .show-ticket-info, .support-index .support-ticket-content-w .support-ticket-content .back-to-index {
+.support-index .university-content-w .university-content .show-university-info, .support-index .university-content-w .university-content .back-to-index {
   display: none;
   text-decoration: none;
   white-space: nowrap
 }
 
-.support-index .support-ticket-content-w .support-ticket-content .show-ticket-info span, .support-index .support-ticket-content-w .support-ticket-content .back-to-index span {
+.support-index .university-content-w .university-content .show-university-info span, .support-index .university-content-w .university-content .back-to-index span {
   display: inline-block;
   vertical-align: middle;
   text-transform: uppercase;
@@ -23686,57 +23687,57 @@ body.rentals-wrapper .select2-container--default .select2-results__option[aria-s
   font-weight: 500
 }
 
-.support-index .support-ticket-content-w .support-ticket-content .show-ticket-info i, .support-index .support-ticket-content-w .support-ticket-content .back-to-index i {
+.support-index .university-content-w .university-content .show-university-info i, .support-index .university-content-w .university-content .back-to-index i {
   display: inline-block;
   vertical-align: middle;
   font-size: 19px
 }
 
-.support-index .support-ticket-content-w .support-ticket-content .show-ticket-info span+i, .support-index .support-ticket-content-w .support-ticket-content .back-to-index span+i {
+.support-index .university-content-w .university-content .show-university-info span+i, .support-index .university-content-w .university-content .back-to-index span+i {
   margin-left: 7px
 }
 
-.support-index .support-ticket-content-w .support-ticket-content .show-ticket-info:hover span, .support-index .support-ticket-content-w .support-ticket-content .back-to-index:hover span {
+.support-index .university-content-w .university-content .show-university-info:hover span, .support-index .university-content-w .university-content .back-to-index:hover span {
   color: #047bf8
 }
 
-.support-index .support-ticket-content-w .support-ticket-content .back-to-index i {
+.support-index .university-content-w .university-content .back-to-index i {
   font-size: 12px
 }
 
-.support-index .support-ticket-content-w .support-ticket-content .back-to-index span {
+.support-index .university-content-w .university-content .back-to-index span {
   margin-left: 10px
 }
 
-.support-index .support-ticket-content-w .ticket-header {
+.support-index .university-content-w .university-header {
   margin-bottom: 40px
 }
 
-.support-index .support-ticket-content-w .ticket-reply {
+.support-index .university-content-w .university-reply {
   border-bottom: 1px solid rgba(0, 0, 0, 0.05);
   padding-bottom: 20px
 }
 
-.support-index .support-ticket-content-w .ticket-reply:last-child {
+.support-index .university-content-w .university-reply:last-child {
   border-bottom: none
 }
 
-.support-index .support-ticket-content-w .ticket-reply+.ticket-reply {
+.support-index .university-content-w .university-reply+.university-reply {
   margin-top: 20px
 }
 
-.support-index .support-ticket-content-w .ticket-reply .ticket-reply-info {
+.support-index .university-content-w .university-reply .university-reply-info {
   padding: 10px 0px;
   margin-bottom: 5px;
   position: relative
 }
 
-.support-index .support-ticket-content-w .ticket-reply .ticket-reply-info .badge {
+.support-index .university-content-w .university-reply .university-reply-info .badge {
   vertical-align: middle;
   display: inline-block
 }
 
-.support-index .support-ticket-content-w .ticket-reply .ticket-reply-info .actions {
+.support-index .university-content-w .university-reply .university-reply-info .actions {
   position: absolute;
   top: 50%;
   right: 0px;
@@ -23748,14 +23749,14 @@ body.rentals-wrapper .select2-container--default .select2-results__option[aria-s
   cursor: pointer
 }
 
-.support-index .support-ticket-content-w .ticket-reply .ticket-reply-info .actions>i {
+.support-index .university-content-w .university-reply .university-reply-info .actions>i {
   vertical-align: middle;
   display: inline-block;
   -webkit-transition: all 0.3s ease;
   transition: all 0.3s ease
 }
 
-.support-index .support-ticket-content-w .ticket-reply .ticket-reply-info .actions .actions-list {
+.support-index .university-content-w .university-reply .university-reply-info .actions .actions-list {
   position: absolute;
   background-color: #0f2338;
   color: #fff;
@@ -23772,7 +23773,7 @@ body.rentals-wrapper .select2-container--default .select2-results__option[aria-s
   right: 0px
 }
 
-.support-index .support-ticket-content-w .ticket-reply .ticket-reply-info .actions .actions-list a {
+.support-index .university-content-w .university-reply .university-reply-info .actions .actions-list a {
   display: block;
   padding: 5px 10px;
   border-bottom: 1px solid rgba(255, 255, 255, 0.05);
@@ -23781,11 +23782,11 @@ body.rentals-wrapper .select2-container--default .select2-results__option[aria-s
   white-space: nowrap
 }
 
-.support-index .support-ticket-content-w .ticket-reply .ticket-reply-info .actions .actions-list a:last-child {
+.support-index .university-content-w .university-reply .university-reply-info .actions .actions-list a:last-child {
   border-bottom: none
 }
 
-.support-index .support-ticket-content-w .ticket-reply .ticket-reply-info .actions .actions-list a i {
+.support-index .university-content-w .university-reply .university-reply-info .actions .actions-list a i {
   font-size: 17px;
   display: inline-block;
   vertical-align: middle;
@@ -23793,7 +23794,7 @@ body.rentals-wrapper .select2-container--default .select2-results__option[aria-s
   color: #fff
 }
 
-.support-index .support-ticket-content-w .ticket-reply .ticket-reply-info .actions .actions-list a span {
+.support-index .university-content-w .university-reply .university-reply-info .actions .actions-list a span {
   color: rgba(255, 255, 255, 0.7);
   display: inline-block;
   vertical-align: middle;
@@ -23801,59 +23802,59 @@ body.rentals-wrapper .select2-container--default .select2-results__option[aria-s
   transition: all 0.2s ease
 }
 
-.support-index .support-ticket-content-w .ticket-reply .ticket-reply-info .actions .actions-list a:hover span {
+.support-index .university-content-w .university-reply .university-reply-info .actions .actions-list a:hover span {
   color: #fff;
   -webkit-transform: translateX(-3px);
   transform: translateX(-3px)
 }
 
-.support-index .support-ticket-content-w .ticket-reply .ticket-reply-info .actions .actions-list a.danger i {
+.support-index .university-content-w .university-reply .university-reply-info .actions .actions-list a.danger i {
   color: #ff5b5b
 }
 
-.support-index .support-ticket-content-w .ticket-reply .ticket-reply-info .actions .actions-list a.danger span {
+.support-index .university-content-w .university-reply .university-reply-info .actions .actions-list a.danger span {
   color: #ff5b5b
 }
 
-.support-index .support-ticket-content-w .ticket-reply .ticket-reply-info .actions:hover>i {
+.support-index .university-content-w .university-reply .university-reply-info .actions:hover>i {
   -webkit-transform: rotate(180deg);
   transform: rotate(180deg)
 }
 
-.support-index .support-ticket-content-w .ticket-reply .ticket-reply-info .actions:hover .actions-list {
+.support-index .university-content-w .university-reply .university-reply-info .actions:hover .actions-list {
   visibility: visible;
   -webkit-transform: translateY(0px);
   transform: translateY(0px);
   opacity: 1
 }
 
-.support-index .support-ticket-content-w .ticket-reply .ticket-reply-info .author {
+.support-index .university-content-w .university-reply .university-reply-info .author {
   display: inline-block;
   vertical-align: middle
 }
 
-.support-index .support-ticket-content-w .ticket-reply .ticket-reply-info .info-data {
+.support-index .university-content-w .university-reply .university-reply-info .info-data {
   display: inline-block;
   vertical-align: middle
 }
 
-.support-index .support-ticket-content-w .ticket-reply .ticket-reply-info .info-data .label {
+.support-index .university-content-w .university-reply .university-reply-info .info-data .label {
   color: #636c72;
   display: inline-block;
   vertical-align: middle;
   margin-right: 5px
 }
 
-.support-index .support-ticket-content-w .ticket-reply .ticket-reply-info .info-data .value {
+.support-index .university-content-w .university-reply .university-reply-info .info-data .value {
   display: inline-block;
   vertical-align: middle
 }
 
-.support-index .support-ticket-content-w .ticket-reply .ticket-reply-info>span+span {
+.support-index .university-content-w .university-reply .university-reply-info>span+span {
   margin-left: 10px
 }
 
-.support-index .support-ticket-content-w .ticket-reply .ticket-reply-content {
+.support-index .university-content-w .university-reply .university-reply-content {
   padding: 20px 25px;
   margin-left: 15px;
   font-size: .99rem;
@@ -23861,16 +23862,16 @@ body.rentals-wrapper .select2-container--default .select2-results__option[aria-s
   border-radius: 6px
 }
 
-.support-index .support-ticket-content-w .ticket-reply .ticket-reply-content p:last-child {
+.support-index .university-content-w .university-reply .university-reply-content p:last-child {
   margin-bottom: 0px
 }
 
-.support-index .support-ticket-content-w .ticket-reply .ticket-attachments {
+.support-index .university-content-w .university-reply .university-attachments {
   text-align: right;
   margin-top: 10px
 }
 
-.support-index .support-ticket-content-w .ticket-reply .ticket-attachments .attachment {
+.support-index .university-content-w .university-reply .university-attachments .attachment {
   display: inline-block;
   padding: 5px 10px;
   padding-right: 20px;
@@ -23881,43 +23882,43 @@ body.rentals-wrapper .select2-container--default .select2-results__option[aria-s
   font-size: .72rem
 }
 
-.support-index .support-ticket-content-w .ticket-reply .ticket-attachments .attachment i {
+.support-index .university-content-w .university-reply .university-attachments .attachment i {
   display: inline-block;
   vertical-align: middle;
   font-size: 18px;
   margin-right: 10px
 }
 
-.support-index .support-ticket-content-w .ticket-reply .ticket-attachments .attachment span {
+.support-index .university-content-w .university-reply .university-attachments .attachment span {
   display: inline-block;
   vertical-align: middle
 }
 
-.support-index .support-ticket-content-w .ticket-reply .ticket-attachments .attachment+.attachment {
+.support-index .university-content-w .university-reply .university-attachments .attachment+.attachment {
   margin-left: 20px
 }
 
-.support-index .support-ticket-content-w .ticket-reply.highlight .ticket-reply-info {
+.support-index .university-content-w .university-reply.highlight .university-reply-info {
   border-bottom: none
 }
 
-.support-index .support-ticket-content-w .ticket-reply.highlight .ticket-reply-content {
+.support-index .university-content-w .university-reply.highlight .university-reply-content {
   background-color: #fff6d7
 }
 
-.support-index .support-ticket-content-w .support-ticket-info {
-  background-color: #F6F7F9;
-  background: -webkit-gradient(linear, left top, left bottom, from(#eff1f7), to(#f9fafc));
-  background: linear-gradient(to bottom, #eff1f7, #f9fafc);
-  padding: 30px 20px;
-  border-radius: 6px;
-  -webkit-box-flex: 0;
-  -ms-flex: 0 0 250px;
-  flex: 0 0 250px;
-  position: relative
+.support-index .university-content-w .university-info {
+    background-color: #F6F7F9;
+    background: -webkit-gradient(linear, left top, left bottom, from(#eff1f7), to(#f9fafc));
+    background: linear-gradient(to bottom, #eff1f7, #f9fafc);
+    padding: 30px 20px;
+    border-radius: 6px;
+    -webkit-box-flex: 0;
+    -ms-flex: 0 0 250px;
+    flex: 0 0 320px;
+    position: relative;
 }
 
-.support-index .support-ticket-content-w .support-ticket-info .close-ticket-info {
+.support-index .university-content-w .university-info .close-university-info {
   position: absolute;
   top: 10px;
   right: 15px;
@@ -23926,51 +23927,51 @@ body.rentals-wrapper .select2-container--default .select2-results__option[aria-s
   font-size: 20px
 }
 
-.support-index .support-ticket-content-w .support-ticket-info .info-header {
+.support-index .university-content-w .university-info .info-header {
   color: #047bf8;
   text-align: center;
   margin-bottom: 15px
 }
 
-.support-index .support-ticket-content-w .support-ticket-info .info-section {
+.support-index .university-content-w .university-info .info-section {
   padding: 0px;
   margin-bottom: 40px;
   padding-bottom: 20px;
   border-bottom: 1px solid rgba(0, 0, 0, 0.05)
 }
 
-.support-index .support-ticket-content-w .support-ticket-info .info-section .label {
+.support-index .university-content-w .university-info .info-section .label {
   color: #636c72;
   display: block;
   margin-bottom: 5px
 }
 
-.support-index .support-ticket-content-w .support-ticket-info .info-section .value {
+.support-index .university-content-w .university-info .info-section .value {
   display: block
 }
 
-.support-index .support-ticket-content-w .support-ticket-info .info-section .value+.label {
+.support-index .university-content-w .university-info .info-section .value+.label {
   margin-top: 10px
 }
 
-.support-index .support-ticket-content-w .support-ticket-info .info-section:last-child {
+.support-index .university-content-w .university-info .info-section:last-child {
   margin-bottom: 0px;
   border-bottom: none;
   padding-bottom: 0px
 }
 
-.support-index .support-ticket-content-w .support-ticket-info ul.users-list {
+.support-index .university-content-w .university-info ul.users-list {
   list-style: none;
   padding: 0px;
   margin: 0px;
   margin-bottom: 20px
 }
 
-.support-index .support-ticket-content-w .support-ticket-info ul.users-list li {
+.support-index .university-content-w .university-info ul.users-list li {
   margin-bottom: 10px
 }
 
-.support-index .support-ticket-content-w .support-ticket-info ul.users-list.as-tiles {
+.support-index .university-content-w .university-info ul.users-list.as-tiles {
   display: inline-block;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -23982,14 +23983,14 @@ body.rentals-wrapper .select2-container--default .select2-results__option[aria-s
   justify-content: space-between
 }
 
-.support-index .support-ticket-content-w .support-ticket-info ul.users-list.as-tiles li {
+.support-index .university-content-w .university-info ul.users-list.as-tiles li {
   text-align: center;
   -webkit-box-flex: 0;
   -ms-flex: 0 0 47%;
   flex: 0 0 47%
 }
 
-.support-index .support-ticket-content-w .support-ticket-info ul.users-list.as-tiles li a {
+.support-index .university-content-w .university-info ul.users-list.as-tiles li a {
   display: block;
   background-color: #fff;
   -webkit-box-shadow: 0px 2px 4px rgba(126, 142, 177, 0.12);
@@ -24002,14 +24003,14 @@ body.rentals-wrapper .select2-container--default .select2-results__option[aria-s
   transition: all 0.2s ease
 }
 
-.support-index .support-ticket-content-w .support-ticket-info ul.users-list.as-tiles li a span {
+.support-index .university-content-w .university-info ul.users-list.as-tiles li a span {
   display: block;
   border-bottom: none;
   color: #3E4B5B;
   font-size: .72rem
 }
 
-.support-index .support-ticket-content-w .support-ticket-info ul.users-list.as-tiles li a .avatar {
+.support-index .university-content-w .university-info ul.users-list.as-tiles li a .avatar {
   margin: 0px;
   width: 50px;
   height: 50px;
@@ -24019,56 +24020,52 @@ body.rentals-wrapper .select2-container--default .select2-results__option[aria-s
   border-radius: 50px
 }
 
-.support-index .support-ticket-content-w .support-ticket-info ul.users-list.as-tiles li a i {
+.support-index .university-content-w .university-info ul.users-list.as-tiles li a i {
   margin-right: 0px;
   margin-bottom: 10px
 }
 
-.support-index .support-ticket-content-w .support-ticket-info ul.users-list.as-tiles li a:hover {
+.support-index .university-content-w .university-info ul.users-list.as-tiles li a:hover {
   -webkit-box-shadow: 0px 5px 12px rgba(126, 142, 177, 0.2);
   box-shadow: 0px 5px 12px rgba(126, 142, 177, 0.2);
   -webkit-transform: translateY(-3px);
   transform: translateY(-3px)
 }
 
-.support-index .support-ticket-content-w .support-ticket-info ul.users-list.as-tiles li a:hover span {
+.support-index .university-content-w .university-info ul.users-list.as-tiles li a:hover span {
   color: #047bf8
 }
 
-.support-index .support-ticket-content-w .support-ticket-info .customer {
+.support-index .university-content-w .university-info .rank-label-container {
   text-align: center;
   padding-bottom: 20px;
   margin-bottom: 30px;
   border-bottom: 1px solid rgba(0, 0, 0, 0.05)
 }
 
-.support-index .support-ticket-content-w .support-ticket-info .customer .avatar {
+.support-index .university-content-w .university-info .rank-label-container .avatar {
   margin-bottom: 10px
 }
 
-.support-index .support-ticket-content-w .support-ticket-info .customer .avatar img {
-  border-radius: 50px;
-  width: 100px;
-  height: auto
-}
 
-.support-index .support-ticket-content-w .support-ticket-info .customer .customer-name {
+
+.support-index .university-content-w .university-info .customer .customer-name {
   margin-bottom: 5px
 }
 
-.support-index .support-ticket-content-w .support-ticket-info .customer .customer-tickets {
+.support-index .university-content-w .university-info .customer .customer-universitys {
   color: #636c72
 }
 
-.support-index .support-ticket-content-w.folded-info .support-ticket-content {
+.support-index .university-content-w.folded-info .university-content {
   padding-right: 30px
 }
 
-.support-index .support-ticket-content-w.folded-info .support-ticket-info {
+.support-index .university-content-w.folded-info .university-info {
   display: none
 }
 
-.support-index .support-ticket-content-w.folded-info .show-ticket-info {
+.support-index .university-content-w.folded-info .show-university-info {
   display: inline-block
 }
 
@@ -24076,7 +24073,7 @@ body.rentals-wrapper .select2-container--default .select2-results__option[aria-s
   border: rgba(0, 0, 0, 0.5) !important
 }
 
-.color-scheme-dark .support-index .st-body .ticket-content .ticket-description {
+.color-scheme-dark .support-index .st-body .university-content .university-description {
   color: #ccd9e8
 }
 
@@ -24088,116 +24085,116 @@ body.rentals-wrapper .select2-container--default .select2-results__option[aria-s
   color: rgba(218, 226, 243, 0.4)
 }
 
-.color-scheme-dark .support-index .support-tickets-header .tickets-control, .color-scheme-dark .support-index .support-tickets-header .tickets-filter {
+.color-scheme-dark .support-index .universitys-header .universitys-control, .color-scheme-dark .support-index .universitys-header .universitys-filter {
   border-bottom-color: rgba(255, 255, 255, 0.05)
 }
 
-.color-scheme-dark .support-index .support-ticket {
+.color-scheme-dark .support-index .university {
   background-color: #323c58;
   -webkit-box-shadow: 0px 5px 15px rgba(22, 22, 35, 0.1);
   box-shadow: 0px 5px 15px rgba(22, 22, 35, 0.1)
 }
 
-.color-scheme-dark .support-index .support-ticket.active, .color-scheme-dark .support-index .support-ticket:hover {
+.color-scheme-dark .support-index .university.active, .color-scheme-dark .support-index .university:hover {
   background-color: #047bf8
 }
 
-.color-scheme-dark .support-index .support-ticket.active .ticket-title, .color-scheme-dark .support-index .support-ticket:hover .ticket-title {
+.color-scheme-dark .support-index .university.active .university-title, .color-scheme-dark .support-index .university:hover .university-title {
   color: #fff
 }
 
-.color-scheme-dark .support-index .support-ticket.active .st-foot a.value, .color-scheme-dark .support-index .support-ticket.active .st-foot .value, .color-scheme-dark .support-index .support-ticket:hover .st-foot a.value, .color-scheme-dark .support-index .support-ticket:hover .st-foot .value {
+.color-scheme-dark .support-index .university.active .st-foot a.value, .color-scheme-dark .support-index .university.active .st-foot .value, .color-scheme-dark .support-index .university:hover .st-foot a.value, .color-scheme-dark .support-index .university:hover .st-foot .value {
   color: #fff
 }
 
-.color-scheme-dark .support-index .support-ticket.active .label, .color-scheme-dark .support-index .support-ticket:hover .label {
+.color-scheme-dark .support-index .university.active .label, .color-scheme-dark .support-index .university:hover .label {
   color: rgba(255, 255, 255, 0.6)
 }
 
-.color-scheme-dark .support-index .support-tickets-header .tickets-filter label {
+.color-scheme-dark .support-index .universitys-header .universitys-filter label {
   color: rgba(218, 226, 243, 0.4)
 }
 
-.color-scheme-dark .support-index .support-tickets-header .tickets-filter select {
+.color-scheme-dark .support-index .universitys-header .universitys-filter select {
   background-color: rgba(0, 0, 0, 0.2);
   border-color: rgba(0, 0, 0, 0.4);
   color: #ccd9e8
 }
 
-.color-scheme-dark .support-index .support-tickets-header .tickets-control .element-search input {
+.color-scheme-dark .support-index .universitys-header .universitys-control .element-search input {
   background-color: rgba(0, 0, 0, 0.1)
 }
 
-.color-scheme-dark .support-index .support-tickets-header .tickets-control .element-search:before {
+.color-scheme-dark .support-index .universitys-header .universitys-control .element-search:before {
   color: rgba(218, 226, 243, 0.4)
 }
 
-.color-scheme-dark .support-index .support-tickets-header .tickets-control .element-search input::-webkit-input-placeholder {
+.color-scheme-dark .support-index .universitys-header .universitys-control .element-search input::-webkit-input-placeholder {
   color: rgba(218, 226, 243, 0.4)
 }
 
-.color-scheme-dark .support-index .support-tickets-header .tickets-control .element-search input:-ms-input-placeholder {
+.color-scheme-dark .support-index .universitys-header .universitys-control .element-search input:-ms-input-placeholder {
   color: rgba(218, 226, 243, 0.4)
 }
 
-.color-scheme-dark .support-index .support-tickets-header .tickets-control .element-search input::-ms-input-placeholder {
+.color-scheme-dark .support-index .universitys-header .universitys-control .element-search input::-ms-input-placeholder {
   color: rgba(218, 226, 243, 0.4)
 }
 
-.color-scheme-dark .support-index .support-tickets-header .tickets-control .element-search input::placeholder {
+.color-scheme-dark .support-index .universitys-header .universitys-control .element-search input::placeholder {
   color: rgba(218, 226, 243, 0.4)
 }
 
-.color-scheme-dark .support-index .support-ticket-content-w {
+.color-scheme-dark .support-index .university-content-w {
   background-color: #323c58;
   -webkit-box-shadow: 0px 5px 15px rgba(22, 22, 35, 0.1);
   box-shadow: 0px 5px 15px rgba(22, 22, 35, 0.1)
 }
 
-.color-scheme-dark .support-index .support-ticket-content-w .ticket-reply {
+.color-scheme-dark .support-index .university-content-w .university-reply {
   border-bottom-color: rgba(255, 255, 255, 0.05)
 }
 
-.color-scheme-dark .support-index .support-ticket-content-w .ticket-reply .ticket-reply-info .info-data .label {
+.color-scheme-dark .support-index .university-content-w .university-reply .university-reply-info .info-data .label {
   color: rgba(218, 226, 243, 0.4)
 }
 
-.color-scheme-dark .support-index .support-ticket-content-w .ticket-reply .ticket-attachments .attachment {
+.color-scheme-dark .support-index .university-content-w .university-reply .university-attachments .attachment {
   background-color: #293148
 }
 
-.color-scheme-dark .support-index .support-ticket-content-w .support-ticket-info {
+.color-scheme-dark .support-index .university-content-w .university-info {
   background-image: none;
   background-color: #293148
 }
 
-.color-scheme-dark .support-index .support-ticket-content-w .support-ticket-info ul.users-list.as-tiles li a {
+.color-scheme-dark .support-index .university-content-w .university-info ul.users-list.as-tiles li a {
   background-color: #3b4768;
   -webkit-box-shadow: 0px 5px 15px rgba(22, 22, 35, 0.1);
   box-shadow: 0px 5px 15px rgba(22, 22, 35, 0.1)
 }
 
-.color-scheme-dark .support-index .support-ticket-content-w .support-ticket-info ul.users-list.as-tiles li a span {
+.color-scheme-dark .support-index .university-content-w .university-info ul.users-list.as-tiles li a span {
   color: #ccd9e8
 }
 
-.color-scheme-dark .support-index .support-ticket-content-w .support-ticket-info .info-section {
+.color-scheme-dark .support-index .university-content-w .university-info .info-section {
   border-bottom-color: rgba(255, 255, 255, 0.05)
 }
 
-.color-scheme-dark .support-index .support-ticket-content-w .support-ticket-info .info-section .label {
+.color-scheme-dark .support-index .university-content-w .university-info .info-section .label {
   color: rgba(218, 226, 243, 0.4)
 }
 
-.color-scheme-dark .support-index .support-ticket-content-w .support-ticket-info .customer {
+.color-scheme-dark .support-index .university-content-w .university-info .customer {
   border-bottom-color: rgba(255, 255, 255, 0.05)
 }
 
-.color-scheme-dark .support-index .support-ticket-content-w .support-ticket-info .customer .customer-tickets {
+.color-scheme-dark .support-index .university-content-w .university-info .customer .customer-universitys {
   color: rgba(218, 226, 243, 0.4)
 }
 
-.color-scheme-dark .support-index .support-ticket-content-w .ticket-reply .ticket-reply-content {
+.color-scheme-dark .support-index .university-content-w .university-reply .university-reply-content {
   background-color: #3b4768
 }
 
@@ -26587,7 +26584,7 @@ body.color-scheme-dark .page-item.disabled .page-link, .content-panel.color-sche
     padding-left: 30px;
     padding-right: 30px
   }
-  .support-index .support-ticket-content-w .ticket-reply .ticket-reply-info .badge {
+  .support-index .university-content-w .university-reply .university-reply-info .badge {
     position: absolute;
     top: -10px;
     right: 0px
@@ -26621,17 +26618,17 @@ body.color-scheme-dark .page-item.disabled .page-link, .content-panel.color-sche
   .full-chat-w .chat-content-w .chat-message .chat-message-content {
     max-width: 320px
   }
-  .support-index .support-ticket-content-w .ticket-reply .ticket-reply-content {
+  .support-index .university-content-w .university-reply .university-reply-content {
     margin-left: 0px
   }
-  .support-index .support-ticket-content-w .support-ticket-content {
+  .support-index .university-content-w .university-content {
     padding-right: 30px;
     padding-left: 20px
   }
-  .support-index .support-ticket-content-w.folded-info .support-ticket-content {
+  .support-index .university-content-w.folded-info .university-content {
     padding-right: 20px
   }
-  .support-index .support-tickets {
+  .support-index .universitys {
     -webkit-box-flex: 0;
     -ms-flex: 0 0 400px;
     flex: 0 0 400px
@@ -26642,7 +26639,7 @@ body.color-scheme-dark .page-item.disabled .page-link, .content-panel.color-sche
   .support-index .st-foot .value+.label {
     margin-left: 10px
   }
-  .support-index .support-tickets {
+  .support-index .universitys {
     margin-right: 15px;
     padding-right: 15px
   }
@@ -26662,7 +26659,7 @@ body.color-scheme-dark .page-item.disabled .page-link, .content-panel.color-sche
   .menu-top-w .menu-top-i ul.main-menu {
     padding-left: 0px
   }
-  .support-index .support-tickets {
+  .support-index .universitys {
     -webkit-box-flex: 0;
     -ms-flex: 0 0 390px;
     flex: 0 0 390px
@@ -26727,30 +26724,7 @@ body.color-scheme-dark .page-item.disabled .page-link, .content-panel.color-sche
     left: 0px;
     right: 0px
   }
-  .support-index .support-ticket-content-w .support-ticket-info {
-    position: absolute;
-    top: 10px;
-    right: 10px;
-    width: 250px;
-    -webkit-box-shadow: 0px 20px 60px rgba(4, 123, 248, 0.3);
-    box-shadow: 0px 20px 60px rgba(4, 123, 248, 0.3);
-    background-color: #fff;
-    background-image: none;
-    display: none
-  }
-  .support-index .support-ticket-content-w .support-ticket-content .show-ticket-info {
-    display: block
-  }
-  .support-index .support-ticket-content-w.force-show-folded-info .support-ticket-info {
-    display: block
-  }
-  .support-index .support-ticket-content-w .support-ticket-content {
-    padding-right: 20px;
-    padding-left: 20px
-  }
-  .support-index .support-ticket-content-w.folded-info .support-ticket-content {
-    padding: 10px 20px
-  }
+
 }
 
 @media (max-width: 1150px) {
@@ -27130,7 +27104,7 @@ body.color-scheme-dark .page-item.disabled .page-link, .content-panel.color-sche
   .search-app-w .search-content .tasks-list li.draggable-task {
     padding-right: 10px
   }
-  .support-index .support-tickets {
+  .support-index .universitys {
     -webkit-box-flex: 0;
     -ms-flex: 0 0 100%;
     flex: 0 0 100%;
@@ -27138,39 +27112,37 @@ body.color-scheme-dark .page-item.disabled .page-link, .content-panel.color-sche
     padding-right: 0px;
     border-right: 0px
   }
-  .support-index .support-ticket-content-w {
-    display: none
-  }
-  .support-index .support-ticket-content-w .support-ticket-content {
+
+  .support-index .university-content-w .university-content {
     padding: 10px 5px
   }
-  .support-index .support-ticket-content-w.folded-info .support-ticket-content {
+  .support-index .university-content-w.folded-info .university-content {
     padding: 10px 5px
   }
-  .support-index.show-ticket-content {
+  .support-index.show-university-content {
     position: relative
   }
-  .support-index.show-ticket-content .support-ticket-content-w {
+  .support-index.show-university-content .university-content-w {
     display: block;
     -webkit-box-flex: 1;
     -ms-flex: 1;
     flex: 1
   }
-  .support-index.show-ticket-content .support-tickets {
+  .support-index.show-university-content .universitys {
     display: none
   }
-  .support-index.show-ticket-content .support-ticket-content-w .support-ticket-content .back-to-index {
+  .support-index.show-university-content .university-content-w .university-content .back-to-index {
     display: block;
     position: absolute;
     top: 0px;
     left: 10px
   }
-  .support-index.show-ticket-content .support-ticket-content-w .support-ticket-content .show-ticket-info {
+  .support-index.show-university-content .university-content-w .university-content .show-university-info {
     position: absolute;
     top: 0px;
     right: 10px
   }
-  .support-index .support-ticket-content-w .support-ticket-content .support-ticket-content-header {
+  .support-index .university-content-w .university-content .university-content-header {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
     -ms-flex-direction: column;
@@ -27178,10 +27150,10 @@ body.color-scheme-dark .page-item.disabled .page-link, .content-panel.color-sche
     padding-top: 0px;
     padding-top: 20px
   }
-  .support-index .support-ticket-content-w .support-ticket-content .support-ticket-content-header .show-ticket-info {
+  .support-index .university-content-w .university-content .university-content-header .show-university-info {
     padding-top: 0px
   }
-  .support-index .support-ticket-content-w .support-ticket-content .support-ticket-content-header .ticket-header {
+  .support-index .university-content-w .university-content .university-content-header .university-header {
     padding-top: 20px;
     border-top: 1px solid rgba(0, 0, 0, 0.07)
   }
@@ -27235,7 +27207,7 @@ body.color-scheme-dark .page-item.disabled .page-link, .content-panel.color-sche
   .support-index .st-foot {
     padding: 10px 10px
   }
-  .support-index .support-ticket+.support-ticket {
+  .support-index .university+.university {
     margin-top: 15px
   }
   .top-bar .logo-w {

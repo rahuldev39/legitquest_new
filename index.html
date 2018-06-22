@@ -97,8 +97,8 @@
               <li class="nav-item">
                 <a class="nav-link" href="#">Contact</a>
               </li>
-              <li class="nav-item btn-link">
-                <button class="mr-2 mb-2 btn btn-primary" type="button"> Sign In</button>
+              <li class="nav-item nav-btn-link">
+                <button class="btn btn-primary" type="button"> Sign In</button>
               </li>
             </ul>
 
@@ -122,27 +122,100 @@
 
         <div class="search-filed-box d-flex align-items-center">
           <div class="search-select">
-            <select class="selectpicker">
-              <optgroup label="Case Law">
-                <option>Party Name</option>
-                <option>Citation</option>
-                <option>Act Name</option>
-                <option>Free text</option>
-              </optgroup>
-              <optgroup label="Act Search">
-                <option>Act Name</option>
-                <option>Free Text </option>
-              </optgroup>
-            </select>
-
+            <button class="btn btn-primary select-btn" data-toggle="collapse" href="#select-dropdown" role="button" aria-expanded="false" aria-controls="select-dropdown">
+              Citation
+            </button>
           </div>
-          <div class="search-field flex-fill">
-            <input class="form-control" placeholder="Search Cases, Statutes and Regulations">
+
+          <div class="position-relative flex-fill">
+
+            <div id="citation-box" class="search-field flex-fill show">
+              <input class="form-control" placeholder="Journal">
+              <input id="example2" class="form-control" placeholder="Year - Volume - Page" >
+            </div>
+            <div id="judge-box" class="search-field flex-fill">
+              <input class="form-control" placeholder="Last name">
+              <input class="form-control" placeholder="First name">
+            </div>
+            <div id="party-box" class="search-field flex-fill">
+              <input class="form-control" placeholder="Party 1">
+              <input class="form-control" placeholder="Party 2">
+            </div>
+            <div id="act-box" class="search-field flex-fill">
+              <input class="form-control" placeholder="Act Name">
+              <input class="form-control" placeholder="Section">
+            </div>
+            <div id="act-search-box" class="search-field flex-fill">
+              <input class="form-control" placeholder="Act Name">
+            </div>
             <div class="search-btn">
               <a href="#"><i class="os-icon os-icon-search" aria-hidden="true"></i></a>
             </div>
           </div>
+
+          <div class="collapse" id="select-dropdown">
+            <div class="card card-body">
+                <div class="row">
+                    <div class="col-md-8">
+                      <div class="select-block">
+                        <strong>Case Law <small>(text in bracket is the help text)</small></strong>
+                        <ul>
+                          <li>
+                            <div class="select-radio">
+                              <label>
+                                <input type="radio" name="search-radio" value="citation-box" checked>
+                                <span>Citation</span>
+                              </label>
+                            </div>
+                          </li>
+                          <li>
+                            <div class="select-radio">
+                              <label>
+                                <input type="radio" name="search-radio" value="judge-box">
+                                <span>Judge Name</span>
+                              </label>
+                            </div>
+                          </li>
+                          <li>
+                            <div class="select-radio">
+                              <label>
+                                <input type="radio" name="search-radio" value="party-box">
+                                <span>Party Name</span>
+                              </label>
+                            </div>
+                          </li>
+                          <li>
+                            <div class="select-radio">
+                              <label>
+                                <input type="radio" name="search-radio" value="act-box">
+                                <span>Act Name</span>
+                              </label>
+                            </div>
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                    <div class="col-md-4">
+                      <div class="select-block">
+                        <strong>Acts Search</strong>
+                        <ul>
+                          <li>
+                            <div class="select-radio">
+                              <label>
+                                <input type="radio" name="search-radio" value="act-search-box">
+                                <span>Act Name</span>
+                              </label>
+                            </div>
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                </div>
+            </div>
+          </div>
+
         </div>
+
 
 
       </div>
@@ -535,7 +608,7 @@
   <script src="bower_components/bootstrap/js/dist/util.js"></script>
   <script src="bower_components/bootstrap/js/dist/button.js"></script>
   <script src="bower_components/bootstrap/js/dist/collapse.js"></script>
-
+  <script src="./js/jquery.inputmask.bundle.js"></script>
   <script src="bower_components/bootstrap/js/dist/modal.js"></script>
   <script src="./js/owl.carousel.min.js"></script>
   <script src="js/maince5a.js?version=4.4.1"></script>
@@ -600,6 +673,25 @@
         }
       }
     })
+  </script>
+  <script type="text/javascript">
+        $(document).ready(function() {
+        $("input[name=search-radio]").on( "change", function() {
+
+             var test = $(this).val();
+             var sText = $(this).next().text();
+             console.log(sText)
+             $(".search-field").removeClass('show');
+             $("#"+test).addClass('show');
+             $(".select-btn").text(sText)
+        } );
+      });
+  </script>
+  <script type="text/javascript">
+  $(document).ready(function(){
+$("#example1").inputmask("99-9999999");
+$("#example2").inputmask("9999-999-999");
+});
   </script>
 </body>
 
