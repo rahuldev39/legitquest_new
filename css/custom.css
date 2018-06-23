@@ -293,14 +293,18 @@ nav.navbar {
     position: absolute;
     top: 104%;
     width: 100%;
-    max-width: 335px;
+    max-width: 290px;
+    font-family: "Avenir Next W01", "Proxima Nova W01", "Rubik", -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
 }
 
 #select-dropdown .card-body {
-    padding: .5rem;
+    padding: .8rem;
 }
 .select-block {
-    margin: 5px 0px;
+    margin-bottom: 15px
+}
+.select-block:last-child{
+  margin-bottom: 0px
 }
 .select-block ul {
     padding: 0px;
@@ -309,8 +313,8 @@ nav.navbar {
 
 }
 .select-block ul li {
-    margin: 4px 0px;
-    margin-right: 11px;
+    margin: 0px;
+    margin-bottom: 3px;
 }
 .select-block ul li  input[type="radio"]
 {
@@ -321,18 +325,18 @@ nav.navbar {
     margin-bottom: 0px;
 }
 .select-block ul li input[type="radio"] + span {
-    padding: 4px 6px;
+    padding: 0px;
     background-color: transparent;
     display: block;
     border-radius: 0px;
-    font-size: .8rem;
-    color: #2d2d2d;
+    color: #0963c5;
     cursor: pointer;
+    text-decoration: underline;
+    font-size: .9rem;
 }
 .select-block ul li input[type="radio"]:checked + span {
-    color: #ffffff;
-    background-color: #077af8;
-    border-radius: 4px;
+    color: #077af8;
+    font-weight: 500;
 }
 .search-field .section-input{
   flex-basis: 300px
@@ -341,14 +345,21 @@ nav.navbar {
   flex-basis: 200px;
 }
 .select-block strong {
-    font-size: 13px;
+    font-size: 15px;
     display: block;
-    margin-bottom: 8px;
-    border-bottom: 1px solid #f3ece8;
-    padding-bottom: 7px;
-    color: #077af8;
+    margin-bottom: 1px;
+    font-weight: 700;
+    color: #8d8d8f;
 }
+.select-radio-inner {
+    display: flex;
 
+    font-size: .84rem;
+}
+.select-radio-inner > span {
+    display: block;
+    min-width: 166px;
+}
 .search-field {
     position: relative;
     display: none;
@@ -359,9 +370,10 @@ nav.navbar {
 .search-btn {
     position: absolute;
     right: 11px;
-    top: 7px;
+    top: 50%;
     font-size: 19px;
     opacity: .9;
+    margin-top: -13px;
 }
 .search-btn a{
   text-decoration: none;
@@ -373,19 +385,23 @@ nav.navbar {
   margin-top: 20px
 }
 .search-field input {
-    font-size: 18px;
-    border-color: #077af8;
+    font-size: 21px;
+    border-color: #077af83b;
     padding-right: 35px;
     margin-right: 2px;
     webkit-box-shadow: 0px 2px 4px rgba(126,142,177,0.12);
     box-shadow: 0px 2px 4px rgba(64, 70, 82, 0.13);
     border-width: 1px;
+    font-weight: 400;
+}
+.search-field input::-webkit-input-placeholder{
+color: #8d8d8f;
 }
 .search-select{
   margin-right: 3px
 }
 .select-btn {
-    height: 41px;
+    height: 45px;
     min-width: 131px;
     text-align: left;
     display: flex;

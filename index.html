@@ -123,13 +123,15 @@
         <div class="search-filed-box d-flex align-items-center">
           <div class="search-select">
             <button class="btn btn-primary select-btn" data-toggle="collapse" href="#select-dropdown" role="button" aria-expanded="false" aria-controls="select-dropdown">
-              Citation
+              All
             </button>
           </div>
 
           <div class="position-relative flex-fill">
-
-            <div id="citation-box" class="search-field flex-fill show">
+            <div id="free-text-box" class="search-field flex-fill show">
+              <input class="form-control" placeholder="Search by title, case number, issue, ..." >
+            </div>
+            <div id="citation-box" class="search-field flex-fill">
               <input id="example1" class="form-control journal-input" placeholder="Journal">
               <input id="example2" class="form-control" placeholder="Year - Volume - Page" >
             </div>
@@ -146,7 +148,7 @@
               <input class="form-control section-input" placeholder="Section">
             </div>
             <div id="act-search-box" class="search-field flex-fill">
-              <input class="form-control" placeholder="Act Name">
+              <input class="form-control" placeholder="Search bare Act">
             </div>
             <div class="search-btn">
               <a href="#"><i class="os-icon os-icon-search" aria-hidden="true"></i></a>
@@ -156,58 +158,87 @@
           <div class="collapse" id="select-dropdown">
             <div class="card card-body">
               <div class="select-block">
-                <strong>Case Law <small>(text in bracket is the help text)</small></strong>
+                <strong>Case Law</strong>
                 <ul>
                   <li>
                     <div class="select-radio">
-                      <label>
-                        <input type="radio" name="search-radio" value="citation-box" checked>
-                        <span>Citation</span>
-                      </label>
+                      <div class="select-radio-inner">
+                        <span>Free text search</span>
+                        <label>
+                          <input type="radio" name="search-radio" value="free-text-box" checked>
+                          <span>All</span>
+                        </label>
+                      </div>
+
                     </div>
                   </li>
                   <li>
                     <div class="select-radio">
-                      <label>
-                        <input type="radio" name="search-radio" value="judge-box">
-                        <span>Judge Name</span>
-                      </label>
+                      <div class="select-radio-inner">
+                        <span>Name-Year-Vol-Page</span>
+                        <label>
+                          <input type="radio" name="search-radio" value="citation-box">
+                          <span>Citation</span>
+                        </label>
+                      </div>
+
                     </div>
                   </li>
                   <li>
                     <div class="select-radio">
-                      <label>
-                        <input type="radio" name="search-radio" value="party-box">
-                        <span>Party Name</span>
-                      </label>
+                      <div class="select-radio-inner">
+                          <span>Last name – first name</span>
+                          <label>
+                            <input type="radio" name="search-radio" value="judge-box">
+                            <span>Judge Name</span>
+                          </label>
+                      </div>
                     </div>
                   </li>
                   <li>
                     <div class="select-radio">
-                      <label>
-                        <input type="radio" name="search-radio" value="act-box">
-                        <span>Act Name</span>
-                      </label>
+                      <div class="select-radio-inner">
+                        <span>Petitioner - respondent</span>
+                        <label>
+                          <input type="radio" name="search-radio" value="party-box">
+                          <span>Party Name</span>
+                        </label>
+                      </div>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="select-radio">
+                      <div class="select-radio-inner">
+                        <span>Act name- Section</span>
+                        <label>
+                          <input type="radio" name="search-radio" value="act-box">
+                          <span>Act Name</span>
+                        </label>
+                      </div>
                     </div>
                   </li>
                 </ul>
               </div>
 
               <div class="select-block">
-                <strong>Acts Search</strong>
+                <strong>Bare Act Search</strong>
                 <ul>
                   <li>
                     <div class="select-radio">
-                      <label>
-                        <input type="radio" name="search-radio" value="act-search-box">
-                        <span>Act Name</span>
-                      </label>
+                      <div class="select-radio-inner">
+                        <span>Search bare Act</span>
+                        <label>
+                          <input type="radio" name="search-radio" value="act-search-box">
+                          <span>Act Name</span>
+                        </label>
+                      </div>
+
                     </div>
                   </li>
                 </ul>
               </div>
             </div>
-            
+
           </div>
 
         </div>
@@ -682,7 +713,7 @@
              $(".select-btn").text(sText)
         } );
 
-        $(".select-radio span").on("click", function() {
+        $(".select-radio label span").on("click", function() {
           $("#select-dropdown").removeClass("show");
 
         });
