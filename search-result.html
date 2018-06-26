@@ -2,7 +2,7 @@
 <html>
 
 <head>
-  <title>Legitquest : Order System</title>
+  <title>Legitquest: A Powerful Legal Search Engine for Indian Case Laws </title>
   <meta charset="utf-8">
   <meta content="ie=edge" http-equiv="x-ua-compatible">
   <meta content="template language" name="keywords">
@@ -65,26 +65,126 @@
 
               <div class="search-filed-box d-flex align-items-center search-nav">
                 <div class="search-select">
-                  <select class="selectpicker">
-                    <optgroup label="Case Law">
-                      <option>Party Name</option>
-                      <option>Citation</option>
-                      <option>Act Name</option>
-                      <option>Free text</option>
-                    </optgroup>
-                    <optgroup label="Act Search">
-                      <option>Act Name</option>
-                      <option>Free Text </option>
-                    </optgroup>
-                  </select>
+                  <button class="btn btn-primary select-btn" data-toggle="collapse" href="#select-dropdown" role="button" aria-expanded="false" aria-controls="select-dropdown">
+                    All
+                  </button>
+                  <div class="collapse" id="select-dropdown">
+                    <div class="card card-body">
+                      <div class="select-block">
+                        <strong>Case Law</strong>
+                        <ul>
+                          <li>
+                            <div class="select-radio">
+                              <div class="select-radio-inner">
+                                <span>Free text search</span>
+                                <label>
+                                  <input type="radio" name="search-radio" value="free-text-box" checked>
+                                  <span>All</span>
+                                </label>
+                              </div>
 
+                            </div>
+                          </li>
+                          <li>
+                            <div class="select-radio">
+                              <div class="select-radio-inner">
+                                <span>Name-Year-Vol-Page</span>
+                                <label>
+                                  <input type="radio" name="search-radio" value="citation-box">
+                                  <span>Citation</span>
+                                </label>
+                              </div>
+
+                            </div>
+                          </li>
+                          <li>
+                            <div class="select-radio">
+                              <div class="select-radio-inner">
+                                  <span>Last name – first name</span>
+                                  <label>
+                                    <input type="radio" name="search-radio" value="judge-box">
+                                    <span>Judge Name</span>
+                                  </label>
+                              </div>
+                            </div>
+                          </li>
+                          <li>
+                            <div class="select-radio">
+                              <div class="select-radio-inner">
+                                <span>Petitioner - respondent</span>
+                                <label>
+                                  <input type="radio" name="search-radio" value="party-box">
+                                  <span>Party Name</span>
+                                </label>
+                              </div>
+                            </div>
+                          </li>
+                          <li>
+                            <div class="select-radio">
+                              <div class="select-radio-inner">
+                                <span>Act name- Section</span>
+                                <label>
+                                  <input type="radio" name="search-radio" value="act-box">
+                                  <span>Act Name</span>
+                                </label>
+                              </div>
+                            </div>
+                          </li>
+                        </ul>
+                      </div>
+
+                      <div class="select-block">
+                        <strong>Bare Act Search</strong>
+                        <ul>
+                          <li>
+                            <div class="select-radio">
+                              <div class="select-radio-inner">
+                                <span>Search bare Act</span>
+                                <label>
+                                  <input type="radio" name="search-radio" value="act-search-box">
+                                  <span>Act Name</span>
+                                </label>
+                              </div>
+
+                            </div>
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+
+                  </div>
                 </div>
-                <div class="search-field flex-fill">
-                  <input class="form-control" placeholder="Search Cases, Statutes and Regulations">
+
+                <div class="position-relative flex-fill">
+                  <div id="free-text-box" class="search-field flex-fill show">
+                    <input class="form-control" placeholder="Search by title, case number, issue, ..." >
+                  </div>
+                  <div id="citation-box" class="search-field flex-fill">
+                    <input id="example1" class="form-control journal-input" placeholder="Journal">
+                    <input id="example2" class="form-control" placeholder="Year - Volume - Page" >
+                  </div>
+                  <div id="judge-box" class="search-field flex-fill">
+                    <input class="form-control" placeholder="Last name">
+                    <input class="form-control" placeholder="First name">
+                  </div>
+                  <div id="party-box" class="search-field flex-fill">
+                    <input class="form-control" placeholder="petitioner/respondent">
+                    <input class="form-control" placeholder="petitioner/respondent">
+                  </div>
+                  <div id="act-box" class="search-field flex-fill">
+                    <input class="form-control" placeholder="Act Name">
+                    <input class="form-control section-input" placeholder="Section">
+                  </div>
+                  <div id="act-search-box" class="search-field flex-fill">
+                    <input class="form-control" placeholder="Search bare Act">
+                  </div>
                   <div class="search-btn">
                     <a href="#"><i class="os-icon os-icon-search" aria-hidden="true"></i></a>
                   </div>
                 </div>
+
+
+
               </div>
 
 
@@ -839,6 +939,45 @@ $(window).scroll(function(){
 
       });
   })
+</script>
+<script type="text/javascript">
+      $(document).ready(function() {
+      $("input[name=search-radio]").on( "change", function() {
+
+           var test = $(this).val();
+           var sText = $(this).next().text();
+
+           $(".search-field").removeClass('show');
+           $("#"+test).addClass('show');
+           $(".select-btn").text(sText)
+      } );
+
+      $(".select-radio label span").on("click", function() {
+        $("#select-dropdown").removeClass("show");
+
+      });
+
+      $(document).on('click',function(e) {
+          e.stopPropagation();
+          var container = $("#select-dropdown");
+
+          //check if the clicked area is dropDown or not
+          if (container.has(e.target).length === 0) {
+              $('#select-dropdown').removeClass('show');
+          }
+
+      });
+
+
+    });
+
+
+</script>
+<script type="text/javascript">
+$(document).ready(function(){
+$("#example1").inputmask("******");
+$("#example2").inputmask("******-9999-999-999");
+});
 </script>
 </body>
 </html>

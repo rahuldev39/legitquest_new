@@ -293,7 +293,7 @@ nav.navbar {
     position: absolute;
     top: 104%;
     width: 100%;
-    max-width: 290px;
+    min-width: 290px;
     font-family: "Avenir Next W01", "Proxima Nova W01", "Rubik", -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
 }
 
@@ -397,8 +397,19 @@ nav.navbar {
 .search-field input::-webkit-input-placeholder{
 color: #8d8d8f;
 }
-.search-select{
-  margin-right: 3px
+.search-field input::-moz-placeholder{
+color: #8d8d8f;
+}
+.search-field input:-ms-input-placeholder{
+color: #8d8d8f;
+}
+.search-field input:-moz-placeholder{
+color: #8d8d8f;
+}
+.search-select {
+    margin-right: 3px;
+    position: relative;
+    z-index: 10;
 }
 .select-btn {
     height: 45px;
@@ -407,7 +418,9 @@ color: #8d8d8f;
     display: flex;
     justify-content: space-between;
     align-items: center;
+width: 100%
 }
+
 .select-btn::after {
     display: inline-block;
     width: 0;
@@ -419,6 +432,10 @@ color: #8d8d8f;
     border-right: .3em solid transparent;
     border-bottom: 0;
     border-left: .3em solid transparent;
+}
+.search-nav {
+  letter-spacing: normal;
+    text-transform: none;
 }
 .nav-btn-link{
   display: flex;
@@ -1792,7 +1809,44 @@ button.close {
     display: block;
     text-align: center;
 }
-
+.video-link {
+    display: block;
+    position: relative;
+    outline: none;
+}
+.video-link::after {
+    content: "\f04b";
+    display: inline-block;
+    font: normal normal normal 14px/1 FontAwesome;
+    font-size: inherit;
+    text-rendering: auto;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    margin-left: -38px;
+    margin-top: -48px;
+    width: 76px;
+    height: 76px;
+    /* background-color: rgba(39, 49, 64, 0.6); */
+    -webkit-transition: 0.2s;
+    -o-transition: 0.2s;
+    transition: 0.2s;
+    border-radius: 50%;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 46px;
+    border: 6px solid #a7a7a7;
+    padding-left: 10px;
+    color: #909090;
+    opacity: .5;
+}
+.video-link:hover::after{
+  opacity: 1
+}
 @media (max-width: 992px){
   .support-index .university-content-w .university-info {
     position: absolute;
@@ -1869,9 +1923,9 @@ button.close {
     flex: auto;
     width: 50%;
 }
-  body.page-internal.has-nav-search  {
-      padding-top: 116px !important;
-  }
+body.page-internal.has-nav-search {
+    padding-top: 110px !important;
+}
 .left-div.left {
     height: 550px;
     width: 100%;
@@ -1914,14 +1968,21 @@ padding: 0px 20px;
 @media (max-width: 767px)
 {
 
-  .search-filed-box {
-  flex-direction: column;
-      max-width: 450px;
+.search-filed-box {
+    display: block !important;
 }
 .search-nav {
     flex-direction: row;
     max-width: 100%;
     padding: 0px 20px;
+    display: flex !important;
+}
+.search-nav .select-btn {
+    height: 36px;
+    min-width: auto;
+}
+.search-nav .search-field input {
+    font-size: 15px;
 }
 .search-select {
     width: 100%;

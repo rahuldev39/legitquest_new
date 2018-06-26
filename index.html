@@ -2,7 +2,7 @@
 <html>
 
 <head>
-  <title>Legitquest : Order System</title>
+  <title>Legitquest: A Powerful Legal Search Engine for Indian Case Laws </title>
   <meta charset="utf-8">
   <meta content="ie=edge" http-equiv="x-ua-compatible">
   <meta content="template language" name="keywords">
@@ -13,11 +13,13 @@
   <link href="bower_components/perfect-scrollbar/css/perfect-scrollbar.min.css" rel="stylesheet">
   <link href="bower_components/slick-carousel/slick/slick.css" rel="stylesheet">
   <link href="./icon_fonts_assets/simple-line-icons/css/simple-line-icons.css" rel="stylesheet">
+  <link href="./icon_fonts_assets/font-awesome/css/font-awesome.min.css" rel="stylesheet">
   <link href="bower_components/select2/dist/css/bootstrap-select.min.css" rel="stylesheet">
   <link href="./css/bootstrap.min.css" rel="stylesheet">
   <link href="./css/owl.theme.css" rel="stylesheet">
   <link href="./css/owl.carousel.css" rel="stylesheet">
   <link href="css/maince5a.css" rel="stylesheet">
+  <link href="./css/jquery.fancybox.min.css" rel="stylesheet">
   <link href="./css/custom.css" rel="stylesheet">
   <script src="./js/webfont.js"></script>
   <script type="text/javascript">
@@ -114,6 +116,7 @@
 
 
     <div class="search-section overlay">
+
       <div class="container">
         <div class="banner-text text-center">
           <h1 class="intro-lead-in">Re-Defining Legal Research</h1>
@@ -125,6 +128,91 @@
             <button class="btn btn-primary select-btn" data-toggle="collapse" href="#select-dropdown" role="button" aria-expanded="false" aria-controls="select-dropdown">
               All
             </button>
+            <div class="collapse" id="select-dropdown">
+              <div class="card card-body">
+                <div class="select-block">
+                  <strong>Case Law</strong>
+                  <ul>
+                    <li>
+                      <div class="select-radio">
+                        <div class="select-radio-inner">
+                          <span>Free text search</span>
+                          <label>
+                            <input type="radio" name="search-radio" value="free-text-box" checked>
+                            <span>All</span>
+                          </label>
+                        </div>
+
+                      </div>
+                    </li>
+                    <li>
+                      <div class="select-radio">
+                        <div class="select-radio-inner">
+                          <span>Name-Year-Vol-Page</span>
+                          <label>
+                            <input type="radio" name="search-radio" value="citation-box">
+                            <span>Citation</span>
+                          </label>
+                        </div>
+
+                      </div>
+                    </li>
+                    <li>
+                      <div class="select-radio">
+                        <div class="select-radio-inner">
+                            <span>Last name – first name</span>
+                            <label>
+                              <input type="radio" name="search-radio" value="judge-box">
+                              <span>Judge Name</span>
+                            </label>
+                        </div>
+                      </div>
+                    </li>
+                    <li>
+                      <div class="select-radio">
+                        <div class="select-radio-inner">
+                          <span>Petitioner - respondent</span>
+                          <label>
+                            <input type="radio" name="search-radio" value="party-box">
+                            <span>Party Name</span>
+                          </label>
+                        </div>
+                      </div>
+                    </li>
+                    <li>
+                      <div class="select-radio">
+                        <div class="select-radio-inner">
+                          <span>Act name- Section</span>
+                          <label>
+                            <input type="radio" name="search-radio" value="act-box">
+                            <span>Act Name</span>
+                          </label>
+                        </div>
+                      </div>
+                    </li>
+                  </ul>
+                </div>
+
+                <div class="select-block">
+                  <strong>Bare Act Search</strong>
+                  <ul>
+                    <li>
+                      <div class="select-radio">
+                        <div class="select-radio-inner">
+                          <span>Search bare Act</span>
+                          <label>
+                            <input type="radio" name="search-radio" value="act-search-box">
+                            <span>Act Name</span>
+                          </label>
+                        </div>
+
+                      </div>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+
+            </div>
           </div>
 
           <div class="position-relative flex-fill">
@@ -155,91 +243,7 @@
             </div>
           </div>
 
-          <div class="collapse" id="select-dropdown">
-            <div class="card card-body">
-              <div class="select-block">
-                <strong>Case Law</strong>
-                <ul>
-                  <li>
-                    <div class="select-radio">
-                      <div class="select-radio-inner">
-                        <span>Free text search</span>
-                        <label>
-                          <input type="radio" name="search-radio" value="free-text-box" checked>
-                          <span>All</span>
-                        </label>
-                      </div>
 
-                    </div>
-                  </li>
-                  <li>
-                    <div class="select-radio">
-                      <div class="select-radio-inner">
-                        <span>Name-Year-Vol-Page</span>
-                        <label>
-                          <input type="radio" name="search-radio" value="citation-box">
-                          <span>Citation</span>
-                        </label>
-                      </div>
-
-                    </div>
-                  </li>
-                  <li>
-                    <div class="select-radio">
-                      <div class="select-radio-inner">
-                          <span>Last name – first name</span>
-                          <label>
-                            <input type="radio" name="search-radio" value="judge-box">
-                            <span>Judge Name</span>
-                          </label>
-                      </div>
-                    </div>
-                  </li>
-                  <li>
-                    <div class="select-radio">
-                      <div class="select-radio-inner">
-                        <span>Petitioner - respondent</span>
-                        <label>
-                          <input type="radio" name="search-radio" value="party-box">
-                          <span>Party Name</span>
-                        </label>
-                      </div>
-                    </div>
-                  </li>
-                  <li>
-                    <div class="select-radio">
-                      <div class="select-radio-inner">
-                        <span>Act name- Section</span>
-                        <label>
-                          <input type="radio" name="search-radio" value="act-box">
-                          <span>Act Name</span>
-                        </label>
-                      </div>
-                    </div>
-                  </li>
-                </ul>
-              </div>
-
-              <div class="select-block">
-                <strong>Bare Act Search</strong>
-                <ul>
-                  <li>
-                    <div class="select-radio">
-                      <div class="select-radio-inner">
-                        <span>Search bare Act</span>
-                        <label>
-                          <input type="radio" name="search-radio" value="act-search-box">
-                          <span>Act Name</span>
-                        </label>
-                      </div>
-
-                    </div>
-                  </li>
-                </ul>
-              </div>
-            </div>
-
-          </div>
 
         </div>
 
@@ -251,7 +255,7 @@
 
     </div>
 
-    <section class="intro-section">
+    <section class="intro-section gray">
       <div class="container">
         <div class="intro-text text-center">
           <h2>World’s only 1-click access to DRAF of a case law! </h2>
@@ -268,35 +272,46 @@
     </section>
 
 
-    <div class="image-section clearfix">
-      <div class="left-div left"></div>
-      <div class="left-div right gray">
-        <div class="center-div">
-          <div>
-            <div data-ix="hero-left-2" class="div-block">
-              <h1 class="column-tittle ">iSearch</h1>
-              <h1 class="column-tittle subtittle">Not all legal search engines are created equal - Information retrieval made easy</h1>
-              <div class="section-divider-line"></div>
+
+
+    <div class="section">
+      <div class="container">
+        <div class="row">
+          <div class="info-column-left col-md-7 ">
+            <a data-fancybox href="https://www.youtube.com/watch?v=oik6qiQNrXg" class="video-link ">
+              <img src="./img/tab-search.png" class="img-fluid idraf-img" alt="">
+            </a>
+          </div>
+          <div data-ix="fade-on-scroll-right" class="w-col col-md-5">
+            <div class="left-algined-div">
+              <h1 class="column-tittle list">iSearch</h1>
+              <h1 class="column-tittle list subtittle">Not all legal search engines are created equal - Information retrieval made easy</h1>
+              <div class="section-divider-line left"></div>
+
               <div class="section-content">
-                <p>For years, lawyers have been stuck with antiquated tools that focus primarily on Boolean search. Better tools are needed to truly understand data.</p>
+                <p class="paragraph">
+                  For years, lawyers have been stuck with antiquated tools that focus primarily on Boolean search. Better tools are needed to truly understand data.
+                </p>
+
                 <p>
                   For years, lawyers have been stuck with antiquated tools that focus primarily on Boolean search. Better tools are needed to truly understand data.
                 </p>
               </div>
+
             </div>
           </div>
         </div>
       </div>
     </div>
 
-    <div class="section dark-bg">
+    <div class="section ">
       <div class="container">
         <div class="row">
           <div class="w-col col-md-6">
             <div class="div-info left">
               <h1 class="column-tittle">iGraphics</h1>
               <h1 class="column-tittle subtittle">A picture is intelligence made visible</h1>
-              <div class="section-divider-line light"></div>
+              <div class="section-divider-line"></div>
               <div class="section-content">
                 <p>
                   Instead of wading through piles of paper, lawyers now deal with terabytes of data and millions of documents.
@@ -316,8 +331,9 @@
           </div>
           <div class="w-col col-md-6">
             <div class="igraphic-img">
-              <img src="./img/58c7149e0709dda74260b034_11ss1-p-800.png" class="model-image img-responsive">
-
+              <a data-fancybox href="https://www.youtube.com/embed/WqWaGMT1T0A" class="video-link ">
+                <img src="./img/58c7149e0709dda74260b034_11ss1-p-800.png" class="model-image img-responsive">
+              </a>
             </div>
           </div>
         </div>
@@ -328,7 +344,9 @@
       <div class="container">
         <div class="row">
           <div class="info-column-left col-md-7 ">
-            <img src="./img/tab-citation.png" class="img-fluid idraf-img" alt="">
+            <a data-fancybox href="https://www.youtube.com/embed/KQXOAMTZLqY" class="video-link ">
+              <img src="./img/tab-draf.png" class="img-fluid idraf-img" alt="">
+            </a>
           </div>
           <div data-ix="fade-on-scroll-right" class="w-col col-md-5">
             <div class="left-algined-div">
@@ -638,6 +656,7 @@
   <script src="./js/jquery.inputmask.bundle.js"></script>
   <script src="bower_components/bootstrap/js/dist/modal.js"></script>
   <script src="./js/owl.carousel.min.js"></script>
+  <script src="./js/jquery.fancybox.min.js"></script>
   <script src="js/maince5a.js?version=4.4.1"></script>
 
 <script type="text/javascript">
@@ -737,9 +756,19 @@
   <script type="text/javascript">
   $(document).ready(function(){
 $("#example1").inputmask("******");
-$("#example2").inputmask("******-9999-999-999");
+$("#example2").inputmask("9999-999-999");
 });
   </script>
+  <script type="text/javascript">
+  $('[data-fancybox]').fancybox({
+  youtube : {
+      controls : 0,
+      showinfo : 0
+  },
+
+});
+  </script>
+
 </body>
 
 </html>
