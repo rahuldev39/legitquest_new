@@ -463,11 +463,11 @@ width: 100%
     flex: 1;
     text-align: center;
     border-right: 1px solid #dadada;
-    padding: 55px 10px;
+    padding: 25px 20px;
 }
-.intro-column .intro-block img {
+.intro-column .intro-block .icon a{
 
-    margin-bottom: 15px;
+    margin-top: 15px;
 }
 .intro-column .intro-block:last-child{
   border-right: 0px solid #dadada;
@@ -475,25 +475,17 @@ width: 100%
 .intro-column .intro-block h4 {
     color: #1a76d2;
     font-size: 1.6rem;
-    margin-top: 0px;
+    margin-top: 15px;
     font-weight: 600;
 }
-.intro-column .intro-block ul {
-    list-style-type: none;
-    padding: 0px;
-    margin-top: 20px;
-    margin-bottom: 0px;
-}
-.intro-column .intro-block ul li {
-    font-size: 18px;
-    display: inline-block;
-    padding: 0px 10px;
-    border-right: 1px solid #b3b3b3;
-    line-height: initial;
-    color: #737479;
-}
-.intro-column .intro-block ul li:last-child{
-  border-right: 0px solid #87a2bd63;
+.intro-column .intro-block p {
+    margin-top: 0px;
+    font-size: 1.3rem;
+    color: #6c6e75;
+    font-weight: 300;
+    max-width: 300px;
+    margin: 0 auto;
+    margin-bottom: 15px;
 }
 .section-divider-line {
     display: inline-block;
@@ -654,9 +646,9 @@ width: 100%
 }
 .section.testimonials {
     padding-bottom: 80px;
-    background-color: #1976d2;
-    background-image: -webkit-linear-gradient(270deg, rgba(20, 106, 191, .95), rgba(20, 106, 191, .95)), url(./../img/58c70b5896695e2b578dab9e_04-3.jpg);
-    background-image: linear-gradient(180deg, rgba(20, 106, 191, .95), rgba(20, 106, 191, .95)), url(./../img/58c70b5896695e2b578dab9e_04-3.jpg);
+    background-color: #474747;
+    background-image: -webkit-linear-gradient(270deg, rgba(37, 37, 37, .93), rgba(37, 37, 37, .93)), url(./../img/58c70b5896695e2b578dab9e_04-3.jpg);
+    background-image: linear-gradient(180deg, rgba(37, 37, 37, .93), rgba(37, 37, 37, .93)), url(./../img/58c70b5896695e2b578dab9e_04-3.jpg);
     background-position: 0px 0px, 50% 50%;
     background-size: auto, cover;
     background-attachment: scroll, fixed;
