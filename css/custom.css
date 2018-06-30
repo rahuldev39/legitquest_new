@@ -230,10 +230,13 @@ nav.navbar {
     justify-content: center;
 }
 .banner-text h1 {
-    font-family: Poppins, sans-serif;
-    font-weight: bold;
-    font-size: 3.1rem;
+    font-family: 'Lato', sans-serif;
+    font-weight: 600;
+    font-size: 2.3rem;
+     color: #0b5daf;
+    margin-bottom: 1.5rem;
 }
+
 .page-header.dark, .page-header.dark h1{
   color: white
   }
@@ -262,13 +265,16 @@ nav.navbar {
     color: #1976d2;
 }
 .search-section {
-    background-image: url(./../img/bg-header.jpg);
+    background-image: none;
     background-size: cover;
     position: relative;
     padding-top: 65px;
     padding-bottom: 65px;
     background-position: bottom;
+    background-color: transparent;
+    overflow: hidden;
 }
+
 .search-section .container{
   position: relative;
   z-index: 1
@@ -379,11 +385,14 @@ nav.navbar {
 .search-btn a{
   text-decoration: none;
 }
-.banner-text span {
-    max-width: 500px;
+.banner-text > span {
+    max-width: 600px;
     margin: 0 auto;
     display: block;
     margin-top: 12px;
+    font-family: 'Lato', sans-serif;
+    font-size: 15pt;
+    color: #0c5298db;
 }
 .search-field input {
     font-size: 21px;
@@ -527,11 +536,10 @@ width: 100%
 }
 .column-tittle, .section-tittle {
     margin-bottom: 6px;
-    font-size: 30px;
+    font-size: 28px;
     line-height: 40px;
     font-family: Poppins, sans-serif;
-    color: #1c1c1c;
-    font-weight: bold;
+    font-weight: 500;
 }
 .column-tittle.subtittle, .section-tittle.subtittle {
     margin-bottom: 12px;
@@ -1918,6 +1926,58 @@ button.close {
 }
 .feature-name{
   flex: 1
+}
+.info-box .feature-tittle {
+    color: white;
+    height: 96px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 600;
+    line-height: 29px;
+    border-bottom: 1px solid #ffffff1c;
+    margin-bottom: 28px;
+}
+.info-box .features-block {
+    background-color: #1a76d2;
+    color: white;
+    background: -webkit-gradient(linear, left top, right bottom, from(#1a76d2), to(#2898da));
+    background: linear-gradient(to bottom right, #1a76d2, #2898da);
+    border: 1px solid #659dd8;
+    font-size: 1rem;
+}
+
+#slideshow {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
+
+#slideshow .slide-img {
+    height: calc(100vh - 40px);
+    position: relative;
+    width: 100%;
+    background-size: cover;
+}
+#slideshow .slide-img.img1{
+background-image: url(./../img/bg-header.jpg);
+}
+#slideshow .slide-img.img2{
+background-image: url(./../img/bg-header2.jpg);
+}
+#slideshow .slide-img.img3{
+background-image: url(./../img/bg-header3.jpg);
+}
+#slideshow .slide-img.img4{
+background-image: url(./../img/bg-header4.jpg);
+}
+
+.white.banner-text h1 {
+    color: #ffffff;
+}
+.white.banner-text > span {
+    opacity: .9;
+    color: #ffffff;
 }
 @media (max-width: 992px){
   .support-index .university-content-w .university-info {
