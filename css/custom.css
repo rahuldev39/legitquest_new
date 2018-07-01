@@ -1996,13 +1996,20 @@ background-image: url(./../img/bg-header4.jpg);
 .index-v2 .banner-text h1{
 }
 .index-v2 .fixed-top {
-    top: 10px;
+    top: 32px;
 }
 .index-v2 .fixed-top.top{
-  top: 0px
+
 }
 .index-v2 .search-filed-box {
-    margin-bottom: 35px;
+    margin-bottom: 10px;
+}
+.index-v2 .navbar-brand {
+    padding-top: 0px;
+    padding-bottom: 0px;
+}
+.index-v2 .navbar-brand img {
+    max-width: 166px;
 }
 /*############-----V2 index css End---------#############*/
 @media (max-width: 992px){
