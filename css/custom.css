@@ -1999,6 +1999,10 @@ background-image: url(./../img/bg-header4.jpg);
     top: 0px;
     border-bottom: 2px solid #1a76d2;
 }
+.index-v2.index-v2_1 .fixed-top {
+    top: 0px;
+    border-bottom: 1px solid #2877c53d;
+}
 .index-v2 .fixed-top.top{
 
 }
