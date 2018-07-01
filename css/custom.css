@@ -1996,7 +1996,8 @@ background-image: url(./../img/bg-header4.jpg);
 .index-v2 .banner-text h1{
 }
 .index-v2 .fixed-top {
-    top: 32px;
+    top: 0px;
+    border-bottom: 2px solid #1a76d2;
 }
 .index-v2 .fixed-top.top{
 
