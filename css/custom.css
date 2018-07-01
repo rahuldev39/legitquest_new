@@ -2001,6 +2001,9 @@ background-image: url(./../img/bg-header4.jpg);
 .index-v2 .fixed-top.top{
   top: 0px
 }
+.index-v2 .search-filed-box {
+    margin-bottom: 35px;
+}
 /*############-----V2 index css End---------#############*/
 @media (max-width: 992px){
   .support-index .university-content-w .university-info {
