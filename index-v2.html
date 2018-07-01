@@ -52,7 +52,7 @@
 
   <div class="all-wrapper white-bg-all">
     <header id="pageTop" class="header">
-      <nav id="nav" class="navbar navbar-expand-md fixed-top">
+      <nav id="nav" class="navbar navbar-expand-md fixed-top navbar-v2">
         <div class="container">
           <div class="nav-mobile d-flex  justify-content-between align-items-center">
             <a class="navbar-brand" href="#">
@@ -97,9 +97,7 @@
                 </div>
               </li>
 
-              <li class="nav-item">
-                <a class="nav-link" href="#">Contact</a>
-              </li>
+
               <li class="nav-item nav-btn-link">
                 <button class="btn btn-primary" type="button"> Sign In</button>
               </li>
@@ -133,7 +131,7 @@
       </div>
       <div class="container ">
         <div class="banner-slider owl-carousel owl-theme">
-          <div class="banner-text text-center item">
+          <div class="banner-text text-center white item">
             <h1 class="intro-lead-in"><span>Artificial Intelligence</span> meets Legal Research</h1>
             <span class="intro-heading">Use latest in Artificial intelligence Technology to drive efficiency in your legal research</span>
           </div>
@@ -141,7 +139,7 @@
             <h1 class="intro-lead-in"><span>Data visualization</span> on Case Citations</h1>
             <span class="intro-heading">Get insights into the treatment of judgment by application of Data visualization on the case treatment</span>
           </div>
-          <div class="banner-text text-center item">
+          <div class="banner-text text-center white item">
             <h1 class="intro-lead-in">Navigate judgment with <span>1-Click of mouse</span></h1>
             <span class="intro-heading">iDRAF- Revolutionary feature first time in the world to navigate sections of judgment with a click</span>
           </div>
@@ -799,7 +797,7 @@ iDRAF is a revolutionary feature which enables access to Issue, reasoning, argum
               <div class="col-md-6 ">
                 <ul class="footer-list w-list-unstyled">
                   <li class="list-footer"><a href="#" class="link footer-link">FAQ</a></li>
-                  <li class="list-footer"><a href="#" class="link footer-link">Careers</a></li>
+                  <li class="list-footer"><a href="#" class="link footer-link">Contact Us</a></li>
                   <li class="list-footer"><a href="#" class="link footer-link">Admin Login</a></li>
                 </ul>
               </div>
@@ -918,11 +916,10 @@ iDRAF is a revolutionary feature which enables access to Issue, reasoning, argum
   <script src="js/maince5a.js?version=4.4.1"></script>
 
 <script type="text/javascript">
-
-  var navbar = $(".navbar-home"),
+  var navbar = $(".navbar-v2"),
   		body = $("html,body");
   	function track (e) {
-  		navbar.toggleClass("fix", $(window).scrollTop() > 0);
+  		navbar.toggleClass("top", $(window).scrollTop() > 0);
   	}
   	$(window).on("scroll", track);
     $(window).on("load", track);
@@ -999,13 +996,12 @@ iDRAF is a revolutionary feature which enables access to Issue, reasoning, argum
       }
   })
   </script>
+
   <script type="text/javascript">
         $(document).ready(function() {
         $("input[name=search-radio]").on( "change", function() {
-
              var test = $(this).val();
              var sText = $(this).next().text();
-
              $(".search-field").removeClass('show');
              $("#"+test).addClass('show');
              $(".select-btn").text(sText)
@@ -1013,56 +1009,51 @@ iDRAF is a revolutionary feature which enables access to Issue, reasoning, argum
 
         $(".select-radio label span").on("click", function() {
           $("#select-dropdown").removeClass("show");
-
         });
 
         $(document).on('click',function(e) {
             e.stopPropagation();
             var container = $("#select-dropdown");
-
             //check if the clicked area is dropDown or not
             if (container.has(e.target).length === 0) {
                 $('#select-dropdown').removeClass('show');
             }
-
         });
-
-
       });
 
 
   </script>
   <script type="text/javascript">
   $(document).ready(function(){
-$("#example1").inputmask("******");
-$("#example2").inputmask("9999-999-999");
-});
-  </script>
-  <script type="text/javascript">
-  $('[data-fancybox]').fancybox({
-  youtube : {
-      controls : 0,
-      showinfo : 0
-  },
+    $("#example1").inputmask("******");
+    $("#example2").inputmask("9999-999-999");
+    });
+      </script>
+      <script type="text/javascript">
+      $('[data-fancybox]').fancybox({
+      youtube : {
+          controls : 0,
+          showinfo : 0
+      },
 
-});
+    });
   </script>
 
   <script>
   var jump=function(e){
 
-e.preventDefault();                        //prevent "hard" jump
-  var target = $(this).attr("href");       //get the target
+  e.preventDefault();                        //prevent "hard" jump
+    var target = $(this).attr("href");       //get the target
 
-      //perform animated scrolling
-      $('html,body').animate(
-        {
-          scrollTop: $(target).offset().top - document.getElementById('nav').offsetHeight + 2  //get top-position of target-element and set it as scroll target
-        },1000,function()                  //scrolldelay: 1 seconds
-        {
-                  //attach the hash (#jumptarget) to the pageurl
-        });
-      }
+        //perform animated scrolling
+        $('html,body').animate(
+          {
+            scrollTop: $(target).offset().top - document.getElementById('nav').offsetHeight + 2  //get top-position of target-element and set it as scroll target
+          },1000,function()                  //scrolldelay: 1 seconds
+          {
+                    //attach the hash (#jumptarget) to the pageurl
+          });
+        }
 
   $(document).ready(function()
   {

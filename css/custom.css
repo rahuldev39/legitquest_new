@@ -290,10 +290,10 @@ nav.navbar {
 .search-filed-box {
     max-width: 800px;
     margin: 0 auto;
-    padding: 30px 0px;
+    padding: 70px 0px;
     position: relative;
     padding-bottom: 0px;
-    margin-bottom: 30px;
+    margin-bottom: 0px;
 }
 #select-dropdown {
     position: absolute;
@@ -550,7 +550,7 @@ width: 100%
     font-size: 16px;
     line-height: 26px;
     font-weight: 300;
-    text-transform: uppercase;
+    text-transform: none;
     max-width: 700px;
     margin: 0 auto;
 }
@@ -1969,7 +1969,7 @@ button.close {
     background-size: cover;
 }
 #slideshow .slide-img.img1{
-background-image: url(./../img/bg-header.jpg);
+background-image: url(./../img/bg-header1.jpg);
 }
 #slideshow .slide-img.img2{
 background-image: url(./../img/bg-header2.jpg);
@@ -1994,7 +1994,12 @@ background-image: url(./../img/bg-header4.jpg);
   height: calc(100vh - 40px);
 }
 .index-v2 .banner-text h1{
-  margin-top: 140px
+}
+.index-v2 .fixed-top {
+    top: 10px;
+}
+.index-v2 .fixed-top.top{
+  top: 0px
 }
 /*############-----V2 index css End---------#############*/
 @media (max-width: 992px){
