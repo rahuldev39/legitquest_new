@@ -9,15 +9,16 @@
   <meta content="width=device-width, initial-scale=1" name="viewport">
   <link href="favicon.png" rel="shortcut icon">
 
-  <link href="bower_components/bootstrap-daterangepicker/daterangepicker.css" rel="stylesheet">
-  <link href="bower_components/perfect-scrollbar/css/perfect-scrollbar.min.css" rel="stylesheet">
-  <link href="bower_components/slick-carousel/slick/slick.css" rel="stylesheet">
+  <link href="plugin/bootstrap-daterangepicker/daterangepicker.css" rel="stylesheet">
+  <link href="plugin/perfect-scrollbar/css/perfect-scrollbar.min.css" rel="stylesheet">
+  <link href="plugin/slick-carousel/slick/slick.css" rel="stylesheet">
   <link href="./icon_fonts_assets/simple-line-icons/css/simple-line-icons.css" rel="stylesheet">
-  <link href="bower_components/select2/dist/css/bootstrap-select.min.css" rel="stylesheet">
+  <link href="plugin/select2/dist/css/bootstrap-select.min.css" rel="stylesheet">
   <link href="./css/bootstrap.min.css" rel="stylesheet">
   <link href="./css/owl.theme.css" rel="stylesheet">
   <link href="./css/owl.carousel.css" rel="stylesheet">
   <link href="css/maince5a.css" rel="stylesheet">
+  <link href="./css/jquery.fancybox.min.css" rel="stylesheet">
   <link href="./css/custom.css" rel="stylesheet">
   <script src="./js/webfont.js"></script>
   <script type="text/javascript">
@@ -113,9 +114,9 @@
     </header>
 
 
-    <div class="page-header about overlay dark">
+    <div class="page-header about overlay dark page-header-internal">
       <div class="container">
-        <div class="banner-text text-center">
+        <div class="banner-text text-center white">
           <h1 class="intro-lead-in">About Legitquest</h1>
           <span class="intro-heading">It is the authority which makes law, to find it is arduous. A good lawyer is one who knows where to find it.</span>
 <div class="section-divider-line light"></div>
@@ -128,7 +129,9 @@
     <section class="video-section">
       <div class="container">
         <div class="about-video-container">
-          <img src="./img/about-video.png" alt="">
+           <a data-fancybox href="https://www.youtube.com/watch?v=74m3LK5ol70"  href="#">
+             <img src="./img/about-video.png" alt="">
+           </a>
         </div>
       </div>
     </section>
@@ -304,20 +307,20 @@
 
   </div>
 
-  <script src="bower_components/jquery/dist/jquery.min.js"></script>
-  <script src="bower_components/popper.js/dist/umd/popper.min.js"></script>
+  <script src="plugin/jquery/dist/jquery.min.js"></script>
+  <script src="plugin/popper.js/dist/umd/popper.min.js"></script>
   <script src="./js/bootstrap.min.js"></script>
-  <script src="bower_components/moment/moment.js"></script>
-  <script src="./bower_components/select2/dist/js/bootstrap-select.min.js"></script>
-  <script src="bower_components/ckeditor/ckeditor.js"></script>
-  <script src="bower_components/bootstrap-daterangepicker/daterangepicker.js"></script>
-  <script src="bower_components/perfect-scrollbar/js/perfect-scrollbar.jquery.min.js"></script>
-  <script src="bower_components/tether/dist/js/tether.min.js"></script>
-  <script src="bower_components/bootstrap/js/dist/util.js"></script>
-  <script src="bower_components/bootstrap/js/dist/button.js"></script>
-  <script src="bower_components/bootstrap/js/dist/collapse.js"></script>
-
-  <script src="bower_components/bootstrap/js/dist/modal.js"></script>
+  <script src="plugin/moment/moment.js"></script>
+  <script src="./plugin/select2/dist/js/bootstrap-select.min.js"></script>
+  <script src="plugin/ckeditor/ckeditor.js"></script>
+  <script src="plugin/bootstrap-daterangepicker/daterangepicker.js"></script>
+  <script src="plugin/perfect-scrollbar/js/perfect-scrollbar.jquery.min.js"></script>
+  <script src="plugin/tether/dist/js/tether.min.js"></script>
+  <script src="plugin/bootstrap/js/dist/util.js"></script>
+  <script src="plugin/bootstrap/js/dist/button.js"></script>
+  <script src="plugin/bootstrap/js/dist/collapse.js"></script>
+  <script src="./js/jquery.fancybox.min.js"></script>
+  <script src="plugin/bootstrap/js/dist/modal.js"></script>
   <script src="./js/owl.carousel.min.js"></script>
   <script src="js/maince5a.js?version=4.4.1"></script>
 
@@ -382,6 +385,15 @@
       }
     })
   </script>
+  <script type="text/javascript">
+  $('[data-fancybox]').fancybox({
+  youtube : {
+      controls : 0,
+      showinfo : 0
+  },
+
+});
+</script>
 </body>
 
 </html>
