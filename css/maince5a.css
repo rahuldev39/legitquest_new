@@ -11592,7 +11592,6 @@ b, strong {
 
 .all-wrapper.solid-bg-all .content-w {
     background-image: none;
-    min-height: 100vh;
 }
 
 .auth-wrapper .all-wrapper {
@@ -20917,6 +20916,7 @@ a.with-avatar span {
     border-bottom: 1px solid rgba(0, 0, 0, 0.1);
     padding: 15px 15px;
     margin-bottom: 0px;
+    padding-right: 0px;
 }
 
 .search-app-w .search-sidebar .search-sidebar-section:first-child {
