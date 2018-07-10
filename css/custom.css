@@ -2035,6 +2035,7 @@ button.close {
     justify-content: center;
     padding-top: 98px !important;
     padding-bottom: 35px !important;
+    background-position-y: 40px;
 }
 .auth-wrapper::before{
   display: none;
