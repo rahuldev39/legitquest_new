@@ -21,14 +21,12 @@
     cursor: pointer;
     display: none;
 }
-.checkbox-default input[type="checkbox"]:checked + span::before,
-.radio-default input[type="radio"]:checked + span::before {
+.checkbox-default input[type="checkbox"]:checked + span::before, .radio-default input[type="radio"]:checked + span::before {
     background-color: #ffffff;
-    border-color: #077af8;
+    border-color: #0372b1;
 }
-.checkbox-default input[type="checkbox"]:checked + span::after,
-.radio-default input[type="radio"]:checked + span::after {
-    color: #077af8;
+.checkbox-default input[type="checkbox"]:checked + span::after, .radio-default input[type="radio"]:checked + span::after {
+    color: #0372b1;
 }
 
 .checkbox span::before {

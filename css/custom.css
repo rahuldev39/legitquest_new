@@ -9,7 +9,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    background-color: #1976d2;
+    background-color: #0073b1;
 }
 .sk-fading-circle {
   margin: 100px auto;
@@ -260,10 +260,10 @@ nav.navbar {
     letter-spacing: 1px;
 }
 .navbar ul li.nav-item.active .nav-link {
-    color: #1976d2;
+    color: #0073b1;
 }
 .navbar ul li.nav-item .nav-link:hover {
-    color: #1976d2;
+    color: #0073b1;
 }
 .search-section {
     background-image: url(./../img/bg-header.jpg);
@@ -300,7 +300,7 @@ nav.navbar {
     position: absolute;
     top: 104%;
     width: 100%;
-    min-width: 290px;
+    min-width: 310px;
     font-family: "Avenir Next W01", "Proxima Nova W01", "Rubik", -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
 }
 
@@ -336,13 +336,13 @@ nav.navbar {
     background-color: transparent;
     display: block;
     border-radius: 0px;
-    color: #0963c5;
+    color: #0372b1;
     cursor: pointer;
     text-decoration: underline;
     font-size: .9rem;
 }
 .select-block ul li input[type="radio"]:checked + span {
-    color: #1976d2;
+    color: #0073b1;
     font-weight: 500;
 }
 .search-field .section-input{
@@ -364,6 +364,16 @@ nav.navbar {
     opacity: .8;
     font-family: "Avenir Next W01", "Proxima Nova W01", "Rubik", -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
 }
+.search-field div.form-control-div span.tooltip-help{
+  background-color: #101010d1;
+    padding: 1px 6px;
+    border-radius: 3px;
+    opacity: 0
+}
+.form-control-div input:focus + span, .form-control-div input:hover + span{
+  opacity: 1 !important;
+
+}
 .select-block strong {
     font-size: 15px;
     display: block;
@@ -378,7 +388,7 @@ nav.navbar {
 }
 .select-radio-inner > span {
     display: block;
-    min-width: 166px;
+    min-width: 200px;
 }
 .search-field {
     position: relative;
@@ -412,7 +422,7 @@ font-size: 13pt;
 }
 .search-field input {
     font-size: 21px;
-    border-color: #1976d23b;
+    border-color: #0073b13b;
     padding-right: 35px;
     margin-right: 2px;
     webkit-box-shadow: 0px 2px 4px rgba(126,142,177,0.12);
@@ -521,7 +531,7 @@ width: 100%
     height: 3px;
     margin-top: 20px;
     margin-bottom: 20px;
-    background-color: #1976d2;
+    background-color: #0073b1;
 }
 .image-section {
     position: static;
@@ -580,7 +590,7 @@ width: 100%
     height: 3px;
     margin-top: 20px;
     margin-bottom: 20px;
-    background-color: #1976d2;
+    background-color: #0073b1;
 }
 .check-list-icon {
     width: 24px;
@@ -831,7 +841,7 @@ width: 100%
 }
 .address_box i {
     font-size: 16px;
-    color: #1976d2;
+    color: #0073b1;
 }
 .social-list{
   display: flex;
@@ -905,6 +915,7 @@ body.page-internal .navbar-collapse {
     margin-left: 300px;
     transition: all ease-in-out 300ms;
     min-height: calc(100vh - 66px);
+    padding-bottom: 84px;
 }
 .close-sidebar .search-content {
     margin-left: 0px
@@ -917,21 +928,26 @@ body.page-internal .navbar-collapse {
     line-height: 43px;
 }
 h2.result_title {
-    font-size: 18px;
+    font-size: 17px;
     font-weight: 500;
     margin-bottom: 5px;
 }
+
 .info_line {
     color: #25773f;
     margin-bottom: 10px;
 }
-.search-text{
-      font-size: .93rem;
+.search-text {
+    font-size: .9rem;
 }
 .result-block {
-    padding-bottom: 20px;
     margin-bottom: 20px;
-    border-bottom: 1px solid #e0dfdf;
+    padding: 30px 25px;
+    background-color: #ffffff;
+    -webkit-box-shadow: 0px 2px 4px rgba(126,142,177,0.12);
+    box-shadow: 0px 2px 4px rgba(126,142,177,0.12);
+    border-radius: 6px;
+    border: 1px solid #f1f1f1;
 }
 .filter-list b.case-count {
     color: #868383;
@@ -1412,7 +1428,7 @@ font-weight: 700;
     font-weight: 500;
 }
 .act-info {
-    color: #1976d2;
+    color: #0073b1;
     font-weight: 600;
     font-size: 19px;
     margin-bottom: 5px;
@@ -1604,7 +1620,7 @@ font-weight: 700;
     padding-right: 8px;
 }
 .plan-switch .plan-link.active {
-    color: #1976d2;
+    color: #0073b1;
 }
 .monthly-price,.yearly-price{
   display: none;
@@ -1731,7 +1747,7 @@ font-weight: 700;
 .rank-block h4 {
     margin: 0;
     padding: 8px;
-    background-color: #1976d2;
+    background-color: #0073b1;
     margin-right: 7px;
     border-right: 1px solid #e4e4e4;
     font-size: 14px;
@@ -1857,7 +1873,7 @@ button.close {
     font-size: 14px!important;
 }
 .university_seat.bgblue {
-    background-color: #1976d2;
+    background-color: #0073b1;
 }
 .university-name {
     color: #7d7f82;
@@ -2046,6 +2062,19 @@ button.close {
     margin-bottom: 20px;
     border-top: 1px solid #e5e5e5;
     padding-top: 14px;
+}
+#footer {
+    background-color: #0372b1;
+    color: #fbfbfbfa;
+    font-size: 13px;
+    padding: 12px 0px;
+    margin-top: -43px;
+}
+.menu-side-left #footer{
+  margin-left: 300px
+}
+.menu-side-left.close-sidebar #footer{
+  margin-left: 0px
 }
 /*############-----image slider css Start---------#############*/
 #slideshow {
