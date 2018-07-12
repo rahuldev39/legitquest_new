@@ -349,7 +349,9 @@ nav.navbar {
   flex-basis: 300px
 }
 .search-field .journal-input{
-  flex-basis: 200px;
+}
+.search-field .year-input, .search-field .volume-input, .search-field .page-input{
+  max-width: 130px
 }
 .search-field div.form-control-div{
   width: 100%;
