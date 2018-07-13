@@ -2082,6 +2082,29 @@ button.close {
 .menu-side-left.close-sidebar #footer{
   margin-left: 0px
 }
+.user-container{
+  padding-top: 100px
+}
+.profile-links ul {
+    list-style-type: none;
+    padding: 0px;
+    border-bottom: 1px solid #f2f2f2;
+    padding-bottom: 10px;
+}
+.profile-links ul li{
+
+}
+.profile-links ul li a {
+    padding: 8px 32px;
+    display: block;
+    font-size: 14px;
+    /* border-bottom: 1px solid #e5e5e5; */
+    color: #3e4b5a;
+    font-weight: 500;
+}
+.profile-links ul li a i {
+    margin-right: 10px;
+}
 /*############-----image slider css Start---------#############*/
 #slideshow {
     position: absolute;

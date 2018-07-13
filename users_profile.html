@@ -65,9 +65,17 @@
                   </div>
                 </li>
 
-
-                <li class="nav-item nav-btn-link">
-                  <button class="btn btn-primary" type="button"> Sign In</button>
+                <li class="nav-item dropdown user-block">
+                  <a class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                  <i class="os-icon os-icon-user-male-circle"></i> Karan Kalia
+                  </a>
+                  <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                    <a class="dropdown-item" href="#">Dashboard</a>
+                    <a class="dropdown-item" href="#">Edit Profile</a>
+                    <a class="dropdown-item" href="#">Bookmarks</a>
+                    <a class="dropdown-item" href="#">Notes</a>
+                    <a class="dropdown-item" href="#">Logout</a>
+                  </div>
                 </li>
               </ul>
 
@@ -81,15 +89,19 @@
         </nav>
       </header>
       <div class="content-i">
-          <div class="content-box">
+          <div class=" user-container container">
               <div class="row">
                   <div class="col-sm-5 col-md-4 col-lg-3">
                       <div class="user-profile compact">
                           <div class="up-head-w" style="background-image:url(img/profile_bg1.jpg)">
-                              <div class="up-social"><a href="#"><i class="os-icon os-icon-twitter"></i></a><a href="#"><i class="os-icon os-icon-facebook"></i></a></div>
+                              <div class="up-social">
+                                <a href="#"><i class="fa fa-twitter-square"></i></a>
+                                <a href="#"><i class="fa fa-facebook-square"></i></a>
+                                <a href="#"><i class="fa fa-linkedin-square"></i></a>
+                              </div>
                               <div class="up-main-info">
-                                  <h2 class="up-header">John Mayers</h2>
-                                  <h6 class="up-sub-header">Product Designer at Facebook</h6></div>
+                                  <h2 class="up-header">Karan Kalia</h2>
+                                  <h6 class="up-sub-header">Founder & CEO Legitquest</h6></div>
                               <svg class="decor" width="842px" height="219px" viewBox="0 0 842 219" preserveAspectRatio="xMaxYMax meet" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
                                   <g transform="translate(-381.000000, -362.000000)" fill="#FFFFFF">
                                       <path class="decor-path" d="M1223,362 L1223,581 L381,581 C868.912802,575.666667 1149.57947,502.666667 1223,362 Z"></path>
@@ -104,25 +116,35 @@
                                           <div class="value badge badge-pill badge-success">Online</div>
                                       </div>
                                   </div>
-                                  <div class="col-sm-6 text-right"><a class="btn btn-primary btn-sm" href="#"><i class="os-icon os-icon-link-3"></i><span>Add to Friends</span></a></div>
+
                               </div>
                           </div>
                           <div class="up-contents">
-                              <div class="m-b">
+                              <div class="">
                                   <div class="row m-b">
                                       <div class="col-sm-6 b-r b-b">
                                           <div class="el-tablo centered padded-v">
                                               <div class="value">25</div>
-                                              <div class="label">Products Sold</div>
+                                              <div class="label">Notes</div>
                                           </div>
                                       </div>
                                       <div class="col-sm-6 b-b">
                                           <div class="el-tablo centered padded-v">
-                                              <div class="value">315</div>
-                                              <div class="label">Friends</div>
+                                              <div class="value">31</div>
+                                              <div class="label">Bookmarks</div>
                                           </div>
                                       </div>
                                   </div>
+
+                                  <div class="profile-links">
+                                    <ul>
+                                      <li><a href="#"><i class="icon-user-follow"></i> Edit Profile</a> </li>
+                                      <li><a href="#"><i class="icon-lock"></i> Change password</a></li>
+                                      <li><a href="#"><i class="icon-tag"></i> Bookmarks</a></li>
+                                      <li><a href="#"><i class="icon-note"></i> Notes</a></li>
+                                    </ul>
+                                  </div>
+
                                   <div class="padded">
                                       <div class="os-progress-bar primary">
                                           <div class="bar-labels">
@@ -135,28 +157,8 @@
                                               </div>
                                           </div>
                                       </div>
-                                      <div class="os-progress-bar primary">
-                                          <div class="bar-labels">
-                                              <div class="bar-label-left"><span>Status Unlocked</span><span class="positive">+5</span></div>
-                                              <div class="bar-label-right"><span class="info">45/100</span></div>
-                                          </div>
-                                          <div class="bar-level-1" style="width: 100%">
-                                              <div class="bar-level-2" style="width: 30%">
-                                                  <div class="bar-level-3" style="width: 10%"></div>
-                                              </div>
-                                          </div>
-                                      </div>
-                                      <div class="os-progress-bar primary">
-                                          <div class="bar-labels">
-                                              <div class="bar-label-left"><span>Followers</span><span class="negative">-12</span></div>
-                                              <div class="bar-label-right"><span class="info">74/100</span></div>
-                                          </div>
-                                          <div class="bar-level-1" style="width: 100%">
-                                              <div class="bar-level-2" style="width: 80%">
-                                                  <div class="bar-level-3" style="width: 60%"></div>
-                                              </div>
-                                          </div>
-                                      </div>
+
+
                                   </div>
                               </div>
                           </div>
@@ -170,107 +172,156 @@
                                   <div class="element-info">
                                       <div class="element-info-with-icon">
                                           <div class="element-info-icon">
-                                              <div class="os-icon os-icon-wallet-loaded"></div>
+                                              <div class="icon-user-follow"></div>
                                           </div>
                                           <div class="element-info-text">
                                               <h5 class="element-inner-header">Profile Settings</h5>
-                                              <div class="element-inner-desc">Validation of the form is made possible using powerful validator plugin for bootstrap. <a href="http://1000hz.github.io/bootstrap-validator/" target="_blank">Learn more about Bootstrap Validator</a></div>
+                                              <div class="element-inner-desc">Please enter all information carefully</div>
                                           </div>
                                       </div>
                                   </div>
-                                  <div class="form-group">
-                                      <label for=""> Email address</label>
-                                      <input class="form-control" data-error="Your email address is invalid" placeholder="Enter email" required type="email">
-                                      <div class="help-block form-text with-errors form-control-feedback"></div>
-                                  </div>
-                                  <div class="row">
-                                      <div class="col-sm-6">
-                                          <div class="form-group">
-                                              <label for=""> Password</label>
-                                              <input class="form-control" data-minlength="6" placeholder="Password" required type="password">
-                                              <div class="help-block form-text text-muted form-control-feedback">Minimum of 6 characters</div>
-                                          </div>
-                                      </div>
-                                      <div class="col-sm-6">
-                                          <div class="form-group">
-                                              <label for="">Confirm Password</label>
-                                              <input class="form-control" data-match-error="Passwords don&#39;t match" placeholder="Confirm Password" required type="password">
-                                              <div class="help-block form-text with-errors form-control-feedback"></div>
-                                          </div>
-                                      </div>
-                                  </div>
-                                  <div class="form-group">
-                                      <label for=""> Regular select</label>
-                                      <select class="form-control">
-                                          <option value="New York">New York</option>
-                                          <option value="California">California</option>
-                                          <option value="Boston">Boston</option>
-                                          <option value="Texas">Texas</option>
-                                          <option value="Colorado">Colorado</option>
-                                      </select>
-                                  </div>
-                                  <div class="form-group">
-                                      <label for=""> Multiselect</label>
-                                      <select class="form-control select2" multiple="true">
-                                          <option selected="true">New York</option>
-                                          <option selected="true">California</option>
-                                          <option>Boston</option>
-                                          <option>Texas</option>
-                                          <option>Colorado</option>
-                                      </select>
-                                  </div>
+
+
+
                                   <fieldset class="form-group">
-                                      <legend><span>Section Example</span></legend>
+                                      <legend><span>Account Details</span></legend>
                                       <div class="row">
                                           <div class="col-sm-6">
                                               <div class="form-group">
-                                                  <label for=""> First Name</label>
-                                                  <input class="form-control" data-error="Please input your First Name" placeholder="First Name" required type="text">
+                                                  <label for=""> Email Id</label>
+                                                  <input class="form-control" disabled="True" placeholder="email" value="venkatesh@legitquest.com" required type="text">
                                                   <div class="help-block form-text with-errors form-control-feedback"></div>
                                               </div>
                                           </div>
                                           <div class="col-sm-6">
                                               <div class="form-group">
-                                                  <label for="">Last Name</label>
-                                                  <input class="form-control" data-error="Please input your Last Name" placeholder="Last Name" required type="text">
+                                                  <label for="">Mobile Number</label>
+                                                  <input class="form-control" disabled="True" placeholder="Mobile Number" required type="text" value="9940835415">
                                                   <div class="help-block form-text with-errors form-control-feedback"></div>
                                               </div>
                                           </div>
                                       </div>
+
+                                  </fieldset>
+
+
+                                  <fieldset class="form-group">
+                                      <legend><span>General Information</span></legend>
                                       <div class="row">
-                                          <div class="col-sm-6">
+                                          <div class="col-md-6">
                                               <div class="form-group">
-                                                  <label for=""> Date of Birth</label>
-                                                  <input class="single-daterange form-control" placeholder="Date of birth" type="text" value="04/12/1978">
+                                                  <label class="control-label">First Name</label>
+                                                  <div class="">
+                                                      <input class="form-control" id="FirstName" name="FirstName" type="text" value="venkatesh"><span class="field-validation-valid" data-valmsg-for="FirstName" data-valmsg-replace="true"></span>
+                                                  </div>
                                               </div>
                                           </div>
-                                          <div class="col-sm-6">
+                                          <div class="col-md-6">
                                               <div class="form-group">
-                                                  <label for="">Twitter Username</label>
-                                                  <div class="input-group">
-                                                      <div class="input-group-prepend">
-                                                          <div class="input-group-text">@</div>
-                                                      </div>
-                                                      <input class="form-control" placeholder="Twitter Username" type="text">
+                                                  <label class="control-label">Last Name</label>
+                                                  <div class="">
+                                                      <input class="form-control" id="LastName" name="LastName" type="text" value=""><span class="field-validation-valid" data-valmsg-for="LastName" data-valmsg-replace="true"></span>
                                                   </div>
                                               </div>
                                           </div>
                                       </div>
-                                      <div class="form-group">
-                                          <label for="">Date Range Picker</label>
-                                          <input class="multi-daterange form-control" type="text" value="03/31/2017 - 04/06/2017">
-                                      </div>
-                                      <div class="form-group">
-                                          <label> Example textarea</label>
-                                          <textarea class="form-control" rows="3"></textarea>
-                                      </div>
-                                  </fieldset>
-                                  <div class="form-check">
-                                      <label class="form-check-label">
-                                          <input class="form-check-input" type="checkbox">I agree to terms and conditions</label>
+
+                                      <div class="row">
+                    <div class="col-md-6">
+
+                        <div class="form-group">
+                            <label class="control-label">University</label>
+                            <div class="">
+                                <select class="form-control" data-val="true" data-val-number="The field UniverityId must be a number." data-val-required="The UniverityId field is required." id="university" name="UniverityId"><option selected="selected" value="0">Select University</option>
+                                    <option value="1">NLSIU Bangalore</option>
+                                    <option value="2">NALSAR Hyderabad</option>
+                                    <option value="3">NUJS Kolkata</option>
+                                    <option value="4">National Law University, Jodhpur</option>
+                                    <option value="5">National Law Institute University Bhopal</option>
+                                    <option value="6">Gujarat National Law University Gandhinagar</option>
+                                    <option value="7">National University of Advanced Legal Studies Kochi</option>
+                                    <option value="8">Dr. Ram Manohar Lohiya National Law University Lucknow</option>
+                                    <option value="9">National Law University, Odisha</option>
+                                    <option value="10">National University of Study and Research Ranchi</option>
+                                    <option value="11">Hidayatullah National Law University Raipur</option>
+                                    <option value="12">Rajiv Gandhi National University Of Law Patiala</option>
+                                    <option value="13">National Law University and Judicial Academy Guwahati</option>
+                                    <option value="14">Chanakya National Law University Patna</option>
+                                    <option value="15">Tamil Nadu National Law School Trichy</option>
+                                    <option value="16">Damodaram Sanjivayya National Law University Vishakhapatnam</option>
+                                    <option value="17">National Law University, Delhi</option>
+                                    <option value="18">Faculty of Law, Aligarh Muslim University</option>
+                                    <option value="19">Faculty of Law, Jamia Millia Islamia Delhi</option>
+                                    <option value="20">Indian Law Society's Law College Pune</option>
+                                    <option value="21">Government Law College Mumbai</option>
+                                    <option value="22">Symbiosis Society's Law College Pune</option>
+                                    <option value="23">Amity Law School Noida</option>
+                                    <option value="24">New Law College Pune</option>
+                                    <option value="25">Faculty of Law, University of Delhi</option>
+                                    <option value="26">University Law College Bangalore Univeristy</option>
+                                    <option value="27">Faculty of Law Mumbai University</option>
+                                    <option value="28">Faculty of Law BHU</option>
+                                    <option value="29">Bangalore Institute of Legal Studies</option>
+                                    <option value="30">Tamil Nadu Dr Ambedkar Law University</option>
+                                    <option value="31">Army Institute of Law Mohali</option>
+                                    <option value="32">DES Law College Pune</option>
+                                    <option value="33">Department of Law, University of Calcutta</option>
+                                    <option value="34">Government Law College Thiruvananthapuram</option>
+                                    <option value="35">National Law University and Judicial Academy, Assam</option>
+                                    <option value="36">Chanakya National Law University, Patna</option>
+                                    <option value="37">Osmania University College of Law, Osmania University</option>
+                                    <option value="38">Department of Laws, Panjab University, Chandigarh</option>
+                                    <option value="39">Baroda School of Legal Studies</option>
+                                    <option value="40">Faculty of Law, Banaras Hindu University, Varanasi</option>
+                                    <option value="41">M.S. Ramaiah College of Law, Bangalore</option>
+                                    <option value="42">School of Law, Christ University, Bangalore</option>
+                                    <option value="43">Department of law, Himachal Pradesh University, Shimla</option>
+                                    <option value="44">Government Law College, Calicut</option>
+                                    <option value="45">Department of Legal Studies &amp; Research (DLSR), Barkatullah University, Bhopal</option>
+                                    <option value="46">K.C. Law College, Mumbai</option>
+                                    <option value="47">Central Law College, Nagpur</option>
+                                    <option value="48">Ambedkar Law College, Dhule</option>
+                                    <option value="49">KIIT School of Law Bhubaneswar</option>
+                                    <option value="50">Department of Laws, Guru Nanak Dev University, Amritsar</option>
+                                    <option value="51">Lloyd Law College, Greater Noida</option>
+                                    <option value="52">Lloyd Law College, Greater Noida</option>
+                                    <option value="53">Forensic science</option>
+                                    <option value="54">Amity Law School, Delhi</option>
+                                    <option value="55">Indraprastha university </option>
+                                    <option value="56">University Five Year Law College (UFYLC), University of Rajasthan (UOR)</option>
+                                    <option value="57">Acharya Nagarjuna university</option>
+                                    <option value="58">Acharya Nagarjuna university</option>
+                                    <option value="59">Kerala Law Academy Law College,Trivandrum</option>
+                                    <option value="60">Kurukshetra University, Kurukshetra</option>
+                                    <option value="61">O.P. Jindal Global University</option>
+                                    <option value="-1">Others</option>
+                                    </select>
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="col-md-6">
+                            <div class="form-group">
+                                <label class="control-label">Occupation</label>
+                                <div class="">
+                                    <select class="form-control" data-val="true" data-val-number="The field Occupation must be a number." data-val-required="The Occupation field is required." id="occupation" name="Occupation"><option selected="selected" value="0">Select Title</option>
+                                      <option value="1">Litigator</option>
+                                      <option value="2">Law Firm</option>
+                                      <option value="3">Corporate lawyer</option>
+                                      <option value="4">Law professor</option>
+                                      <option value="5">Student</option>
+                                      <option value="6">Others</option>
+                                      </select>
                                   </div>
+                                </div>
+
+                    </div>
+                </div>
+
+                                  </fieldset>
+
                                   <div class="form-buttons-w">
-                                      <button class="btn btn-primary" type="submit"> Submit</button>
+                                      <button class="btn btn-primary" type="submit"> Update profile</button>
                                   </div>
                               </form>
                           </div>
