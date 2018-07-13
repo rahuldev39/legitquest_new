@@ -2082,8 +2082,9 @@ button.close {
 .menu-side-left.close-sidebar #footer{
   margin-left: 0px
 }
-.user-container{
-  padding-top: 100px
+.user-container {
+    padding-top: 100px;
+    padding-bottom: 70px;
 }
 .profile-links ul {
     list-style-type: none;
