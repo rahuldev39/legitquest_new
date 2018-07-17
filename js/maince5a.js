@@ -47,7 +47,12 @@ function os_init_sub_menus() {
 
 $(function () {
 
+	// #5. DATATABLES
 
+	  
+	  if ($('#dataTable1').length) {
+	    $('#dataTable1').DataTable({ buttons: ['copy', 'excel', 'pdf'] });
+	  }
 
   // #16. OUR OWN CUSTOM DROPDOWNS
   $('.os-dropdown-trigger').on('mouseenter', function () {

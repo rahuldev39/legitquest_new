@@ -991,9 +991,9 @@ h2.result_title {
     height: 0;
     overflow: hidden;
     opacity: 0;
-    background-color: #fff6d7;
-
+    background-color: #293145;
     display: none;
+    border-radius: 6px;
 }
 .case-popup.active {
     height: auto;
@@ -1003,28 +1003,29 @@ h2.result_title {
 }
 .header-popup {
     width: 100%;
-    color: #3E3221;
+    color: #dadfec;
     border-radius: 2px 2px 0 0;
     display: flex;
     justify-content: space-between;
     padding: 10px 20px;
-    font-weight: 700;
-    border-bottom: 1px solid #f7edcc;
+    font-weight: 500;
+    border-bottom: 1px solid #ffffff0d;
 }
-.header-popup a{
-  color: #3E3221;
+.header-popup a {
+    color: #ffffffad;
 }
-.popup-body {
-  padding: 20px;
+.case-popup .popup-body {
+    padding: 20px;
+    color: #ffffffb8;
 }
 .judges-list span {
     margin-right: 2px;
-    border: 1px solid #e8dbae;
+    border: 1px solid #3f475f;
     padding: 4px 10px;
     display: inline-block;
     border-radius: 4px;
-    background-color: #fbf2d4;
-    font-size: 13px;
+    background-color: #242a3a;
+    font-size: 12px;
 }
 .popup-result .case-search .btn{
 margin-left: 5px

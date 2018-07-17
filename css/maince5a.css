@@ -14705,11 +14705,11 @@ body.menu-side-right .layout-w {
 }
 
 .element-wrapper .element-info-with-icon .element-info-icon {
-  -webkit-box-flex: 0;
-  -ms-flex: 0 0 70px;
-  flex: 0 0 70px;
-  color: #0073b1;
-  font-size: 30px
+    -webkit-box-flex: 0;
+    -ms-flex: 0 0 70px;
+    flex: 0 0 50px;
+    color: #0073b1;
+    font-size: 30px;
 }
 
 .element-wrapper .element-info-with-icon.smaller .element-info-icon {
@@ -14781,7 +14781,7 @@ body.menu-side-right .layout-w {
 }
 
 .element-wrapper .element-inner-header {
-  margin-bottom: 0.5rem;
+  margin-bottom: 0px;
   margin-top: 0px;
   display: block
 }
@@ -14790,7 +14790,8 @@ body.menu-side-right .layout-w {
   color: #999;
   font-weight: 300;
   font-size: .81rem;
-  display: block
+  display: block;
+  margin-top: 0.5rem;
 }
 
 .element-wrapper .element-search {
