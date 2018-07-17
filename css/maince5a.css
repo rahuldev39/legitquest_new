@@ -21776,19 +21776,22 @@ a.with-avatar span {
 }
 
 .top-bar-rentals {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: stretch;
-  -ms-flex-align: stretch;
-  align-items: stretch
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: stretch;
+    -ms-flex-align: stretch;
+    align-items: stretch;
+    -webkit-box-shadow: 0px 2px 4px rgba(126, 142, 177, 0.12);
+    box-shadow: 0px 7px 5px rgba(40, 47, 62, 0.73);
+    border-bottom: 1px solid #e4e7ef;
 }
 
 .top-bar-rentals .logo-w {
   -webkit-box-flex: 0;
-  -ms-flex: 0 0 400px;
-  flex: 0 0 400px;
-  background-color: #4472fd;
+  -ms-flex: 0 0 300px;
+  flex: 0 0 300px;
+  background-color: #ffffff;
   padding: 10px 20px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -21984,41 +21987,42 @@ a.with-avatar span {
 }
 
 .rentals-list-w .filter-side {
-  background-color: #f6f6f6;
-  -webkit-box-flex: 0;
-  -ms-flex: 0 0 400px;
-  flex: 0 0 400px
+    background-color: #fbfbfb;
+    -webkit-box-flex: 0;
+    -ms-flex: 0 0 300px;
+    flex: 0 0 300px;
+    box-shadow: 0px 0px 14px #8a8b8c47 inset;
 }
 
 .rentals-list-w .filter-side .filters-header {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  padding: 16px 20px;
-  -webkit-box-pack: justify;
-  -ms-flex-pack: justify;
-  justify-content: space-between;
-  border-bottom: 1px solid rgba(0, 0, 0, 0.05);
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    padding: 16px 20px;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    border-bottom: 1px solid rgb(204, 224, 236);
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    background-color: #edf6fb;
+    border-right: 1px solid #cce0ec;
 }
-
 .rentals-list-w .filter-side .filters-header h4 {
   text-transform: uppercase;
   letter-spacing: 2px;
   font-size: 1.08rem;
   margin-bottom: 0px
 }
-
 .rentals-list-w .filter-side .filters-header .reset-filters {
-  color: #BC8F8F;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center
+    color: #ce1d1d;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
 }
 
 .rentals-list-w .filter-side .filters-header .reset-filters i {
@@ -22041,19 +22045,19 @@ a.with-avatar span {
 }
 
 .rentals-list-w .filter-side .filter-w .filter-toggle {
-  position: absolute;
-  top: 20px;
-  right: 20px;
-  display: inline-block;
-  padding: 4px 5px;
-  border-radius: 4px;
-  background-color: rgba(0, 0, 0, 0.07);
-  color: rgba(0, 0, 0, 0.4);
-  font-size: 10px;
-  line-height: 1;
-  vertical-align: middle;
-  cursor: pointer;
-  z-index: 3
+    position: absolute;
+    top: 18px;
+    right: 40px;
+    display: inline-block;
+    padding: 4px 5px;
+    border-radius: 4px;
+    background-color: rgba(0, 0, 0, 0.07);
+    color: rgba(0, 0, 0, 0.4);
+    font-size: 10px;
+    line-height: 1;
+    vertical-align: middle;
+    cursor: pointer;
+    z-index: 3;
 }
 
 .rentals-list-w .filter-side .filter-w .filter-toggle i {
@@ -22080,14 +22084,14 @@ a.with-avatar span {
 }
 
 .rentals-list-w .filter-side .filter-header {
-  text-transform: uppercase;
-  letter-spacing: 2px;
-  font-size: .81rem;
-  position: relative;
-  padding: 40px;
-  padding-bottom: 20px;
-  padding-top: 20px;
-  margin: 0px
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-size: .81rem;
+    position: relative;
+    padding: 40px;
+    padding-bottom: 20px;
+    padding-top: 20px;
+    margin: 0px;
 }
 
 .rentals-list-w .filter-side .filter-header:before {
@@ -22103,9 +22107,8 @@ a.with-avatar span {
 }
 
 .rentals-list-w .filter-side .filter-body {
-  padding: 10px 40px 30px 40px
+    padding: 10px 40px 15px 40px;
 }
-
 .rentals-list-w .filter-side .filter-w+.filter-w {
   border-top: 1px solid rgba(0, 0, 0, 0.05)
 }
@@ -22144,17 +22147,18 @@ a.with-avatar span {
 }
 
 .rentals-list-w .rentals-list .list-controls {
-  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
-  padding: 10px 20px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-  -ms-flex-pack: justify;
-  justify-content: space-between;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center
+    border-bottom: 1px solid rgb(204, 224, 236);
+    padding: 10px 20px;
+    /* display: -webkit-box; */
+    display: -ms-flexbox;
+    /* display: flex; */
+    /* -webkit-box-pack: justify; */
+    -ms-flex-pack: justify;
+    /* justify-content: space-between; */
+    /* -webkit-box-align: center; */
+    -ms-flex-align: center;
+    /* align-items: center; */
+    background-color: #edf6fb;
 }
 
 .rentals-list-w .rentals-list .list-controls .list-info {
