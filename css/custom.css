@@ -906,9 +906,10 @@ body.page-internal .navbar-collapse {
 }
 .fix-rightsidebar .search-sidebar {
     position: fixed;
-    width: 300px;
+    width: 288px;
     transition: all ease-in-out 300ms;
     z-index: 100;
+    left: 12px;
 }
 .close-sidebar .search-sidebar {
     left: -300px;
