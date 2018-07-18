@@ -2200,7 +2200,9 @@ background-image: url(./../img/bg-header4.jpg);
 /*############-----image slider css End---------#############*/
 
 
-
+.search-sidebar .search-sidebar-scroll{
+  height: calc(100vh - 117px) !important
+}
 
 
 /*only for screens greater than 992px  */
@@ -2246,6 +2248,9 @@ background-image: url(./../img/bg-header4.jpg);
   }
 }
 @media (max-width: 992px){
+  .search-sidebar .search-sidebar-scroll{
+    height: calc(100vh - 66px) !important
+  }
   .support-index .university-content-w .university-info {
     position: absolute;
     top: 10px;
@@ -2382,7 +2387,9 @@ padding: 0px 20px;
 }
 @media (max-width: 767px)
 {
-
+  .search-sidebar .search-sidebar-scroll{
+    height: calc(100vh - 100px) !important
+  }
 .search-filed-box {
     display: block !important;
 }

@@ -887,21 +887,22 @@ else{
 </script>
 
 <script type="text/javascript">
+$(function() {
+  $('.search-sidebar-scroll').slimScroll({
+    height: '100%',
+  });
+});
+</script>
+
+<script type="text/javascript">
  $(function() {
    $(window).resize(function resize() {
      if ($(window).width() < 976) {
        $('body').addClass('close-sidebar');
-       $('.search-sidebar-scroll').slimScroll({
-         height: 'calc(100vh - 100px)',
-
-       });
-     } else {
+     }
+     else {
 
        $('body').removeClass('close-sidebar');
-       $('.search-sidebar-scroll').slimScroll({
-         height: 'calc(100vh - 117px)',
-
-       });
      }
    }).trigger('resize');
 
