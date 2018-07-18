@@ -906,10 +906,9 @@ body.page-internal .navbar-collapse {
 }
 .fix-rightsidebar .search-sidebar {
     position: fixed;
-    width: 288px;
+    width: 300px;
     transition: all ease-in-out 300ms;
     z-index: 100;
-    left: 12px;
 }
 .close-sidebar .search-sidebar {
     left: -300px;
@@ -2228,6 +2227,13 @@ background-image: url(./../img/bg-header4.jpg);
 
 /* end nav on hover  */
 @media (min-width: 992px){
+  .fix-rightsidebar .search-sidebar {
+    position: fixed;
+    width: 288px;
+    transition: all ease-in-out 300ms;
+    z-index: 100;
+    left: 12px;
+}
   body.page-internal.has-nav-search {
       padding-top: 117px !important;
   }
