@@ -2188,8 +2188,9 @@ background-image: url(./../img/bg-header4.jpg);
 }
 .search-v2 .result-stats {
     color: #000000;
-    margin-bottom: 20px;
+    margin-bottom: 11px;
     font-size: 15px;
+    font-weight: 500;
 }
 .search-v2  .filter-within .form-control {
     margin-right: 12px;
