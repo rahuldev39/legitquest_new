@@ -9,7 +9,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    background-color: #0073b1;
+    background-color: #005aaa;
 }
 .sk-fading-circle {
   margin: 100px auto;
@@ -260,10 +260,10 @@ nav.navbar {
     letter-spacing: 1px;
 }
 .navbar ul li.nav-item.active .nav-link {
-    color: #0073b1;
+    color: #005aaa;
 }
 .navbar ul li.nav-item .nav-link:hover {
-    color: #0073b1;
+    color: #005aaa;
 }
 .search-section {
     background-image: url(./../img/bg-header.jpg);
@@ -342,7 +342,7 @@ nav.navbar {
     font-size: .9rem;
 }
 .select-block ul li input[type="radio"]:checked + span {
-    color: #0073b1;
+    color: #005aaa;
     font-weight: 500;
 }
 .search-field .section-input{
@@ -424,7 +424,7 @@ font-size: 13pt;
 }
 .search-field input {
     font-size: 21px;
-    border-color: #0073b13b;
+    border-color: #005aaa3b;
     padding-right: 35px;
     margin-right: 2px;
     webkit-box-shadow: 0px 2px 4px rgba(126,142,177,0.12);
@@ -533,7 +533,7 @@ width: 100%
     height: 3px;
     margin-top: 20px;
     margin-bottom: 20px;
-    background-color: #0073b1;
+    background-color: #005aaa;
 }
 .image-section {
     position: static;
@@ -592,7 +592,7 @@ width: 100%
     height: 3px;
     margin-top: 20px;
     margin-bottom: 20px;
-    background-color: #0073b1;
+    background-color: #005aaa;
 }
 .check-list-icon {
     width: 24px;
@@ -843,7 +843,7 @@ width: 100%
 }
 .address_box i {
     font-size: 16px;
-    color: #0073b1;
+    color: #005aaa;
 }
 .social-list{
   display: flex;
@@ -930,7 +930,7 @@ body.page-internal .navbar-collapse {
     line-height: 43px;
 }
 h2.result_title {
-    font-size: 17px;
+    font-size: 19px;
     font-weight: 500;
     margin-bottom: 5px;
 }
@@ -938,9 +938,11 @@ h2.result_title {
 .info_line {
     color: #25773f;
     margin-bottom: 10px;
+    font-weight: 500;
 }
 .search-text {
     font-size: .9rem;
+    color: #1b1b1b;
 }
 .result-block {
     margin-bottom: 20px;
@@ -1407,23 +1409,25 @@ font-weight: 700;
   display: block;
 }
 .right-sidebar-toggle {
-    position: absolute;
-    right: -33px;
-    top: 14px;
+
     display: none;
 }
 .right-sidebar-toggle a {
     display: block;
     padding: 5px 10px;
-    background-color: #f9f9f9;
+    background-color: #0259aa;
     font-size: 15px;
-    border: 1px solid #ecebeb;
     border-left: 0px;
-    position: relative;
-    height: 89px;
-    border-radius: 0px 4px 5px 0px;
     -webkit-box-shadow: 0px 2px 4px rgba(126, 142, 177, 0.12);
     box-shadow: 2px 1px 3px rgba(29, 35, 49, 0.02);
+    position: absolute;
+    right: -33px;
+    top: 0px;
+    height: 100%;
+    /* display: flex; */
+    align-items: center;
+    color: white;
+    border-radius: 0px;
 }
 .right-sidebar-toggle a span {
     display: block;
@@ -1435,7 +1439,7 @@ font-weight: 700;
     font-weight: 500;
 }
 .act-info {
-    color: #0073b1;
+    color: #005aaa;
     font-weight: 600;
     font-size: 19px;
     margin-bottom: 5px;
@@ -1627,7 +1631,7 @@ font-weight: 700;
     padding-right: 8px;
 }
 .plan-switch .plan-link.active {
-    color: #0073b1;
+    color: #005aaa;
 }
 .monthly-price,.yearly-price{
   display: none;
@@ -1754,7 +1758,7 @@ font-weight: 700;
 .rank-block h4 {
     margin: 0;
     padding: 8px;
-    background-color: #0073b1;
+    background-color: #005aaa;
     margin-right: 7px;
     border-right: 1px solid #e4e4e4;
     font-size: 14px;
@@ -1880,7 +1884,7 @@ button.close {
     font-size: 14px!important;
 }
 .university_seat.bgblue {
-    background-color: #0073b1;
+    background-color: #005aaa;
 }
 .university-name {
     color: #7d7f82;
@@ -2071,11 +2075,11 @@ button.close {
     padding-top: 14px;
 }
 #footer {
-    background-color: #0372b1;
+    background-color: #0259aa;
     color: #fbfbfbfa;
     font-size: 13px;
     padding: 12px 0px;
-    margin-top: -43px;
+    /* margin-top: -43px; */
 }
 .menu-side-left #footer{
   margin-left: 300px
@@ -2154,14 +2158,14 @@ background-image: url(./../img/bg-header4.jpg);
 .search-v2 .result-container {
     padding: 20px;
 }
-.search-v2  .result-block {
-    margin-bottom: 20px;
+.search-v2 .result-block {
+    margin-bottom: 30px;
     padding: 25px 25px;
     background-color: #ffffff;
     -webkit-box-shadow: 0px 2px 4px rgba(126,142,177,0.12);
     box-shadow: 0px 2px 4px rgba(126,142,177,0.12);
     border-radius: 6px;
-    border: 1px solid #d0e0e8;
+    border: 1px solid #e2e2e2;
 }
 .search-v2  .filter-list {
     margin-bottom: 2rem;
@@ -2178,16 +2182,34 @@ background-image: url(./../img/bg-header4.jpg);
 .search-v2 .select-btn {
     height: 40px;
 }
-.search-v2  .search-filed-box {
-    max-width: 770px;
+.search-v2 .search-filed-box {
+    max-width: initial;
+    padding-right: 15px;
 }
 .search-v2 .result-stats {
-    color: #565656;
+    color: #000000;
     margin-bottom: 20px;
-    line-height: normal;
+    font-size: 15px;
 }
 .search-v2  .filter-within .form-control {
     margin-right: 12px;
+}
+
+
+
+.filters-toggler a
+{
+  display: block;
+    position: absolute;
+    left: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    background-color: white;
+    border-left: 1px solid #e2e2e2;
+    border-right: 1px solid #e2e2e2;
+    padding: 5px;
+    font-size: 11px;
 }
 /*##########------Search v2 end---------###################*/
 
@@ -2213,7 +2235,19 @@ background-image: url(./../img/bg-header4.jpg);
 }
 
 /* end nav on hover  */
+@media (min-width: 992px){
+  body.page-internal.has-nav-search.search-v2 {
+      padding-top: 117px !important;
+  }
+  .search-v2 nav.navbar {
 
+      box-shadow: none;
+      border-bottom: 0px;
+  }
+  .has-nav-search .navbar .nav-mobile{
+        width: 260px;
+  }
+}
 @media (max-width: 992px){
   .support-index .university-content-w .university-info {
     position: absolute;
@@ -2263,6 +2297,15 @@ background-image: url(./../img/bg-header4.jpg);
 .fix-rightsidebar .search-sidebar {
     border-right: 1px solid #ecebeb;
 }
+.rentals-list-w .rentals-list .list-controls {
+
+   position: static;
+    padding-left: 20px;
+    padding-right: 20px;
+    background-color: transparent;
+    margin-bottom: 27px;
+}
+
 }
 @media (max-width: 991px)
 {
