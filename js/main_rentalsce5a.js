@@ -69,7 +69,7 @@ $(function () {
   // #6. FILTERS PANEL MAIN TOGGLER
 
   $('.filters-toggler').on('click', function () {
-    $('.rentals-list-w').toggleClass('hide-filters');
+    $('.search-list-w').toggleClass('hide-filters');
     return false;
   });
 });

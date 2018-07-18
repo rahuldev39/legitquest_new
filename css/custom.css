@@ -616,7 +616,7 @@ width: 100%
 }
 .section.dark-bg {
     position: static;
-    background-color: #313131;
+    background-color: #05559e;
 }
 .dark-bg .column-tittle{
   color: white
@@ -916,14 +916,15 @@ body.page-internal .navbar-collapse {
 .fix-rightsidebar .search-content {
     margin-left: 300px;
     transition: all ease-in-out 300ms;
-    min-height: calc(100vh - 66px);
-    padding-bottom: 84px;
+    min-height: calc(100vh - 117px);
+    padding-bottom: 65px;
 }
 .close-sidebar .search-content {
     margin-left: 0px
 }
 .result-container{
-  padding-top: 15px
+  padding: 12px 12px;
+  padding-top: 0px;
 }
 .result-stats {
     color: #808080;
@@ -940,18 +941,63 @@ h2.result_title {
     margin-bottom: 10px;
     font-weight: 500;
 }
+.filter-body  .filter-list {
+    margin-bottom: 2rem;
+    list-style-type: none;
+    padding: 0px;
+    margin-bottom: 0px
+}
+.filter-body .filter-list li {
+    margin-bottom: 7px;
+}
+.has-nav-search .search-field input {
+    font-size: 18px;
+}
+.has-nav-search .select-btn {
+    height: 40px;
+}
+.has-nav-search .search-filed-box {
+    max-width: initial;
+    padding-right: 15px;
+}
+.search-content .result-stats {
+    color: #000000;
+    margin-bottom: 0px;
+    font-size: 15px;
+    font-weight: 500;
+}
+.sort-label{
+  min-width: 63px;
+}
+.search-content  .filter-within .form-control {
+    margin-right: 12px;
+}
+.filters-toggler a
+{
+  display: block;
+    position: absolute;
+    left: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    background-color: white;
+    border-left: 1px solid #e2e2e2;
+    border-right: 1px solid #e2e2e2;
+    padding: 5px;
+    font-size: 11px;
+}
 .search-text {
     font-size: .9rem;
     color: #1b1b1b;
 }
 .result-block {
-    margin-bottom: 20px;
-    padding: 30px 25px;
-    background-color: #ffffff;
-    -webkit-box-shadow: 0px 2px 4px rgba(126,142,177,0.12);
-    box-shadow: 0px 2px 4px rgba(126,142,177,0.12);
-    border-radius: 6px;
-    border: 1px solid #f1f1f1;
+  margin-bottom: 12px;
+  padding: 25px 25px;
+  background-color: #ffffff;
+  -webkit-box-shadow: 0px 2px 4px rgba(126,142,177,0.12);
+  box-shadow: 0px 2px 4px rgba(126,142,177,0.12);
+  border-radius: 6px;
+  border: 1px solid #e2e2e2;
 }
 .filter-list b.case-count {
     color: #868383;
@@ -1449,8 +1495,8 @@ font-weight: 700;
 .page-header {
 
   background-color: #474747;
-    background-image: -webkit-linear-gradient(270deg, rgba(37, 37, 37, .93), rgba(37, 37, 37, .93)), url(./../img/58c70b5896695e2b578dab9e_04-3.jpg);
-    background-image: linear-gradient(180deg, rgba(37, 37, 37, .93), rgba(37, 37, 37, .93)), url(./../img/58c70b5896695e2b578dab9e_04-3.jpg);
+    background-image: -webkit-linear-gradient(270deg, rgba(0, 62, 140, 0.91), rgba(1, 75, 140, 0.93)),  url(./../img/58c70b5896695e2b578dab9e_04-3.jpg);
+    background-image: linear-gradient(180deg, rgba(0, 62, 140, 0.91), rgba(1, 75, 140, 0.93)),  url(./../img/58c70b5896695e2b578dab9e_04-3.jpg);
     background-position: 0px 0px, 50% 50%;
     background-size: auto, cover;
     background-attachment: scroll, fixed;
@@ -1752,7 +1798,7 @@ font-weight: 700;
     display: flex;
     align-items: center;
     background-color: #eff1f7;
-    border: 1px solid #0879f8;
+    border: 1px solid #0259aa;
     padding-right: 6px;
 }
 .rank-block h4 {
@@ -1766,7 +1812,7 @@ font-weight: 700;
 }
 .rank-label {
     font-size: 25px;
-    color: #0879f8;
+    color: #0259aa;
     padding: 0px 2px;
     margin-bottom: 0;
     margin-top: 0;
@@ -2079,7 +2125,7 @@ button.close {
     color: #fbfbfbfa;
     font-size: 13px;
     padding: 12px 0px;
-    /* margin-top: -43px; */
+    margin-top: -43px;
 }
 .menu-side-left #footer{
   margin-left: 300px
@@ -2154,66 +2200,7 @@ background-image: url(./../img/bg-header4.jpg);
 /*############-----image slider css End---------#############*/
 
 
-/*##########--------Search v2 start-----------#################*/
-.search-v2 .result-container {
-    padding: 12px 12px;
-    padding-top: 0px;
-}
-.search-v2 .result-block {
-    margin-bottom: 12px;
-    padding: 25px 25px;
-    background-color: #ffffff;
-    -webkit-box-shadow: 0px 2px 4px rgba(126,142,177,0.12);
-    box-shadow: 0px 2px 4px rgba(126,142,177,0.12);
-    border-radius: 6px;
-    border: 1px solid #e2e2e2;
-}
-.search-v2  .filter-list {
-    margin-bottom: 2rem;
-    list-style-type: none;
-    padding: 0px;
-    margin-bottom: 0px
-}
-.search-v2 .filter-list li {
-    margin-bottom: 7px;
-}
-.search-v2 .search-field input {
-    font-size: 18px;
-}
-.search-v2 .select-btn {
-    height: 40px;
-}
-.search-v2 .search-filed-box {
-    max-width: initial;
-    padding-right: 15px;
-}
-.search-v2 .result-stats {
-    color: #000000;
-    margin-bottom: 0px;
-    font-size: 15px;
-    font-weight: 500;
-}
-.search-v2  .filter-within .form-control {
-    margin-right: 12px;
-}
 
-
-
-.filters-toggler a
-{
-  display: block;
-    position: absolute;
-    left: 100%;
-    height: 100%;
-    display: flex;
-    align-items: center;
-    background-color: white;
-    border-left: 1px solid #e2e2e2;
-    border-right: 1px solid #e2e2e2;
-    padding: 5px;
-    font-size: 11px;
-}
-/*##########------Search v2 end---------###################*/
 
 
 /*only for screens greater than 992px  */
@@ -2234,15 +2221,16 @@ background-image: url(./../img/bg-header4.jpg);
         opacity: 1;
         visibility: visible;
     }
+
+
 }
 
 /* end nav on hover  */
 @media (min-width: 992px){
-  body.page-internal.has-nav-search.search-v2 {
+  body.page-internal.has-nav-search {
       padding-top: 117px !important;
   }
-  .search-v2 nav.navbar {
-
+  .has-nav-search nav.navbar {
       box-shadow: none;
       border-bottom: 0px;
   }
@@ -2299,13 +2287,12 @@ background-image: url(./../img/bg-header4.jpg);
 .fix-rightsidebar .search-sidebar {
     border-right: 1px solid #ecebeb;
 }
-.rentals-list-w .rentals-list .list-controls {
-
-   position: static;
-    padding-left: 20px;
-    padding-right: 20px;
+.search-list-w .search-list .list-controls {
+    position: static;
+    padding-left: 0px;
+    padding-right: 0px;
     background-color: transparent;
-    margin-bottom: 27px;
+    margin-bottom: 0px;
 }
 
 }
@@ -2331,6 +2318,12 @@ background-image: url(./../img/bg-header4.jpg);
 }
 @media (max-width: 767px)
 {
+  .search-list-w .pagination-w {
+    flex-direction: column;
+}
+.search-list-w .pagination-w .pagination-info {
+    margin-bottom: 20px;
+}
   .intro-section .container{
     max-width: 95%
   }
