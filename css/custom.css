@@ -927,7 +927,7 @@ body.page-internal .navbar-collapse {
 }
 .result-stats {
     color: #808080;
-    line-height: 43px;
+    line-height: 51px;
 }
 h2.result_title {
     font-size: 19px;
@@ -2156,10 +2156,11 @@ background-image: url(./../img/bg-header4.jpg);
 
 /*##########--------Search v2 start-----------#################*/
 .search-v2 .result-container {
-    padding: 20px;
+    padding: 12px 12px;
+    padding-top: 0px;
 }
 .search-v2 .result-block {
-    margin-bottom: 22px;
+    margin-bottom: 12px;
     padding: 25px 25px;
     background-color: #ffffff;
     -webkit-box-shadow: 0px 2px 4px rgba(126,142,177,0.12);
@@ -2188,7 +2189,7 @@ background-image: url(./../img/bg-header4.jpg);
 }
 .search-v2 .result-stats {
     color: #000000;
-    margin-bottom: 11px;
+    margin-bottom: 0px;
     font-size: 15px;
     font-weight: 500;
 }
