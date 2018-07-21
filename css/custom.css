@@ -2207,17 +2207,9 @@ background-image: url(./../img/bg-header4.jpg);
 .idraf-icon {
     margin-left: 1px;
 }
-.disposition-header::before {
-    content: "\f023" !important;
-    display: inline-block;
-    font: normal normal normal 14px/1 FontAwesome;
-    font-size: inherit;
-    text-rendering: auto;
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
-    background: transparent !important;
-    color: #0259aa;
-    top: 48% !important;
+.lock-icon {
+    color: #efbd31;
+    margin-left: 3px;
 }
 /*only for screens greater than 992px  */
 @media (min-width: 768px) {
