@@ -18,6 +18,8 @@
   <link href="./css/bootstrap.min.css" rel="stylesheet">
   <link href="./css/owl.theme.css" rel="stylesheet">
   <link href="./css/owl.carousel.css" rel="stylesheet">
+  <link href="./plugin/autocomplete/easy-autocomplete.css" rel="stylesheet">
+  <link href="./plugin/autocomplete/easy-autocomplete.themes.css" rel="stylesheet">
   <link href="css/maince5a.css" rel="stylesheet">
   <link href="./css/jquery.fancybox.min.css" rel="stylesheet">
   <link href="./css/custom.css" rel="stylesheet">
@@ -84,9 +86,11 @@
                 </div>
               </li>
 
-
               <li class="nav-item nav-btn-link">
                 <button class="btn btn-primary" type="button"> Sign In</button>
+              </li>
+              <li class="nav-item nav-btn-link">
+                <button class="btn btn-outline-primary" type="button"> Corporate</button>
               </li>
             </ul>
 
@@ -232,7 +236,7 @@
 
           <div class="position-relative flex-fill">
             <div id="free-text-box" class="search-field flex-fill show">
-              <input class="form-control" placeholder="Search by title, case number, issue, ..." >
+              <input id="basics" class="form-control" placeholder="Search by title, case number, issue, ..." >
             </div>
             <div id="citation-box" class="search-field flex-fill">
               <input class="form-control journal-input" placeholder="Journal">
@@ -922,7 +926,16 @@ iDRAF is a revolutionary feature which enables access to Issue, reasoning, argum
   <script src="plugin/bootstrap/js/dist/modal.js"></script>
   <script src="./js/owl.carousel.min.js"></script>
   <script src="./js/jquery.fancybox.min.js"></script>
+  <script src="./plugin/autocomplete/jquery.easy-autocomplete.min.js"></script>
   <script src="js/maince5a.js?version=4.4.1"></script>
+
+  <script type="text/javascript">
+    var options = {
+  data: ["blue", "green", "pink", "red", "yellow"],
+  };
+
+  $("#basics").easyAutocomplete(options);
+  </script>
 
 <script type="text/javascript">
   var navbar = $(".navbar-v2"),
