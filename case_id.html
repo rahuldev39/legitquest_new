@@ -54,6 +54,7 @@
       <div class="content-w">
         <header id="pageTop" class="header">
           <nav class="navbar navbar-expand-md fixed-top">
+
             <div class="container container-wide">
               <div class="nav-mobile d-flex  justify-content-between align-items-center">
                 <a class="navbar-brand" href="#">
@@ -79,6 +80,12 @@
                       <a class="dropdown-item" href="#">About</a>
                       <a class="dropdown-item" href="#">Contact</a>
                     </div>
+                  </li>
+
+                  <li class="nav-item nav-btn-link">
+                    <button class="btn btn-outline-warning" type="button" data-target="#reportModal" data-toggle="modal">
+                      Report a Problem
+                    </button>
                   </li>
 
                   <li class="nav-item dropdown user-block">
@@ -631,6 +638,42 @@
     </div>
     <div class="display-type"></div>
   </div>
+
+  <div aria-hidden="true" class="modal fade" id="reportModal" role="dialog" tabindex="-1">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header faded smaller">
+                    <div class="modal-title"><strong>Report a Problem</strong></div>
+                    <button aria-label="Close" class="close" data-dismiss="modal" type="button"><span aria-hidden="true"> &times;</span></button>
+                </div>
+                <div class="modal-body">
+                    <form>
+                        <div class="prblem-area form-group">
+                          <label for="">Select Problem Area</label>
+                          <ul class="nav nav-pills smaller d-none d-lg-flex">
+                            <li class="nav-item"><a class="nav-link active show" data-toggle="tab" href="#"> Content</a></li>
+                            <li class="nav-item"><a class="nav-link" data-toggle="tab" href="#"> Segregation</a></li>
+                            <li class="nav-item"><a class="nav-link" data-toggle="tab" href="#"> Judge name</a></li>
+                            <li class="nav-item"><a class="nav-link" data-toggle="tab" href="#"> Court</a></li>
+                            <li class="nav-item"><a class="nav-link" data-toggle="tab" href="#"> Citation</a></li>
+                            <li class="nav-item"><a class="nav-link" data-toggle="tab" href="#"> Others</a></li>
+                          </ul>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="">Description</label>
+                            <textarea class="form-control" value"" name="" rows="3" placeholder="Please enter information here"></textarea>
+                        </div>
+                    </form>
+                </div>
+                <div class="modal-footer buttons-on-left">
+                    <button class="btn btn-primary" type="button"> Send</button>
+                    <button class="btn btn-link" data-dismiss="modal" type="button"> Cancel</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
   <script src="plugin/jquery/dist/jquery.min.js"></script>
   <script src="plugin/popper.js/dist/umd/popper.min.js"></script>
   <script src="./js/bootstrap.min.js"></script>
