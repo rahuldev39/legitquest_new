@@ -108,7 +108,7 @@
     transform: scale(1, 1);
 }
 .radio-default input[type="radio"]:checked + span::after {
-    background-color: #077af8;
+    background-color: #0259aa;
 }
 .radio {
     padding-left: 20px;
