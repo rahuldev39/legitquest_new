@@ -15925,7 +15925,7 @@ a.el-tablo:hover .label {
 }
 
 .auth-box-w {
-    max-width: 450px;
+    max-width: 500px;
     margin: 0px auto;
     background-color: #fafafb;
     border-radius: 6px;
@@ -15951,7 +15951,7 @@ a.el-tablo:hover .label {
 .auth-box-w .auth-header {
     border-bottom: 1px solid rgba(0, 0, 0, 0.1);
     padding-bottom: 1.5rem;
-    margin-bottom: 2rem;
+    margin-bottom: 1.5rem;
     position: relative;
     z-index: 1;
     padding-left: 80px;
@@ -15994,8 +15994,8 @@ a.el-tablo:hover .label {
 }
 
 .auth-box-w .buttons-w {
-    padding-top: 1.5rem;
-    margin-top: 1.5rem;
+    padding-top: 1rem;
+    margin-top: 1rem;
     border-top: 1px solid rgba(0, 0, 0, 0.05);
 }
 

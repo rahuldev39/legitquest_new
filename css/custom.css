@@ -2137,7 +2137,7 @@ button.close {
 .auth-wrapper {
     background-image: url(./../img/testimonial.jpg);
     background-size: contain;
-  
+
     padding-top: 98px !important;
     padding-bottom: 35px !important;
     background-position-y: 40px;
@@ -2298,6 +2298,20 @@ background-image: url(./../img/bg-header4.jpg);
 .top-bar .breadcrumb-item+.breadcrumb-item::before {
     color: #adadad;
     content: "/";
+}
+.auth-box-w .radio{
+  display: inline-block;
+  margin-right: 10px
+}
+.auth-box-w .alert {
+    padding: .5rem 1rem;
+    margin-bottom: 0rem;
+    font-size: 13px;
+    margin: 0px 25px;
+    font-weight: 500;
+}
+.auth-box-w .alert-dismissible .close {
+    padding: 0.4rem 1.25rem;
 }
 /*only for screens greater than 992px  */
 @media (min-width: 768px) {
