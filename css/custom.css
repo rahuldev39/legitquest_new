@@ -2137,9 +2137,7 @@ button.close {
 .auth-wrapper {
     background-image: url(./../img/testimonial.jpg);
     background-size: contain;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+  
     padding-top: 98px !important;
     padding-bottom: 35px !important;
     background-position-y: 40px;

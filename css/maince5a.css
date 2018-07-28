@@ -15974,6 +15974,7 @@ a.el-tablo:hover .label {
 .auth-box-w form {
     padding: 20px 80px;
     padding-bottom: 45px;
+    padding-right: 45px;
 }
 
 .auth-box-w form .form-check-inline {
@@ -15993,9 +15994,9 @@ a.el-tablo:hover .label {
 }
 
 .auth-box-w .buttons-w {
-  padding-top: 1rem;
-  margin-top: 0.5rem;
-  border-top: 1px solid rgba(0, 0, 0, 0.05)
+    padding-top: 1.5rem;
+    margin-top: 1.5rem;
+    border-top: 1px solid rgba(0, 0, 0, 0.05);
 }
 
 .auth-box-w.centered {
