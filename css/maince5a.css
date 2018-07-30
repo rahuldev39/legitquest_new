@@ -15925,7 +15925,7 @@ a.el-tablo:hover .label {
 }
 
 .auth-box-w {
-    max-width: 500px;
+    max-width: 45%;
     margin: 0px auto;
     background-color: #fafafb;
     border-radius: 6px;
