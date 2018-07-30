@@ -2313,6 +2313,22 @@ background-image: url(./../img/bg-header4.jpg);
 .auth-box-w .alert-dismissible .close {
     padding: 0.4rem 1.25rem;
 }
+
+/*###########--------Index-v2 start-------##############*/
+
+.index-v2 .search-filed-box {
+    max-width: 950px;
+    margin-top: 20px;
+}
+.index-v2 .search-field input {
+    padding: 8px 12px;
+}
+.index-v2 .select-btn {
+    height: 49px;
+}
+/*###########--------Index-v2 end-------##############*/
+
+
 /*only for screens greater than 992px  */
 @media (min-width: 768px) {
   .navbar .navbar-nav > li.dropdown > .dropdown-menu {
@@ -2334,8 +2350,10 @@ background-image: url(./../img/bg-header4.jpg);
 
 
 }
-
 /* end nav on hover  */
+
+
+
 @media (min-width: 992px){
   .fix-rightsidebar .search-sidebar {
     position: fixed;
