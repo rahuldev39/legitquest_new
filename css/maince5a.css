@@ -24259,7 +24259,7 @@ body.search-wrapper .select2-container--default .select2-results__option[aria-se
 }
 
 .onboarding-modal .onboarding-content.with-gradient {
-    padding: 30px 50px 30px;
+    padding: 30px 35px 30px;
     background-image: url(../img/onboarding-gradient-hor.png);
     background-size: 100% auto;
     background-position: top center;
@@ -24267,29 +24267,29 @@ body.search-wrapper .select2-container--default .select2-results__option[aria-se
 }
 
 .onboarding-modal .onboarding-content h1, .onboarding-modal .onboarding-content h2, .onboarding-modal .onboarding-content h3, .onboarding-modal .onboarding-content h4 {
-  color: #005aaa;
-  margin-bottom: 1.5rem
+    color: #2a3145;
+    margin-bottom: 1.5rem;
 }
 
 .onboarding-modal .onboarding-content .onboarding-text {
-    color: rgb(69, 76, 96);
+    color: rgb(42, 49, 69);
     font-weight: 400;
     font-size: .94rem;
     margin-bottom: 30px;
     padding-left: 20px;
     padding-right: 20px;
 }
-.onboarding-footer{
+.onboarding-footer {
     padding: 30px 50px 30px;
     border-top: 1px solid #e0e0e0;
-    background-color: #0259aa;
+    background-color: #293145;
     color: white;
     border-radius: 0px 0px 5px 5px;
 }
-.onboarding-footer strong{
-  margin-bottom: 10px;
+.onboarding-footer strong {
+    margin-bottom: 10px;
     display: block;
-    font-size: 1.1rem;
+    font-size: 1.8rem;
 }
 .onboarding-modal .onboarding-content .onboarding-text:last-child {
   margin-bottom: 10px
@@ -24382,9 +24382,10 @@ body.search-wrapper .select2-container--default .select2-results__option[aria-se
 }
 
 .onboarding-modal .onboarding-slider-w .onboarding-slide:first-child {
-  display: block
+    display: block;
+    border: 1px solid #4c5263;
+    border-radius: 6px;
 }
-
 .onboarding-modal .onboarding-slider-w.slick-initialized .onboarding-slide {
   display: block
 }
@@ -24537,7 +24538,6 @@ body.search-wrapper .select2-container--default .select2-results__option[aria-se
   content: "\e987";
   left: -20px
 }
-
 .onboarding-modal .slick-dots {
   position: absolute;
   bottom: 30px;
@@ -24590,7 +24590,9 @@ body.search-wrapper .select2-container--default .select2-results__option[aria-se
     padding-bottom: 27px;
     padding-top: 0px;
 }
-
+.onboarding-modal .modal-dialog{
+  margin-top: 4rem
+}
 .all-wrapper>.top-bar {
   border-radius: 6px 6px 0px 0px
 }
