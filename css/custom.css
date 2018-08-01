@@ -2482,6 +2482,8 @@ font-weight: 500;
 }
 .onboarding-footer {
     border-radius: 0px 0px 5px 6px;
+    border-left: 0px;
+    border-top: 1px solid #cac7c7;
 }
 .onboarding-footer strong {
     font-size: 1.3rem;
