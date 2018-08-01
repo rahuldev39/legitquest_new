@@ -49,7 +49,7 @@ $(function () {
 
 	// #5. DATATABLES
 
-	  
+
 	  if ($('#dataTable1').length) {
 	    $('#dataTable1').DataTable({ buttons: ['copy', 'excel', 'pdf'] });
 	  }
@@ -111,6 +111,22 @@ $(function () {
 	    $('.support-index').removeClass('show-university-content');
 	    return false;
 	  });
+
+		// #21. Onboarding Screens Modal
+
+ $('.onboarding-modal.show-on-load').modal('show');
+ if ($('.onboarding-modal .onboarding-slider-w').length) {
+	 $('.onboarding-modal .onboarding-slider-w').slick({
+		 dots: true,
+		 infinite: false,
+		 adaptiveHeight: true,
+		 slidesToShow: 1,
+		 slidesToScroll: 1
+	 });
+	 $('.onboarding-modal').on('shown.bs.modal', function (e) {
+		 $('.onboarding-modal .onboarding-slider-w').slick('setPosition');
+	 });
+ }
 
 
   // #22. Colors Toggler
