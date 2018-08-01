@@ -24285,6 +24285,7 @@ body.search-wrapper .select2-container--default .select2-results__option[aria-se
     background-color: #293145;
     color: white;
     border-radius: 0px 0px 5px 5px;
+    border: 1px solid #ffffff40;
 }
 .onboarding-footer strong {
     margin-bottom: 10px;
@@ -24383,7 +24384,6 @@ body.search-wrapper .select2-container--default .select2-results__option[aria-se
 
 .onboarding-modal .onboarding-slider-w .onboarding-slide:first-child {
     display: block;
-    border: 1px solid #4c5263;
     border-radius: 6px;
 }
 .onboarding-modal .onboarding-slider-w.slick-initialized .onboarding-slide {
