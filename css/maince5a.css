@@ -24311,7 +24311,7 @@ body.search-wrapper .select2-container--default .select2-results__option[aria-se
     font-size: 12px;
     color: #ffffff69 !important;
 }
-.onboarding-modal {
+.onboarding-modal.show {
     display: flex !important;
     align-items: center;
     justify-content: center;
