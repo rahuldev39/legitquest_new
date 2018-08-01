@@ -24284,16 +24284,20 @@ body.search-wrapper .select2-container--default .select2-results__option[aria-se
 }
 .onboarding-footer {
     padding: 65px 50px 55px;
-    border-top: 1px solid #e0e0e0;
     background-color: #293145;
     color: white;
     border-radius: 0px 6px 5px 0px;
-    border: 1px solid #ffffff40;
+    /* border: 1px solid #ffffff40; */
+    background-image: -webkit-linear-gradient(270deg, rgba(32, 38, 56, 0.9), rgba(30, 36, 56, 0.92)), url(./../img/58c70b5896695e2b578dab9e_04-3.jpg);
+    background-image: linear-gradient(180deg, rgba(32, 38, 56, 0.9), rgba(30, 36, 56, 0.92)), url(./../img/58c70b5896695e2b578dab9e_04-3.jpg);
+}
+.onboarding-footer p{
+      font-size: .93rem;
 }
 .onboarding-footer strong {
     margin-bottom: 10px;
     display: block;
-    font-size: 1.8rem;
+    font-size: 1.5rem;
 }
 .onboarding-modal .onboarding-content .onboarding-text:last-child {
   margin-bottom: 10px
@@ -24408,8 +24412,9 @@ filter:progid:DXImageTransform.Microsoft.Blur(PixelRadius='2');
 
 .onboarding-modal .onboarding-slider-w .onboarding-slide:first-child {
     display: block;
-    border-radius: 6px;
+    border-radius: 7px;
     display: flex;
+    border: 1px solid #717786;
 }
 .onboarding-modal .onboarding-slider-w.slick-initialized .onboarding-slide {
   display: block
