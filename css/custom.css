@@ -2391,6 +2391,9 @@ font-weight: 500;
   }
 }
 @media (max-width: 992px){
+  .onboarding-modal .modal-dialog {
+      max-width: initial !important
+  }
   .search-sidebar .search-sidebar-scroll{
     height: calc(100vh - 66px) !important
   }
@@ -2473,6 +2476,16 @@ font-weight: 500;
 }
 @media (max-width: 767px)
 {
+  .onboarding-modal .onboarding-slider-w .onboarding-slide:first-child {
+
+    display: block;
+}
+.onboarding-footer {
+    border-radius: 0px 0px 5px 6px;
+}
+.onboarding-footer strong {
+    font-size: 1.3rem;
+}
   .search-list-w .pagination-w {
     flex-direction: column;
 }

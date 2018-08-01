@@ -4841,7 +4841,8 @@ button.close {
 }
 
 .modal-open {
-  overflow: hidden
+    overflow: hidden;
+    padding-right: 0px !important;
 }
 
 .modal {
@@ -4857,8 +4858,9 @@ button.close {
 }
 
 .modal-open .modal {
-  overflow-x: hidden;
-  overflow-y: auto
+    overflow-x: hidden;
+    overflow-y: auto;
+    padding-right: 0px !important;
 }
 
 .modal-dialog {
@@ -4997,6 +4999,7 @@ button.close {
     max-width: 550px;
     margin: 1.75rem auto
   }
+
   .modal-dialog-centered {
     min-height: calc(100% - (1.75rem * 2))
   }
@@ -24259,7 +24262,7 @@ body.search-wrapper .select2-container--default .select2-results__option[aria-se
 }
 
 .onboarding-modal .onboarding-content.with-gradient {
-    padding: 30px 35px 30px;
+    padding: 65px 35px 30px;
     background-image: url(../img/onboarding-gradient-hor.png);
     background-size: 100% auto;
     background-position: top center;
@@ -24280,11 +24283,11 @@ body.search-wrapper .select2-container--default .select2-results__option[aria-se
     padding-right: 20px;
 }
 .onboarding-footer {
-    padding: 30px 50px 30px;
+    padding: 65px 50px 55px;
     border-top: 1px solid #e0e0e0;
     background-color: #293145;
     color: white;
-    border-radius: 0px 0px 5px 5px;
+    border-radius: 0px 6px 5px 0px;
     border: 1px solid #ffffff40;
 }
 .onboarding-footer strong {
@@ -24300,13 +24303,34 @@ body.search-wrapper .select2-container--default .select2-results__option[aria-se
   text-align: left;
   padding-left: 20px
 }
-
+.onboarding-modal button.close .os-icon {
+    font-size: 12px;
+    color: #ffffff69 !important;
+}
+.onboarding-modal {
+    display: flex !important;
+    align-items: center;
+    justify-content: center;
+    margin: 0px 12px;
+}
 .onboarding-modal .onboarding-content .features-list li {
   margin-bottom: 10px;
   list-style: none;
   position: relative
 }
+.onboarding-modal .modal-content {
 
+    background-color: rgba(255, 255, 255, 0.93);
+}
+body.modal-open .blur-container{
+    -webkit-filter: blur(2px);
+    -moz-filter: blur(2px);
+    -o-filter: blur(2px);
+    -ms-filter: blur(2px);
+    filter: blur(2px);
+    filter: url("https://gist.githubusercontent.com/amitabhaghosh197/b7865b409e835b5a43b5/raw/1a255b551091924971e7dee8935fd38a7fdf7311/blur".svg#blur);
+filter:progid:DXImageTransform.Microsoft.Blur(PixelRadius='2');
+}
 .onboarding-modal .onboarding-content .features-list li:before {
   content: "\e961";
   font-family: 'osfont' !important;
@@ -24385,6 +24409,7 @@ body.search-wrapper .select2-container--default .select2-results__option[aria-se
 .onboarding-modal .onboarding-slider-w .onboarding-slide:first-child {
     display: block;
     border-radius: 6px;
+    display: flex;
 }
 .onboarding-modal .onboarding-slider-w.slick-initialized .onboarding-slide {
   display: block
@@ -24588,10 +24613,8 @@ body.search-wrapper .select2-container--default .select2-results__option[aria-se
 
 .onboarding-modal .onboarding-slide .onboarding-content {
     padding-bottom: 27px;
-    padding-top: 0px;
 }
 .onboarding-modal .modal-dialog{
-  margin-top: 4rem
 }
 .all-wrapper>.top-bar {
   border-radius: 6px 6px 0px 0px
