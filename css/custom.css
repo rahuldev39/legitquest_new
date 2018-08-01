@@ -2325,7 +2325,12 @@ font-weight: 500;
 .auth-box-w .alert-dismissible .close {
     padding: 0.4rem 1.25rem;
 }
-
+.register-box.auth-box-w form {
+    padding-left: 45px;
+}
+.register-box.auth-box-w .form-group {
+    margin-bottom: 1rem;
+}
 /*###########--------Index-v2 start-------##############*/
 
 .index-v2 .search-filed-box {
