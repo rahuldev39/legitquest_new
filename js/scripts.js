@@ -1,3 +1,11 @@
+WebFont.load({
+  google: {
+    families: ["PT Serif:400,400italic,700,700italic", "Open Sans:300,300italic,400,400italic,600,600italic,700,700italic,800,800italic", "Poppins:300,regular,500,600,700"]
+  }
+});
+/*************************************
+  Pt serif font end
+ *************************************/
 
 var options = {
 data: ["blue", "green", "pink", "red", "yellow"],

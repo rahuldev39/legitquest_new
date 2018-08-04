@@ -751,9 +751,10 @@ width: 100%
     padding-top: 50px;
     padding-bottom: 50px;
 }
-.featured-slider .item img{
-  width: auto;
-  margin: 0 auto;
+.featured-slider .item img {
+    width: auto;
+    margin: 0 auto;
+    max-width: 105px;
 }
 .footer {
     padding-top: 80px;
@@ -1798,6 +1799,10 @@ font-weight: 700;
     padding-bottom: 20px;
     margin-bottom: 30px;
 }
+.address_box img{
+  width: 26px;
+  height: 21px;
+}
 .university_pts {
     padding: 4px 0px;
     border-bottom: 1px solid #e8e8e8;
@@ -2226,9 +2231,10 @@ background-image: url(./../img/bg-header4.jpg);
     padding-top: 0px;
     padding-bottom: 0px;
 }
-.index-v2 .navbar-brand img {
-    max-width: 166px;
+.navbar-brand img{
+  width: 186;
 }
+
 /*############-----image slider css End---------#############*/
 
 
@@ -2369,8 +2375,6 @@ font-weight: 500;
 }
 /* end nav on hover  */
 
-
-
 @media (min-width: 992px){
   .fix-rightsidebar .search-sidebar {
     position: fixed;
@@ -2490,7 +2494,7 @@ font-weight: 500;
     padding: 40px 0px;
 }
 .section.services-section img{
-  margin-bottom: 25px 
+  margin-bottom: 25px
 }
   .onboarding-modal .onboarding-slider-w .onboarding-slide:first-child {
 
