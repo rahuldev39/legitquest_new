@@ -754,6 +754,7 @@ width: 100%
 .featured-slider .item img {
     margin: 0 auto;
     width: 105px;
+    height: 46px;
 }
 .footer {
     padding-top: 80px;
