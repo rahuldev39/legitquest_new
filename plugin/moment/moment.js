@@ -1,9 +1,3 @@
-//! moment.js
-//! version : 2.20.1
-//! authors : Tim Wood, Iskren Chernev, Moment.js contributors
-//! license : MIT
-//! momentjs.com
-
 ;(function (global, factory) {
     typeof exports === 'object' && typeof module !== 'undefined' ? module.exports = factory() :
     typeof define === 'function' && define.amd ? define(factory) :
@@ -16,8 +10,6 @@ function hooks () {
     return hookCallback.apply(null, arguments);
 }
 
-// This is done to register the method called with moment()
-// without creating circular dependencies.
 function setHookCallback (callback) {
     hookCallback = callback;
 }
@@ -27,8 +19,6 @@ function isArray(input) {
 }
 
 function isObject(input) {
-    // IE8 will treat undefined and null as object if it wasn't for
-    // input != null
     return input != null && Object.prototype.toString.call(input) === '[object Object]';
 }
 
@@ -93,7 +83,7 @@ function createUTC (input, format, locale, strict) {
 }
 
 function defaultParsingFlags() {
-    // We need to deep clone this object.
+  
     return {
         empty           : false,
         unusedTokens    : [],

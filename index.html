@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html>
-
 <head>
   <title>Legitquest: A Powerful Legal Search Engine for Indian Case Laws </title>
   <meta charset="utf-8">
@@ -22,7 +21,7 @@
   <link href="./css/jquery.fancybox.min.css" rel="stylesheet">
   <link href="./css/custom.min.css" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Lato:100,300,400,400i,700,900,900i" rel="stylesheet">
-  <script src="./js/webfont.min.js"></script>
+  <script src="./js/webfont.min.js" async></script>
   <script type="text/javascript">
     WebFont.load({
       google: {
@@ -955,23 +954,7 @@
   <script src="./js/scripts.min.js"></script>
   <script src="js/maince5a.min.js"></script>
 
-  <script type="text/javascript">
-  function parseJSAtOnload() {
-  var links = ["./js/webfont.min.js", "./js/scripts.min.js"],
-  headElement = document.getElementsByTagName("head")[0],
-  linkElement, i;
-  for (i = 0; i < links.length; i++) {
-  linkElement = document.createElement("script");
-  linkElement.src = links[i];
-  headElement.appendChild(linkElement);
-  }
-  }
-  if (window.addEventListener)
-  window.addEventListener("load", parseJSAtOnload, false);
-  else if (window.attachEvent)
-  window.attachEvent("onload", parseJSAtOnload);
-  else window.onload = parseJSAtOnload;
-  </script>
+
 </body>
 
 </html>
