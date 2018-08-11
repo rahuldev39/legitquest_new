@@ -2569,6 +2569,10 @@ padding: 0px 20px;
 }
 @media (max-width: 767px)
 {
+  .result-detail .element-wrapper {
+    padding-bottom: 0px;
+}
+
   .member-image {
     margin-right: 0px;
     text-align: left !important;
@@ -2608,6 +2612,9 @@ padding: 0px 20px;
 .search-field {
     width: 100%;
 }
+.detail-box-header h3 {
+    font-size: 2rem;
+}
 }
 @media (max-width: 576px)
 {
@@ -2622,10 +2629,16 @@ padding: 0px 20px;
 .intro-column .intro-block:last-child {
     border-bottom: 0px;
 }
+.detail-box-header h3 {
+    font-size: 1.8rem;
+}
 }
 
 @media (max-width: 480px)
 {
+  .detail-box-header h3 {
+    font-size: 1.5rem;
+}
   .banner-content .btn {
     font-size: 13px;
     padding: 9px 10px;
