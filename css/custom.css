@@ -2403,7 +2403,7 @@ font-weight: 500;
       max-width: initial !important
   }
   .search-sidebar .search-sidebar-scroll{
-    height: calc(100vh - 66px) !important
+    height: calc(100vh - 103px) !important
   }
   .support-index .university-content-w .university-info {
     position: absolute;
@@ -2464,7 +2464,28 @@ font-weight: 500;
 }
 @media (max-width: 991px)
 {
-
+  .navbar .container {
+          flex-wrap: wrap;
+  }
+  .has-nav-search .search-filed-box {
+    width: 100%;
+    order: 3;
+    padding: 0px;
+}
+  .navbar .container {
+    max-width: 100%;
+    padding: 0px 15px;
+}
+body.page-internal.has-nav-search {
+    padding-top: 103px !important;
+}
+  .search-nav .select-btn {
+      height: 36px;
+      min-width: auto;
+  }
+  .search-nav .search-field input {
+      font-size: 15px;
+  }
 .left-div.right {
     height: 650px;
 }
@@ -2484,6 +2505,9 @@ font-weight: 500;
 }
 @media (max-width: 767px)
 {
+  body.page-internal.has-nav-search {
+      padding-top: 100px !important;
+  }
   .banner-content .btn {
     font-size: 13px;
     padding: 9px 10px;
@@ -2525,9 +2549,7 @@ font-weight: 500;
     flex: auto;
     width: 50%;
 }
-body.page-internal.has-nav-search {
-    padding-top: 100px !important;
-}
+
 .left-div.left {
     height: 550px;
     width: 100%;
@@ -2544,12 +2566,11 @@ body.page-internal.has-nav-search {
     left: 75px;
     top: 15%;
 }
-.navbar .container{
-  max-width: 100%
-}
-.nav-mobile{
-  width: 100%;
-padding: 0px 20px;
+
+.nav-mobile {
+    width: 100%;
+    padding: 0px;
+
 }
 .navbar-collapse{
     background-color: white;
@@ -2594,13 +2615,7 @@ padding: 0px 20px;
     padding: 0px 20px;
     display: flex !important;
 }
-.search-nav .select-btn {
-    height: 36px;
-    min-width: auto;
-}
-.search-nav .search-field input {
-    font-size: 15px;
-}
+
 .search-select {
     width: 100%;
     margin-bottom: 10px
