@@ -1599,7 +1599,7 @@ font-weight: 700;
     justify-content: center;
 }
 .team-block {
-    margin-bottom: 34px;
+    margin-bottom: 52px;
 }
 .team-block .flex-row{
   max-width: 900px;
@@ -1619,8 +1619,7 @@ font-weight: 700;
     font-size: 1rem;
 }
 .team-pane .element-wrapper .element-header {
-
-    font-size: 1.4rem;
+    font-size: 1.6rem;
 }
 .member-detail{
   border-radius: 6px;
