@@ -1601,6 +1601,9 @@ font-weight: 700;
 .team-block {
     margin-bottom: 52px;
 }
+.team-block:last-child{
+  margin-bottom: 0px
+}
 .team-block .flex-row{
   max-width: 900px;
   margin: 0 auto;
