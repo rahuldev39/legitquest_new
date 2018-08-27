@@ -2358,16 +2358,16 @@ font-weight: 500;
 /*###########--------Index-v2 end-------##############*/
 
 .registration-box{
-  max-width: 1200px;
+  max-width: 900px;
   margin: 0 auto;
 }
 .registration-box .pricing-plan {
     background-color: transparent;
     padding: 10px 10px 10px 10px;
     -webkit-box-flex: 0;
-    -ms-flex: 0 0 25%;
-    flex: 0 0 25%;
-    max-width: 25%;
+    -ms-flex: 0 0 33.3%;
+    flex: 0 0 33.3%;
+    max-width: 33.3%;
 }
 .registration-box .pricing-plan .plan-head {
     background-color: #015aaa;
