@@ -2357,7 +2357,30 @@ font-weight: 500;
 }
 /*###########--------Index-v2 end-------##############*/
 
+.registration-box{
+  max-width: 1200px;
+  margin: 0 auto;
+}
+.registration-box .pricing-plan {
+    background-color: transparent;
+    padding: 10px 10px 10px 10px;
+    -webkit-box-flex: 0;
+    -ms-flex: 0 0 25%;
+    flex: 0 0 25%;
+    max-width: 25%;
+}
+.registration-box .pricing-plan .plan-head {
+    background-color: #015aaa;
+    color: white;
+}
 
+.registration-box .pricing-plan.with-hover-effect:hover .plan-name  {
+        color: #ffffff !important;
+}
+.registration-box .pricing-plan .plan-name {
+    font-size: 1.1rem;
+    color: #ffffff;
+}
 /*only for screens greater than 992px  */
 @media (min-width: 768px) {
   .navbar .navbar-nav > li.dropdown > .dropdown-menu {
@@ -2401,6 +2424,12 @@ font-weight: 500;
   }
 }
 @media (max-width: 992px){
+  .registration-box .pricing-plan {
+
+      -ms-flex: 0 0 50%;
+      flex: 0 0 50%;
+      max-width: 50%;
+  }
   .onboarding-modal .modal-dialog {
       max-width: initial !important
   }
@@ -2635,6 +2664,11 @@ body.page-internal.has-nav-search {
 }
 @media (max-width: 576px)
 {
+  .registration-box .pricing-plan {
+    -ms-flex: 0 0 1000%;
+    flex: 0 0 100%;
+    max-width: 100%;
+}
   .intro-column {
       flex-direction: column;
   }

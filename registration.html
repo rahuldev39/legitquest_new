@@ -83,47 +83,145 @@
         </nav>
       </header>
 
-        <div class="auth-box-w">
+        <div class="registration-box">
+          <div class=" row no-gutters">
+                            <div class="pricing-plan with-hover-effect">
+                                <div class="plan-head">
+                                    <div class="plan-image">
+                                      <i class="icon-user"></i>
+                                    </div>
+                                    <div class="plan-name">Individuals</div>
 
-            <h4 class="auth-header">Login Legitquest</h4>
-            <div class="alert alert-warning alert-dismissible fade show" role="alert">
-              <button aria-label="Close" class="close" data-dismiss="alert" type="button"><span aria-hidden="true"> ×</span></button>
-              Username or Password Invalid
-            </div>
-            <form action="#">
-              <div class="form-group ">
-                  <div class="radio radio-default">
-                  <label><input type="radio" name="radio1" checked=""><span>Indiviual</span></label>
-                </div>
-                <div class="radio radio-default">
-                  <label><input type="radio" name="radio1"><span>Coorporate</span></label>
-                </div>
-                </div>
-                <div class="form-group">
-                    <label for="">Username</label>
-                    <input class="form-control" placeholder="Enter your username" type="text">
-                    <div class="pre-icon os-icon os-icon-user-male-circle"></div>
-                </div>
-                <div class="form-group">
-                    <label for="">Password</label>
-                    <input class="form-control" placeholder="Enter your password" type="password">
-                    <div class="pre-icon os-icon os-icon-fingerprint"></div>
-                </div>
-                <div class="buttons-w">
-                  <div class="mb-3">
-                      <label class="form-check-label">
-                          <input class="form-check-input" type="checkbox">Remember Me</label>
-                  </div>
-                    <button class="btn btn-primary btn-block btn-lg">Log me in</button>
+                                </div>
+                                <div class="plan-body">
+                                    <div class="plan-price-w">
+                                      <div class="plan-switch">
+                                         <a href="#" id="monthly" class="plan-link active ">Monthly</a>
+                                         <a href="#" id="yearly" class="plan-link ">Annually</a>
+                                       </div>
+                                        <div class="price-value monthly-price show"><span>₹</span> 4550</div>
+                                        <div class="price-value yearly-price"><span>₹</span> 39000</div>
+                                        <div class="price-label">For Price</div>
+                                    </div>
+                                    <div class="plan-btn-w">
+                                      <a class="btn btn-primary btn-rounded" href="#" data-target=".registration-modal" data-toggle="modal">Subscribe</a>
+                                    </div>
+                                </div>
 
-                </div>
-            </form>
-            <div class="text-center login-footer">
-              <a href="#">Forgot password?</a> | <a href="#">Register Now</a>
-            </div>
+                            </div>
+                            <div class="pricing-plan with-hover-effect">
+                                <div class="plan-head">
+                                    <div class="plan-image">
+                                      <i class="icon-people"></i>
+                                    </div>
+                                    <div class="plan-name">Law Firms</div>
+                                </div>
+                                <div class="plan-body">
+                                    <div class="plan-price-w">
+                                        <div class="price-value">Call</div>
+                                        <div class="price-label">For Price</div>
+                                    </div>
+                                    <div class="plan-btn-w">
+                                      <a class="btn btn-primary btn-rounded" href="#" data-target=".registration-modal" data-toggle="modal">Contact Us</a>
+                                    </div>
+                                </div>
+
+                            </div>
+                            <div class="pricing-plan  with-hover-effect">
+                                <div class="plan-head">
+                                    <div class="plan-image">
+                                      <i class="icon-tag"></i>
+                                    </div>
+                                    <div class="plan-name">Free 7 day Trial</div>
+                                </div>
+                                <div class="plan-body">
+                                    <div class="plan-price-w">
+                                        <div class="price-value">Free</div>
+                                        <div class="price-label">For Price</div>
+                                    </div>
+                                    <div class="plan-btn-w">
+                                      <a class="btn btn-primary btn-rounded" href="#" data-target=".registration-modal" data-toggle="modal">Subscribe</a>
+                                    </div>
+                                </div>
+
+                            </div>
+                            <div class="pricing-plan with-hover-effect">
+                                <div class="plan-head">
+                                    <div class="plan-image">
+                                      <i class="icon-magnifier"></i>
+                                    </div>
+                                    <div class="plan-name">Free Case search</div>
+                                </div>
+                                <div class="plan-body">
+                                    <div class="plan-price-w">
+                                        <div class="price-value">Free</div>
+                                        <div class="price-label">For Price</div>
+                                    </div>
+                                    <div class="plan-btn-w">
+                                      <a class="btn btn-primary btn-rounded" href="#" data-target=".registration-modal" data-toggle="modal">Sign Up</a>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
         </div>
 
     </div>
+
+    <div aria-hidden="true" class="modal fade registration-modal" id="applyModal" role="dialog" tabindex="-1">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header faded smaller">
+                <div class="modal-title"><strong>Registration </strong> <span> <small>Individuals</small> </span></div>
+                <button aria-label="Close" class="close" data-dismiss="modal" type="button"><span aria-hidden="true"> &times;</span></button>
+            </div>
+            <div class="modal-body">
+                <form>
+                  <div class="row">
+                    <div class="col-md-6">
+                      <div class="form-group">
+                          <label for="">First Name</label>
+                          <input class="form-control" placeholder="Enter  name" type="text" >
+                      </div>
+                    </div>
+                    <div class="col-md-6">
+                      <div class="form-group">
+                          <label for="">Name Name</label>
+                          <input class="form-control" placeholder="Enter  name" type="text" >
+                      </div>
+                    </div>
+                  </div>
+
+                    <div class="form-group">
+                        <label for="">Email</label>
+                        <input class="form-control" placeholder="Enter email" type="text">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="">Contact</label>
+                        <input class="form-control" placeholder="Enter contact info" type="text">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="">Linkedin</label>
+                        <input class="form-control" placeholder="Enter linkedin profile" type="text">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="">Company</label>
+                        <input class="form-control" placeholder="Enter linkedin profile" type="text">
+                    </div>
+
+                </form>
+            </div>
+            <div class="modal-footer buttons-on-left">
+                <button class="btn btn-primary" type="button">Register Now</button>
+                <button class="btn btn-link" data-dismiss="modal" type="button"> Cancel</button>
+            </div>
+        </div>
+    </div>
+</div>
+
 
     <script src="plugin/jquery/dist/jquery.min.js"></script>
     <script src="plugin/popper.js/dist/umd/popper.min.js"></script>
