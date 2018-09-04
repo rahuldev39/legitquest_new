@@ -24262,7 +24262,7 @@ body.search-wrapper .select2-container--default .select2-results__option[aria-se
 }
 
 .onboarding-modal .onboarding-content.with-gradient {
-    padding: 65px 35px 30px;
+    padding: 30px 35px 30px;
     background-size: 100% auto;
     background-position: top center;
     background-repeat: no-repeat;
@@ -27256,7 +27256,7 @@ body.color-scheme-dark .page-item.disabled .page-link, .content-panel.color-sche
     padding-bottom: 0px;
     padding-top: 20px
   }
-  
+
   .hidden-mobile {
     display: none !important
   }

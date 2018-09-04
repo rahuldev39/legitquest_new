@@ -14,9 +14,9 @@
   <link href="./css/owl.carousel.min.css" rel="stylesheet">
   <link href="./plugin/autocomplete/easy-autocomplete.min.css" rel="stylesheet">
   <link href="./plugin/autocomplete/easy-autocomplete.themes.min.css" rel="stylesheet">
-  <link href="css/maince5a.min.css" rel="stylesheet">
+  <link href="css/maince5a.css" rel="stylesheet">
   <link href="./css/jquery.fancybox.min.css" rel="stylesheet">
-  <link href="./css/custom.min.css" rel="stylesheet">
+  <link href="./css/custom.css" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Lato:100,300,400,400i,700,900,900i" rel="stylesheet">
   <script src="./js/webfont.min.js" async></script>
 </head>
@@ -49,7 +49,9 @@
               <a href="#">Blog</a>
             </li>
               <li class="breadcrumb-item"><a href="#">Faq</a></li>
-              <li class="breadcrumb-item"><a href="#">Request a Demo</a></li>
+              <li class="breadcrumb-item">
+                <a href="#" data-target=".demoModal" data-toggle="modal">Request a Demo</a>
+              </li>
             </ul>
         </div>
       </div>
@@ -318,7 +320,7 @@
 
                   </p>
 
-                  <h3> <a href="#">See all features</a> </h3>
+                  <h3> <a href="#feature-section">See all features</a> </h3>
 
                 </div>
 
@@ -345,7 +347,7 @@
                   <p>
                     iGraphics is a feature which uses data visualization to help researchers see in the future treatments of a case.
                   </p>
-                  <h3> <a href="#">See all features</a> </h3>
+                  <h3> <a href="#feature-section">See all features</a> </h3>
 
                 </div>
 
@@ -381,7 +383,7 @@
                   <p>
                     Legitquest’s search engine iSearch is designed to provide flexibility to you while researching- from the search options to the heuristic algorithm and the easy to use search bar.
                   </p>
-                  <h3> <a href="#">See all features</a> </h3>
+                  <h3> <a href="#feature-section">See all features</a> </h3>
 
                 </div>
 
@@ -411,7 +413,7 @@
                   <p>
                     A set of highly advanced filters to help researchers reach the most relevant search results. For the first time in India, find case laws based on the final disposition.
                   </p>
-                  <h3> <a href="#">See all features</a> </h3>
+                  <h3> <a href="#feature-section">See all features</a> </h3>
 
                 </div>
 
@@ -438,7 +440,7 @@
                   Make your own notes on judgments. Refer to them, print them or share them with your colleagues with the click of a button.  Take a step today towards a paperless workspace.
                 </p>
 
-                <h3> <a href="#">See all features</a> </h3>
+                <h3> <a href="#feature-section">See all features</a> </h3>
 
               </div>
 
@@ -465,7 +467,7 @@
                 <p>
                   Use the Bookmark option and mark important cases for later reference.
                 </p>
-                <h3> <a href="#">See all features</a> </h3>
+                <h3> <a href="#feature-section">See all features</a> </h3>
 
               </div>
 
@@ -543,7 +545,7 @@
   </div>
 
 
-    <section class="section ">
+    <section class="section " id="feature-section">
       <div class="container">
         <div class="section-tittle-block text-center">
           <h1 class="section-tittle"><span class="center-text">Our Features</span></h1>
@@ -780,7 +782,11 @@
           <div class="features-column w-col col-md-4 w-col-small-small-stack">
             <div class="footer-tittle">Legitquest</div>
             <p class="footer-text">Legit Quest is a Legal-Tech venture run by a versatile team of tech-savvy attorneys, engineers and designers who aim to make the practice of law simpler for its end users. We have eminent jurist Mr. Ram Jethmalani as our patron...</p>
-            <div class="footer-tittle middle">Infomation</div>
+            <a href="./about.html">Read more...</a>
+
+          </div>
+          <div class="features-column col-md-4">
+            <div class="footer-tittle">Infomation</div>
             <div class="row">
               <div class="col-md-6 ">
                 <ul class="footer-list w-list-unstyled">
@@ -792,34 +798,11 @@
               </div>
               <div class="col-md-6">
                 <ul class="footer-list w-list-unstyled">
-                  <li class="list-footer"><a href="#" class="link footer-link">Terms & Conditions</a></li>
-                  <li class="list-footer"><a href="#" class="link footer-link">We value your Privacy</a></li>
+                  <li class="list-footer"><a href="./terms_conditions.html" class="link footer-link">Terms & Conditions</a></li>
+                  <li class="list-footer"><a href="./privacy_policy.html" class="link footer-link">We value your Privacy</a></li>
                   <li class="list-footer"><a href="#" class="link footer-link">Admin Login</a></li>
                   <li class="list-footer"><a href="#" class="link footer-link">Blog</a></li>
                 </ul>
-              </div>
-            </div>
-          </div>
-          <div class="features-column col-md-4">
-            <div class="footer-tittle">Popular Posts</div>
-            <div class="w-dyn-list">
-              <div class="w-dyn-items">
-                <div class="w-dyn-item">
-                  <a href="#" class="blog-wrapper w-inline-block w-clearfix">
-                    <div class="icon-clock date"></div>
-                    <p class="footer-text">July 13, 2017</p>
-                    <p class="footer-text white">Best Aprooach</p>
-                    <p class="footer-text">Pellentesque egestas, neque sit amet convallis pulvinar, usce vulputate eleifend sapien [...]</p>
-                  </a>
-                </div>
-                <div class="w-dyn-item">
-                  <a href="#" class="blog-wrapper w-inline-block w-clearfix">
-                    <div class="icon-clock date"></div>
-                    <p class="footer-text">July 13, 2017</p>
-                    <p class="footer-text white">Designers and Web</p>
-                    <p class="footer-text">Pellentesque egestas, neque sit amet convallis pulvinar, usce vulputate eleifend sapien [...]</p>
-                  </a>
-                </div>
               </div>
             </div>
           </div>
@@ -841,7 +824,7 @@
 
                 </div>
 
-                <div class="footer-tittle middle">Social Contact</div>
+
                 <div class="row">
                   <div class="col-md-12 ">
                     <ul class="footer-list social-list">
@@ -924,6 +907,95 @@
             </div>
         </div>
 
+
+
+        <div aria-hidden="true" class="onboarding-modal modal fade sucess-modal" role="dialog" tabindex="-1">
+                  <div class="modal-dialog" role="document">
+                      <div class="modal-content text-center">
+                          <button aria-label="Close" class="close" data-dismiss="modal" type="button">
+                            <span class="close-label">Close</span>
+                            <span class="os-icon os-icon-close"></span>
+                          </button>
+                          <div class="onboarding-slider-w">
+                              <div class="onboarding-slide">
+
+                                  <div class="onboarding-content with-gradient">
+                                    <div class="icon-box success-icon">
+                                      <i class="icon-check"></i>
+                                    </div>
+                                    <h4 class="onboarding-title">Successful!!</h4>
+                                  <div class="onboarding-text">
+                                    Your Request for demo is register successfully registered, please check your mail for further information
+
+                                  </div>
+                                  </div>
+
+                              </div>
+
+
+                          </div>
+                      </div>
+                  </div>
+              </div>
+
+        <div aria-hidden="true" class="modal fade demoModal" id="demoModal" role="dialog" tabindex="-1">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header faded smaller">
+                    <div class="modal-title"><strong>Request Demo </strong> </div>
+                    <button aria-label="Close" class="close" data-dismiss="modal" type="button"><span aria-hidden="true"> &times;</span></button>
+                </div>
+                <div class="modal-body">
+                    <form>
+                      <div class="row">
+                        <div class="col-md-6">
+                          <div class="form-group">
+                              <label for="">Name <span class="required">*</span></label>
+                              <input class="form-control" placeholder="Enter  name" type="text" >
+                          </div>
+                        </div>
+                        <div class="col-md-6">
+                          <div class="form-group">
+                              <label for="">Mobile No<span class="required">*</span> (ex.9090909090)</label>
+                              <input class="form-control" placeholder="Enter  name" type="text" >
+                          </div>
+                        </div>
+                      </div>
+
+                      <div class="row">
+                        <div class="col-md-6">
+                          <div class="form-group">
+                              <label for="">Email ID<span class="required">*</span></label>
+                              <input class="form-control" placeholder="Enter  name" type="text" >
+                          </div>
+                        </div>
+                        <div class="col-md-6">
+                          <div class="form-group">
+                              <label for="">Company Name<span class="required">*</span></label>
+                              <input class="form-control" placeholder="Enter  name" type="text" >
+                          </div>
+                        </div>
+                      </div>
+
+                        <div class="form-group">
+                            <label for="">Address<span class="required">*</span></label>
+                            <textarea type="text" cols="50" rows="5" class="form-control" id="address"></textarea>
+                        </div>
+
+
+
+                    </form>
+                </div>
+                <div class="modal-footer buttons-on-left">
+                    <button class="btn btn-primary" data-target=".sucess-modal" data-toggle="modal" data-dismiss="modal" type="button">
+                      Send Request
+                    </button>
+                    <button class="btn btn-link" data-dismiss="modal" type="button"> Cancel</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
   <script src="plugin/jquery/dist/jquery.min.js"></script>
   <script src="plugin/popper.js/dist/umd/popper.min.js"></script>
   <script src="./js/bootstrap.min.js"></script>
@@ -935,6 +1007,8 @@
   <script src="./plugin/autocomplete/jquery.easy-autocomplete.min.js"></script>
   <script src="./js/scripts.min.js"></script>
   <script src="js/maince5a.min.js"></script>
+
+
 
 
 </body>

@@ -114,10 +114,13 @@
 
             <div class="detail-container">
               <div class="text-slider">
-                <span class="premium-icon">
-                    <i class="fa fa-diamond"></i>
-                    Premium
-                  </span>
+                <a href="#" data-target=".premium-modal" data-toggle="modal">
+                  <span class="premium-icon">
+                      <i class="fa fa-diamond"></i>
+                      Premium
+                    </span>
+                </a>
+
                 <div class="text-slider-main">
                   <ul class="sldr clearfix">
                     <li>
@@ -344,10 +347,13 @@
 
                       <div class="separator-heading igraph-separator">
                         <span>iGraphics</span>
-                        <span class="premium-icon">
-                                   <i class="fa fa-diamond"></i>
-                                   Premium
-                                 </span>
+                        <a href="#" data-target=".premium-modal" data-toggle="modal">
+                          <span class="premium-icon">
+                                     <i class="fa fa-diamond"></i>
+                                     Premium
+                          </span>
+                        </a>
+
                       </div>
 
                       <div class="igraph-box">
@@ -673,6 +679,35 @@
         </div>
     </div>
 
+
+    <div aria-hidden="true" class="onboarding-modal modal fade premium-modal" role="dialog" tabindex="-1">
+              <div class="modal-dialog" role="document">
+                  <div class="modal-content text-center">
+                      <button aria-label="Close" class="close" data-dismiss="modal" type="button">
+                        <span class="close-label">Close</span>
+                        <span class="os-icon os-icon-close"></span>
+                      </button>
+                      <div class="onboarding-slider-w">
+                          <div class="onboarding-slide">
+
+                              <div class="onboarding-content with-gradient">
+                                <div class="icon-box premium-icon">
+                                  <i class="fa fa-diamond"></i>
+                                </div>
+                                <h4 class="onboarding-title">Subscribe Us</h4>
+                              <div class="onboarding-text">
+                                 You need to subscribe for the <strong>premium features</strong> to use this feature.
+                              </div>
+                              </div>
+
+                          </div>
+
+
+                      </div>
+                  </div>
+              </div>
+          </div>
+
   <script src="plugin/jquery/dist/jquery.min.js"></script>
   <script src="plugin/popper.js/dist/umd/popper.min.js"></script>
   <script src="./js/bootstrap.min.js"></script>
@@ -691,6 +726,9 @@
   <script src="./plugin/chart.js/dist/Chart.min.js"></script>
   <script src="./js/jquery.sticky.js"></script>
   <script src="js/maince5a.js"></script>
+
+
+
 
   <script type="text/javascript">
     $(document).ready(function() {
