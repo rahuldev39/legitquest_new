@@ -2359,7 +2359,7 @@ font-weight: 500;
 /*###########--------Index-v2 end-------##############*/
 
 .registration-box{
-  max-width: 900px;
+  max-width: 1200px;
   margin: 0 auto;
 }
 .registration-box .pricing-plan {
@@ -2367,8 +2367,8 @@ font-weight: 500;
     padding: 10px 10px 10px 10px;
     -webkit-box-flex: 0;
     -ms-flex: 0 0 33.3%;
-    flex: 0 0 33.3%;
-    max-width: 33.3%;
+    flex: 0 0 25%;
+    max-width: 25%;
 }
 .registration-box .pricing-plan .plan-head {
     background-color: #015aaa;
@@ -2419,6 +2419,62 @@ color: #ed7e1f;
 .page-header.about .white.banner-text{
   margin-top: 60px
 }
+
+.plan-detail {
+    display: flex;
+    margin-bottom: 24px;
+    box-shadow: 0px 17px 8px -12px #46464652;
+}
+.plan-detail .l-side {
+    flex: 1;
+    padding: 20px;
+    background-color: #f1f1f1;
+    border-left: 9px solid #0259aa;
+}
+.plan-detail .l-side h3{
+
+}
+.plan-detail .l-side span {
+    font-size: 14px;
+    color: #7b7b7b;
+}
+.plan-detail .r-side {
+    display: flex;
+    align-items: center;
+    padding: 20px;
+    background-color: #0259aa;
+    padding-right: 42px;
+    padding-left: 32px;
+    background-image: url(./../img/blue-bg.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.plan-detail .r-side .plan-price{
+
+}
+.plan-detail .r-side .plan-price h1 {
+    color: #f7f3f3;
+    font-size: 3rem;
+    position: relative;
+}
+.plan-detail .r-side .plan-price h1 span {
+    position: absolute;
+    right: -21px;
+    top: -2px;
+    font-weight: 400;
+    font-size: 29px;
+}
+.modal-body label {
+    font-weight: 600;
+    font-size: .9rem;
+}
+.subscribe-form {
+    margin-top: 27px;
+    border-top: 1px dashed #e2e1e1;
+    padding-top: 18px;
+}
+
+
 /*only for screens greater than 992px  */
 @media (min-width: 768px) {
   .navbar .navbar-nav > li.dropdown > .dropdown-menu {
