@@ -4913,13 +4913,13 @@ button.close {
 }
 
 .modal-backdrop {
-  position: fixed;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
-  z-index: 1040;
-  background-color: #235a94
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 1040;
+    background-color: #081c31;
 }
 
 .modal-backdrop.fade {
@@ -4927,7 +4927,7 @@ button.close {
 }
 
 .modal-backdrop.show {
-  opacity: .3
+    opacity: .6;
 }
 
 .modal-header {
