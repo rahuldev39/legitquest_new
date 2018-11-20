@@ -2536,6 +2536,9 @@ color: #ed7e1f;
   }
 }
 @media (max-width: 992px){
+  .auth-box-w {
+    max-width: 500px;
+}
   .registration-box .pricing-plan {
 
       -ms-flex: 0 0 50%;
@@ -2648,6 +2651,7 @@ body.page-internal.has-nav-search {
 }
 @media (max-width: 767px)
 {
+
   .page-header.about .white.banner-text {
     margin-top: 10px;
 }
@@ -2736,6 +2740,12 @@ body.page-internal.has-nav-search {
 }
 @media (max-width: 767px)
 {
+  .navbar-nav{
+    display: block;
+  }
+  .nav-btn-link {
+    display: inline-block;
+}
   .result-detail .element-wrapper {
     padding-bottom: 0px;
 }
@@ -2779,6 +2789,29 @@ body.page-internal.has-nav-search {
 }
 @media (max-width: 576px)
 {
+  .auth-box-w {
+    margin: 0px 10px;
+
+}
+.auth-box-w .radio label {
+    font-size: 13px;
+}
+.auth-box-w label {
+    font-size: 13px;
+}
+.auth-box-w form {
+    padding: 20px 58px;
+    padding-bottom: 25px;
+    padding-right: 25px;
+}
+.auth-box-w .auth-header {
+
+    padding-left: 25px;
+}
+.auth-box-w .auth-header:after {
+
+    left: 25px;
+}
   .registration-box .pricing-plan {
     -ms-flex: 0 0 1000%;
     flex: 0 0 100%;
