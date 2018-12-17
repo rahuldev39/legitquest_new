@@ -1,7 +1,7 @@
 /*################-----PreLoad Start--------##################*/
 .preload {
     position: fixed;
-    z-index: 10000;
+    z-index: 100000;
     width: 100%;
     height: 100%;
     left: 0px;
@@ -278,7 +278,7 @@ nav.navbar {
 
 .search-section .container{
   position: relative;
-  z-index: 1
+
 }
 .search-section.overlay::after {
     content: "";
@@ -296,6 +296,7 @@ nav.navbar {
     position: relative;
     padding-bottom: 0px;
     margin-bottom: 10px;
+    z-index: 1;
 }
 #select-dropdown {
     position: absolute;
@@ -2867,4 +2868,176 @@ body.page-internal.has-nav-search {
 .gallery-header {
     padding-bottom: 116px;
 }
+}
+
+
+
+
+/*################-----New Search CSS Start------###############*/
+.lq-search-fileds {
+    max-width: 728px;
+    margin: 0 auto;
+    margin-top: 30px;
+    position: relative;
+
+}
+.lq-search-fileds.index{
+  z-index: 10000;
+}
+.search-box-inner {
+  position: relative;
+}
+.search-box-inner .search-field > .form-control {
+    margin-right: 0px;
+    border-color: white !important;
+}
+.search-box-inner .search-field .btn {
+    font-size: 15px;
+}
+.search-box-inner .search-field .btn:focus{
+  box-shadow: none !important
+}
+.search-box-inner .search-field .all-btn {
+    border-left: 1px solid #e6e5e5 !important;
+}
+.search-box-inner .search-field .all-btn i {
+    margin-left: 8px;
+}
+.search-dropdown {
+    background-color: white;
+    margin-top: 1px;
+    padding: .5rem 0;
+    position: absolute;
+    width: 100%;
+    display: none;
+}
+.search-dropdown.show{
+  display: block;
+}
+.search-overlay {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    left: 0px;
+    top: 0px;
+    background-color: #00000073;
+    z-index: 9999;
+    display: none;
+}
+.search-dropdown-btn.active{
+  color: #292b2c;
+    background-color: #e6e5e5;
+    border-color: #dfdfdf;
+}
+.search-overlay.show{
+  display: block;
+}
+.search-dropdown ul{
+  padding: 0px;
+  margin: 0px;
+  list-style-type: none;
+}
+.search-dropdown ul li{
+    width: 100%;
+      margin-right: auto;
+      margin-left: auto;
+      padding: .25rem 1.5rem;
+      cursor: pointer;
+}
+.search-dropdown ul li.search-help-section-header small {
+    font-size: 12px;
+    margin-bottom: 8px;
+    display: block;
+}
+.search-dropdown ul li:first-child:hover{
+  background: 0 0;
+}
+.search-dropdown ul li:hover{
+  background-color: #eee;
+}
+.search-dropdown ul li .col-desc{
+  display: flex;
+  color: #757575;
+}
+.search-dropdown ul li strong.col-tag {
+    font-weight: 600;
+    color: #040404;
+}
+.search-dropdown ul li .col-desc span {
+    width: 12em;
+    flex: 0 0 16em;
+}
+.search-dropdown ul li .col-desc em{
+  width: auto;
+    flex: 1 1 auto;
+}
+.search-modal-container {
+    position: fixed;
+    left: 0px;
+    top: 0px;
+    z-index: 1000;
+    background-color: white;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    display: none;
+}
+.search-modal-container.show{
+  display: block;
+}
+.search-modal-content {
+    padding-top: 2rem;
+    padding-bottom: 103px;
+}
+.search-modal-open{
+  height: 100%;
+  overflow: hidden;
+}
+.search-modal-footer
+{
+    padding: 20px;
+    position: fixed;
+    bottom: 0px;
+    background-color: white;
+    width: 100%;
+    box-shadow: 0px 0px 4px #b5b3b3;
+    background-color: #fdfdfd;
+    text-align: right;
+}
+.search-modal-content h4 {
+    font-weight: 500;
+    font-size: 21px;
+    margin-bottom: 20px;
+}
+.search-modal-content ul.filter-list {
+    padding: 0px;
+    list-style-type: none;
+}
+.search-modal-content ul.filter-list > li {
+    padding: 9px 0px;
+}
+.search-modal-content ul.filter-list li label {
+    font-weight: 700;
+    font-size: 16px;
+    padding-left: 18px;
+    display: block;
+    cursor: pointer;
+}
+.search-modal-content .select-clear-buttons {
+    padding-bottom: 10px;
+    border-bottom: 1px solid #eae9e9;
+    margin-bottom: 3px;
+}
+.ct-border-bottom {
+    border-bottom: 1px solid #eae9e9;
+    margin-bottom: 10px;
+}
+.search-modal-content .select-clear-buttons a {
+    display: inline-block;
+    margin-right: 14px;
+    font-size: 16px;
+}
+.search-modal-footer
+{
+
 }
