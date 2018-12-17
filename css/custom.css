@@ -2877,19 +2877,26 @@ body.page-internal.has-nav-search {
 .lq-search-fileds {
     max-width: 728px;
     margin: 0 auto;
-    margin-top: 30px;
+    margin-top: 0px;
     position: relative;
-    margin-bottom: 15px;
+    margin-bottom: 0px;
+    padding-top: 20px;
+    margin-bottom: 25px;
 }
+
 .lq-search-fileds.index{
   z-index: 10000;
 }
-.search-box-inner {
-  position: relative;
+
+.lq-search-fileds .select-btn{
+  border: 2px solid #015aaa;
 }
-.search-box-inner .search-field > .form-control {
+.lq-search-fileds  .search-field  .form-control.search-input {
     margin-right: 0px;
     border-color: white !important;
+}
+.lq-search-fileds #select-dropdown{
+      right: 0px;
 }
 .search-box-inner .search-field .btn {
     font-size: 15px;
@@ -2910,6 +2917,7 @@ body.page-internal.has-nav-search {
     position: absolute;
     width: 100%;
     display: none;
+    top: 100%;
 }
 .search-dropdown.show{
   display: block;

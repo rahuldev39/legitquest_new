@@ -146,42 +146,156 @@
 
         </div>
 
-        <div class="lq-search-fileds">
-          <div class="search-box-inner ">
-            <div class="input-group input search-field show">
-              <input type="text" class="form-control search-input" placeholder="Search millions of legal authorities...">
-              <div class="input-group-btn">
-                <button type="button" class="btn btn-white search-dropdown-btn">
-                  <i class="fa fa-angle-down" aria-hidden="true"></i>
-                </button>
-              </div>
-              <div class="input-group-btn">
-                <button type="button" class="btn btn-white all-btn" data-toggle="modal" data-target="#exampleModal">
-                  All State & Federal  <i class="fa fa-angle-down" aria-hidden="true"></i>
-                </button>
-              </div>
-            </div>
+        <div class="search-filed-box d-flex align-items-center lq-search-fileds">
 
-            <div class="search-dropdown">
-              <ul class="" >
-                  <li class="search-help-section-header text-muted">
-                      <div  class=""><small class="text-uppercase">Search techniques</small></div>
-                  </li>
-                  <li><a class="row"><strong class="col-2 col-tag">AND</strong><small class="col-9 col-desc"><span  >fraud AND damages</span><em  class="detail">Both terms in document</em></small></a></li>
-                  <li><a class="row"><strong class="col-2 col-tag">OR</strong><small class="col-9 col-desc"><span  >car OR automobile</span><em  class="detail">Either term in document</em></small></a></li>
-                  <li><a class="row"><strong class="col-2 col-tag">NOT</strong><small class="col-9 col-desc"><span >infringement NOT patent</span><em  class="detail">Term must not appear in document</em></small></a></li>
-                  <li><a class="row"><strong class="col-2 col-tag">""</strong><small class="col-9 col-desc"><span  >"due diligence"</span><em  class="detail">Exact match</em></small></a></li>
-                  <li><a class="row"><strong class="col-2 col-tag">()</strong><small class="col-9 col-desc"><span  >appeal AND (verdict OR judgment)</span><em  class="detail">Grouping terms</em></small></a></li>
-                  <li><a class="row"><strong class="col-2 col-tag">*</strong><small  class="col-9 col-desc"><span  >withdr*w</span><em  class="detail">Single letter wildcard (withdraw, withdrew)</em></small></a></li>
-                  <li><a class="row"><strong class="col-2 col-tag">!</strong><small class="col-9 col-desc"><span  >infring!</span><em class="detail">Root expander</em></small></a></li>
-                  <li><a class="row"><strong class="col-2 col-tag">/n</strong><small class="col-9 col-desc"><span  >investor /5 diligence</span><em class="detail">Terms within n words of each other</em></small></a></li>
-                  <li><a class="row"><strong class="col-2 col-tag">/s</strong><small class="col-9 col-desc"><span >fees /s reasonable</span><em  class="detail">Terms within same sentence of each other</em></small></a></li>
-                  <li><a class="row"><strong class="col-2 col-tag">/p</strong><small class="col-9 col-desc"><span >admissible /p warrant</span><em  class="detail">Terms within the same paragraph</em></small></a></li>
-              </ul>
+
+          <div class="position-relative flex-fill search-controls-containers">
+            <div id="free-text-box" class="search-field flex-fill show">
+              <div class="input-group input ">
+                <input  type="text" class="form-control search-input" placeholder="Search millions of legal authorities...">
+                <div class="input-group-btn">
+                  <button type="button" class="btn btn-white search-dropdown-btn">
+                    <i class="fa fa-angle-down" aria-hidden="true"></i>
+                  </button>
+                </div>
+
+              </div>
+
+              <div class="search-dropdown">
+                <ul class="" >
+                    <li class="search-help-section-header text-muted">
+                        <div  class=""><small class="text-uppercase">Search techniques</small></div>
+                    </li>
+                    <li><a class="row"><strong class="col-2 col-tag">AND</strong><small class="col-9 col-desc"><span  >fraud AND damages</span><em  class="detail">Both terms in document</em></small></a></li>
+                    <li><a class="row"><strong class="col-2 col-tag">OR</strong><small class="col-9 col-desc"><span  >car OR automobile</span><em  class="detail">Either term in document</em></small></a></li>
+                    <li><a class="row"><strong class="col-2 col-tag">NOT</strong><small class="col-9 col-desc"><span >infringement NOT patent</span><em  class="detail">Term must not appear in document</em></small></a></li>
+                    <li><a class="row"><strong class="col-2 col-tag">""</strong><small class="col-9 col-desc"><span  >"due diligence"</span><em  class="detail">Exact match</em></small></a></li>
+                    <li><a class="row"><strong class="col-2 col-tag">()</strong><small class="col-9 col-desc"><span  >appeal AND (verdict OR judgment)</span><em  class="detail">Grouping terms</em></small></a></li>
+                    <li><a class="row"><strong class="col-2 col-tag">*</strong><small  class="col-9 col-desc"><span  >withdr*w</span><em  class="detail">Single letter wildcard (withdraw, withdrew)</em></small></a></li>
+                    <li><a class="row"><strong class="col-2 col-tag">!</strong><small class="col-9 col-desc"><span  >infring!</span><em class="detail">Root expander</em></small></a></li>
+                    <li><a class="row"><strong class="col-2 col-tag">/n</strong><small class="col-9 col-desc"><span  >investor /5 diligence</span><em class="detail">Terms within n words of each other</em></small></a></li>
+                    <li><a class="row"><strong class="col-2 col-tag">/s</strong><small class="col-9 col-desc"><span >fees /s reasonable</span><em  class="detail">Terms within same sentence of each other</em></small></a></li>
+                    <li><a class="row"><strong class="col-2 col-tag">/p</strong><small class="col-9 col-desc"><span >admissible /p warrant</span><em  class="detail">Terms within the same paragraph</em></small></a></li>
+                </ul>
+              </div>
+
+            </div>
+            <div id="citation-box" class="search-field flex-fill">
+              <input class="form-control journal-input" placeholder="Journal">
+              <input class="form-control year-input" placeholder="Year" >
+              <input class="form-control volume-input" placeholder="Volume" >
+              <input class="form-control page-input" placeholder="Page" >
+            </div>
+            <div id="judge-box" class="search-field flex-fill">
+              <input class="form-control" placeholder="Last name">
+              <input class="form-control" placeholder="First name">
+            </div>
+            <div id="party-box" class="search-field flex-fill">
+              <input class="form-control" placeholder="petitioner/respondent">
+              <input class="form-control" placeholder="petitioner/respondent">
+            </div>
+            <div id="act-box" class="search-field flex-fill">
+              <input class="form-control" placeholder="Act Name">
+              <input class="form-control section-input" placeholder="Section">
+            </div>
+            <div id="act-search-box" class="search-field flex-fill">
+              <input class="form-control" placeholder="Search bare Act">
             </div>
 
           </div>
+          <div class="search-select">
+            <button class="btn btn-primary select-btn" data-toggle="collapse" href="#select-dropdown" role="button" aria-expanded="false" aria-controls="select-dropdown">
+              All
+            </button>
+            <div class="collapse" id="select-dropdown">
+              <div class="card card-body">
+                <div class="select-block">
+                  <strong>Case Law</strong>
+                  <ul>
+                    <li>
+                      <div class="select-radio">
+                        <div class="select-radio-inner">
+                          <span>Free text search</span>
+                          <label>
+                            <input type="radio" name="search-radio" value="free-text-box" checked>
+                            <span>All</span>
+                          </label>
+                        </div>
+
+                      </div>
+                    </li>
+                    <li>
+                      <div class="select-radio">
+                        <div class="select-radio-inner">
+                          <span>Name-Year-Vol-Page</span>
+                          <label>
+                            <input type="radio" name="search-radio" value="citation-box">
+                            <span>Citation</span>
+                          </label>
+                        </div>
+
+                      </div>
+                    </li>
+                    <li>
+                      <div class="select-radio">
+                        <div class="select-radio-inner">
+                            <span>Last name – first name</span>
+                            <label>
+                              <input type="radio" name="search-radio" value="judge-box">
+                              <span>Judge Name</span>
+                            </label>
+                        </div>
+                      </div>
+                    </li>
+                    <li>
+                      <div class="select-radio">
+                        <div class="select-radio-inner">
+                          <span>Petitioner - respondent</span>
+                          <label>
+                            <input type="radio" name="search-radio" value="party-box">
+                            <span>Party Name</span>
+                          </label>
+                        </div>
+                      </div>
+                    </li>
+                    <li>
+                      <div class="select-radio">
+                        <div class="select-radio-inner">
+                          <span>Act name- Section</span>
+                          <label>
+                            <input type="radio" name="search-radio" value="act-box">
+                            <span>Act Name</span>
+                          </label>
+                        </div>
+                      </div>
+                    </li>
+                  </ul>
+                </div>
+
+                <div class="select-block">
+                  <strong>Bare Act Search</strong>
+                  <ul>
+                    <li>
+                      <div class="select-radio">
+                        <div class="select-radio-inner">
+                          <span>Search bare Act</span>
+                          <label>
+                            <input type="radio" name="search-radio" value="act-search-box">
+                            <span>Act Name</span>
+                          </label>
+                        </div>
+
+                      </div>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+
+            </div>
+          </div>
         </div>
+
+
 
       </div>
     </div>
@@ -1039,12 +1153,18 @@
   <script src="js/maince5a.min.js"></script>
 
   <script type="text/javascript">
-      $('.search-box-inner  .search-input').focus(function (e) {
+      $('.search-controls-containers  .search-input').focus(function (e) {
         $('.search-dropdown').addClass('show');
         $('.search-overlay').addClass('show');
         $('.lq-search-fileds').addClass('index');
         $('.search-dropdown-btn').addClass('active');
         e.stopPropagation();
+      });
+      $('.select-btn').click(function() {
+        $('.search-dropdown').removeClass('show');
+        $('.search-overlay').removeClass('show');
+        $('.lq-search-fileds').removeClass('index');
+        $('.search-dropdown-btn').removeClass('active');
       });
       $('.search-dropdown-btn').click(function(e) {
         $('.search-dropdown').toggleClass('show');
@@ -1053,7 +1173,7 @@
         $('.search-dropdown-btn').toggleClass('active');
         e.stopPropagation();
       })
-      $('.search-box-inner').click(function (e) {
+      $('.search-controls-containers').click(function (e) {
         e.stopPropagation();
       });
       $(document).click(function(e) {
@@ -1063,18 +1183,7 @@
         $('.search-dropdown-btn').removeClass('active');
       });
 
-      $('.all-btn').click(function() {
-          $('.search-dropdown').removeClass('show');
-          $('.search-overlay').removeClass('show');
-          $('.lq-search-fileds').removeClass('index');
-          $('.search-dropdown-btn').removeClass('active');
-          $('.search-modal-container').addClass('show');
-          $('body').addClass('search-modal-open');
-      });
-      $('.search-modal-footer .btn-cancel').click(function() {
-        $('.search-modal-container').removeClass('show');
-        $('body').removeClass('search-modal-open');
-      });
+
   </script>
 
   <script type="text/javascript">
