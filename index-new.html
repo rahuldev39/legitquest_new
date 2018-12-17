@@ -919,610 +919,102 @@
         <div class="container">
           <div class="row">
             <div class="col-md-6">
-              <h4>State</h4>
-              <div class="select-clear-buttons">
-                <a href="#">Select All</a>
-                <a href="#">Clear All</a>
+              <div class="filter-box">
+                <h4>Case Law</h4>
+                <div class="select-clear-buttons">
+                  <a href="#">Select All</a>
+                  <a href="#">Clear All</a>
+                </div>
+
+                <div >
+                  <ul class="filter-list">
+                    <li>
+                      <div class="checkbox checkbox-default">
+                        <label>
+                          <input class="styled" type="checkbox"  name="court-filter">
+                          <span>
+                            Free text search
+                          </span>
+                          <i>All</i>
+                        </label>
+                    </div>
+                    </li>
+                    <li>
+                      <div class="checkbox checkbox-default">
+                        <label>
+                          <input class="styled" type="checkbox"  name="court-filter">
+                          <span>
+                            Name-Year-Vol-Page
+                          </span>
+                          <i>Citation</i>
+                        </label>
+                    </div>
+                    </li>
+                    <li>
+                      <div class="checkbox checkbox-default">
+                        <label>
+                          <input class="styled" type="checkbox"  name="court-filter">
+                          <span>
+                            Last name – first name
+                          </span>
+                          <i>Judge Name</i>
+                        </label>
+                    </div>
+                    </li>
+                    <li>
+                      <div class="checkbox checkbox-default">
+                        <label>
+                          <input class="styled" type="checkbox"  name="court-filter">
+                          <span>
+                            Petitioner - respondent
+                          </span>
+                          <i>Party Name</i>
+                        </label>
+                    </div>
+                    </li>
+                    <li>
+                      <div class="checkbox checkbox-default">
+                        <label>
+                          <input class="styled" type="checkbox"  name="court-filter">
+                          <span>
+                            Act name- Section
+                          </span>
+                          <i>Act Name</i>
+                        </label>
+                    </div>
+                    </li>
+                  </ul>
+
+                </div>
               </div>
-              <ul class="filter-list">
-                <li class="ct-border-bottom">
-                  <div class="checkbox checkbox-default">
-                    <label>
-                      <input class="styled" type="checkbox" checked="" name="court-filter">
-                      <span> Supreme Court <img src="./img/idraf-icon.png" class="idraf-icon"> </span>
-                    </label>
-
-                  </div>
-                </li>
-
-                <li>
-                  <div class="checkbox checkbox-default">
-                    <label>
-                      <input class="styled" type="checkbox" checked="" name="court-filter">
-                      <span> Delhi HC <img src="./img/idraf-icon.png" class="idraf-icon"> </span>
-                    </label>
-
-                  </div>
-                </li>
-
-                <li>
-                  <div class="checkbox checkbox-default">
-                    <label>
-                      <input class="styled" type="checkbox" checked="" name="court-filter">
-                      <span> Mumbai HC <img src="./img/idraf-icon.png" class="idraf-icon"> </span>
-                    </label>
-
-                  </div>
-                </li>
-
-                <li>
-                  <div class="checkbox checkbox-default">
-                    <label>
-                      <input class="styled" type="checkbox"  name="court-filter">
-                      <span>  High Court</span>
-                    </label>
-
-                  </div>
-                  <div class="filter-dropdown">
-    <form id="filter-select" class="" action="#" method="post">
-      <ul>
-        <li>
-          <div class="checkbox-item checkbox checkbox-default">
-              <label class="label">
-              <input type="checkbox" name="hc-list" value="HCTNMDU"><span>HCTNMDU</span></label>
-          </div>
-        </li>
-        <li>
-          <div class="checkbox-item checkbox checkbox-default">
-              <label class="label">
-              <input type="checkbox" name="hc-list" value="HCAP"><span>HCAP</span></label>
-          </div>
-        </li>
-        <li>
-          <div class="checkbox-item checkbox checkbox-default">
-              <label class="label">
-              <input type="checkbox" name="hc-list" value="HCA"><span>HCA</span></label>
-          </div>
-        </li>
-        <li>
-          <div class="checkbox-item checkbox checkbox-default">
-              <label class="label">
-              <input type="checkbox" name="hc-list" value="HCWBCAL-APP"><span>HCWBCAL-APP</span></label>
-          </div>
-        </li>
-        <li>
-          <div class="checkbox-item checkbox checkbox-default">
-              <label class="label">
-              <input type="checkbox" name="hc-list" value="HCCG"><span> HCCG</span></label>
-          </div>
-        </li>
-        <li>
-          <div class="checkbox-item checkbox checkbox-default">
-              <label class="label">
-              <input type="checkbox" name="hc-list" value="HCDL"><span>HCDL</span></label>
-          </div>
-        </li>
-        <li>
-          <div class="checkbox-item checkbox checkbox-default">
-              <label class="label">
-              <input type="checkbox" name="hc-list" value="HCGJ"><span>HCGJ</span></label>
-          </div>
-        </li>
-        <li>
-          <div class="checkbox-item checkbox checkbox-default">
-              <label class="label">
-              <input type="checkbox" name="hc-list" value="HCHP"><span>HCHP</span></label>
-          </div>
-        </li>
-        <li>
-          <div class="checkbox-item checkbox checkbox-default">
-              <label class="label">
-              <input type="checkbox" name="hc-list" value="HCJK"><span>HCJK</span></label>
-          </div>
-        </li>
-        <li>
-          <div class="checkbox-item checkbox checkbox-default">
-              <label class="label">
-              <input type="checkbox" name="hc-list" value="HCJH"><span>HCJH</span></label>
-          </div>
-        </li>
-        <li>
-          <div class="checkbox-item checkbox checkbox-default">
-              <label class="label">
-              <input type="checkbox" name="hc-list" value="HCUPAB"><span>HCUPAB</span></label>
-          </div>
-        </li>
-        <li>
-          <div class="checkbox-item checkbox checkbox-default">
-              <label class="label">
-              <input type="checkbox" name="hc-list" value="HCMH"><span>HCMH</span></label>
-          </div>
-        </li>
-        <li>
-          <div class="checkbox-item checkbox checkbox-default">
-              <label class="label">
-              <input type="checkbox" name="hc-list" value="HCWB"><span>HCWB</span></label>
-          </div>
-        </li>
-        <li>
-          <div class="checkbox-item checkbox checkbox-default">
-              <label class="label">
-              <input type="checkbox" name="hc-list" value="HCTN"><span>HCTN</span></label>
-          </div>
-        </li>
-        <li>
-          <div class="checkbox-item checkbox checkbox-default">
-              <label class="label">
-              <input type="checkbox" name="hc-list" value="HCBR"><span>HCBR</span></label>
-          </div>
-        </li>
-        <li>
-          <div class="checkbox-item checkbox checkbox-default">
-              <label class="label">
-              <input type="checkbox" name="hc-list" value="HCKA"><span>HCKA</span></label>
-          </div>
-        </li>
-        <li>
-          <div class="checkbox-item checkbox checkbox-default">
-              <label class="label">
-              <input type="checkbox" name="hc-list" value="HCKADH"><span>HCKADH</span></label>
-          </div>
-        </li>
-        <li>
-          <div class="checkbox-item checkbox checkbox-default">
-              <label class="label">
-              <input type="checkbox" name="hc-list" value="HCKAGU"><span>HCKAGU</span></label>
-          </div>
-        </li>
-        <li>
-          <div class="checkbox-item checkbox checkbox-default">
-              <label class="label">
-              <input type="checkbox" name="hc-list" value="HCKAKB"><span>HCKAKB</span></label>
-          </div>
-        </li>
-        <li>
-          <div class="checkbox-item checkbox checkbox-default">
-              <label class="label">
-              <input type="checkbox" name="hc-list" value="HCKL"><span>HCKL</span></label>
-          </div>
-        </li>
-        <li>
-          <div class="checkbox-item checkbox checkbox-default">
-              <label class="label">
-              <input type="checkbox" name="hc-list" value="HCMP"><span>HCMP</span></label>
-          </div>
-        </li>
-        <li>
-          <div class="checkbox-item checkbox checkbox-default">
-              <label class="label">
-              <input type="checkbox" name="hc-list" value="HCMPGW"><span>HCMPGW</span></label>
-          </div>
-        </li>
-        <li>
-          <div class="checkbox-item checkbox checkbox-default">
-              <label class="label">
-              <input type="checkbox" name="hc-list" value="HCMPIND"><span>HCMPIND</span></label>
-          </div>
-        </li>
-        <li>
-          <div class="checkbox-item checkbox checkbox-default">
-              <label class="label">
-              <input type="checkbox" name="hc-list" value="HCMN"><span>HCMN</span></label>
-          </div>
-        </li>
-        <li>
-          <div class="checkbox-item checkbox checkbox-default">
-              <label class="label">
-              <input type="checkbox" name="hc-list" value="HCML"><span>HCML</span></label>
-          </div>
-        </li>
-        <li>
-          <div class="checkbox-item checkbox checkbox-default">
-              <label class="label">
-              <input type="checkbox" name="hc-list" value="HCOR"><span>HCOR</span></label>
-          </div>
-        </li>
-        <li>
-          <div class="checkbox-item checkbox checkbox-default">
-              <label class="label">
-              <input type="checkbox" name="hc-list" value="HCPBHR"><span>HCPBHR</span></label>
-          </div>
-        </li>
-        <li>
-          <div class="checkbox-item checkbox checkbox-default">
-              <label class="label">
-              <input type="checkbox" name="hc-list" value="HCRJ"><span>HCRJ</span></label>
-          </div>
-        </li>
-        <li>
-          <div class="checkbox-item checkbox checkbox-default">
-              <label class="label">
-              <input type="checkbox" name="hc-list" value="HCRJJP"><span>HCRJJP</span></label>
-          </div>
-        </li>
-      </ul>
-
-    </form>
 
 
-  </div>
-                </li>
-
-                <li>
-                  <div class="checkbox checkbox-default">
-                    <label>
-                      <input class="styled" type="checkbox" checked="" name="court-filter">
-                      <span> Supreme Court <img src="./img/idraf-icon.png" class="idraf-icon"> </span>
-                    </label>
-
-                  </div>
-                </li>
-
-                <li>
-                  <div class="checkbox checkbox-default">
-                    <label>
-                      <input class="styled" type="checkbox" checked="" name="court-filter">
-                      <span> Delhi HC <img src="./img/idraf-icon.png" class="idraf-icon"> </span>
-                    </label>
-
-                  </div>
-                </li>
-
-                <li>
-                  <div class="checkbox checkbox-default">
-                    <label>
-                      <input class="styled" type="checkbox" checked="" name="court-filter">
-                      <span> Mumbai HC <img src="./img/idraf-icon.png" class="idraf-icon"> </span>
-                    </label>
-
-                  </div>
-                </li>
-
-                <li>
-                  <div class="checkbox checkbox-default">
-                    <label>
-                      <input class="styled" type="checkbox" checked="" name="court-filter">
-                      <span> Supreme Court <img src="./img/idraf-icon.png" class="idraf-icon"> </span>
-                    </label>
-
-                  </div>
-                </li>
-
-                <li>
-                  <div class="checkbox checkbox-default">
-                    <label>
-                      <input class="styled" type="checkbox" checked="" name="court-filter">
-                      <span> Delhi HC <img src="./img/idraf-icon.png" class="idraf-icon"> </span>
-                    </label>
-
-                  </div>
-                </li>
-
-                <li>
-                  <div class="checkbox checkbox-default">
-                    <label>
-                      <input class="styled" type="checkbox" checked="" name="court-filter">
-                      <span> Mumbai HC <img src="./img/idraf-icon.png" class="idraf-icon"> </span>
-                    </label>
-
-                  </div>
-                </li>
-
-                <li>
-                  <div class="checkbox checkbox-default">
-                    <label>
-                      <input class="styled" type="checkbox"  name="court-filter">
-                      <span>  Other Court </span>
-                    </label>
-
-                  </div>
-                </li>
-
-
-              </ul>
             </div>
             <div class="col-md-6">
-              <h4>Federal</h4>
-              <div class="select-clear-buttons">
-                <a href="#">Select All</a>
-                <a href="#">Clear All</a>
+              <div class="filter-box">
+                <h4>Bare Act Search</h4>
+                <div class="select-clear-buttons">
+                  <a href="#">Select All</a>
+                  <a href="#">Clear All</a>
+                </div>
+                <div class="">
+                  <ul class="filter-list">
+                    <li>
+                      <div class="checkbox checkbox-default">
+                        <label>
+                          <input class="styled" type="checkbox"  name="court-filter">
+                          <span>
+                            Search bare Act
+                          </span>
+                          <i>Act Name</i>
+                        </label>
+                    </div>
+                    </li>
+
+                  </ul>
+                </div>
               </div>
-              <ul class="filter-list">
-                <li class="ct-border-bottom">
-                  <div class="checkbox checkbox-default">
-                    <label>
-                      <input class="styled" type="checkbox" checked="" name="court-filter">
-                      <span> Supreme Court <img src="./img/idraf-icon.png" class="idraf-icon"> </span>
-                    </label>
 
-                  </div>
-                </li>
-
-                <li>
-                  <div class="checkbox checkbox-default">
-                    <label>
-                      <input class="styled" type="checkbox" checked="" name="court-filter">
-                      <span> Delhi HC <img src="./img/idraf-icon.png" class="idraf-icon"> </span>
-                    </label>
-
-                  </div>
-                </li>
-
-                <li>
-                  <div class="checkbox checkbox-default">
-                    <label>
-                      <input class="styled" type="checkbox" checked="" name="court-filter">
-                      <span> Mumbai HC <img src="./img/idraf-icon.png" class="idraf-icon"> </span>
-                    </label>
-
-                  </div>
-                </li>
-
-                <li>
-                  <div class="checkbox checkbox-default">
-                    <label>
-                      <input class="styled" type="checkbox"  name="court-filter">
-                      <span>  High Court</span>
-                    </label>
-
-                  </div>
-                  <div class="filter-dropdown">
-    <form id="filter-select" class="" action="#" method="post">
-      <ul>
-        <li>
-          <div class="checkbox-item checkbox checkbox-default">
-              <label class="label">
-              <input type="checkbox" name="hc-list" value="HCTNMDU"><span>HCTNMDU</span></label>
-          </div>
-        </li>
-        <li>
-          <div class="checkbox-item checkbox checkbox-default">
-              <label class="label">
-              <input type="checkbox" name="hc-list" value="HCAP"><span>HCAP</span></label>
-          </div>
-        </li>
-        <li>
-          <div class="checkbox-item checkbox checkbox-default">
-              <label class="label">
-              <input type="checkbox" name="hc-list" value="HCA"><span>HCA</span></label>
-          </div>
-        </li>
-        <li>
-          <div class="checkbox-item checkbox checkbox-default">
-              <label class="label">
-              <input type="checkbox" name="hc-list" value="HCWBCAL-APP"><span>HCWBCAL-APP</span></label>
-          </div>
-        </li>
-        <li>
-          <div class="checkbox-item checkbox checkbox-default">
-              <label class="label">
-              <input type="checkbox" name="hc-list" value="HCCG"><span> HCCG</span></label>
-          </div>
-        </li>
-        <li>
-          <div class="checkbox-item checkbox checkbox-default">
-              <label class="label">
-              <input type="checkbox" name="hc-list" value="HCDL"><span>HCDL</span></label>
-          </div>
-        </li>
-        <li>
-          <div class="checkbox-item checkbox checkbox-default">
-              <label class="label">
-              <input type="checkbox" name="hc-list" value="HCGJ"><span>HCGJ</span></label>
-          </div>
-        </li>
-        <li>
-          <div class="checkbox-item checkbox checkbox-default">
-              <label class="label">
-              <input type="checkbox" name="hc-list" value="HCHP"><span>HCHP</span></label>
-          </div>
-        </li>
-        <li>
-          <div class="checkbox-item checkbox checkbox-default">
-              <label class="label">
-              <input type="checkbox" name="hc-list" value="HCJK"><span>HCJK</span></label>
-          </div>
-        </li>
-        <li>
-          <div class="checkbox-item checkbox checkbox-default">
-              <label class="label">
-              <input type="checkbox" name="hc-list" value="HCJH"><span>HCJH</span></label>
-          </div>
-        </li>
-        <li>
-          <div class="checkbox-item checkbox checkbox-default">
-              <label class="label">
-              <input type="checkbox" name="hc-list" value="HCUPAB"><span>HCUPAB</span></label>
-          </div>
-        </li>
-        <li>
-          <div class="checkbox-item checkbox checkbox-default">
-              <label class="label">
-              <input type="checkbox" name="hc-list" value="HCMH"><span>HCMH</span></label>
-          </div>
-        </li>
-        <li>
-          <div class="checkbox-item checkbox checkbox-default">
-              <label class="label">
-              <input type="checkbox" name="hc-list" value="HCWB"><span>HCWB</span></label>
-          </div>
-        </li>
-        <li>
-          <div class="checkbox-item checkbox checkbox-default">
-              <label class="label">
-              <input type="checkbox" name="hc-list" value="HCTN"><span>HCTN</span></label>
-          </div>
-        </li>
-        <li>
-          <div class="checkbox-item checkbox checkbox-default">
-              <label class="label">
-              <input type="checkbox" name="hc-list" value="HCBR"><span>HCBR</span></label>
-          </div>
-        </li>
-        <li>
-          <div class="checkbox-item checkbox checkbox-default">
-              <label class="label">
-              <input type="checkbox" name="hc-list" value="HCKA"><span>HCKA</span></label>
-          </div>
-        </li>
-        <li>
-          <div class="checkbox-item checkbox checkbox-default">
-              <label class="label">
-              <input type="checkbox" name="hc-list" value="HCKADH"><span>HCKADH</span></label>
-          </div>
-        </li>
-        <li>
-          <div class="checkbox-item checkbox checkbox-default">
-              <label class="label">
-              <input type="checkbox" name="hc-list" value="HCKAGU"><span>HCKAGU</span></label>
-          </div>
-        </li>
-        <li>
-          <div class="checkbox-item checkbox checkbox-default">
-              <label class="label">
-              <input type="checkbox" name="hc-list" value="HCKAKB"><span>HCKAKB</span></label>
-          </div>
-        </li>
-        <li>
-          <div class="checkbox-item checkbox checkbox-default">
-              <label class="label">
-              <input type="checkbox" name="hc-list" value="HCKL"><span>HCKL</span></label>
-          </div>
-        </li>
-        <li>
-          <div class="checkbox-item checkbox checkbox-default">
-              <label class="label">
-              <input type="checkbox" name="hc-list" value="HCMP"><span>HCMP</span></label>
-          </div>
-        </li>
-        <li>
-          <div class="checkbox-item checkbox checkbox-default">
-              <label class="label">
-              <input type="checkbox" name="hc-list" value="HCMPGW"><span>HCMPGW</span></label>
-          </div>
-        </li>
-        <li>
-          <div class="checkbox-item checkbox checkbox-default">
-              <label class="label">
-              <input type="checkbox" name="hc-list" value="HCMPIND"><span>HCMPIND</span></label>
-          </div>
-        </li>
-        <li>
-          <div class="checkbox-item checkbox checkbox-default">
-              <label class="label">
-              <input type="checkbox" name="hc-list" value="HCMN"><span>HCMN</span></label>
-          </div>
-        </li>
-        <li>
-          <div class="checkbox-item checkbox checkbox-default">
-              <label class="label">
-              <input type="checkbox" name="hc-list" value="HCML"><span>HCML</span></label>
-          </div>
-        </li>
-        <li>
-          <div class="checkbox-item checkbox checkbox-default">
-              <label class="label">
-              <input type="checkbox" name="hc-list" value="HCOR"><span>HCOR</span></label>
-          </div>
-        </li>
-        <li>
-          <div class="checkbox-item checkbox checkbox-default">
-              <label class="label">
-              <input type="checkbox" name="hc-list" value="HCPBHR"><span>HCPBHR</span></label>
-          </div>
-        </li>
-        <li>
-          <div class="checkbox-item checkbox checkbox-default">
-              <label class="label">
-              <input type="checkbox" name="hc-list" value="HCRJ"><span>HCRJ</span></label>
-          </div>
-        </li>
-        <li>
-          <div class="checkbox-item checkbox checkbox-default">
-              <label class="label">
-              <input type="checkbox" name="hc-list" value="HCRJJP"><span>HCRJJP</span></label>
-          </div>
-        </li>
-      </ul>
-
-    </form>
-
-
-  </div>
-                </li>
-
-                <li>
-                  <div class="checkbox checkbox-default">
-                    <label>
-                      <input class="styled" type="checkbox" checked="" name="court-filter">
-                      <span> Supreme Court <img src="./img/idraf-icon.png" class="idraf-icon"> </span>
-                    </label>
-
-                  </div>
-                </li>
-
-                <li>
-                  <div class="checkbox checkbox-default">
-                    <label>
-                      <input class="styled" type="checkbox" checked="" name="court-filter">
-                      <span> Delhi HC <img src="./img/idraf-icon.png" class="idraf-icon"> </span>
-                    </label>
-
-                  </div>
-                </li>
-
-                <li>
-                  <div class="checkbox checkbox-default">
-                    <label>
-                      <input class="styled" type="checkbox" checked="" name="court-filter">
-                      <span> Mumbai HC <img src="./img/idraf-icon.png" class="idraf-icon"> </span>
-                    </label>
-
-                  </div>
-                </li>
-
-                <li>
-                  <div class="checkbox checkbox-default">
-                    <label>
-                      <input class="styled" type="checkbox" checked="" name="court-filter">
-                      <span> Supreme Court <img src="./img/idraf-icon.png" class="idraf-icon"> </span>
-                    </label>
-
-                  </div>
-                </li>
-
-                <li>
-                  <div class="checkbox checkbox-default">
-                    <label>
-                      <input class="styled" type="checkbox" checked="" name="court-filter">
-                      <span> Delhi HC <img src="./img/idraf-icon.png" class="idraf-icon"> </span>
-                    </label>
-
-                  </div>
-                </li>
-
-                <li>
-                  <div class="checkbox checkbox-default">
-                    <label>
-                      <input class="styled" type="checkbox" checked="" name="court-filter">
-                      <span> Mumbai HC <img src="./img/idraf-icon.png" class="idraf-icon"> </span>
-                    </label>
-
-                  </div>
-                </li>
-
-                <li>
-                  <div class="checkbox checkbox-default">
-                    <label>
-                      <input class="styled" type="checkbox"  name="court-filter">
-                      <span>  Other Court </span>
-                    </label>
-
-                  </div>
-                </li>
-
-
-              </ul>
             </div>
           </div>
         </div>

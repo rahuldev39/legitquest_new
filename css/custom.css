@@ -2879,7 +2879,7 @@ body.page-internal.has-nav-search {
     margin: 0 auto;
     margin-top: 30px;
     position: relative;
-
+    margin-bottom: 15px;
 }
 .lq-search-fileds.index{
   z-index: 10000;
@@ -2906,7 +2906,7 @@ body.page-internal.has-nav-search {
 .search-dropdown {
     background-color: white;
     margin-top: 1px;
-    padding: .5rem 0;
+    padding: 6px 0;
     position: absolute;
     width: 100%;
     display: none;
@@ -2937,12 +2937,13 @@ body.page-internal.has-nav-search {
   margin: 0px;
   list-style-type: none;
 }
-.search-dropdown ul li{
+.search-dropdown ul li {
     width: 100%;
-      margin-right: auto;
-      margin-left: auto;
-      padding: .25rem 1.5rem;
-      cursor: pointer;
+    margin-right: auto;
+    margin-left: auto;
+    padding: .15rem 1.5rem;
+    cursor: pointer;
+    font-size: 13px;
 }
 .search-dropdown ul li.search-help-section-header small {
     font-size: 12px;
@@ -2965,7 +2966,7 @@ body.page-internal.has-nav-search {
 }
 .search-dropdown ul li .col-desc span {
     width: 12em;
-    flex: 0 0 16em;
+    flex: 0 0 20em;
 }
 .search-dropdown ul li .col-desc em{
   width: auto;
@@ -3005,9 +3006,9 @@ body.page-internal.has-nav-search {
     text-align: right;
 }
 .search-modal-content h4 {
-    font-weight: 500;
+    font-weight: 600;
     font-size: 21px;
-    margin-bottom: 20px;
+    margin-bottom: 30px;
 }
 .search-modal-content ul.filter-list {
     padding: 0px;
@@ -3022,11 +3023,18 @@ body.page-internal.has-nav-search {
     padding-left: 18px;
     display: block;
     cursor: pointer;
+    display: flex;
+    justify-content: space-between;
+}
+.search-modal-content ul.filter-list li label i {
+    font-weight: 400;
+    color: #015aaa;
+    font-size: 14px;
 }
 .search-modal-content .select-clear-buttons {
-    padding-bottom: 10px;
+    padding-bottom: 17px;
     border-bottom: 1px solid #eae9e9;
-    margin-bottom: 3px;
+    margin-bottom: 19px;
 }
 .ct-border-bottom {
     border-bottom: 1px solid #eae9e9;
@@ -3040,4 +3048,7 @@ body.page-internal.has-nav-search {
 .search-modal-footer
 {
 
+}
+.filter-box{
+  max-width: 450px
 }
