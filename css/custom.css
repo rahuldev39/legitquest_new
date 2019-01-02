@@ -2895,6 +2895,18 @@ body.page-internal.has-nav-search {
     margin-right: 0px;
     border-color: white !important;
 }
+.lq-search-fileds.search-nav .search-field .form-control.search-input {
+    margin-right: 0px;
+    border-color: #e0e0e0 !important;
+}
+.lq-search-fileds.search-nav .search-dropdown {
+    box-shadow: 0px 4px 8px #d8d8d8;
+    border: 1px solid #e6e6e6;
+}
+.lq-search-fileds.search-nav .search-field .search-dropdown-btn {
+    border: 1px solid #e0e0e0;
+    border-left: 0px;
+}
 .lq-search-fileds #select-dropdown{
       right: 0px;
 }
@@ -2951,7 +2963,7 @@ body.page-internal.has-nav-search {
     margin-left: auto;
     padding: .15rem 1.5rem;
     cursor: pointer;
-    font-size: 13px;
+    font-size: 14px;
 }
 .search-dropdown ul li.search-help-section-header small {
     font-size: 12px;
@@ -2974,11 +2986,15 @@ body.page-internal.has-nav-search {
 }
 .search-dropdown ul li .col-desc span {
     width: 12em;
-    flex: 0 0 20em;
+    flex: 0 0 19em;
+    margin-right: 13px;
 }
 .search-dropdown ul li .col-desc em{
   width: auto;
     flex: 1 1 auto;
+}
+.search-dropdown ul li .col-desc em small{
+  display: block;
 }
 .search-modal-container {
     position: fixed;

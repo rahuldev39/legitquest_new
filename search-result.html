@@ -49,6 +49,7 @@
   </div>
   </div>
   <div class="all-wrapper search">
+  
     <header id="pageTop" class="header">
       <nav class="navbar navbar-expand-md fixed-top">
         <div class="container container-wide">
@@ -61,7 +62,114 @@
             </button>
           </div>
 
-          <div class="search-filed-box d-flex align-items-center search-nav">
+          <div class="search-filed-box d-flex align-items-center lq-search-fileds search-nav">
+
+
+            <div class="position-relative flex-fill search-controls-containers">
+              <div id="free-text-box" class="search-field flex-fill show">
+                <div class="input-group input ">
+                  <input  type="text" class="form-control search-input" placeholder="Search millions of legal authorities...">
+                  <div class="input-group-btn">
+                    <button type="button" class="btn btn-white search-dropdown-btn">
+                      <i class="fa fa-angle-down" aria-hidden="true"></i>
+                    </button>
+                  </div>
+
+                </div>
+
+                <div class="search-dropdown">
+                  <ul class="" >
+                      <li class="search-help-section-header text-muted">
+                          <div  class=""><small class="text-uppercase">Search techniques</small></div>
+                      </li>
+                      <li><a class="row">
+                        <strong class="col-2 col-tag">(+)</strong>
+                        <small class="col-10 col-desc">
+                          <span  >Find documents containing all connected terms</span>
+                          <em  class="detail">personal + injury</em>
+                        </small></a>
+                      </li>
+                      <li><a class="row">
+                        <strong class="col-2 col-tag">(-)</strong>
+                        <small class="col-10 col-desc">
+                          <span  >Excludes documents</span>
+                          <em  class="detail">personal - injury
+                            <small>finds documents with the word “personal” without  “injury”</small>
+                          </em>
+                        </small></a>
+                      </li>
+                      <li><a class="row">
+                        <strong class="col-2 col-tag">w/#</strong>
+                        <small class="col-10 col-desc">
+                          <span >Find documents which have terms within a given proximity of each other.</span>
+                          <em  class="detail">personal w/5 injury
+                          <small>finds documents with “personal” within five words of “injury”</small>
+
+                          </em>
+                        </small>
+                      </a></li>
+                      <li><a class="row">
+                        <strong class="col-2 col-tag">!</strong>
+                        <small class="col-10 col-desc">
+                          <span  >Stemming finds all words containing the root word</span>
+                          <em  class="detail">juris!
+                          <small>finds documents containing “jurisdiction”, “jurisprudence”, “juristic”, etc.</small>
+
+                          </em>
+                        </small>
+                      </a></li>
+                      <li><a class="row">
+                        <strong class="col-2 col-tag">*</strong>
+                        <small class="col-10 col-desc">
+                          <span  >Find similar words with variations on single characters</span>
+                          <em  class="detail">wom*n
+                          <small>find documents containing either “woman” or “women”</small>
+
+                          </em>
+                        </small></a></li>
+
+                      <li><a class="row">
+                        <strong class="col-2 col-tag">FILTER WITHIN RESULT</strong>
+                        <small class="col-10 col-desc">
+                          <span  >Any number of filter within the result</span>
+                          <em class="detail"></em>
+                        </small></a></li>
+                      <li><a class="row">
+                        <strong class="col-2 col-tag">" "</strong>
+                        <small class="col-10 col-desc">
+                          <span  >Quote for the same phrase search</span>
+                          <em class="detail">"stop payment"; "non compliance of mandatory provisions"</em>
+                        </small></a></li>
+
+                </div>
+
+              </div>
+              <div id="citation-box" class="search-field flex-fill">
+                <input class="form-control journal-input" placeholder="Journal">
+                <input class="form-control year-input" placeholder="Year" >
+                <input class="form-control volume-input" placeholder="Volume" >
+                <input class="form-control page-input" placeholder="Page" >
+              </div>
+              <div id="judge-box" class="search-field flex-fill">
+                <input class="form-control" placeholder="Last name">
+                <input class="form-control" placeholder="First name">
+              </div>
+              <div id="party-box" class="search-field flex-fill">
+                <input class="form-control" placeholder="petitioner/respondent">
+              </div>
+              <div id="act-box" class="search-field flex-fill">
+                <input class="form-control" placeholder="Act Name">
+                <input class="form-control section-input" placeholder="Section">
+              </div>
+              <div id="act-search-box" class="search-field flex-fill">
+                <input class="form-control" placeholder="Search bare Act">
+              </div>
+
+              <div class="search-btn">
+                <a href="#"><i class="os-icon os-icon-search" aria-hidden="true"></i></a>
+              </div>
+
+            </div>
             <div class="search-select">
               <button class="btn btn-primary select-btn" data-toggle="collapse" href="#select-dropdown" role="button" aria-expanded="false" aria-controls="select-dropdown">
                 All
@@ -150,35 +258,6 @@
                   </div>
                 </div>
 
-              </div>
-            </div>
-
-            <div class="position-relative flex-fill">
-              <div id="free-text-box" class="search-field flex-fill show">
-                <input class="form-control" placeholder="Search by title, case number, issue, ..." >
-              </div>
-              <div id="citation-box" class="search-field flex-fill">
-                <input class="form-control journal-input" placeholder="Journal">
-                <input class="form-control year-input" placeholder="Year" >
-                <input class="form-control volume-input" placeholder="Volume" >
-                <input class="form-control page-input" placeholder="Page" >
-              </div>
-              <div id="judge-box" class="search-field flex-fill">
-                <input class="form-control" placeholder="Last name">
-                <input class="form-control" placeholder="First name">
-              </div>
-              <div id="party-box" class="search-field flex-fill">
-                <input class="form-control" placeholder="Petitioner / Respondent Name">
-              </div>
-              <div id="act-box" class="search-field flex-fill">
-                <input class="form-control" placeholder="Act Name">
-                <input class="form-control section-input" placeholder="Section">
-              </div>
-              <div id="act-search-box" class="search-field flex-fill">
-                <input class="form-control" placeholder="Search bare Act">
-              </div>
-              <div class="search-btn">
-                <a href="#"><i class="os-icon os-icon-search" aria-hidden="true"></i></a>
               </div>
             </div>
           </div>
@@ -947,6 +1026,40 @@ $(function() {
    })
 
  });
+</script>
+
+<script type="text/javascript">
+    $('.search-controls-containers  .search-input').focus(function (e) {
+      $('.search-dropdown').addClass('show');
+      $('.search-overlay').addClass('show');
+      $('.lq-search-fileds').addClass('index');
+      $('.search-dropdown-btn').addClass('active');
+      e.stopPropagation();
+    });
+    $('.select-btn').click(function() {
+      $('.search-dropdown').removeClass('show');
+      $('.search-overlay').removeClass('show');
+      $('.lq-search-fileds').removeClass('index');
+      $('.search-dropdown-btn').removeClass('active');
+    });
+    $('.search-dropdown-btn').click(function(e) {
+      $('.search-dropdown').toggleClass('show');
+      $('.search-overlay').toggleClass('show');
+      $('.lq-search-fileds').toggleClass('index');
+      $('.search-dropdown-btn').toggleClass('active');
+      e.stopPropagation();
+    })
+    $('.search-controls-containers').click(function (e) {
+      e.stopPropagation();
+    });
+    $(document).click(function(e) {
+      $('.search-dropdown').removeClass('show');
+      $('.search-overlay').removeClass('show');
+      $('.lq-search-fileds').removeClass('index');
+      $('.search-dropdown-btn').removeClass('active');
+    });
+
+
 </script>
 
 <script type="text/javascript">

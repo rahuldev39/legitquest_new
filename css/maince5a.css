@@ -901,12 +901,14 @@ pre code {
     flex: 0 0 66.6666666667%;
     max-width: 66.6666666667%
   }
-  .col-sm-9 {
-    -webkit-box-flex: 0;
-    -ms-flex: 0 0 75%;
-    flex: 0 0 75%;
-    max-width: 75%
-  }
+  .search-nav {
+    flex-grow: 1;
+    padding: 0px;
+    margin: 0px;
+    margin-left: auto;
+    padding-top: 0px !important;
+    margin-bottom: 0px !important;
+}
   .col-sm-10 {
     -webkit-box-flex: 0;
     -ms-flex: 0 0 83.3333333333%;
