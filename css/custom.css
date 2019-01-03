@@ -409,6 +409,7 @@ nav.navbar {
     font-size: 19px;
     opacity: .9;
     margin-top: -13px;
+    z-index: 100;
 }
 .search-btn a{
   text-decoration: none;
