@@ -2526,9 +2526,9 @@ color: #ed7e1f;
     z-index: 100;
     left: 12px;
 }
-  body.page-internal.has-nav-search {
-      padding-top: 117px !important;
-  }
+body.page-internal.has-nav-search {
+    padding-top: 112px !important;
+}
   .has-nav-search nav.navbar {
       box-shadow: none;
       border-bottom: 0px;

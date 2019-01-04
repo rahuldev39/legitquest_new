@@ -22176,6 +22176,7 @@ a.with-avatar span {
     top: 66px;
     padding-right: 24px;
     z-index: 100;
+    min-height: 51px;
 }
 
 .search-list-w .search-list .list-controls .list-info {
