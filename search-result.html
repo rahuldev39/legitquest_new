@@ -129,7 +129,7 @@
                         </small></a></li>
 
                       <li><a class="row">
-                        <strong class="col-2 col-tag">FILTER WITHIN RESULT</strong>
+                        <strong class="col-2 col-tag">Filter Within</strong>
                         <small class="col-10 col-desc">
                           <span  >Any number of filter within the result</span>
                           <em class="detail"></em>
@@ -658,7 +658,7 @@ END - search Index Filters
                       <div class="col-sm-6 d-none d-sm-block">
                         <form class="form-inline justify-content-md-end filter-within">
                           <div class="filter-within-control">
-                            <input class="form-control form-control-sm rounded bright" placeholder="Filter within results" type="text">
+                            <input class="form-control form-control-sm rounded bright" placeholder="Filter Within" type="text">
                             <a href="#"><i class="fa fa-search" aria-hidden="true"></i></a>
                           </div>
                           <a class="btn btn-sm btn-primary" href="#">Reset</a>
@@ -1033,6 +1033,9 @@ $(function() {
       $('.search-dropdown-btn').addClass('active');
       e.stopPropagation();
     });
+
+
+
     $('.select-btn').click(function() {
       $('.search-dropdown').removeClass('show');
       $('.search-overlay').removeClass('show');
@@ -1056,6 +1059,21 @@ $(function() {
       $('.search-dropdown-btn').removeClass('active');
     });
 
+    $('.search-controls-containers  .search-input').keyup(function() {
+        if($(".search-controls-containers  .search-input").val() == "")
+        {
+          $('.search-dropdown').addClass('show');
+          $('.search-overlay').addClass('show');
+          $('.lq-search-fileds').addClass('index');
+          $('.search-dropdown-btn').addClass('active');
+        }
+        else {
+          $('.search-dropdown').removeClass('show');
+          $('.search-overlay').removeClass('show');
+          $('.lq-search-fileds').removeClass('index');
+          $('.search-dropdown-btn').removeClass('active');
+        }
+    });
 
 </script>
 

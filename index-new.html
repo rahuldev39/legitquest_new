@@ -213,7 +213,7 @@
                       </small></a></li>
 
                     <li><a class="row">
-                      <strong class="col-2 col-tag">FILTER WITHIN RESULT</strong>
+                      <strong class="col-2 col-tag">Filter Within</strong>
                       <small class="col-10 col-desc">
                         <span  >Any number of filter within the result</span>
                         <em class="detail"></em>
@@ -1208,6 +1208,9 @@
         $('.search-dropdown-btn').addClass('active');
         e.stopPropagation();
       });
+
+
+
       $('.select-btn').click(function() {
         $('.search-dropdown').removeClass('show');
         $('.search-overlay').removeClass('show');
@@ -1231,6 +1234,21 @@
         $('.search-dropdown-btn').removeClass('active');
       });
 
+      $('.search-controls-containers  .search-input').keyup(function() {
+          if($(".search-controls-containers  .search-input").val() == "")
+          {
+            $('.search-dropdown').addClass('show');
+            $('.search-overlay').addClass('show');
+            $('.lq-search-fileds').addClass('index');
+            $('.search-dropdown-btn').addClass('active');
+          }
+          else {
+            $('.search-dropdown').removeClass('show');
+            $('.search-overlay').removeClass('show');
+            $('.lq-search-fileds').removeClass('index');
+            $('.search-dropdown-btn').removeClass('active');
+          }
+      });
 
   </script>
 
