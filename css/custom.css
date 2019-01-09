@@ -3078,3 +3078,10 @@ body.page-internal.has-nav-search {
 .filter-box{
   max-width: 450px
 }
+.citation-list ul {
+    margin: 6px 0px;
+}
+
+.citation-list ul a {
+    font-size: 13px;
+}

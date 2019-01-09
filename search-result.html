@@ -74,7 +74,6 @@
                         <i class="fa fa-angle-down" aria-hidden="true"></i>
                       </button>
                     </div> -->
-
                 </div>
 
                 <div class="search-dropdown">
@@ -140,12 +139,152 @@
                           <span  >Quote for the same phrase search</span>
                           <em class="detail">"stop payment"; "non compliance of mandatory provisions"</em>
                         </small></a></li>
-
+                      </ul>
                 </div>
 
               </div>
               <div id="citation-box" class="search-field flex-fill">
-                <input class="form-control journal-input" placeholder="Please enter keyword">
+                <input class="form-control journal-input search-input" placeholder="Please enter keyword">
+
+                <div class="search-dropdown">
+
+                    <div class="citation-list-container">
+                      <div class="row">
+                        <div class="col-md-4">
+                          <div class="citation-list">
+                            <ul>
+                              <li>
+                                <strong>Supreme Court</strong>
+                              </li>
+                              <li>
+                                <a href="#">AIR 1950 SC 1</a>
+                              </li>
+                              <li>
+                                <a href="#">[1950 ] 1 SCR 64</a>
+                              </li><li>
+                                <a href="#">JT 1986 (1) SC 178</a>
+                              </li>
+                              <li>
+                                <a href="#">1981 (3) SCALE 1831</a>
+                              </li>
+                              <li>
+                                <a href="#">(1970 ) 3 SCC 368</a>
+                              </li>
+                            </ul>
+                          </div>
+                        </div>
+                        <div class="col-md-4">
+                          <div class="citation-list">
+                            <ul>
+                              <li>
+                                <strong>Delhi</strong>
+                              </li>
+                              <li>
+                                <a href="#">1993 IVAD (Delhi ) 838</a>
+                              </li>
+                              <li>
+                                <a href="#">AIR 1967 Delhi 65</a>
+                              </li><li>
+                                <a href="#">3(1967 ) DLT 299</a>
+                              </li>
+                              <li>
+                                <a href="#">1981 (2) DRJ 184</a>
+                              </li>
+                            </ul>
+                          </div>
+                        </div>
+                        <div class="col-md-4">
+                          <div class="citation-list">
+                            <ul>
+                              <li>
+                                <strong>Maharashtra</strong>
+                              </li>
+                              <li>
+                                <a href="#">1997 (3) ALLMR 688</a>
+                              </li>
+                              <li>
+                                <a href="#">AIR 1950 Bom 378</a>
+                              </li><li>
+                                <a href="#">1982 (1) BomCR 236</a>
+                              </li>
+                              <li>
+                                <a href="#">1981 (2) DRJ 184</a>
+                              </li>
+                              <li>
+                                <a href="#">1963 MhLJ 503</a>
+                              </li>
+                            </ul>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="row">
+                        <div class="col-md-4">
+                          <div class="citation-list">
+                            <ul>
+                              <li>
+                                <strong>Calcutta</strong>
+                              </li>
+                              <li>
+                                <a href="#">AIR 1950 Cal 573</a>
+                              </li>
+                              <li>
+                                <a href="#">(1950 ) 1 CALLT 341 (HC )	</a>
+                              </li><li>
+                                <a href="#">2010 (1) CHN 237</a>
+                              </li>
+                              <li>
+                                <a href="#">1971 (1) CLJ 314</a>
+                              </li>
+                              <li>
+                                <a href="#">54 CWN 189</a>
+                              </li>
+                              <li>
+                                <a href="#">(1952) ILR 2 Cal 352</a>
+                              </li>
+                            </ul>
+                          </div>
+                        </div>
+                        <div class="col-md-4">
+                          <div class="citation-list">
+                            <ul>
+                              <li>
+                                <strong>Patna</strong>
+                              </li>
+                              <li>
+                                <a href="#">AIR 2000 Pat 331</a>
+                              </li>
+                              <li>
+                                <a href="#">2000 (3) BLJR 2184</a>
+                              </li><li>
+                                <a href="#">2000 (3)PLJR 241</a>
+                              </li>
+
+                            </ul>
+                          </div>
+                        </div>
+
+                        <div class="col-md-4">
+                          <div class="citation-list">
+                            <ul>
+                              <li>
+                                <strong>Punjab & Haryana</strong>
+                              </li>
+                              <li>
+                                <a href="#">AIR 2014 P&H 139</a>
+                              </li>
+                              <li>
+                                <a href="#">(1954 ) 56 PLR 12</a>
+                              </li>
+
+                            </ul>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+
+                </div>
+
+
               </div>
               <div id="judge-box" class="search-field flex-fill">
                 <input class="form-control" placeholder="Last name">
@@ -1060,7 +1199,7 @@ $(function() {
     });
 
     $('.search-controls-containers  .search-input').keyup(function() {
-        if($(".search-controls-containers  .search-input").val() == "")
+        if($(this).val() == "")
         {
           $('.search-dropdown').addClass('show');
           $('.search-overlay').addClass('show');
