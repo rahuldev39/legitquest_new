@@ -3078,10 +3078,34 @@ body.page-internal.has-nav-search {
 .filter-box{
   max-width: 450px
 }
-.citation-list ul {
-    margin: 6px 0px;
+.citation-list-container {
+    padding: 10px 15px;
 }
-
-.citation-list ul a {
-    font-size: 13px;
+.citation-list-container h4 {
+    font-size: 17px;
+    margin-top: 0px;
+    border-bottom: 1px solid #f1f1f1;
+    padding-bottom: 8px;
+    margin-bottom: 15px;
+}
+.citation-list ul {
+    margin-bottom: 15px;
+}
+.citation-list ul li {
+    padding: 1px 0px;
+    cursor: auto;
+}
+.citation-list ul li strong {
+    font-size: 14px;
+    margin-bottom: 4px;
+    display: block;
+}
+.citation-list ul li:hover{
+  background-color: white
+}
+.citation-list ul li span {
+    font-size: 12px;
+    cursor: auto;
+    color: #8e8e8e;
+    font-style: italic;
 }

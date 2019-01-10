@@ -224,12 +224,145 @@
                         <span  >Quote for the same phrase search</span>
                         <em class="detail">"stop payment"; "non compliance of mandatory provisions"</em>
                       </small></a></li>
-
+                    </ul>
               </div>
 
             </div>
             <div id="citation-box" class="search-field flex-fill">
-              <input class="form-control journal-input" placeholder="Please enter keyword">
+              <input class="form-control journal-input search-input" placeholder="Please enter keyword">
+              <div class="search-dropdown">
+
+                  <div class="citation-list-container">
+                    <h4 class="text-center">Please enter your Citation in this format </h4>
+                    <div class="row">
+                      <div class="col-md-3 col-sm-6">
+                        <div class="citation-list">
+                          <ul>
+                            <li>
+                              <strong>Supreme Court</strong>
+                            </li>
+                            <li>
+                            <span>AIR 1950 SC 1</span>
+                            </li>
+                            <li>
+                            <span>[1950 ] 1 SCR 64</span>
+                            </li><li>
+                            <span>JT 1986 (1) SC 178</span>
+                            </li>
+                            <li>
+                            <span>1981 (3) SCALE 1831</span>
+                            </li>
+                            <li>
+                            <span>(1970 ) 3 SCC 368</span>
+                            </li>
+                          </ul>
+                        </div>
+                        <div class="citation-list">
+                          <ul>
+                            <li>
+                              <strong>Patna</strong>
+                            </li>
+                            <li>
+                            <span>AIR 2000 Pat 331</span>
+                            </li>
+                            <li>
+                            <span>2000 (3) BLJR 2184</span>
+                            </li><li>
+                            <span>2000 (3)PLJR 241</span>
+                            </li>
+
+                          </ul>
+                        </div>
+                      </div>
+                      <div class="col-md-3 col-sm-6">
+                        <div class="citation-list">
+                          <ul>
+                            <li>
+                              <strong>Delhi</strong>
+                            </li>
+                            <li>
+                            <span>1993 IVAD (Delhi ) 838</span>
+                            </li>
+                            <li>
+                            <span>AIR 1967 Delhi 65</span>
+                            </li><li>
+                            <span>3(1967 ) DLT 299</span>
+                            </li>
+                            <li>
+                            <span>1981 (2) DRJ 184</span>
+                            </li>
+                          </ul>
+                        </div>
+                        <div class="citation-list">
+                          <ul>
+                            <li>
+                              <strong>Punjab & Haryana</strong>
+                            </li>
+                            <li>
+                            <span>AIR 2014 P&H 139</span>
+                            </li>
+                            <li>
+                            <span>56 PLR 12 (1954 )</span>
+                            </li>
+
+                          </ul>
+                        </div>
+                      </div>
+                      <div class="col-md-3 col-sm-6">
+                        <div class="citation-list">
+                          <ul>
+                            <li>
+                              <strong>Maharashtra</strong>
+                            </li>
+                            <li>
+                            <span>1997 (3) ALLMR 688</span>
+                            </li>
+                            <li>
+                            <span>AIR 1950 Bom 378</span>
+                            </li><li>
+                            <span>1982 (1) BomCR 236</span>
+                            </li>
+                            <li>
+                            <span>1981 (2) DRJ 184</span>
+                            </li>
+                            <li>
+                            <span>1963 MhLJ 503</span>
+                            </li>
+                          </ul>
+                        </div>
+                      </div>
+                      <div class="col-md-3 col-sm-6">
+                        <div class="citation-list">
+                          <ul>
+                            <li>
+                              <strong>Calcutta</strong>
+                            </li>
+                            <li>
+                            <span>AIR 1950 Cal 573</span>
+                            </li>
+                            <li>
+                            <span>(1950 ) 1 CALLT 341 (HC )</span>
+                            </li><li>
+                            <span>2010 (1) CHN 237</span>
+                            </li>
+                            <li>
+                            <span>1971 (1) CLJ 314</span>
+                            </li>
+                            <li>
+                            <span>54 CWN 189</span>
+                            </li>
+                            <li>
+                            <span>(1952) ILR 2 Cal 352</span>
+                            </li>
+                          </ul>
+                        </div>
+                      </div>
+                    </div>
+
+                  </div>
+
+              </div>
+
             </div>
             <div id="judge-box" class="search-field flex-fill">
               <input class="form-control" placeholder="Last name">
@@ -1235,7 +1368,7 @@
       });
 
       $('.search-controls-containers  .search-input').keyup(function() {
-          if($(".search-controls-containers  .search-input").val() == "")
+          if($(this).val() == "")
           {
             $('.search-dropdown').addClass('show');
             $('.search-overlay').addClass('show');
