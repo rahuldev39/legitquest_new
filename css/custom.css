@@ -2616,10 +2616,11 @@ body.page-internal.has-nav-search {
           flex-wrap: wrap;
   }
   .has-nav-search .search-filed-box {
-    width: 100%;
-    order: 3;
-    padding: 0px;
-}
+      width: 100%;
+      order: 3;
+      padding: 0px;
+      margin-bottom: 0px;
+  }
   .navbar .container {
     max-width: 100%;
     padding: 0px 15px;
@@ -3113,6 +3114,11 @@ body.page-internal.has-nav-search {
 {
   .search-dropdown {
     margin-top: 46px;
+}
+.lq-search-fileds.search-nav .search-dropdown {
+    box-shadow: 0px 4px 8px #d8d8d8;
+    border: 1px solid #e6e6e6;
+    margin-top: 0px;
 }
 }
 @media (max-width: 540px)
