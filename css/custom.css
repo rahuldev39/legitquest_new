@@ -3109,3 +3109,43 @@ body.page-internal.has-nav-search {
     color: #8e8e8e;
     font-style: italic;
 }
+@media (max-width: 767px)
+{
+  .search-dropdown {
+    margin-top: 46px;
+}
+}
+@media (max-width: 540px)
+{
+  .search-dropdown ul li .row{
+    flex-direction: column;
+  }
+  .search-dropdown ul li .col-desc {
+    max-width: 100%;
+}
+.search-dropdown ul li strong.col-tag {
+    margin-bottom: 5px;
+    max-width: 100%;
+}
+.search-dropdown ul li {
+    border-bottom: 1px solid #f1f1f1;
+    padding-bottom: 6px;
+    padding-top: 6px;
+}
+.search-dropdown ul li .col-desc span {
+    flex: 0 0 16em;
+}
+}
+@media (max-width: 400px)
+{
+  .search-dropdown ul li .col-desc {
+    display: block;
+}
+.search-dropdown ul li .col-desc span {
+    color: #4c4c4c;
+    font-weight: 500;
+    margin-bottom: 3px;
+    display: block;
+    width: 100%;
+}
+}
