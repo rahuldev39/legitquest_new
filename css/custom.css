@@ -3110,6 +3110,9 @@ body.page-internal.has-nav-search {
     color: #8e8e8e;
     font-style: italic;
 }
+.filter-within{
+  display: none;
+}
 @media (max-width: 767px)
 {
   .search-dropdown {
@@ -3154,4 +3157,14 @@ body.page-internal.has-nav-search {
     display: block;
     width: 100%;
 }
+}
+
+/* For general iPad layouts */
+
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px)
+{
+
+  .filter-within{
+    display: flex;
+  }
 }
